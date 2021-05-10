@@ -3,9 +3,19 @@
     :root { font-family: 'Inter var', sans-serif; }
 }
 
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
 h1 {
     font-size: 50px;
     font-weight: 900;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .hcpss-blue {
@@ -20,6 +30,15 @@ h1 {
     color: #444444;
 }
 
+.color-grey {
+    color: #6B7280;
+}
+
 .hcpss-offwhite {
     color: #F4F4EF;
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

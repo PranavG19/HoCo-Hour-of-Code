@@ -1,0 +1,103 @@
+.max-w-6xl {
+    max-width: 72rem
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.inline-center {
+    text-align: center;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-hcpss-offwhite {
+    background-color: #F4F4EF;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.lm-16 {
+    margin-left: 4rem;
+}
+
+.margin-4 {
+    margin: 1rem
+}
+
+.rm-16 {
+    margin-right: 4rem;
+}
+
+.margin-0 {
+    margin: 0rem;
+}
+
+.padding-0 {
+    padding: 0rem;
+}
+
+.pt-6 {
+    padding-top: 1.5rem;
+}
+
+.pt-18 {
+    padding-top: 4.5rem;
+}
+
+.pt-24 {
+    padding-top: 6rem;
+}
+
+.pb-32 {
+    padding-bottom: 8rem;
+}
+
+.mt-24 {
+    margin-top: 6rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.rounded-md {
+    border-radius: .375rem;
+}

@@ -30,12 +30,28 @@
     justify-content: left;
 }
 
+.justify-right {
+    justify-content: right;
+}
+
 .justify-between {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .justify-around {
     justify-content: space-around;
+}
+
+.align-end {
+    align-content: flex-end;
+}
+
+.align-center {
+    align-content: center;
 }
 
 .flex-column {
@@ -90,6 +106,54 @@
     background-color: #094d74;
 }
 
+.bg-gold {
+    background-color: gold;
+}
+
+.bg-silver {
+    background-color: silver;
+}
+
+.bg-bronze {
+    background-color: #CD7F32;
+}
+
+.h-60p {
+    height: 60%;
+}
+
+.h-40p {
+    height: 40%;
+}
+
+.h-20p {
+    height: 20%;
+}
+
+.h-48 {
+    height: 12rem;
+}
+
+.h-32 {
+    height: 8rem;
+}
+
+.h-24 {
+    height: 6rem;
+}
+
+.h-22 {
+    height: 5.5rem;
+}
+
+.h-20 {
+    height: 5rem;
+}
+
+.h-18 {
+    height: 4.5rem;
+}
+
 .h-16 {
     height: 4rem;
 }
@@ -102,6 +166,22 @@
     height: 1rem;
 }
 
+.w-24 {
+    width: 6rem;
+}
+
+.w-22 {
+    width: 5.5rem;
+}
+
+.w-20 {
+    width: 5rem;
+}
+
+.w-18 {
+    width: 4.5rem;
+}
+
 .w-16 {
     width: 4rem;
 }
@@ -110,12 +190,20 @@
     margin-left: 4rem;
 }
 
+.lm-4 {
+    margin-left: 1rem;
+}
+
 .margin-4 {
     margin: 1rem
 }
 
 .rm-16 {
     margin-right: 4rem;
+}
+
+.rm-8 {
+    margin-right: 2rem;
 }
 
 .margin-0 {
@@ -154,6 +242,18 @@
     padding-bottom: 4rem;
 }
 
+.pb-8 {
+    padding-bottom: 2rem;
+}
+
+.pb-0 {
+    padding-bottom: 0rem;
+}
+
+.mb-0 {
+    margin-bottom: 0rem;
+}
+
 .mt-2 {
     margin-top: 0.5rem;
 }
@@ -178,6 +278,18 @@
     width: 50%;
 }
 
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
 .width-60 {
     width: 60%;
 }
@@ -188,6 +300,18 @@
 
 .full-height {
     height: 100%;
+}
+
+.half-height {
+    height: 50%
+}
+
+.height-1 {
+    height: 1rem;
+}
+
+.height-1\.5 {
+    height: 1.5rem;
 }
 
 .rounded-md {

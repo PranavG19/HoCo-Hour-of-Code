@@ -1,0 +1,23 @@
+.first-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.leaderboard-points {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.secondthird-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.normal-name {
+    font-size: 1.25 rem;
+    font-weight: 400;
+}
+
+.highlight-blue2 {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #cfdaec 50%);
+}

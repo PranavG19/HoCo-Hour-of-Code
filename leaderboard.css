@@ -1,0 +1,13 @@
+.leaderboard-points {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.leaderboard-name {
+    font-size: 1.5 rem;
+    font-weight: 500;
+}
+
+.highlight-hcpss-blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #759cd8 50%);
+}

@@ -1,0 +1,24 @@
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.article-subtitle {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.article-tag {
+    font-size: 0.75rem;
+    font-weight: 300;
+}

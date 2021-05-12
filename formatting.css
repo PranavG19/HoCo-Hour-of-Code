@@ -2,6 +2,10 @@
     max-width: 72rem
 }
 
+.max-w-4xl {
+    max-width: 57rem;
+}
+
 .max-w-2xl {
     max-width: 42rem;
 }
@@ -44,6 +48,10 @@
 
 .justify-around {
     justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .align-end {
@@ -118,6 +126,10 @@
     background-color: #CD7F32;
 }
 
+.bg-grey {
+    background-color: lightgray;
+}
+
 .h-60p {
     height: 60%;
 }
@@ -158,12 +170,24 @@
     height: 4rem;
 }
 
+.h-7 {
+    height: 1.75rem;
+}
+
 .h-8 {
     height: 2rem;
 }
 
 .h-4 {
     height: 1rem;
+}
+
+.w-7 {
+    width: 1.75rem;
+}
+
+.w-4 {
+    width: 1rem;
 }
 
 .w-24 {
@@ -194,6 +218,10 @@
     margin-left: 1rem;
 }
 
+.lm-2 {
+    margin-left: 0.5rem;
+}
+
 .margin-4 {
     margin: 1rem
 }
@@ -206,12 +234,20 @@
     margin-right: 2rem;
 }
 
+.rm-2 {
+    margin-right: 0.5rem;
+}
+
 .margin-0 {
     margin: 0rem;
 }
 
 .padding-0 {
     padding: 0rem;
+}
+
+.padding-1 {
+    padding: 0.25rem;
 }
 
 .padding-6 {
@@ -238,6 +274,10 @@
     padding-bottom: 8rem;
 }
 
+.pb-20 {
+    padding-bottom: 5rem;
+}
+
 .pb-16 {
     padding-bottom: 4rem;
 }
@@ -252,6 +292,14 @@
 
 .mb-0 {
     margin-bottom: 0rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
 }
 
 .mt-2 {

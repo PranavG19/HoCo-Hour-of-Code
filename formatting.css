@@ -290,6 +290,14 @@
     padding-bottom: 0rem;
 }
 
+.pl-0\.25 {
+    padding-left: 0.25rem;
+}
+
+.pr-0\.25 {
+    padding-right: 0.25rem;
+}
+
 .mb-0 {
     margin-bottom: 0rem;
 }

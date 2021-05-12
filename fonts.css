@@ -56,6 +56,10 @@
     line-height: 4rem;
 }
 
+.lh-1\.75 {
+    line-height: 1.75rem;
+}
+
 h1 {
     font-size: 3.125rem;
     font-weight: 900;

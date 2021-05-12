@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="buttons.css">
   <link rel="stylesheet" href="hover.css">
   <link rel="stylesheet" href="articles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="section-scroll.js"></script>
 </head>
 
 <body>
@@ -73,28 +75,43 @@
       <div class="block-center text-center width-60 color-light-blue subtitle pt-4">Complete articles to get points,
         which are transformed into raffle tickets and earns your school leaderboard points! </div>
       <div class="bg-white block-center rounded-md mt-12 padding-6 half-width flex flex-column">
-        <div class="fs-1.25 color-hcpss-black">Progress</div>
+        <div class="fs-1.25 color-black">Progress</div>
         <div class="mt-6"></div>
         <div class="flex justify-around">
-          <div class="flex flex-column justify-left">
-            <span class="h-16 w-16 bg-blue1 rounded-full text-center fs-1.875 lh-4 color-blue3">0</span>
-            <div class="color-blue3 mt-2">Section 1</div>
+          <div class="hvr-pop">
+            <a id="section1-btn" href="#section1-label">
+              <div class="flex flex-column justify-left">
+                <span class="h-16 w-16 bg-blue1 rounded-full text-center fs-1.875 lh-4 color-blue3">0</span>
+                <div class="color-blue3 mt-2">Section 1</div>
+              </div>
+            </a>
           </div>
-          <div class="flex flex-column justify-left">
-            <span class="h-16 w-16 bg-blue2 rounded-full text-center fs-1.875 lh-4 color-blue4">0</span>
-            <div class="color-blue4 mt-2">Section 2</div>
+          
+          <div class="hvr-pop">
+            <a id="section2-btn" href="#section2-label">
+              <div class="flex flex-column justify-left">
+                <span class="h-16 w-16 bg-blue2 rounded-full text-center fs-1.875 lh-4 color-blue4">0</span>
+                <div class="color-blue4 mt-2">Section 2</div>
+              </div>
+            </a>
           </div>
-          <div class="flex flex-column justify-left">
-            <span class="h-16 w-16 bg-blue3 rounded-full text-center fs-1.875 lh-4 color-blue5">0</span>
-            <div class="color-blue5 mt-2">Section 3</div>
+          
+          <div class="hvr-pop">
+            <a id="section2-btn" href="#section2-label">
+              <div class="flex flex-column justify-left">
+                <span class="h-16 w-16 bg-blue3 rounded-full text-center fs-1.875 lh-4 color-blue5">0</span>
+                <div class="color-blue5 mt-2">Section 3</div>
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="mt-6"></div>
         <div class="full-width h-4 bg-hcpss-offwhite rounded-md">
           <div class="bg-blue4 full-height rounded-md" style="width: 1%"></div>
         </div>
         <div class="mt-2"></div>
-        <div class="full-width text-right">0 pts / 60 max</div>
+        <div class="full-width text-right color-black">0 pts / 60 max</div>
       </div>
     </div>
   </div>
@@ -107,7 +124,7 @@
         <!-- Section 1 -->
         <div class="flex full-width mb-12">
           <div class="flex flex-column half-width text-right justify-right">
-            <div class="section-title color-grey">Section 1</div>
+            <div id="section1-label" class="section-title color-grey">Section 1</div>
             <div class="section-subtitle color-grey">A gentle introduction to core computer science 
               concepts, intended for students with &lt2 years of programming experience.</div>
           </div>
@@ -117,7 +134,7 @@
                 <div class="mb-12 hvr-blue4">
                   <div class="flex">
                     <div class="article-title color-grey article-blue4">Hello World!</div>
-                    <div class="bg-grey rounded-full h-7 w-7 lm-2"></div>
+                    <div class="article-tag bg-hcpss-offwhite hcpss-black rounded-md lm-2 lh-1.75 pl-0.25 pr-0.25">To-Do</div>
                   </div>
                   <div class="flex mt-2">
                     <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">4pts</div>
@@ -136,9 +153,76 @@
             </div>
           </div>
         </div>
+
+
+        <!-- Section 2 -->
+        <div class="flex full-width mb-12">
+          <div class="flex flex-column half-width text-right justify-right">
+            <div id="section2-label" class="section-title color-grey">Section 2</div>
+            <div class="section-subtitle color-grey">A deeper look at advanced algorithms, intended for
+              students with &GreaterEqual;2 years of programming experience.</div>
+          </div>
+          <div class="half-width lm-16">
+            <div class="flex flex-column">
+              <a href="#">
+                <div class="mb-12 hvr-blue4">
+                  <div class="flex">
+                    <div class="article-title color-grey article-blue4">Hello World!</div>
+                    <div class="article-tag bg-hcpss-offwhite hcpss-black rounded-md lm-2 lh-1.75 pl-0.25 pr-0.25">To-Do</div>
+                  </div>
+                  <div class="flex mt-2">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">4pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                  </div>
+                  <div class="article-subtitle mt-2 color-greychateau article-blue4">
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                  </div>
+                </div>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Section 3 -->
+        <div class="flex full-width mb-12">
+          <div class="flex flex-column half-width text-right justify-right">
+            <div id="section3-label" class="section-title color-grey">Section 3</div>
+            <div class="section-subtitle color-grey">An overview of many different hot topics
+              in computer science, intended for interested students of all levels.</div>
+          </div>
+          <div class="half-width lm-16">
+            <div class="flex flex-column">
+              <a href="#">
+                <div class="mb-12 hvr-blue4">
+                  <div class="flex">
+                    <div class="article-title color-grey article-blue4">Hello World!</div>
+                    <div class="article-tag bg-hcpss-offwhite hcpss-black rounded-md lm-2 lh-1.75 pl-0.25 pr-0.25">To-Do</div>
+                  </div>
+                  <div class="flex mt-2">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">4pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                  </div>
+                  <div class="article-subtitle mt-2 color-greychateau article-blue4">
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                  </div>
+                </div>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+
       </div>
-
-
     </div>
   </div>
 </body>

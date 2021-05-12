@@ -22,3 +22,8 @@
     font-size: 0.75rem;
     font-weight: 300;
 }
+
+.hvr-blue4:hover .article-blue4{
+    color: #759cd8;
+    transition-duration: 150ms;
+}

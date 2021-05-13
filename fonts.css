@@ -8,6 +8,11 @@
     font-weight: 900;
 }
 
+p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 .subtitle {
     font-size: 1rem;
 }
@@ -38,6 +43,10 @@
 
 .lh-6 {
     line-height: 6rem;
+}
+
+.lh-12 {
+    line-height: 12rem;
 }
 
 .lh-5\.5 {

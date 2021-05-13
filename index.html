@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -12,7 +13,10 @@
   <link rel="stylesheet" href="formatting.css">
   <link rel="stylesheet" href="buttons.css">
   <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="typewriter.js"></script>
 </head>
+
 <body>
   <div class="navbar-shadow full-width margin-0 padding-0">
     <div class="max-w-6xl block-center">
@@ -25,7 +29,7 @@
             <div style="width: 4rem"></div>
             <div class="hvr-underline-reveal">
               <a href="index.html" class="navbar-font color-grey margin-4 full-height">
-                <div class="navbar-tile">
+                <div class="navbar-tile hcpss-blue">
                   Home
                 </div>
               </a>
@@ -46,8 +50,8 @@
                 </div>
               </a>
             </div>
-            
-            
+
+
           </div>
 
           <div class="flex justify-left items-center">
@@ -63,16 +67,16 @@
       </nav>
     </div>
   </div>
-  
+
   <div class="relative pt-18 pb-32 full-width">
-    <div class="max-w-6xl block-center pt-6 flex justify-between">
+    <div class="max-w-6xl block-center pt-6 flex justify-between pl-2 pr-2">
       <div class="max-w-2xl flex justify-left flex-column">
         <div class="full-width margin-0 title">Howard County</div>
         <div class="full-width hcpss-blue margin-0 title">Hour of Code</div>
         <div class="pt-6"></div>
         <h3 class="full-width color-grey margin-0">
           <!-- TODO typewriter effect -->
-          Learn xxxxxxxxx. 
+          Learn <span id="typewriter"></span>
         </h3>
         <h3 class="full-width color-grey margin-0">
           Compete. Win $xxxx in prizes.
@@ -106,6 +110,141 @@
   <div class="relative pt-6 pb-32 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white">
     <div class="max-w-6xl block-center">
       <h2 class="text-center full-width">Prizes</h2>
+    </div>
+  </div>
+
+  <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+    <div class="max-w-4xl block-center pl-2 pr-2">
+      <h2 class="text-center full-width">Frequently Asked Questions</h2>
+      <div class="flex flex-wrap">
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            What is the Hour of Code?
+          </div>
+          <div class="normal-text color-grey">
+            The Hour of Code started as a one-hour introduction to computer science, designed to demystify "code", to
+            show that anybody can learn the basics, and to broaden participation in the field of computer science. It
+            has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities
+            but expanding to all sorts of community efforts. You can check out the official Hour of Code <a
+              href="https://hourofcode.com/us">here</a>.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            When is the Hour of Code?
+          </div>
+          <div class="normal-text color-grey">
+            This event, Howard County’s Hour of Code, is a 5-day event taking place from May 24 to May 28, 2021.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            Why computer science?
+          </div>
+          <div class="normal-text color-grey">
+            Every student should have the opportunity to learn computer science. It helps nurture problem-solving
+            skills, logic and creativity. By starting early, students will have a foundation for success in any
+            21st-century career path. See more stats <a href="https://hourofcode.com/us/promote/stats">here</a>.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            How do I participate in the Hour of Code?
+          </div>
+          <div class="normal-text color-grey">
+            Login using your HCPSS Google account, navigate to <a href="articles.html">Articles</a>, and start
+            completing articles! Completing articles will earn you and your school points, which are transformed into
+            raffle tickets at the end of the event.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            What device should I use?
+          </div>
+          <div class="normal-text color-grey">
+            Todo - depends on responsive design implemented by the event.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            How much can one learn in an hour?
+          </div>
+          <div class="normal-text color-grey">
+            The goal of the Hour of Code is not to teach anybody to become an expert computer scientist in one hour. One
+            hour is only enough to learn that computer science is fun and creative, that it is accessible at all ages,
+            for all students, regardless of background. The measure of success of this campaign is not in how much CS
+            students learn - the success is reflected in broad participation across gender and ethnic and socioeconomic
+            groups, and the resulting increase in enrollment and participation we see in CS courses at all grade levels.
+            Millions of the participating teachers and students have decided to go beyond one hour - to learn for a
+            whole day or a whole week or longer, and many students have decided to enroll in a whole course (or even a
+            college major) as a result.
+            <br> <br>
+            Besides the students, another "learner" is the educator who gains the confidence after one hour that they
+            can teach computer science even though they may not have a college degree as a computer scientist. Tens of
+            thousands of teachers decide to pursue computer science further, either attending PD or offering follow-on
+            online courses, or both. And this applies to school administrators too, who realize that computer science is
+            something their students want and their teachers are capable of.
+            <br> <br>
+            Above all, what all participants can learn in an hour is that we can do this.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            How do I keep learning after the Hour of Code?
+          </div>
+          <div class="normal-text color-grey">
+            Our teachers in Howard County are some of the best educators in the world- take advantage of the
+            opportunities HCPSS offers! If you liked learning about CS, then take some of our county’s CS courses and
+            join the Computer Programming Career Academy.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            How do the points/prizes work?
+          </div>
+          <div class="normal-text color-grey">
+            TBD- might post YT video outlining points system?
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            Who made this website, and why?
+          </div>
+          <div class="normal-text color-grey">
+            This website is the product of a collaboration between various schools and clubs across the county. It is
+            intended to be a version of Hour of Code better catered for high schoolers and to better promote CS
+            education through inter-school competitions. The authors and editors of each article are listed at the
+            bottom of their respective articles in contribution-level-order. A full list of contributors is available
+            here [hyperlink to full list of contributors].
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            Why isn't login working?
+          </div>
+          <div class="normal-text color-grey">
+            Please use either Chrome or Firefox for Google login compatibility reasons.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="question color-black mb-1">
+            I still have questions. Where can I ask them?
+          </div>
+          <div class="normal-text color-grey">
+            Join our discord server!
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

@@ -1,0 +1,19 @@
+#typewriter {
+    border-right: .05em solid;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+.question {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.answer {
+    font-size: 1rem;
+    font-weight: 300;
+}

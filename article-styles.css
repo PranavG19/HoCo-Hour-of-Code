@@ -73,6 +73,7 @@
     border-bottom-right-radius: .375rem;
     border-bottom-left-radius: .375rem;
     border-top-right-radius: .375rem;
+    box-sizing: border-box;
 }
 .tabs input[type="radio"] {
 	display: none;

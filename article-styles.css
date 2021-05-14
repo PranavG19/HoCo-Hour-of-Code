@@ -8,6 +8,11 @@
     font-weight: 300;
 }
 
+.article-content-sectiontitle {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .article-content {
     font-size: 1.25rem;
     font-weight: 200;
@@ -27,3 +32,71 @@
     font-size: 0.75rem;
     font-weight: 300;
 }
+
+.code-text {
+    font-size: 1rem;
+}
+
+.output-text {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.bg-code-blue {
+    background-color: #002451;
+}
+
+/* Tabs */
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 0.5rem 0.5rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+    background: #cfdaec;
+    font-weight: 500;
+    transition: background ease 0.2s;
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.tabs .tab {
+    order: 99; 
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #F4F4EF;
+    border-bottom-right-radius: .375rem;
+    border-bottom-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #F4F4EF;
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45rem) {
+  .tabs .tab,
+  .tabs label {
+    order: 1;
+    border-bottom-right-radius: .375rem;
+    border-bottom-left-radius: .375rem;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+

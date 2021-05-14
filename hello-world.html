@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -69,9 +73,10 @@
 
     <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
         <div class="max-w-2xl block-center">
-            <div class="flex flex-column lm-2 rm-2">
+            <div class="flex flex-column lm-4 rm-4">
                 <div class="color-grey mb-1">Sponsored by ________</div>
-                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your sponsored message here</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
                 <!-- Title -->
                 <div class="full-width article-title">Hello World!</div>
 
@@ -86,14 +91,218 @@
 
                 <!-- Subtitle -->
                 <div class="article-subtitle color-grey mt-2">
-                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the
+                    main points
                 </div>
 
                 <!-- Content -->
-                <div class="article-content color-black mt-6">
-                    Next.js has been designed for gradual adoption. With Next.js, you can continue using your existing code and add as much (or as little) React as you need. By starting small and incrementally adding more pages, you can prevent derailing feature work by avoiding a complete rewrite.
+                <div class="article-content color-black mt-6 mb-3">
+                    The <b>“Hello World!”</b> program is the first step in learning how to code with any language. This
+                    tradition was first established in the 70s by Nokia Bell Labs and has since advanced into the famous
+                    first line of code that most programmers write. It is a program that prints the text “Hello World!”
+                    to some output stream, usually the console, and it’s primarily taught for three purposes:
+                    <ul>
+                        <li class="mb-2">To illustrate the basic syntax of a language</li>
+                        <li class="mb-2">To check that you have correctly installed your computer language.</li>
+                        <li class="mb-2">To teach printing
+                            <ul>
+                                <li class="mt-2">Printing is a handy tool because you can use it for debugging
+                                    regardless of what language or IDE you are running</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    Here are some examples of how printing works:
                 </div>
-                
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">print('Hello World!')</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">System.out.println("Hello World!");</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">cout << "Hello World!";</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">print('Big thank you to all contributors to Hour of Code!')</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Big thank you to all contributors to Hour of Code!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">System.out.println("Big thank you to all contributors to Hour of Code!");</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Big thank you to all contributors to Hour of Code!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">cout << "Big thank you to all contributors to Hour of Code!";</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Big thank you to all contributors to Hour of Code!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">print('I like to eat pizza!')</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > I like to eat pizza!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">System.out.println("I like to eat pizza!");</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > I like to eat pizza!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">cout << "I like to eat pizza!";</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > I like to eat pizza!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle color-black">Entry points</div>
+                <div class="article-content color-black mt-6 mb-3">
+                    It’s also important to know about <b>entry points</b>. Entry points are where your program will begin to run. In Java and C++, the <b>main</b> function/method, which you will learn more about later, marks this entry point. That means in order to get your “Hello World!” programs to run in these languages, you will need to put your code inside the main function/method, as shown below.
+                </div>
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-11" checked="checked">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
+    public static void main(String[] args)
+    { // only the code between this bracket
+        System.out.println("Hello World");
+    } // and this bracket will be run
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+int main()
+{ // only the code between this bracket
+    cout << "Hello World";
+    return 0;
+} // and this bracket will be run</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Python is executed differently from Java and C++. It simply executes all code from the very first line to the very bottom line, and this means you don’t need to mark any entry points with main functions/methods. The same python code from before, shown below, will work fine. 
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs5" id="tab-10" checked="checked">
+                    <label for="tab-10">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">print('Hello World!')</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Contributors -->
                 <div class="flex mt-2 padding-3 rounded-md bg-hcpss-offwhite justify-around">

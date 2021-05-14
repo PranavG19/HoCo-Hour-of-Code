@@ -47,6 +47,10 @@
     background-color: #002451;
 }
 
+.lborder-blue3 {
+    border-left: 1rem solid #032552;
+}
+
 /* Tabs */
 .tabs {
 	display: flex;

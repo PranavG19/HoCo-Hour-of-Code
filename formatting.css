@@ -421,3 +421,7 @@
 .rounded-full {
     border-radius: 50%;
 }
+
+.border-box {
+    box-sizing: border-box;
+}

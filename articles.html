@@ -57,8 +57,8 @@
 
           <div class="flex justify-left items-center">
             <div class="hvr-underline-reveal">
-              <a href="index.html" class="navbar-font color-grey h-16 margin-4">
-                <div class="navbar-tile">
+              <a href="" class="navbar-font color-grey h-16 margin-4 login">
+                <div class="navbar-tile username">
                   Login
                 </div>
               </a>
@@ -81,25 +81,25 @@
           <div class="hvr-pop">
             <a id="section1-btn" href="#section1-label">
               <div class="flex flex-column justify-left">
-                <span class="h-16 w-16 bg-blue1 rounded-full text-center fs-1.875 lh-4 color-blue3">0</span>
+                <span class="h-16 w-16 bg-blue1 rounded-full text-center fs-1.875 lh-4 color-blue3 sect1">0</span>
                 <div class="color-blue3 mt-2">Section 1</div>
               </div>
             </a>
           </div>
-          
+
           <div class="hvr-pop">
             <a id="section2-btn" href="#section2-label">
               <div class="flex flex-column justify-left">
-                <span class="h-16 w-16 bg-blue2 rounded-full text-center fs-1.875 lh-4 color-blue4">0</span>
+                <span class="h-16 w-16 bg-blue2 rounded-full text-center fs-1.875 lh-4 color-blue4 sect2">0</span>
                 <div class="color-blue4 mt-2">Section 2</div>
               </div>
             </a>
           </div>
-          
+
           <div class="hvr-pop">
             <a id="section2-btn" href="#section3-label">
               <div class="flex flex-column justify-left">
-                <span class="h-16 w-16 bg-blue3 rounded-full text-center fs-1.875 lh-4 color-blue5">0</span>
+                <span class="h-16 w-16 bg-blue3 rounded-full text-center fs-1.875 lh-4 color-blue5 sect3">0</span>
                 <div class="color-blue5 mt-2">Section 3</div>
               </div>
             </a>
@@ -108,10 +108,10 @@
 
         <div class="mt-6"></div>
         <div class="full-width h-4 bg-hcpss-offwhite rounded-md">
-          <div class="bg-blue4 full-height rounded-md" style="width: 1%"></div>
+          <div class="bg-blue4 full-height rounded-md score-bar" style="width: 0%; transition: width 200ms ease-in-out;"></div>
         </div>
         <div class="mt-2"></div>
-        <div class="full-width text-right color-black">0 pts / 60 max</div>
+        <div class="full-width text-right color-black score increaseScore">0 pts / 60 max</div>
       </div>
     </div>
   </div>
@@ -125,7 +125,7 @@
         <div class="flex full-width mb-12">
           <div class="flex flex-column half-width text-right justify-right">
             <div id="section1-label" class="section-title color-grey">Section 1</div>
-            <div class="section-subtitle color-grey">A gentle introduction to core computer science 
+            <div class="section-subtitle color-grey">A gentle introduction to core computer science
               concepts, intended for students with &lt2 years of programming experience.</div>
           </div>
           <div class="half-width lm-16">
@@ -134,7 +134,8 @@
                 <div class="hvr-blue4">
                   <div class="flex">
                     <div class="article-title color-grey article-blue4">Hello World!</div>
-                    <div class="article-tag bg-hcpss-offwhite hcpss-black rounded-md lm-2 lh-1.75 pl-0.25 pr-0.25">To-Do</div>
+                    <div class="article-tag bg-hcpss-offwhite hcpss-black rounded-md lm-2 lh-1.75 pl-0.25 pr-0.25">To-Do
+                    </div>
                   </div>
                   <div class="flex mt-2">
                     <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">3pts</div>
@@ -277,7 +278,8 @@
                     <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
                   </div>
                   <div class="article-subtitle mt-2 color-greychateau article-blue4">
-                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the
+                    main points
                   </div>
                 </div>
               </a>
@@ -309,7 +311,8 @@
                     <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
                   </div>
                   <div class="article-subtitle mt-2 color-greychateau article-blue4">
-                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the
+                    main points
                   </div>
                 </div>
               </a>
@@ -469,7 +472,7 @@
           </div>
         </div>
 
-        
+
         <!-- Section 3 -->
         <div class="flex full-width mb-12">
           <div class="flex flex-column half-width text-right justify-right">
@@ -493,7 +496,8 @@
                     <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
                   </div>
                   <div class="article-subtitle mt-2 color-greychateau article-blue4">
-                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the main points
+                    A list of main article topics goes here, keep it short and simple, but also make sure to hit the
+                    main points
                   </div>
                 </div>
               </a>
@@ -619,3 +623,10 @@
     </div>
   </div>
 </body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script type="module" src="script.js"></script>

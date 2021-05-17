@@ -43,12 +43,24 @@
     font-weight: 300;
 }
 
+.mono-text {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 300;
+    background: #F4F4EF;
+    display: inline;
+}
+
 .bg-code-blue {
     background-color: #002451;
 }
 
 .lborder-blue3 {
     border-left: 1rem solid #032552;
+}
+
+.lborder-orangered {
+    border-left: 1rem solid orangered;
 }
 
 /* Tabs */

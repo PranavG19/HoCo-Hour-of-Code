@@ -1,0 +1,428 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Variables</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">7pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    How to modify and manipulate variables in Java and C++
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    The vast majority of applications, regardless of platform, store data. <b>Variables</b> are one such method of storing data, and they are helpful because an application can constantly manipulate and reference them. One common example is a score in a video game. The score is stored in a variable, and whenever you defeat an enemy or pass a level, the variable’s value increases.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In Java and C++, a variable is created with three components:
+                    <ul>
+                        <li class="mb-2">Data type - data type tells your computer how to store the data. The important fundamental data types are mentioned at the end of this article, but for now, we will only be working with the integer data type, denoted with the word <div class="mono-text">int</div>.</li>
+                        <li class="mb-2">Name - you use the name to reference the variable later on</li>
+                        <li class="mb-2">Value - this is the data that is being stored</li>
+                    </ul>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Specifying data type is only necessary the first time a variable is created.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s first store a variable of data type integer, named <div class="mono-text">number</div>, and value <div class="mono-text">5</div>. Then, let’s use the print function we learned in the “Hello World!” article to check the variable’s value. Here is what it would look like:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+System.out.println(number);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+cout << number;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Notice that unlike in the “Hello World!” article, we don’t have quotation marks around <div class="mono-text">number</div> in the print statement. This is because quotation marks indicate the computer should print the words between them. We don’t want to print the actual word “number,” we want the computer to print the value of the variable named <div class="mono-text">number</div>. Here’s what would happen if we surrounded number with quotation marks:
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs2" id="tab-3" checked="checked">
+                    <label for="tab-3">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+System.out.println("number");</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > number
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-4">
+                    <label for="tab-4">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+cout << "number";</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > number
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle color-black">Math using variables</div>
+                <div class="article-content color-black mt-6 mb-3">
+                    Now that we know how to create variables, we can manipulate and modify them. For example, here is how we manipulate them using the four basic arithmetic operations:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-5" checked="checked">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int a = 5;
+int b = 5;
+System.out.println(a + b);
+System.out.println(a - b);
+System.out.println(a * b);
+System.out.println(a / b);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 10 <br>
+                            > 0 <br>
+                            > 25 <br>
+                            > 1
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int a = 5;
+int b = 5;
+cout << a + b << "\n"; // the "\n" just makes a new line in the output
+cout << a - b << "\n";
+cout << a * b << "\n";
+cout << a / b << "\n";</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 10 <br>
+                            > 0 <br>
+                            > 25 <br>
+                            > 1
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orangered mb-3">
+                    Common Mistake: Since the integer data type only stores integers, when numbers that aren’t integers are stored in a variable of data type integer, they are automatically rounded down (e.g., 99/100 → 0, 5.43 → 5, 4.65 → 4).
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    We can also modify the value of an already-created variable with a line of code in the form “name of variable = new value of variable.” If we wanted to change <div class="mono-text">number</div> from the previous example to have the value <div class="mono-text">10</div>, this is what it would look like:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-7" checked="checked">
+                    <label for="tab-7">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = 10;
+System.out.println(number);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 10
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-8">
+                    <label for="tab-8">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = 10;
+cout << number;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 10
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    You can also use arithmetic when modifying a variable…
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs5" id="tab-9" checked="checked">
+                    <label for="tab-9">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = 10 + 5;
+System.out.println(number);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 15
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-10">
+                    <label for="tab-10">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = 10 + 5;
+cout << number;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 15
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    … and even use the variable itself when modifying it.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs6" id="tab-11" checked="checked">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = number + 2;
+System.out.println(number);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+number = number + 2;
+cout << number;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In programming, the equals sign does not have the same purpose as in math. Instead, equal signs are used to set the variable on the LEFT equal to the value on the RIGHT. The value on the right is first calculated, then the variable on the left is assigned that value. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    If you plan to use the variable itself when modifying it, you can use the shortcut below. This code does the same thing as the previous example but takes less space. You can also use this shortcut with any arithmetic operation by replacing <div class="mono-text">+</div> in the expression with the desired operation (<div class="mono-text">-</div>, <div class="mono-text">*</div>, <div class="mono-text">/</div>). 
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs7" id="tab-13" checked="checked">
+                    <label for="tab-13">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int number = 5;
+number += 2;
+System.out.println(number);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs7" id="tab-14">
+                    <label for="tab-14">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int number = 5;
+number += 2;
+cout << number;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Variables are an extremely powerful tool that every programmer utilizes daily. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This article only went over variables with data type integer, but there are many other data types in Java and C++ that store different kinds of data, such as: 
+                    <ul>
+                        <li>string - stores text</li>
+                        <li>float - stores numbers with decimals</li>
+                        <li>long - stores really big numbers</li>
+                        <li>char - stores single characters</li>
+                        <li>boolean - stores either a 1 or a 0 (denoting True and False); this is covered in a later article.</li>
+                    </ul>
+                </div>
+
+                <!-- Contributors -->
+                <div class="flex mt-2 padding-3 rounded-md bg-hcpss-offwhite justify-around">
+                    <div class="flex flex-column">
+                        <div class="article-contributors-type">Authors</div>
+                        <div class="article-contributors-name">
+                            John Doe <br>
+                            Mason Adams <br>
+                            Steven Smith
+                        </div>
+                    </div>
+                    <div class="flex flex-column lm-4">
+                        <div class="article-contributors-type">Editors</div>
+                        <div class="article-contributors-name">
+                            John Doe <br>
+                            Mason Adams <br>
+                            Steven Smith
+                        </div>
+                    </div>
+                    <div class="flex flex-column lm-4">
+                        <div class="article-contributors-type">Reviewers</div>
+                        <div class="article-contributors-name">
+                            John Doe <br>
+                            Mason Adams <br>
+                            Steven Smith
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

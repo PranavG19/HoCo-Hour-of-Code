@@ -245,7 +245,7 @@
 
                 <div class="article-content-sectiontitle color-black">Entry points</div>
                 <div class="article-content color-black mt-6 mb-3">
-                    Another important concept is <b>entry points</b>. Entry points are where your program will begin to run. In Java and C++, the <b>main</b> function/method (you will learn more about functions and methods later) marks this entry point. That means in order to get your “Hello World!” programs to run in these languages, you will need to put your code inside the main function/method, as shown below.
+                    Another important beginner concept is <b>entry points</b>. Entry points are where your program will begin to run. In Java and C++, the <b>main</b> function/method (you will learn more about functions and methods later) marks this entry point. That means to get the “Hello World!” examples from above to run in these languages, you will need to put your code inside the brackets after the main function/method. The entry points for getting our previous printing code to run are marked below; only code after the entry point will run. 
                 </div>
                 <div class="tabs mb-3">
                     <input type="radio" name="tabs4" id="tab-11" checked="checked">
@@ -255,7 +255,8 @@
                         <pre
                             class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
     public static void main(String[] args)
-    { // the code will start running here
+    { 
+        // THIS IS THE ENTRY POINT
         System.out.println("Hello World!");
     }
 }</code></pre>
@@ -276,7 +277,8 @@
 using namespace std;
 
 int main()
-{ // the code will start running here
+{ 
+    // THIS IS THE ENTRY POINT
     cout << "Hello World!";
     return 0;
 }</code></pre>
@@ -289,7 +291,7 @@ int main()
                 </div>
 
                 <div class="article-content color-black mb-3">
-                    Python is executed differently from Java and C++. It simply executes all code from the very first line to the very bottom line, and this means you don’t need to mark any entry points with main functions/methods. The same python code from before, copied below for convenience, will run fine. 
+                    Python is executed differently from Java and C++. It simply runs all code from the very first line to the very bottom line, and this means you don’t need to mark any entry points like in Java or C++. The same python code from before, copied below for convenience, will run fine.
                 </div>
 
                 <div class="tabs mb-3">
@@ -307,8 +309,12 @@ int main()
                     </div>
                 </div>
 
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: It’s possible to structure your code in Python to define an entry point that isn’t the first line, but it isn't necessary to get the code running. In Java and C++, you need to define an entry point, or your code will not run.
+                </div>
+
                 <div class="article-content color-black mb-3">
-                    Many of the future articles won’t include entry points because they take a lot of space and don’t add much instructional value, but it’s important to know that if you want to get code running on your own computer, you will need to use entry points for Java and C++.
+                    Many of the future articles won’t include marked entry points because they take a lot of space and don’t add much instructional value, but it’s essential to know that if you want to get code running on your computer, you will need to use entry points for Java and C++.
                 </div>
 
                 <div class="article-content color-black mt-6 mb-3 quiz">

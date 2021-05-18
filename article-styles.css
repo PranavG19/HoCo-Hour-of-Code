@@ -59,8 +59,12 @@
     border-left: 1rem solid #032552;
 }
 
-.lborder-orangered {
-    border-left: 1rem solid orangered;
+.lborder-orange {
+    border-left: 1rem solid orange;
+}
+
+.lborder-darkred {
+    border-left: 1rem solid #8b0000;
 }
 
 /* Tabs */

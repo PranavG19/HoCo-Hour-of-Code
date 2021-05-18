@@ -12,7 +12,12 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 var rt = firebase.database();
 
-let questionsSolved = JSON.parse(localStorage.getItem("questionsSolved"));
+let questionsSolved;
+try {
+	questionsSolved = JSON.parse(localStorage.getItem("questionsSolved"));
+} catch {
+	questionsSolved = [];
+}
 let score = JSON.parse(localStorage.getItem("score"));
 let totalScore = JSON.parse(localStorage.getItem("totalScore"));
 let school = localStorage.getItem("school");
@@ -20,6 +25,7 @@ let leaderboard = JSON.parse(localStorage.getItem("leaderboard"));
 let leaderboardTime = Date.parse(
 	JSON.parse(localStorage.getItem("leaderboardTime"))
 );
+let randomNumbers = JSON.parse(localStorage.getItem("randomNumbers"));
 
 let students = {
 	"Atholton High School": 1460,
@@ -39,111 +45,6 @@ let students = {
 	"Wilde Lake High School": 999,
 };
 
-function login() {
-	const googleAuth = new firebase.auth.GoogleAuthProvider();
-	firebase.auth().signInWithPopup(googleAuth);
-}
-
-function logout() {
-	firebase
-		.auth()
-		.signOut()
-		.then(function () {
-			localStorage.clear();
-			$(".username").text("Login");
-		})
-		.catch(function (error) {
-			console.log(error);
-		});
-}
-
-function store(schoolName, scoreList, questions) {
-	let ts = scoreList.reduce((a, b) => a + b, 0);
-
-	localStorage.setItem("school", schoolName);
-	localStorage.setItem("score", JSON.stringify(scoreList));
-	localStorage.setItem("questionsSolved", JSON.stringify(questions));
-	localStorage.setItem("totalScore", JSON.stringify(ts));
-
-	school = schoolName;
-	score = scoreList;
-	totalScore = ts;
-	questionsSolved = questionsSolved;
-}
-
-function time(t) {
-	let d = new Date();
-	if (leaderboardTime) {
-		if ((d - leaderboardTime) / 1000 < t) {
-			return false;
-		}
-	}
-	localStorage.setItem("leaderboardTime", JSON.stringify(d));
-	leaderboardTime = d;
-	return true;
-}
-
-function renderLeaderboard() {
-	for (var s in leaderboard) {
-		$(`
-        <div class="h-16">
-            <div class="leaderboard-name text-right">
-                ${leaderboard[s][0]}
-            </div>
-            <div class="leaderboard-points text-right">
-                ${Math.floor(
-									10000 * (leaderboard[s][1] / students[leaderboard[s][0]])
-								)}
-            </div>
-        </div>`)
-			.hide()
-			.appendTo(".leaderboard-wrapper")
-			.fadeIn(s * 150);
-	}
-
-	let maxScore = leaderboard[0][1];
-
-	for (var s in leaderboard) {
-		let bg;
-		if (s == 0) {
-			bg = "bg-gold";
-		} else if (s == 1) {
-			bg = "bg-silver";
-		} else if (s == 2) {
-			bg = "bg-bronze";
-		} else {
-			bg = "bg-blue2";
-		}
-
-		let w = (leaderboard[s][1] / maxScore) * 100;
-
-		let bar = $(`
-        <div class="h-16">
-            <div class="${bg} height-1 lm-4 rounded-md"></div>
-        </div>
-        `);
-		$(".leaderboard-bar").append(bar);
-		bar.animate({ width: w + "%" }, 1000);
-		// .$(".leaderboard-bar").append(`
-		// <div class="h-16">
-		//     <div class="${bg} height-1 lm-4 rounded-md" style="width: ${
-		// 	(leaderboard[s][1] / maxScore) * 100
-		// }%"></div>
-		// </div>
-		// `);
-	}
-}
-
-function renderScore() {
-	if ($(".score")[0]) {
-		$(".score").text(totalScore + " pts / 60 max");
-		$(".score-bar").css({ width: (totalScore / 60) * 100 + "%" });
-		for (var i = 1; i < 4; i++) {
-			$(".sect" + i).text(score[i - 1]);
-		}
-	}
-}
-
 $(".login").on("click", function (e) {
 	e.preventDefault();
 	if (firebase.auth().currentUser) {
@@ -160,16 +61,19 @@ firebase.auth().onAuthStateChanged(function (user) {
 			logout();
 			$("body")
 				.prepend(
-					`<div style="text-align: center; background: lightcoral; border-radius: 100vw; padding: 10px; margin-bottom: 10px">
-                        <p style="margin: 0">Please Login With HCPSS Account!</p>
-                        </div>`
+					`<div style="text-align: center; background: lightcoral; border-radius: 50px; padding: 15px; margin-bottom: 10px;">
+                                <p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Please Login With HCPSS Account!</p>
+                                </div>`
 				)
 				.scrollTop(0);
 			setTimeout(() => {
 				location.reload();
-			}, 5000);
+			}, 6000);
 		}
 		$(".username").text(user.displayName);
+		$(".login-button")
+			.text("Logout")
+			.css({ background: "lightcoral", color: "white" });
 
 		if (!questionsSolved || !score || !school) {
 			let userRef = rt.ref("users/" + user.uid);
@@ -178,7 +82,12 @@ firebase.auth().onAuthStateChanged(function (user) {
 				.then((snapshot) => {
 					if (snapshot.exists()) {
 						let data = snapshot.val();
-						store(data.school, data.score, data.questionsSolved);
+						store(
+							data.school,
+							data.score,
+							data.questionsSolved,
+							data.randomNumbers
+						);
 					} else {
 						let randomNumberGenerated = [];
 						for (let i = 0; i < 25; i++) {
@@ -294,32 +203,9 @@ if ($(".leaderboard-wrapper")[0]) {
 
 $(".increaseScore").on("click", function (e) {
 	e.preventDefault();
-	let pts = 4;
-	let user = firebase.auth().currentUser;
-
-	rt.ref("users/" + user.uid + "/score/1").set(
-		firebase.database.ServerValue.increment(pts)
-	);
-	rt.ref("schools/" + school).set(firebase.database.ServerValue.increment(pts));
-
-	rt.ref("users/" + user.uid)
-		.get()
-		.then((snapshot) => {
-			let data = snapshot.val();
-			store(data.school, data.score, data.questionsSolved);
-			renderScore();
-		});
-
-	// db.collection("users").doc(user.uid).update({ score: increaseBy });
-	// db.collection("schools").doc("Schools").update(schoolUpdate);
-
-	// db.collection("users")
-	// 	.doc(user.uid)
-	// 	.get()
-	// 	.then((snapshot) => {
-	// 		let data = snapshot.data();
-	// 		store(data.school, data.score, data.questionsSolved);
-	// 		$(".score").text(score + " pts / 60 max");
-	// 		$(".score-bar").css({ width: score + "%" });
-	// 	});
+	increaseScore(4);
 });
+
+if ($(".quiz")[0]) {
+	getQuestions("Automation", [1, 2, 3]);
+}

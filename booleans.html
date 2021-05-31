@@ -1,0 +1,916 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Booleans</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">10pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Logic</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    What are booleans and how to use them to control your program's flow
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    <b>Booleans</b> are a special variable data type that can only store two possible values: 1 and 0. These values are intended to represent the two truth values in logic: True and False. 
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: It’s only storing the numbers 1 and 0, but because it’s basically only ever used to represent True and False, most languages offer programmers the ability to use 1/True and 0/False interchangeably when referencing or modifying a boolean.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To serve this purpose, a boolean variable is best declared like so:
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">our_boolean = True</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = true;</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = true;</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In many languages, booleans can also be declared by setting it equal to 1 or 0, but it is best practice to use true and false to not confuse booleans with integers.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Like the integer data type you saw in the “Variables” article, Booleans can also be modified and manipulated in various ways. Here are some examples:
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>Booleans can be declared as equal to some statement the computer can check is true or false. In the following example, we ask the program if 1 is greater than 2.</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">b = 1 > 2
+print(b)</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > False
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = 1 > 2;
+System.out.println(b);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > false
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = 1 > 2;
+cout << b;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > 0
+                        </div>(Note in this case 0 represents false)
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>You can also use variables in the statement that the computer checks is true or false.</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">a = 2
+b = 1
+c = a > b
+print(c)</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > True
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int a = 2;
+int b = 1;
+boolean c = a > b;
+System.out.println(c);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > true
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int a = 2;
+int b = 1;
+bool c = a > b;
+cout << c;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > 1 
+                        </div>(Note in this case 1 represents true)
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    You may be wondering how we check two variables are equal to each other. We can use the <div class="mono-text">==</div> operator to do this, which checks if the value on the left of the operator is equal to the value on the right of the operator. Notice it uses two equal signs, which helps the computer distinguish between whether we are trying to check if two variables are equal vs whether we are trying to modify a variable’s value.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-10" checked="checked">
+                    <label for="tab-10">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">a = 1
+b = 1
+c = (a == b)
+print(c)</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > True
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-11">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int a = 1;
+int b = 1;
+boolean c = (a == b);
+System.out.println(c);</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > true
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int a = 1;
+int b = 1;
+bool c = (a == b);
+cout << c;</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > 1 
+                        </div>(Note in this case 1 represents true)
+                    </div>
+                </div>
+
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orange mb-12">
+                    Common Mistake: Accidentally using the <div class="mono-text">=</div> operator instead of the <div class="mono-text">==</div> operator to check if two values are equal is one of the most common beginner mistakes. Make sure you’re using the right operator for what you want to do!
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Conditionals</div>
+
+                <div class="article-content color-black mb-3">
+                    <b>Conditional statements</b> are statements that can control the flow of a program when used in conjunction with booleans. The most common conditional statement is the “if-statement,” which has three components:
+                    <ol>
+                        <li class="mb-2">The if-statement itself</li>
+                        <li class="mb-2">The boolean that determines if the enclosed code will run</li>
+                        <li class="mb-2">The enclosed code that will run if the boolean is true
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    For example, this code will print the variable <div class="mono-text">b</div> only if it is true because the print statement is enclosed in the body of the if-statement:
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When b is true:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs5" id="tab-13" checked="checked">
+                    <label for="tab-13">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">b = True
+if b:
+    print(b)</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > True
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-14">
+                    <label for="tab-14">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = true;
+if(b) {
+    System.out.println(b);
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > true
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-15">
+                    <label for="tab-15">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = true;
+if(b) {
+    cout << b;
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 1 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When b is false:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs6" id="tab-16" checked="checked">
+                    <label for="tab-16">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">b = False
+if b:
+    print(b)</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            >
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-17">
+                    <label for="tab-17">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = false;
+if(b) {
+    System.out.println(b);
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            >
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-18">
+                    <label for="tab-18">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = false;
+if(b) {
+    cout << b;
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Python doesn’t use brackets and instead uses indentation to indicate that a body of code is enclosed in an if-statement. The lack of brackets is one of the hallmarks of Python that make it an easily identifiable language.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    “If-statement”s can also be expanded into “if-else-statement”s, which add an additional level of control. The body of code enclosed in the else component only runs if the given boolean is false.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When b is true:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs7" id="tab-19" checked="checked">
+                    <label for="tab-19">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">b = True
+if b:
+    print("b is true!")
+else:
+    print("b is false!")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is true!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs7" id="tab-20">
+                    <label for="tab-20">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = true;
+if(b) {
+    System.out.println("b is true!");
+} else {
+    System.out.println("b is false!");
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is true!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs7" id="tab-21">
+                    <label for="tab-21">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = true;
+if(b) {
+    cout << "b is true!";
+} else {
+    cout << "b is false!";
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is true!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When b is false:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs8" id="tab-22" checked="checked">
+                    <label for="tab-22">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">b = False
+if b:
+    print("b is true!")
+else:
+    print("b is false!")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is false!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs8" id="tab-23">
+                    <label for="tab-23">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">boolean b = false;
+if(b) {
+    System.out.println("b is true!");
+} else {
+    System.out.println("b is false!");
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is false!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs8" id="tab-24">
+                    <label for="tab-24">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">bool b = false;
+if(b) {
+    cout << "b is true!";
+} else {
+    cout << "b is false!";
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > b is false!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s apply our repertoire of variables, booleans, and conditionals to write a short program that tells you what to wear. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Imagine you want to wear a t-shirt if the temperature is >70 degrees Fahrenheit, and otherwise, you want to wear a jacket. Your code for this scenario might look like this:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs9" id="tab-25" checked="checked">
+                    <label for="tab-25">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">temperature = 80 // replace 80 with today’s temperature
+if temperature > 70:
+    print("Wear a t-shirt")
+else:
+    print("Wear a jacket")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs9" id="tab-26">
+                    <label for="tab-26">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int temperature = 80; // replace 80 with today's temperature
+if(temperature > 70) {
+    System.out.println("Wear a t-shirt");
+} else {
+    System.out.println("Wear a jacket");
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs9" id="tab-27">
+                    <label for="tab-27">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int temperature = 80; // replace 80 with today's temperature
+if(temperature > 70) 
+    cout << "Wear a t-shirt";
+} else {
+    cout << "Wear a jacket";
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This program executes perfectly, but the issue is we also don’t want to wear a jacket for all temperatures &leq;70 degrees. We instead want to wear a coat if the temperature is &lt;40 degrees. Here is the catch: we now have three different ranges where we will be wearing various things depending on the temperature (&lt;40, &geq;40 but &leq;70, >70). How can we represent three different values in the boolean we give the if-else-statement when a boolean can only store two different values? Where do we define the 3rd body of code since an if-else statement only has room for two bodies of code?
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To address this issue, we can use a <b>nested if-else-statement</b>. A nested if-else-statement is an if-else-statement enclosed within another if-else statement. We can use this in our scenario to address our problem in 2 steps:
+                    <ol>
+                        <li>First, determine if the temperature is >70 degrees, and if it is, wear a t-shirt.</li>
+                        <li>If it isn’t, we either need to wear a jacket or coat, so we use another if-statement to figure out if we will wear a jacket or coat</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This is what that logic would look like in code:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs10" id="tab-28" checked="checked">
+                    <label for="tab-28">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">if temperature > 70:
+print("Wear a t-shirt")
+else:
+if temperature < 40:
+    print("Wear a coat")
+else:
+    print("Wear a jacket")</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs10" id="tab-29">
+                    <label for="tab-29">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">if(temperature > 70) {
+    System.out.println("Wear a t-shirt");
+} else {
+    if(temperature < 40) {
+        System.out.println("Wear a coat");
+    } else {
+        System.out.println("Wear a jacket");
+    }
+}</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs10" id="tab-30">
+                    <label for="tab-30">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">if(temperature > 70) {
+    cout << "Wear a t-shirt";
+} else {
+    if(temperature < 40) {
+        cout << "Wear a coat";
+    } else {
+        cout << "Wear a jacket";
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s test our code with <b>unit tests</b>, a type of software testing that checks all of the units of our code are working as intended. In this case, our units would be the temperature ranges, so we can use temperatures 20, 60, and 80 to test all 3 of our units. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When the temperature is 20:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs11" id="tab-31" checked="checked">
+                    <label for="tab-31">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">temperature = 20
+if temperature > 70:
+    print("Wear a t-shirt")
+else:
+    if temperature < 40:
+        print("Wear a coat")
+    else:
+        print("Wear a jacket")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a coat
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs11" id="tab-32">
+                    <label for="tab-32">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int temperature = 20;
+if(temperature > 70) {
+    System.out.println("Wear a t-shirt");
+} else {
+    if(temperature < 40) {
+        System.out.println("Wear a coat");
+    } else {
+        System.out.println("Wear a jacket");
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a coat
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs11" id="tab-33">
+                    <label for="tab-33">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int temperature = 20;
+if(temperature > 70) {
+    cout << "Wear a t-shirt";
+} else {
+    if(temperature < 40) {
+        cout << "Wear a coat";
+    } else {
+        cout << "Wear a jacket";
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a coat
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>When the temperature is 60:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs12" id="tab-34" checked="checked">
+                    <label for="tab-34">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">temperature = 60
+if temperature > 70:
+    print("Wear a t-shirt")
+else:
+    if temperature < 40:
+        print("Wear a coat")
+    else:
+        print("Wear a jacket")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a jacket
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs12" id="tab-35">
+                    <label for="tab-35">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int temperature = 60;
+if(temperature > 70) {
+    System.out.println("Wear a t-shirt");
+} else {
+    if(temperature < 40) {
+        System.out.println("Wear a coat");
+    } else {
+        System.out.println("Wear a jacket");
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a jacket
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs12" id="tab-36">
+                    <label for="tab-36">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int temperature = 60;
+if(temperature > 70) {
+    cout << "Wear a t-shirt";
+} else {
+    if(temperature < 40) {
+        cout << "Wear a coat";
+    } else {
+        cout << "Wear a jacket";
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a jacket
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ul>
+                        <li>Finally, when the temperature is 80:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs13" id="tab-37" checked="checked">
+                    <label for="tab-37">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">temperature = 80
+if temperature > 70:
+    print("Wear a t-shirt")
+else:
+    if temperature < 40:
+        print("Wear a coat")
+    else:
+        print("Wear a jacket")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs13" id="tab-38">
+                    <label for="tab-38">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int temperature = 80;
+if(temperature > 70) {
+    System.out.println("Wear a t-shirt");
+} else {
+    if(temperature < 40) {
+        System.out.println("Wear a coat");
+    } else {
+        System.out.println("Wear a jacket");
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs13" id="tab-39">
+                    <label for="tab-39">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int temperature = 80;
+if(temperature > 70) {
+    cout << "Wear a t-shirt";
+} else {
+    if(temperature < 40) {
+        cout << "Wear a coat";
+    } else {
+        cout << "Wear a jacket";
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Wear a t-shirt
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

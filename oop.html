@@ -1,0 +1,496 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">OOP</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">14pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Objects</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Object-oriented programming and why it's the most dominant programming paradigm
+                </div>
+
+                <!-- Content -->
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orange mt-6 mb-3">
+                    Warning: This article covers advanced material and concepts. In the HCPSS Programming Career Academy, Object-Oriented Programming is briefly covered in AP CS A (taken by 11th graders) and extensively covered in Advanced Object-Oriented Design (taken by 12th graders).
+                </div>
+
+
+                <div class="article-content color-black mb-3">
+                    <b>Object-oriented programming (OOP)</b> is an approach to organizing code into <b>classes</b> and <b>objects</b>, and it enables programmers to connect data to its behavior easily. All three programming languages covered in this event support OOP, although some can also support other programming paradigms. OOP is the most dominant modern programming paradigm because it’s designed to encourage two important CS concepts:
+                    <ul>
+                        <li class="mb-2">Modularization - breaking down a major application into many small “modules”</li>
+                        <li class="mb-2">Re-using code - writing code that others can reuse, enabling programmers to collaborate</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    There are four main features to every object-oriented programming paradigm that support those two concepts and make OOP very powerful:
+                    <ul>
+                        <li class="mb-2">Classes</li>
+                        <li class="mb-2">Objects</li>
+                        <li class="mb-2">Inheritance</li>
+                        <li class="mb-2">Polymorphism</li>
+                    </ul>
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Classes</div>
+
+                <div class="article-content color-black mb-3">
+                    An OOP <b>class</b> is a way to organize concepts that have certain notions in common. All <b>objects</b> built off a class will share essential characteristics as well as differ from one another. A close analogy is an animal species;  all dogs share the “class” characteristics of being able to run, having four legs, and fur, yet still differ in the “object” characteristics of their running speed, the length of their legs, and the color of their fur.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Classes have two major components:
+                    <ul>
+                        <li class="mb-2"><b>States</b> - data that is stored in the class (but may not include the values of the data)</li>
+                        <li class="mb-2"><b>Methods</b> - the behavior of the class (how the object interacts with its data; methods are shared across all objects built using the same class, but they will behave differently depending on the object’s state)</li>
+                    </ul>
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Objects</div>
+
+                <div class="article-content color-black mb-3">
+                    Objects are an <b>instance</b> of a class, meaning that they realize the concepts outlined in a class. Using the animal analogy, a class of dogs contains all the features (states) that all dogs have, but a dog object will have concrete parameters that make that specific dog unique compared to other dogs. A dog class might contain a state for height, but a dog object will contain the actual height; some dogs will be taller, and some dogs will be shorter. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    For example, we could build user accounts on this website using classes and objects. Our class includes states and methods all users have:
+                    <ul>
+                        <li class="mb-2">States (data that is stored in the class) - first name, last name, current point value </li>
+                        <li class="mb-2">Methods (the behavior of the class) - adding points to a user, retrieving points</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s write the code for this class and test it using objects built from the class.
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">class user:
+    # states
+    firstName = ""
+    lastName = ""
+    points = 0 # all users start with 0 points
+    
+    # constructor method that is always called when an object is initialized
+    # this should only include code that every object needs to run before use
+    def __init__(self, firstName, lastName):
+        self.firstName = firstName # "self" keyword refers to the current object
+        self.lastName = lastName
+    
+    # other methods
+    def addPoints(self, addedPoints):
+        self.points += addedPoints
+
+
+# this code tests our class
+JLo = user("Jennifer", "Lopez")
+ARod = user("Alex", "Rodriguez")
+
+# test our addPoints method
+JLo.addPoints(5)
+ARod.addPoints(10)
+
+print(JLo.points)
+print(ARod.points)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5 <br>
+                            > 10
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class user{
+    // this main function tests our class
+    public static void main(String []args){
+        user JLo = new user("Jennifer", "Lopez");
+        user ARod = new user("Alex", "Rodriguez");
+        
+        // test addPoints method
+        JLo.addPoints(5);
+        ARod.addPoints(10);
+        
+        System.out.println(JLo.points);
+        System.out.println(ARod.points);
+    }
+    
+    // states
+    String firstName;
+    String lastName;
+    int points;
+    
+    // constructor method that is always called when an object is initialized
+    // this should only include code that every object needs run before use
+    user(String firstName, String lastName) {
+        this.firstName = firstName; // "this" keyword refers to the current object
+        this.lastName = lastName;
+        points = 0; // all users start with 0 points
+    }
+    
+    // other methods
+    void addPoints(int addedPoints) {
+        points += addedPoints;
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5 <br>
+                            > 10
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <bits/stdc++.h>
+
+using namespace std;
+
+class user {
+    public:
+        // states
+        string firstName;
+        string lastName;
+        int points;
+        
+        // method declarations (but not their definitions)
+        user(string firstName, string lastName);
+        void addPoints(int addedPoints);
+};
+
+// method definitions
+
+// constructor method that is always called when an object is initialized
+// this should only include code that every object needs to be run before use
+user::user(string firstName, string lastName) {
+    this->firstName = firstName; // "this" keyword refers to the current object
+    this->lastName = lastName;
+    points = 0; // all users start with 0 points
+}
+
+// other methods
+void user::addPoints(int addedPoints) {
+    points += addedPoints;
+}
+
+// this main function tests our class
+int main()
+{
+    user JLo("Jennifer", "Lopez");
+    user ARod("Alex", "Rodriguez");
+    
+    // test addPoints method
+    JLo.addPoints(5);
+    ARod.addPoints(10);
+    
+    cout << JLo.points << "\n";
+    cout << ARod.points << "\n";
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5 <br>
+                            > 10
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Notice that we have two objects, one named <div class="mono-text">JLo</div> and one named <div class="mono-text">ARod</div>, built using the user class. The class only contained the data types that the object should include, but the object contained the actual data values. In addition, note that when we modified the points of one user, it did not affect the other user. 
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-12">
+                    Note: This website uses much more complex code behind the scenes to keep things working- this example is for demonstration purposes only
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Encapsulation</div>
+
+                <div class="article-content color-black mb-3">
+                    OOP encourages programmers to <b>encapsulate</b> their code. Encapsulation is where the mechanics behind code is hidden, but the overall function and interface to use the function are shown. For example, your television may have buttons for changing the volume, changing channels, etc. While most people do not understand the underlying mechanisms, they know how to use the interface (the remote) and use the television effectively.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    An <b>interface</b> is the collection of functionality (states and methods) that the programmer can interact with. The interface of our user class can be most clearly seen in the C++ example above, where the class declaration includes all the states and methods available to the programmer, but the methods are defined separately.
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Inheritance</div>
+
+                <div class="article-content color-black mb-3">
+                    Suppose you want to represent concepts that share many characteristics using classes. Instead of creating classes for each one containing many overlapping features, you can use <b>inheritance</b>. Inheritance is a way to organize classes to store their differences better.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    For example, if you wanted to create classes for different vehicles, you could first create a vehicle class containing all the features common to all vehicles (e.g., current gas amount, speed, maximum occupancy, etc.). Then, you can create a <b>child</b> class that inherits all of the vehicle class’s features and enables you to add on features unique to that child class.
+                </div>
+
+                <img src="oop-img-1.png" alt="oop-img-1.png" class="mb-12">
+
+                <div class="article-content-sectiontitle color-black mb-3">Polymorphism</div>
+
+                <div class="article-content color-black mb-12">
+                    <b>Polymorphism</b> in programming refers to the idea that the same methods can be used in different classes or that the same methods can be used with different parameters. There are two kinds of polymorphism, over-riding and over-loading.
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Over-riding</div>
+
+                <div class="article-content color-black mb-3">
+                    <b>Over-riding</b> is when a child class requires a different implementation of an inherited method from a parent class.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    For example, the throttle method of a vehicle class could increase the speed of the vehicle. However, depending on the vehicle, the throttle method is activated differently (gas pedal on a car/van vs. right handgrip on a motorbike). Therefore, we must leave the vehicle class incomplete because the throttle method will have a different implementation depending on the child. We call this type of incomplete class an <b>abstract class</b>. In this case, each child class should include an overridden implementation of the throttle method inherited from the vehicle parent class.
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Over-loading</div>
+
+                <div class="article-content color-black mb-3">
+                    <b>Over-loading</b> is when a class requires a different implementation of a method for different parameters (must have either a different number of parameters or a different data type for the parameters). For example:
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>An add method could add two given integers together:</li>
+                    </ul>
+                </div>
+
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-5" checked="checked">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">static int add(int a, int b) {
+    return a+b;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>But you could also write an overloaded version for adding two longs together:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-6" checked="checked">
+                    <label for="tab-6">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">static long add(long a, long b) {
+    return a+b;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>Or an overloaded version for adding three integers together:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-7" checked="checked">
+                    <label for="tab-7">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">static int add(int a, int b, int c) {
+    return a+b+c;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>Or even an overloaded version for adding strings together:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs5" id="tab-8" checked="checked">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">static String add(String a, String b) {
+    return a+b;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    At runtime, a compiler will automatically figure out which version to use and execute the appropriate code:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs6" id="tab-9" checked="checked">
+                    <label for="tab-9">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">import java.util.*;
+
+public class overloadingTest{
+    public static void main(String []args){
+        System.out.println(add(2,3));
+        // tip - you can use scientific notation in most languages
+        // 1e12 = 1 * 10^12
+        System.out.println(add((long)1e12, (long)1e12));
+        System.out.println(add(2,3,6));
+        System.out.println(add("Hello ", "World!"));
+    }
+    
+    static int add(int a, int b) {
+        System.out.println("The 1st add method was used.");
+        return a+b;
+    }
+    
+    static long add(long a, long b) {
+        System.out.println("The 2nd add method was used.");
+        return a+b;
+    }
+    
+    static int add(int a, int b, int c) {
+        System.out.println("The 3rd add method was used.");
+        return a+b+c;
+    }
+    
+    static String add(String a, String b) {
+        System.out.println("The 4th add method was used.");
+        return a+b;
+    }
+}</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > The 1st add method was used. <br>
+                            > 5 <br>
+                            > The 2nd add method was used. <br>
+                            > 2000000000000 <br>
+                            > The 3rd add method was used. <br>
+                            > 11 <br>
+                            > The 4th add method was used. <br>
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="article-content color-black mb-3">
+                    Object-oriented programming is a programming paradigm highly prevalent in modern app development. It’s crucial to understand OOP to continue learning computer science.
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

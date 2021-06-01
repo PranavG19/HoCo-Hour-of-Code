@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Graphs</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">7pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Math</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    An introduction to graphs and graph theory
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    What is a <b>graph</b>? You may be thinking of a <i>functional</i> graph (the kind you see in math). But the graphs that appear in <b>graph theory</b>, a popular computer science domain with millions of applications, are wildly different.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here is one example of a graph in CS:
+                </div>
+                
+                <img src="graphs-img-1.png" alt="graphs-img-1.png" class="mb-12 w-50p block-center">
+
+                <div class="article-content color-black mb-12">
+                    Looks weird? Let’s talk about its components. A graph theory graph is a collection of <b>nodes</b> (the circles) connected by <b>edges</b> (the lines). One typical graph task is <b>graph traversal</b>, where you move from one node to the next via an edge connecting them.
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Special Graphs</div>
+
+                <img src="graphs-img-2.png" alt="graphs-img-2.png" class="mb-12 block-center">
+
+                <div class="article-content color-black mb-3">
+                    First, graphs can have different types of edges. A <b>bidirectional</b> edge connects nodes both ways; if a bidirectional edge connects nodes A and B, you can use a bidirectional edge to traverse from A to B or from B to A. In contrast, a <b>directed</b> edge only allows traversal in the arrow’s direction. If a directional edge goes from A to B, you can only travel from A to B.
+                </div>
+
+                <img src="graphs-img-3.png" alt="graphs-img-3.png" class="mb-12 block-center">
+
+                <div class="article-content color-black mb-3">
+                    Certain types of graphs have unique properties that make them useful in particular domains. A tree is a graph where every node is connected, and if there are N nodes, there are also exactly N-1 edges. You can think of a tree as having started from a single node, and every new node is added to the tree using a single edge. Trees have been heavily studied and have an expansive set of algorithms. We encourage you to google additional information, as they are outside the scope of this event. A <b>directed acyclic graph</b> (or DAG) is another type of graph. “Directed” means it only has directed edges, and “acyclic” means there are no cycles in the graph-- there is no way to reach the same node twice using graph traversal. DAGs also have a lot of unique properties (one of which you can read about in the "Google Maps" article).
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: These are only two specific types of graphs. We encourage everyone to google additional information if interested. Some examples include a null graph, trivial graph, non-directed graph, complete graph, wheel graph, and many more!
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    So what is the purpose of graphs? They are helpful in a wide array of computing problems ranging from finding the shortest path from one place to another (Dijkstra’s algorithm) to sorting and updating a set of numbers (balanced binary search tree). Understanding graphs can make learning the frameworks and programs that our world runs on much more manageable. In addition, understanding graphs make the following modules on this website much more understandable!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

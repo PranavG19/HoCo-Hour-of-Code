@@ -1,0 +1,395 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Greedy</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">15pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Introduction to algorithms, greedy algorithms, some examples, and real-world applications
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    What is the first thing that comes to mind when you hear the word “greedy”? Most likely, you think of someone obsessed with wealth, such as Mr. Krabs from Spongebob. In programming, however, one of the most fundamental algorithm types is greedy algorithms.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    An <b>algorithm</b> is a specific set of instructions/steps used to accomplish a task. <b>Greedy</b> algorithms are defined as any algorithm that determines the solution to a problem by taking the <i>locally</i> optimal choice at every sub-problem of the problem (hence the name greedy- they’re always taking whatever they can at the moment without considering the future).
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Example: Your house is on fire, and you want to bring the most valuable items outside, but you only have time to enter and exit the house 4 times before it collapses (for a total of 8 items carried outside). By taking the 2 most valuable items in the house every time you enter (every entrance to the house is the sub-problem, and taking the 2 most valuable items is the locally optimal choice for that sub-problem), in the end, you will have the 8 most valuable items outside. This is the globally optimal solution.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In the example, using a greedy algorithm produces the globally optimal solution. However, a lot of real-world applications of greedy algorithms do not produce the globally optimal solution. Instead, they are used to provide an approximate solution because determining the exact solution takes far longer. Discussion of these applications is outside of the scope of this article, but if you are interested, some common examples of greedy algorithms are the traveling salesman problem, vertex cover, k-center clustering (not to be confused with k-means clustering), and gradient descent.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    Let’s take a look at some examples with code.
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Example 1</div>
+
+                <div class="article-content color-black mb-3">
+                    Problem: Given an array of positive integers, determine the maximum sum of 3 elements in the array.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Solution:
+                    <ol>
+                        <li class="mb-2">Determine the largest element, add it to the sum. Remove the element.</li>
+                        <li class="mb-2">Determine the largest element, add it to the sum. Remove the element.</li>
+                        <li class="mb-2">Determine the largest element, add it to the sum.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Sub-problems: Finding the largest element in the array
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    At each step, we can take the <i>locally</i> optimal solution (finding the largest element), then add it to the sum. In the end, we have the <i>globally</i> optimal solution of the maximum sum of 3 elements in the array
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Implementation of the solution:
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">arr = [4, 6, 2, 8, 13, 11]
+sum = 0
+
+# step 1
+sum += max(arr)
+arr.remove(max(arr))
+
+# step 2
+sum += max(arr)
+arr.remove(max(arr))
+
+# step 3
+sum += max(arr)
+
+# verify our results
+print("Maximum sum: " + str(sum))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Maximum sum: 32
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = {4, 6, 2, 8, 13, 11};
+int sum = 0;
+
+// step 1
+int mx = arr[0], mxidx = 0;
+for(int i = 1; i < arr.length; i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+arr[mxidx] = -1;
+
+// step 2
+mx = arr[0];
+mxidx = 0;
+for(int i = 1; i < arr.length; i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+arr[mxidx] = -1;
+
+// step 3
+mx = arr[0];
+mxidx = 0;
+for(int i = 1; i < arr.length; i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+
+// verify our results
+System.out.println("Maximum sum: " + sum);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Maximum sum: 32
+                        </div> Instead of removing the element, we can set it equal to -1 which has the same effect.
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[] = {4, 6, 2, 8, 13, 11};
+int sum = 0;
+
+// step 1
+int mx = arr[0], mxidx = 0;
+for(int i = 1; i < (sizeof(arr)/sizeof(*arr)); i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+arr[mxidx] = -1;
+
+// step 2
+mx = arr[0];
+mxidx = 0;
+for(int i = 1; i < (sizeof(arr)/sizeof(*arr)); i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+arr[mxidx] = -1;
+
+// step 3
+mx = arr[0];
+mxidx = 0;
+for(int i = 1; i < (sizeof(arr)/sizeof(*arr)); i++) {
+    if(arr[i] > mx) {
+        mx = arr[i];
+        mxidx = i;
+    }
+}
+sum += mx;
+
+// verify our results
+cout << "Maximum sum: " << sum;
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Maximum sum: 32
+                        </div>Instead of removing the element, we can set it equal to -1 which has the same effect.
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle-2 color-grey mb-3">Example 2</div>
+
+                <div class="article-content color-black mb-3">
+                    Problem: You are working at a company where, in return for doing task A, you are given <div class="mono-text">B</div> dollars. At the beginning of the week, you receive <div class="mono-text">N</div> requests for task A. However, task A can also be customized according to the customer’s needs (although you are always paid <div class="mono-text">B</div> dollars), and for each of the <div class="mono-text">N</div> requests, the <div class="mono-text">i</div>-th request will take <div class="mono-text">T<sub>i</sub></div> hours to complete. Given you work <div class="mono-text">W</div> hours on requests of task A throughout the week, what is the maximum number of dollars you can earn that week from task A?
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Solution: Sort the tasks by the time <div class="mono-text">T<sub>i</sub></div> it will take to complete the task. Then, greedily complete each task starting with the shortest tasks until the <div class="mono-text">W</div> hours are over.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Sub-problems: Identifying the task that will take the shortest amount of time.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    At each step, we can take the <i>locally</i> optimal solution (finding the shortest task), then add it to the total time spent. In the end, we have the <i>globally</i> optimal solution of the maximum number of dollars you can earn that week from task A.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Implementation of the solution:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">B = 20
+N = 8
+W = 30
+T = [2, 7, 30, 14, 8, 4, 10, 6]
+
+T.sort()
+
+passedTime = 0
+idx = 0
+while passedTime + T[idx] <= W and idx < N:
+    passedTime += T[idx]
+    idx += 1
+
+print("Total dollars earned: " + str(B*idx))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Total dollars earned: 100
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int B = 20;
+int N = 8;
+int W = 30;
+int[] T = {2, 7, 30, 14, 8, 4, 10, 6};
+
+Arrays.sort(T);
+
+int passedTime = 0;
+int idx = 0;
+while(passedTime + T[idx] <= W && idx < N) {
+    passedTime += T[idx];
+    idx++;
+}
+
+System.out.println("Total dollars earned: " + B*idx);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Total dollars earned: 100
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int B = 20;
+int N = 8;
+int W = 30;
+int T[] = {2, 7, 30, 14, 8, 4, 10, 6};
+
+sort(T, T+N);
+
+int passedTime = 0;
+int idx = 0;
+while(passedTime + T[idx] <= W && idx < N) {
+    passedTime += T[idx];
+    idx++;
+}
+
+cout << "Total dollars earned: " << B*idx;
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Total dollars earned: 100
+                        </div>(Note in this case 1 represents true)
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Greedy algorithms as a whole are an incredibly broad topic. There is no silver bullet for creating greedy algorithms. The most important characteristic to remember when solving greedy problems is “how do locally optimal solutions contribute to a globally optimal result.”
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

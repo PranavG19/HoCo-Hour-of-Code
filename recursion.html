@@ -1,0 +1,351 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Recursion</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">14pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Math</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Introduction to recursion with Fibonacci numbers
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    <b>Recursion</b> is a problem-solving technique where a function calls itself (or executes code that eventually leads to calling itself). At its core, it’s a straightforward concept. However, recursion has many pitfalls. For example, this code will run infinitely until stopped by an external limitation (power, memory, terminated, stack overflow, etc.):
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def recursive_function():
+    recursive_function()
+
+recursive_function()
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class recursiveFunctionTest{
+    public static void main(String []args){
+        recursive_function();
+    }
+     
+    static void recursive_function() {
+        recursive_function();
+    }
+}
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">void recursive_function() {
+    recursive_function();
+}
+
+int main() {
+    recursive_function();
+
+    return 0;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Python and Java have a stack limit of ~1k and ~10k, respectively, meaning a function can only call itself 1k or 10k levels deep before your program breaks. C++ has a memory limit of ~1 MB instead of a stack limit.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Recursion is typically only used to solve problems with sub-problems. Every recursive call should bring the computer one step closer to solving the problem by breaking it down into sub-problems, and then breaking the sub-problems down into more sub-problems, until eventually the sub-problems are so simple that we know the answer. Then, once we have the solutions to the small sub-problems, we can build back up solutions to higher sub-problems until we know the solution to the original problem. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To do this, a good recursive function should have two main cases that define how it should call itself so that no stack overflows or infinite recursions occur:
+                    <ul>
+                        <li class="mb-2"><b>Base case</b> - This is a simple case of the problem that we know the solution of immediately. All recursive cases must reduce to a base case. Note that you can have more than one base case.</li>
+                        <li class="mb-2"><b>Recursive case</b> - This is every other case of the problem. We might not know the solution to it, but we should know how to express the solution in terms of its sub-problems. This is the case where the function will call itself. Remember that eventually, all subproblems should reduce to the base case.</li>
+
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    The flow of a recursive function that uses the two cases must be:
+                    <ol>
+                        <li class="mb-2">First, check if we have reached a base case. If we have, then return the base case solution. If we haven’t, proceed to the recursive case.</li>
+                        <li class="mb-2">The recursive case is executed, and it should break down the problem into smaller pieces that will eventually all reach the base case.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s look at an example where we need to find the <div class="mono-text">n</div>th Fibonacci number. The first two Fibonacci numbers are 0 and 1. Then, every subsequent number is equal to the sum of the previous two numbers. The Fibonacci sequence would then be 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Because every Fibonacci number can be defined as the sum of 2 earlier Fibonacci numbers, we can treat the earlier numbers as sub-problems. So, our cases would be:
+                    <ul>
+                        <li class="mb-2">Base cases - the first Fibonacci number is 0, and the second Fibonacci number is 1</li>
+                        <li class="mb-2">Recursive case - the <div class="mono-text">n</div>th Fibonacci number is the sum of the <div class="mono-text">n-1</div>th Fibonacci number and the <div class="mono-text">n-2</div>th Fibonacci number.</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    We know that if we keep defining a Fibonacci number in terms of the two previous Fibonacci numbers, then we define those Fibonacci numbers in terms of their two previous Fibonacci numbers, we will eventually reach the first or second Fibonacci number. So, we can write a function that tells us the <div class="mono-text">n</div>th Fibonacci number like so:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def fibonacci_number(n):
+    # base case 1
+    if n == 1:
+        return 0
+        
+    # base case 2
+    if n == 2:
+        return 1
+    
+    # recursive case
+    return fibonacci_number(n - 1) + fibonacci_number(n - 2)
+    
+    
+# Unit tests to make sure our code is working
+print(fibonacci_number(1))
+print(fibonacci_number(2))
+print(fibonacci_number(3))
+print(fibonacci_number(4))
+print(fibonacci_number(5))
+print(fibonacci_number(6))
+print(fibonacci_number(7))
+print(fibonacci_number(8))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class FibonacciNumbers{
+    public static void main(String []args){
+        // Unit tests to make sure our code is working
+        System.out.println(fibonacci_number(1));
+        System.out.println(fibonacci_number(2));
+        System.out.println(fibonacci_number(3));
+        System.out.println(fibonacci_number(4));
+        System.out.println(fibonacci_number(5));
+        System.out.println(fibonacci_number(6));
+        System.out.println(fibonacci_number(7));
+        System.out.println(fibonacci_number(8));
+    }
+     
+    static int fibonacci_number(int n) {
+        // base case 1
+        if(n == 1) {
+            return 0;
+        }
+        
+        // base case 2
+        if(n == 2) {
+            return 1;
+        }
+        
+        // recursive case
+        return fibonacci_number(n - 1) + fibonacci_number(n - 2);
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+int fibonacci_number(int n) {
+    // base case 1
+    if(n == 1) {
+        return 0;
+    }
+    
+    // base case 2
+    if(n == 2) {
+        return 1;
+    }
+    
+    // recursive case
+    return fibonacci_number(n - 1) + fibonacci_number(n - 2);
+}
+
+int main() {
+    // Unit tests to make sure our code is working
+    cout << fibonacci_number(1) << "\n";
+    cout << fibonacci_number(2) << "\n";
+    cout << fibonacci_number(3) << "\n";
+    cout << fibonacci_number(4) << "\n";
+    cout << fibonacci_number(5) << "\n";
+    cout << fibonacci_number(6) << "\n";
+    cout << fibonacci_number(7) << "\n";
+    cout << fibonacci_number(8) << "\n";
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    The recursion you have seen thus far (where a function calls itself) is called <b>direct recursion</b>. A secondary type of recursion is <b>indirect recursion</b>, where a function calls some other functions that eventually lead back to calling itself. 
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: <b>Tail recursion</b>, where no code is executed after a function’s recursive call, often means that you don’t need to use recursion and can instead build the solution iteratively. This approach is called <b>dynamic programming</b> and is covered in a later article. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Recursive functions are an essential algorithmic technique, with applications everywhere from DFS (which you’ll see in a future article!) to the AP CS A exam.
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

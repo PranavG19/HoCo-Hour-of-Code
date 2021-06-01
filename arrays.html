@@ -1,0 +1,537 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Arrays</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">8pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Data Structures</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    How to store and manipulate a lot of data at once
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    So far, we only know how to store data in variables, which store a single piece of data and gives the data a name that we can later reference. But what happens if we want to store large amounts of data (e.g., user accounts, leaderboards, text messages, etc.)? Assigning variables for every piece of data would be impractical and impossible, especially for massive tech companies like Google, where thousands of data points are generated every second. In these cases, we need to use a <b>data structure</b>, a programming structure designed to hold data. The difference between data structures and variables is that data structures can contain many pieces of data at once and, depending on how the data structure is formatted, enable the programmer to manipulate the data effectively.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    An <b>array</b> is the most basic and widely used data structure designed to hold a fixed number of data points (called the array size) of the same type in contiguous memory locations. The fixed number and data type need to be provided when the array is created, but the data itself can be manipulated and modified later, which is what makes an array powerful.
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Python does not support arrays and instead uses a data structure called a List, which is similar to a Vector data structure in C++ or an ArrayList data structure in Java. All three are helpful for a variety of reasons that are outside the scope of this event. We encourage everyone to Google information about them to see what benefits they provide!
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This is how an array named <div class="mono-text">arr</div> of size 10 is created with data type <div class="mono-text">int</div>:
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-2" checked="checked">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = new int[10];</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[10] = {};</code></pre>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Initializing an array using this method sets all of the elements to the default value of 0.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    An array can be treated as a sequence of variables (called <b>elements</b>) of the provided data type, but instead of accessing each variable by name, they are accessed using the array’s name with an <b>index</b>. Java and C++ are <b>zero-indexed</b>, meaning arrays start with index 0.
+                </div>
+
+                <img src="arrays-img-1.png" alt="arrays-img-1.png" class="block-center w-60p">
+
+                <div class="article-content color-black mb-3 mt-6">
+                    With this scheme, the first element in an array is accessed with the syntax <div class="mono-text">arr[0]</div>, the 2nd element is accessed with <div class="mono-text">arr[1]</div>, the 3rd element is accessed with <div class="mono-text">arr[2]</div>, and so on.
+                </div>
+
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orange mb-3">
+                    Common Mistake: Zero-indexing is challenging to grasp initially because we are raised on numbers starting with 1. Most, but not all, languages are 0-indexed. JavaScript and Python are also 0-indexed, but MATLAB is 1-indexed.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Once you have accessed an element in your array, you can manipulate it as if it was a normal variable of the array’s data type. For example:
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>We can modify it:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-5" checked="checked">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = new int[10];
+arr[0] = 56;
+System.out.println(arr[0]);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 56
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[10] = {};
+arr[0] = 56;
+cout << arr[0];
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 56
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>We can add them (and use all of the other arithmetic operators):</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-8" checked="checked">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = new int[10];
+arr[0] = 3;
+arr[1] = 2
+System.out.println(arr[0] + arr[1]);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[10] = {};
+arr[0] = 3;
+arr[1] = 2;
+cout << arr[0] + arr[1];
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>We can use it in its own modification equation:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+
+                    <input type="radio" name="tabs4" id="tab-11" checked="checked">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = new int[10];
+arr[0] = 5;
+arr[0] = arr[0] + 2;
+System.out.println(arr[0]);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[10] = {};
+arr[0] = 5;
+arr[0] = arr[0] + 2;
+cout << arr[0];
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    One of the most important uses of arrays is in conjunction with loops. Recall that for-loops enable you to run the same block of code multiple times with an iterator variable. We can use that to perform an operation on every element of an array. For example, we could double the value of every element:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs5" id="tab-14" checked="checked">
+                    <label for="tab-14">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = new int[10];
+arr[0] = 4;
+arr[1] = 2;
+arr[2] = 0;
+arr[3] = 5;
+arr[4] = 7;
+arr[5] = 11;
+arr[6] = 6;
+arr[7] = 3;
+arr[8] = 1;
+arr[9] = 9;
+for(int i = 0; i < 10 ;i++) {
+    arr[i] = arr[i] * 2;
+    System.out.println(arr[i]);
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 8 <br>
+> 4 <br>
+> 0<br>
+> 10<br>
+> 14<br>
+> 22<br>
+> 12<br>
+> 6<br>
+> 2<br>
+> 18<br>
+
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-15">
+                    <label for="tab-15">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[3] = {};
+arr[0] = 4;
+arr[1] = 2;
+arr[2] = 0;
+arr[3] = 5;
+arr[4] = 7;
+arr[5] = 11;
+arr[6] = 6;
+arr[7] = 3;
+arr[8] = 1;
+arr[9] = 9;
+for(int i = 0; i < 10 ;i++) {
+    arr[i] = arr[i] * 2;
+    cout << arr[i] << "\n";
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 8 <br>
+> 4 <br>
+> 0<br>
+> 10<br>
+> 14<br>
+> 22<br>
+> 12<br>
+> 6<br>
+> 2<br>
+> 18<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    A more helpful operation that a programmer might see in the real world could be connecting two String arrays. In this example, we combine two String arrays consisting of first and last names to get an array of full names.
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs6" id="tab-17" checked="checked">
+                    <label for="tab-17">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">String[] firstNames = {"Susan", "John", "Tracy"};
+String[] lastNames = {"Milton", "Smith", "Chang"};
+String[] fullNames = new String[3];
+
+for(int i = 0; i < 3; i++) {
+    fullNames[i] = firstNames[i] + " " + lastNames[i];
+    System.out.println(fullNames[i]);
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Susan Milton <br>
+> John Smith <br>
+> Tracy Chang
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-18">
+                    <label for="tab-18">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">string firstNames[3] = {"Susan", "John", "Tracy"};
+string lastNames[3] = {"Milton", "Smith", "Chang"};
+string fullNames[3];
+
+for(int i = 0; i < 3; i++) {
+    fullNames[i] = firstNames[i] + " " + lastNames[i];
+    cout << fullNames[i] << "\n";
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Susan Milton <br>
+> John Smith <br>
+> Tracy Chang
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">2D Arrays</div>
+
+                <div class="article-content color-black mb-3">
+                    Much like nested for-loops and if-statements, we can nest arrays inside one another by making an array where the data type is another array. This is called a <b>2D array</b>.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s look at this example, where we initialize an array of size 3, where its data type is another array, but this time with data type <div class="mono-text">int</div> and size 4. 
+                    <ul>
+                        <li>
+                            Array named <div class="mono-text">arr</div> (We will refer to this array as the “outer” array)
+                            <ul>
+                                <li>Size: 3</li>
+                                <li>
+                                    Data type: Array (We will refer to any of these arrays as “inner” arrays)
+                                    <ul>
+                                        <li>Size: 4</li>
+                                        <li>Data type: <div class="mono-text">int</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs7" id="tab-20" checked="checked">
+                    <label for="tab-20">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[][] arr = new int[3][4];</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs7" id="tab-21">
+                    <label for="tab-21">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[3][4] = {};</code></pre>
+                    </div>
+                </div>
+                
+                <div class="article-content color-black mb-3">
+                    In our original 1D array, we used an index to access certain elements inside the array. This also works for our 2D array. Using a single index allows us to access an element inside the array. However, because in 2D arrays the data type of the outer array is another array, the element we access using a single index is just an inner array. So, we need to go one step deeper using a second index to access an element of the inner array. This code accesses the element located at index 3 of the inner array located at index 0 of the outer array
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs100" id="tab-101" checked="checked">
+                    <label for="tab-101">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">arr[0][3];</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs100" id="tab-102">
+                    <label for="tab-102">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">arr[0][3];</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Once you have used two indices, every element of an inner array can be manipulated like a variable just like with our normal arrays:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs8" id="tab-23" checked="checked">
+                    <label for="tab-23">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[][] arr = new int[10][12];
+arr[5][2] = 56;
+System.out.println(arr[5][2]);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 56
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs8" id="tab-24">
+                    <label for="tab-24">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[10][12] = {};
+arr[5][2] = 56;
+cout << arr[5][2];
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 56
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    2D arrays are visually represented using a 2D grid where the rows are each of the inner arrays. This, for example, is a depiction of a 3x4 2D array. There are three arrays of size 4, one in each row.
+                </div>
+
+                <img src="arrays-img-2.jpeg" alt="arrays-img-2.jpeg" class="block-center">
+
+                <div class="article-content color-black mt-6 mb-3">
+                    They are also primarily used to store data that were initially designed with two dimensions in mind. For example, a checkerboard can be represented with an 8x8 array.
+                </div>
+
+                <img src="arrays-img-3.png" alt="arrays-img-3.png" class="block-center">
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3 mt-6">
+                    Note: If you are using multi-dimensional arrays, be careful with declaring too many dimensions. Every additional dimension increases the memory required to store the array exponentially. 
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>

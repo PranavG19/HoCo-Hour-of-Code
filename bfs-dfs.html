@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">BFS/DFS</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">8pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Math</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Breadth-first search, depth-first search, and when to use them
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    A brief review of graphs: A graph is a collection of <b>nodes</b> (the circles) connected by <b>edges</b> (the lines). <b>Traversing</b> a graph means traveling along these edges to visit other nodes.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    How can we use graphs to solve problems? One such problem is searching for a node in a graph. For example, you could treat every cell in a maze as a node and connected cells as if there is an edge connecting those two nodes. The task of navigating the maze then boils down to: starting from a given node (the start of the maze) in a given graph (the maze), find the target node (the end of the maze).
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <b>Breadth-first search</b> and <b>depth-first search</b> (BFS and DFS) are two different methods to accomplishing the task of finding a specific node in a graph. While both algorithms have the same goal — searching for a node — the main difference between these two methods is in how they search; while BFS prioritizes closer nodes (breadth), DFS will go as deep as possible into the graph first (depth).
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here is a visualization of BFS:
+                </div>
+
+                <img src="bfs-dfs-img-1.png" alt="bfs-dfs-img-1.png" class="mb-12 block-center full-width">
+
+                <div class="article-content color-black mb-3">
+                    In short, the strategy is to start with a node, mark down all adjacent nodes, then process the queued nodes one by one in the order that they were added to the queue. In the end, every node that could be reached from the starting node is processed, meaning as long as the node you are searching for is connected, you will find it.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

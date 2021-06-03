@@ -4,6 +4,9 @@ import admin = require("firebase-admin");
 admin.initializeApp();
 
 const db = admin.database();
+const questionLengths = [
+	6, 8, 8, 1, 1, 1, 10, 1, 1, 10, 1, 10, 6, 6, 6, 7, 10, 7, 6, 1,
+];
 
 exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const uid = context?.auth?.uid;
@@ -14,7 +17,6 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const questionName: string = data.questionName;
 	const answers: (string | number)[] = data.answers;
 	const questionNumbers: number[] = data.questionNumbers;
-	const pts: number = data.pts;
 	const cat: number = data.cat;
 	const school: string = data.school;
 
@@ -37,10 +39,17 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const isAnswerCorrect =
 		answers.length === questionAnswers.length &&
 		answers.every((element, index) => {
-			return element === questionAnswers[index];
+			return element == questionAnswers[index];
 		});
 
 	if (isAnswerCorrect) {
+		let pts: number = data.pts;
+		await db
+			.ref("/questions/" + questionName + "/pts")
+			.get()
+			.then((snapshot) => {
+				pts = snapshot.val();
+			});
 		const scoreRef = db.ref("users/" + uid + "/score/" + cat);
 		scoreRef.set(admin.database.ServerValue.increment(pts));
 
@@ -54,7 +63,6 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 exports.createUser = functions.https.onCall(async (data) => {
 	const uid: string = data.uid;
 	const school: string = data.school;
-	const questionLengths: number[] = data.questionLengths;
 
 	let randomNumbersGenerated: number[] = [];
 	for (let i = 0; i < 25; i++) {
@@ -67,7 +75,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 				j++;
 			}
 		}
-		randomNumbersGenerated = [...temp, ...randomNumbersGenerated];
+		randomNumbersGenerated = [...randomNumbersGenerated, ...temp];
 	}
 	db.ref("users/" + uid).set({
 		score: [0, 0, 0],

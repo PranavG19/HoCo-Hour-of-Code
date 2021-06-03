@@ -52,7 +52,33 @@ const students = {
 	"Wilde Lake High School": 999, /// Placholder
 };
 
-const questionLengths = new Array(25).fill(5);
+const questionOrder = [
+	"Hello World",
+	"Variables 1",
+	"Variables 2",
+	"Booleans",
+	"Arrays",
+	"Loops",
+	"Libraries",
+	"Functions",
+	"Classes & OOP",
+	"Greedy",
+	"Recursion",
+	"Merge Sort",
+	"Binary Search",
+	"Graphs",
+	"BFS & DFS",
+	"Floodfill",
+	"SSSP & 0-1 BFS",
+	"Dynamic Programming",
+	"Automation",
+	"Google Maps",
+	"Maze Generation",
+	"Game Development",
+	"Desktop Apps",
+	"Mobile Apps",
+	"Web Development",
+];
 
 $(".login").on("click", function (e) {
 	e.preventDefault();
@@ -161,26 +187,32 @@ if ($(".leaderboard-wrapper")[0]) {
 if ($(".quiz")[0]) {
 	const question = $(".quiz").attr("name").replaceAll("_", " ");
 	const cat = $(".quiz").attr("cat");
-	if (localStore.school) {
-		try {
-			getQuestions(
-				question,
-				localStore.randomNumbers.slice(0, 3),
-				cat,
-				localStore.school
-			);
-		} catch {
-			setTimeout(() => {
-				localStore.randomNumbers = JSON.parse(
-					localStorage.getItem("randomNumbers")
-				);
+	const questionNum = questionOrder.indexOf(question);
+	if (questionNum !== -1) {
+		if (localStore.school) {
+			try {
 				getQuestions(
 					question,
-					localStore.randomNumbers.slice(0, 3),
+					localStore.randomNumbers.slice(questionNum * 3, questionNum * 3 + 3),
 					cat,
 					localStore.school
 				);
-			}, 1000);
+			} catch {
+				setTimeout(() => {
+					localStore.randomNumbers = JSON.parse(
+						localStorage.getItem("randomNumbers")
+					);
+					getQuestions(
+						question,
+						localStore.randomNumbers.slice(
+							questionNum * 3,
+							questionNum * 3 + 3
+						),
+						cat,
+						localStore.school
+					);
+				}, 1000);
+			}
 		}
 	}
 }

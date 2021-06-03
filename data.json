@@ -1,0 +1,1148 @@
+{
+	"questions": {
+		"Automation": {
+			"pts": 10,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is the main reason why we automate things?",
+						"Because it’s fun",
+						"Because it’s not fun",
+						"To spend less time on routine tasks",
+						"To spend more time on routine tasks"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What types of tasks are most easily automated?",
+						"Routine tasks",
+						"Challenging intellectual tasks",
+						"Skilled jobs like carpentry or plumbing",
+						"Creative tasks"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Which of the following would be a task best suited for automation?",
+						"cooking food",
+						"talking to customers",
+						"cleaning tables",
+						"sending weekly paychecks to employees"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What does API stand for?",
+						"Apple Programming Instance",
+						"Application Port Initialization",
+						"Application Programming Interface",
+						"Anonymous Pilot Interface"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What is the main purpose of APIs?",
+						"To track you and your data",
+						"To allow developers to interact with applications",
+						"To automate server maintenance",
+						"To automatically respond to emails"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"Which of the following is an example of automation?",
+						"Scheduled Instagram posts",
+						"Driving a car",
+						"Writing a paper",
+						"Playing an instrument"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"What is a background process?",
+						"A process that outputs information to the user",
+						"A website that tracks you in the background",
+						"A process that does not require an internet connection",
+						"A process that does not require user input"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Which of the following should not be run in a background process?",
+						"Scheduled Twitter posts",
+						"Video game",
+						"Music",
+						"Routine security checks"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"Why is abstraction beneficial?",
+						"It teaches us more",
+						"It tells us how things work",
+						"It makes it unnecessary to know exactly how things work",
+						"It forces us to understand in detail how things work"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Which of the following is an example of abstraction?",
+						"An engineer designing a spacecraft in detail",
+						"A regular person driving a car ",
+						"An accountant keeping track of all company expenses",
+						"A student learning a complicated math topic"
+					]
+				}
+			]
+		},
+		"Binary Search": {
+			"pts": 15,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Sequential search has a better time complexity than binary search.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"The time complexity of binary search is logarithmic.",
+						"True ",
+						"False "
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"smc",
+						"How is binary search implemented?",
+						"Going through values sequentially",
+						"Searching a sorted array by repeatedly dividing search interval in half",
+						"Randomly picking values"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"How do you efficiently narrow down the amount of elements being searched?",
+						"Divide the search space in half each time",
+						"Double the search space each time",
+						"Decrease search space by 1 each time",
+						"Keep search space the same each time"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Binary search works when the array is ______",
+						"Sequential",
+						"Sorted",
+						"Any of these",
+						"Random"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"The maximum number of comparisons needed in binary search on array of size 32 is ____",
+						"8",
+						"5",
+						"4",
+						"16"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Binary search terminates when_____",
+						"Starting index<ending index",
+						"Starting index>=ending index",
+						"Starting index<=ending index",
+						"None of these"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"If the middle element is greater than the target value, then the binary search algorithm searches for the target in the second half of the array.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"smc",
+						"How do you know if the element you are searching for is found?",
+						"The while loop terminates",
+						"The index is not returned",
+						"The index is returned"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Binary search is ALWAYS faster than iterating through every element",
+						"True",
+						"False"
+					]
+				}
+			]
+		},
+		"Dynamic Programming": {
+			"pts": 17,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What is dynamic programming?",
+						"Using repetitive subproblems to speed up computation",
+						"Reusing memory locations in order to save space",
+						"Changing the sizes of arrays",
+						"Exploding, as dynamic sounds like dynamite"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"What’s the abbreviation for dynamic programming?",
+						"DyPr",
+						"DY",
+						"D.Y.N.A.M.I.C. P.R.O.G.R.A.M.M.I.N.G.",
+						"DP"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What are the two criteria that must be filled to use dynamic programming?",
+						"Optimal substructure and differentiated subproblems",
+						"Recursion and storage",
+						"Optimal substructure and overlapping subproblems",
+						"Limited memory and memory locations"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"The Fibonacci sequence can be calculated quickly using dynamic programming.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What technique can help with implementing dynamic programming?",
+						"Top-down processing",
+						"Recursion",
+						"Automatically resizing arrays",
+						"Too much free time"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"How many UNIQUE calculations will the Fibonacci sequence implemented make when calculating the 56th number in that sequence? (Disregard when the algorithm just calls storage for already calculated subproblems.)",
+						"2",
+						"28",
+						"56",
+						"84"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What is the purpose of dynamic programming?",
+						"Capitalize on overlapping subproblems by only ever solving a subproblem once",
+						"Run your program on a dynamically-allocated array, thus speeding up runtime",
+						"Optimize collaborative programming through dynamic allocation of tasks",
+						"Break down big problems into smaller subproblems until we eventually reach a base case"
+					]
+				}
+			]
+		},
+		"Functions & Parameters": {
+			"pts": 13,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"Which is the following NOT a benefit of using functions?",
+						"Increases reusability",
+						"Saves time",
+						"Harder to debug",
+						"Decreases complexity"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What is a parameter in a function?",
+						"Useless value",
+						"Input",
+						"Output",
+						"Middleput"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"If a function has the “void” keyword in the function definition, what does it return?",
+						"An integer",
+						"A boolean value",
+						"A decimal value",
+						"Nothing"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Functions improve…",
+						"readability",
+						"shareability",
+						"encapsulation",
+						"all of the above"
+					]
+				},
+				{
+					"info": [
+						"mc",
+						"What is the output of this code? <br> def foo(a, b): <br> return b+a <br> print(foo('how are you doing?','Hi, '))",
+						"how are you doing?Hi,",
+						"Hi, how are you doing",
+						"Error: cannot add strings",
+						"Hello World!"
+					]
+				},
+				{
+					"answer": "17",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> Code: <br> def foo(a, b, c): <br> return a+b+(2*c) <br> print(foo(3,4,5))"
+					]
+				},
+				{
+					"answer": "good day!",
+					"info": [
+						"fr",
+						"Given the code and its output, fill in the blank: <br> Code: <br> def foo(a, b): <br> return a+b <br> print(foo('Have a ','_______')) <br> Output: <br> > Have a good day!"
+					]
+				},
+				{
+					"answer": "8",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> Code: <br> def pow(a, b): <br> return a**b <br> print(pow(2,3))"
+					]
+				},
+				{
+					"answer": "12",
+					"info": [
+						"fr",
+						"Given this code and its output, fill in the blank. <br> Code: <br> def foo(a, b, ____): <br> return a+b+c <br> print(foo(3,4,5)) <br> Output: <br> > 12"
+					]
+				},
+				{
+					"answer": "return",
+					"info": ["fr", "What keyword is used to exit a function forcibly?"]
+				}
+			]
+		},
+		"Game Making": {
+			"info": [
+				{
+					"answer": 0,
+					"info": [
+						"What website is a good place to start making games on?",
+						"Codeforces",
+						"Hackerrank",
+						"Code.org",
+						"Leetcode"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"The two main components to game design are ___________ and ____________."
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"What function does the design part serve?",
+						"Codes the functionality of the game",
+						"Erases unnecessary code",
+						"Adds visuals to the game",
+						"Nothing"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"The two ways to code your game in code.org are __________ and _____________."
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"What language is code.org based around?",
+						"Python",
+						"Java",
+						"JavaScript",
+						"C++"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"Why is text mode recommended for more experienced programmers?",
+						"Blocks are more visually appealing",
+						"Syntax can be difficult to remember",
+						"Text mode is more fun",
+						"They’re the same"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"Why is code.org beginner friendly?",
+						"It codes the game for you",
+						"It provides many useful built-in functions",
+						"It has no ads",
+						"It isn’t"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"What does the “onEvent” function do?",
+						"Runs whatever is inside the function when the event occurs",
+						"Sets a timer for the event",
+						"Runs whatever is inside the function regardless of what happens",
+						"Nothing"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"What is the final project in Ap Computer Science Principles?",
+						"Make USACO platinum",
+						"Create a game",
+						"Create a replica of Minecraft",
+						"Reach LGM on Codeforces"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"How can you get good at making games?",
+						"Practice",
+						"Have natural talent",
+						"Doign Nothing",
+						"You can't be good"
+					]
+				}
+			],
+			"pts": 4
+		},
+		"Google Maps": {
+			"pts": 6,
+			"questions": [
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"What kind of graph is a map usually represented as?",
+						"Undirected Unweighted Graph",
+						"Directed Acyclic Graph",
+						"Undirected Weighted Tree",
+						"Directed Weighted Graph"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"An singular road with no intersections between two locations is represented as a _____",
+						"Node",
+						"Edge",
+						"Cycle",
+						"Path"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"A location on a map is represented as a _____",
+						"Node",
+						"Edge",
+						"Cycle",
+						"Path"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"A route (possibly consisting of multiple roads) between two locations is known as a _____",
+						"Node",
+						"Edge",
+						"Cycle",
+						"Path"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"An intersection point between two roads is represented as a _____",
+						"Node",
+						"Edge",
+						"Cycle",
+						"Path"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is the primary difference between a shortest-path algorithm and a pathfinding algorithm?",
+						"A pathfinding algorithm finds the longest route",
+						"A shortest-path algorithm uses machine learning to determine the fastest route",
+						"A pathfinding algorithm uses a heuristic to predict the fastest route",
+						"A shortest-path algorithm tries every possible route"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Which is the relationship between the performance of a shortest-path algorithm and a pathfinding algorithm?",
+						"A shortest path algorithm is always faster",
+						"A pathfinding algorithm is always faster",
+						"A shortest path algorithm is usually faster in a realistic context",
+						"A pathfinding algorithm is usually faster in a realistic context"
+					]
+				}
+			]
+		},
+		"Hello World": {
+			"pts": 4,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"Which of the following is not a reason most programmers start with the “Hello World!” program?",
+						"Nokia Bell Labs holds a monopoly over introductory programming textbooks and forces all programmers to begin learning with it.",
+						"It illustrates the basic syntax of a language.",
+						"It is used to check that you have correctly installed your computer language",
+						"It teaches programmers how to print things."
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What marks the entry point in Java/C++?",
+						"The main function/method",
+						"The first line",
+						"The last line",
+						"A line of code saying “THIS IS THE ENTRY POINT”"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Where does a program start running in Python?",
+						"The main function/method",
+						"The first line",
+						"The last line",
+						"A line of code that says “THIS IS THE ENTRY POINT”"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"Why is printing a useful tool?",
+						"You can use it for debugging regardless of what language or IDE you are running.",
+						"Every programmer prints a lot.",
+						"Most of your code will be print statements.",
+						"It’s cool to print things to the console."
+					]
+				},
+				{
+					"answer": "Hour of code",
+					"info": [
+						"fr",
+						"What does this code print? <br> print(“Hour of code”)"
+					]
+				},
+				{
+					"answer": "Sushi!",
+					"info": [
+						"fr",
+						"Given the output, fill in the blank in the code. <br> print(“____”) <br> Output: <br> > Sushi!"
+					]
+				}
+			]
+		},
+		"Maze Generation": {
+			"pts": 9,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"What is true about trees?",
+						"There is exactly one path between any two nodes",
+						"There is exactly one cycle in the graph",
+						"There are more edges than nodes in the graph",
+						"There are at least two paths between any two nodes"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"If our tree represents a maze grid, how many edges can each node have?",
+						"1 to 2",
+						"0 to 4",
+						"1 to 4",
+						"2 to 4"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"If a tree has exactly 26 nodes, how many edges does it have?",
+						"24",
+						"25",
+						"26",
+						"27"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"If a graph has exactly N nodes, how many nodes will a spanning tree of that graph have?",
+						"N - 2",
+						"N - 1",
+						"N",
+						"N + 1"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or False: All maze generation algorithms generate equally random mazes",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Which maze generation algorithm produces perfectly random mazes?",
+						"Dijkstra’s algorithm",
+						"Prim’s algorithm",
+						"Recursive backtracking",
+						"Wilson’s algorithm"
+					]
+				}
+			]
+		},
+		"Variables 1": {
+			"pts": 6,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"What do variables do in programming?",
+						"Represent an unknown value",
+						"Store data",
+						"Act as a placeholder",
+						"Randomize a signal"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"Which of the following is not a component of a variable’s declaration?",
+						"Data type",
+						"Name",
+						"Value",
+						"Size"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"What is the output of the following code? <br> int a = 25; <br> int b = 20; <br> System.out.println(a/b);",
+						"1.25",
+						"1",
+						"5/4",
+						"Error: Not integer"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"What do integer variables do in Java and C++ when they are given a non-integer value?",
+						"Throw a “Not integer” error",
+						"Round down",
+						"Round to the nearest integer",
+						"Round up"
+					]
+				},
+				{
+					"answer": "12",
+					"info": [
+						"What is the output of the following code? <br> int a = 3; <br> a *= 4; <br>,System.out.println(a);"
+					]
+				},
+				{
+					"answer": "10",
+					"info": [
+						"What is the output of the following code? <br> int a = 2; <br> int b = 4; <br> a /= 2; <br> b += 6; <br> System.out.println(a*b);"
+					]
+				},
+				{
+					"answer": "3",
+					"info": [
+						"Fill in the blank in the code to produce the given output. <br> Code: <br> int a = __; <br> int b = 2; <br> System.out.println(a*b*3); <br> Output: <br> > 18"
+					]
+				},
+				{
+					"answer": "15",
+					"info": [
+						"Fill in the blank in the code to produce the given output. <br> Code:  <br> int x = __; <br> int y = 3; <br> System.out.println((x-y-6)*4); <br> Output: <br> > 24 <br>"
+					]
+				}
+			]
+		},
+		"Variables 2": {
+			"pts": 5,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"What do variables do in programming?",
+						"Represent an unknown value",
+						"Store data",
+						"Act as a placeholder",
+						"Randomize a signal"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"Which of the following describes all of the components required in a Python variable declaration?",
+						"Name, Value",
+						"Name, Value, Data type",
+						"Name, Data type",
+						"Name, Value, Data type, size"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"What is the output of the following code? <br> a = 40 <br> b = 20 <br> print (a/b)",
+						"Error: Invalid Math",
+						"2.0",
+						"2",
+						"Error: Not integer"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"How to integer behave in Python when they are given a non-integer value?",
+						"Throw a “Not integer” error",
+						"They turn into the non-integer data type (called float or double)",
+						"Round to the nearest integer",
+						"Round down"
+					]
+				},
+				{
+					"answer": "0.5",
+					"info": [
+						"What is the output of the following code? <br> a = 2 <br> a /= 4 <br> print(a)"
+					]
+				},
+				{
+					"answer": "11.0",
+					"info": [
+						"What is the output of the following code? <br> a = 2 <br> b = 4  <br> a /= 2 <br> b += 7 <br> print(a*b)"
+					]
+				},
+				{
+					"answer": "4",
+					"info": [
+						"Fill in the blank in the code to produce the given output. <br> Code: <br> a = __ <br> b = 4 <br> print(a*b*3); <br> Output: <br> > 48"
+					]
+				},
+				{
+					"answer": "12",
+					"info": [
+						"Fill in the blank in the code to produce the given output. <br> Code: <br>  x = _ <br> y = 3 <br> print((x-y-6)*3) <br> Output: <br> > 9"
+					]
+				}
+			]
+		},
+		"BFS & DFS": {
+			"pts": 16,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"What does BFS stand for?",
+						"Binary fast search",
+						"Binary fast sorting",
+						"Breadth-first search",
+						"Binary-first sorting"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"What does DFS stand for?",
+						"Depth-following sorting",
+						"Dearth first search",
+						"Depth-first search",
+						"Depth-fade sorting"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"Will BFS prioritize closer nodes over further nodes?",
+						"Yes",
+						"No"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"Will DFS prioritize closer nodes over further nodes?",
+						"Yes",
+						"No"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"Which of the following will ALWAYS visit every reachable node in a graph?",
+						"BFS",
+						"DFS",
+						"Both",
+						"Neither"
+					]
+				},
+
+				{
+					"answer": 4,
+					"info": [
+						"Which of the following can reach nodes that are not connected to the start node?",
+						"BFS",
+						"DFS",
+						"Both",
+						"Neither"
+					]
+				}
+			]
+		},
+		"Flood Fill": {
+			"pts": 13,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"What is flood fill?",
+						"Starting from one point and visiting other nodes by “filling” outward",
+						"Starting from one point and processing everything about that point (i.e., “filling” up info on it)",
+						"Overloading a system with as much data as possible",
+						"Dumping water over your computer"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"True or False: flood fill can be implemented using BFS.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"True or False: Flood fill cannot be implemented using DFS.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"Which of the following tools is most similar to flood fill?",
+						"Straight-line drawing tool",
+						"Bucket tool",
+						"Spambot",
+						"Color picker"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"True or False: Flood fill can help with filling a bounded region.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 4,
+					"info": [
+						"Starting from one node, in a standard flood fill which nodes should you visit?",
+						"The node 2 to the right",
+						"The node at the corners of the bounded region",
+						"Every node that is NOT connected to the selected node",
+						"Every node that IS connected to the selected node"
+					]
+				}
+			]
+		},
+		"Graphs": {
+			"pts": 7,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"What is a graph (in graph theory)?",
+						"A function - y in terms of x, etc",
+						"A function specifically in terms of time (something with respect to time, etc.)",
+						"A collection of nodes connected by edges",
+						"A collection of nodes"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"What connects nodes in a graph?",
+						"Edges",
+						"Connections",
+						"Links",
+						"Bridges"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"True or false: you can go both ways across a bidirectional edge.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"True or false: you can go both ways across a directed edge.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 4,
+					"info": [
+						"What is true about a graph theory tree?",
+						"All edges are directed and pointed upward, like tree branches",
+						"All edges are directed and pointed downward, like tree roots",
+						"All edges are directed and point toward a center point, like how tree roots collect nutrients (maybe)",
+						"The number of edges is exactly the number of nodes minus one"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"What does DAG stand for?",
+						"Directed anticlockwise graph",
+						"Directed acyclic graph",
+						"Dijkstra’s acyclic graph",
+						"DAG acrylic graph"
+					]
+				}
+			]
+		},
+		"Recursion": {
+			"pts": 14,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"What is direct recursion?",
+						"A function recurring throughout a program",
+						"A function calling itself",
+						"A function calling another function which calls the first function",
+						"A function that calls another function within it"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"What is a base case in recursion?",
+						"A case where the function needs to call itself",
+						"A case where the function needs to call another function ",
+						"A case where we know the solution to the function",
+						"A case that is based"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"What is a recursive case in recursion?",
+						"A case where the function needs to call itself",
+						"A case where the function needs to call another function ",
+						"A case where the function should not call itself again and use some outside information",
+						"Every case"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"What is indirect recursion?",
+						"A function recurring throughout a program",
+						"A function calling itself",
+						"A function calling another function which calls the first function",
+						"A function that calls another function within it"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"What is the default Java stack limit (how many layers deep can a function call itself)?",
+						"20",
+						"1k",
+						"10k",
+						"5 MB"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"What are the two components of every recursive function?",
+						"Base case, recursive case",
+						"Base case, indirect case",
+						"Recursive case, direct case",
+						"Indirect case, direct case"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"What is a common problem you should watch out for when writing recursive functions?",
+						"Missing semi-colons",
+						"Infinite recursion",
+						"Hard-to-read code",
+						"Terminating too quickly"
+					]
+				}
+			]
+		}
+	},
+	"schools": {
+		"Atholton High School": 26,
+		"Centennial High School": 24,
+		"Glenelg High School": 22,
+		"Hammond High School": 109,
+		"Howard High School": 13,
+		"Long Reach High School": 19,
+		"Marriotts Ridge High School": 2,
+		"Mt Hebron High School": 8,
+		"Oakland Mills High School": 79,
+		"Reservoir High School": 50,
+		"River Hill High School": 280,
+		"Wilde Lake High School": 81
+	},
+	"users": {
+		"HD7KYJqC6ST4GaRVzcM4qEkbTjM2": {
+			"questionsSolved": ["placeholder", "Hello World", "Dynamic Programming"],
+			"randomNumbers": [
+				4, 1, 3, 4, 3, 0, 1, 2, 4, 0, 4, 2, 4, 1, 2, 1, 0, 3, 2, 0, 4, 1, 3, 2,
+				0, 3, 1, 2, 4, 3, 4, 2, 0, 0, 4, 3, 1, 3, 4, 2, 3, 0, 4, 2, 1, 3, 1, 4,
+				3, 2, 0, 3, 1, 0, 0, 4, 2, 4, 0, 2, 3, 4, 0, 2, 3, 4, 4, 0, 3, 4, 3, 0,
+				4, 1, 2
+			],
+			"school": "River Hill High School",
+			"score": [4, 4, 0]
+		},
+		"testUser": "test"
+	}
+}

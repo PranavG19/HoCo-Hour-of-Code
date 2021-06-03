@@ -89,7 +89,6 @@ const renderModal = (user) => {
 				createUser({
 					uid: user.uid,
 					school: school,
-					questionLengths: questionLengths,
 				})
 					.then((result) => {
 						store(school, [0, 0, 0], ["placeholder"], result.data);
@@ -202,6 +201,17 @@ const renderQuestions = (questions, questionName) => {
                 <input type="radio" id="${i}.4" name="group-${i}" value="${i}.4" style="margin: 0 0 10px 30px">
                 <label for="${i}.4" class="article-content color-black"> ${questions[i][5]} </label>
             </fieldset>`);
+		} else if (questions[i][0] == "smc") {
+			$(".quiz").append(`
+            <fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">
+                <div class='article-subtitle color-black mt-4 mb-4'> ${questions[i][1]} </div>
+                <input type="radio" id="${i}.1" name="group-${i}" value="${i}.1" style="margin: 15px 0 10px 30px">
+                <label for="${i}.1" class="article-content color-black"> ${questions[i][2]} </label><br>
+                <input type="radio" id="${i}.2" name="group-${i}" value="${i}.2" style="margin: 0 0 10px 30px">
+                <label for="${i}.2" class="article-content color-black"> ${questions[i][3]} </label><br>
+                <input type="radio" id="${i}.3" name="group-${i}" value="${i}.3" style="margin: 0 0 10px 30px">
+                <label for="${i}.3" class="article-content color-black"> ${questions[i][4]} </label><br>
+            </fieldset>`);
 		} else if (questions[i][0] == "tf") {
 			$(".quiz").append(`
             <fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">
@@ -259,6 +269,7 @@ const getQuestions = async (questionName, numbers, cat, school) => {
 	renderQuestions(localStore[questionName], questionName);
 	answerChecker(localStore[questionName], questionName, numbers, cat, school);
 };
+
 let locked = false;
 const answerChecker = (questions, questionName, numbers, cat, school) => {
 	console.log(cat);
@@ -309,9 +320,8 @@ const answerChecker = (questions, questionName, numbers, cat, school) => {
 			checkAnswers({
 				answers: answers,
 				questionName: questionName,
-				pts: 4,
 				questionNumbers: numbers,
-				cat: cat,
+				cat: cat - 1,
 				school: school,
 			})
 				.then((result) => {
@@ -359,7 +369,7 @@ const answerChecker = (questions, questionName, numbers, cat, school) => {
 						document.getElementById("quizResultsIncorrect").scrollIntoView();
 						setTimeout(() => {
 							$("#quizResultsIncorrect").remove();
-						}, 1000);
+						}, 5000);
 					}
 				})
 				.catch((error) => {

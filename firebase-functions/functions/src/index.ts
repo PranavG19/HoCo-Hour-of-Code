@@ -65,7 +65,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 	const school: string = data.school;
 
 	let randomNumbersGenerated: number[] = [];
-	for (let i = 0; i < 25; i++) {
+	for (let i = 0; i < questionLengths.length; i++) {
 		const temp = [];
 		let j = 0;
 		while (j < 3) {

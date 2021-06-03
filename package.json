@@ -4,6 +4,7 @@
   "description": "Howard County Hour of Code website",
   "main": "index.html",
   "scripts": {
+    "build": "echo firebase hi",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,324 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Flood Fill</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">13pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    How the paint bucket tool works using the flood fill technique
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    Ever wonder how the paint bucket tool works? When you go into something like MS Paint, if you ever want to fill up a specific area, all you have to do is click a color, the paint bucket, and one specific pixel in the region you want to fill. Then, as if by magic, the area is filled. But why? Or more specifically, how exactly does the code work?
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    First, to simplify this problem, imagine that the area you need to fill is composed entirely of individual pixels (just like in MS Paint!). This changes the problem from filling a rough blob to an area with strict horizontal and vertical borders.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Now, this is where the <b>flood fill</b> technique comes in. Flood fill starts from a point and “spills” outward until it hits a wall. To illustrate this algorithm, take a look at this grid (note that it follows the definition above):
+                </div>
+
+                <img src="flood-fill-img-1.png" alt="flood-fill-img-1.png" class="mb-12 block-center w-40p">
+
+                <div class="article-content color-black mb-3">
+                    Here, gray squares denote the borders that block the spread of the flood fill, and white squares are open squares that can be filled. Now, how will the flood fill algorithm fill the space from here?
+                </div>
+
+                <img src="flood-fill-img-2.png" alt="flood-fill-img-2.png" class="mb-12 block-center full-width">
+
+                <div class="article-content color-black mb-3">
+                    As seen here, the algorithm will first find a pixel to process and fill in (red). Then, it stores any adjacent, open pixels that have not yet been processed (light green). Once the original pixel finishes processing, it is removed from storage and marked as visited so it isn’t processed again (dark green). After, the algorithm will pick a stored pixel (light green) to process. Can you see how every pixel reachable from the start pixel will be eventually colored in?
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Flood fill can be implemented by adapting either Breadth-First-Search or Depth-First-Search for grids.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here’s what the code for flood fill for the above example looks like:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">grid = [[False, False, False, True, False, False],[False, True, True, False, True, False],[False, False, True, False, True, False],[False, True, True, True, True, False],[False, False, True, True, True, False],[False, False, False, False, False, False]]
+
+starting_point = [3,2]
+
+def print_grid(your_grid):
+    for row in your_grid:
+        str = ""
+        for box in row:
+            if box:
+                str += "O"
+            else:
+                str += "X"
+        print(str)
+
+def flood_fill(current_point):
+    if not grid[current_point[0]][current_point[1]]:
+        return
+    
+    grid[current_point[0]][current_point[1]] = False
+    
+    directions = [[1,0],[-1,0],[0,1],[0,-1]]
+    for direction in directions:
+        adjacent_point = [current_point[0]+direction[0],current_point[1]+direction[1]]
+        if adjacent_point[0] < 0 or adjacent_point[0] > 5 or adjacent_point[1] < 0 or adjacent_point[1] > 5:
+            continue
+        flood_fill(adjacent_point)
+   
+print("Original grid:") 
+print_grid(grid)
+flood_fill(starting_point)
+print("Flood filled grid:")
+print_grid(grid)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Original grid: <br>
+> XXXOXX<br>
+> XOOXOX<br>
+> XXOXOX<br>
+> XOOOOX<br>
+> XXOOOX<br>
+> XXXXXX<br>
+> Flood filled grid:<br>
+> XXXOXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">import java.util.*;
+public class floodFill {
+    static boolean[][] grid = {{false, false, false, true, false, false},{false, true, true, false, true, false},{false, false, true, false, true, false},{false, true, true, true, true, false},{false, false, true, true, true, false},{false, false, false, false, false, false}};
+    
+    public static void main(String[] args) {
+        int[] starting_point = {3,2};
+        System.out.println("Original grid:");
+        print_grid(grid);
+        flood_fill(starting_point);
+        System.out.println("Flood filled grid:");
+        print_grid(grid);
+    }
+    
+    static void print_grid(boolean[][] your_grid) {
+        for(boolean[] row : your_grid) {
+            String s = "";
+            for(boolean b : row) {
+                if(b) s += "O";
+                else s += "X";
+            }
+            System.out.println(s);
+        }
+    }
+    
+    static void flood_fill(int[] current_point) {
+        if(!grid[current_point[0]][current_point[1]]) return;
+        
+        grid[current_point[0]][current_point[1]] = false;
+        
+        int[][] directions = {{1,0},{-1,0},{0,1},{0,-1}};
+        for(int[] direction : directions) {
+            int[] adjacent_point = {current_point[0]+direction[0],current_point[1]+direction[1]};
+            if(adjacent_point[0] < 0 || adjacent_point[0] > 5 || adjacent_point[1] < 0 || adjacent_point[1] > 5) continue;
+            flood_fill(adjacent_point);
+        }
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Original grid: <br>
+> XXXOXX<br>
+> XOOXOX<br>
+> XXOXOX<br>
+> XOOOOX<br>
+> XXOOOX<br>
+> XXXXXX<br>
+> Flood filled grid:<br>
+> XXXOXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <bits/stdc++.h>
+
+using namespace std;
+
+bool grid[6][6] = {{false, false, false, true, false, false},{false, true, true, false, true, false},{false, false, true, false, true, false},{false, true, true, true, true, false},{false, false, true, true, true, false},{false, false, false, false, false, false}};
+
+void print_grid() {
+    for(auto& row : grid) {
+        for(auto& b : row) {
+            if(b) cout << "O";
+            else cout << "X";
+        } cout << "\n";
+    }
+}
+
+void flood_fill(int current_point[]) {
+    if(!grid[current_point[0]][current_point[1]]) return;
+        
+    grid[current_point[0]][current_point[1]] = false;
+    
+    int directions[4][2] = {{1,0},{-1,0},{0,1},{0,-1}};
+    for(auto& direction : directions) {
+        int adjacent_point[2] = {current_point[0]+direction[0],current_point[1]+direction[1]};
+        if(adjacent_point[0] < 0 || adjacent_point[0] > 5 || adjacent_point[1] < 0 || adjacent_point[1] > 5) continue;
+        flood_fill(adjacent_point);
+    }
+}
+
+int main() {
+    int starting_point[2] = {3,2};
+    cout << "Original grid:\n";
+    print_grid();
+    flood_fill(starting_point);
+    cout << "Flood filled grid:\n";
+    print_grid();
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Original grid: <br>
+> XXXOXX<br>
+> XOOXOX<br>
+> XXOXOX<br>
+> XOOOOX<br>
+> XXOOOX<br>
+> XXXXXX<br>
+> Flood filled grid:<br>
+> XXXOXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX<br>
+> XXXXXX
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Flood fill has the very obvious real-world application of filling an area in graphics applications. However, it can also help with searching a bounded area. There are plenty of other, more efficient methods to perform a flood fill; the one we’ve shown is the easiest to understand and we encourage everyone to Google flood fill algorithms for more advanced versions!
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

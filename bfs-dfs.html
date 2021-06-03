@@ -105,6 +105,8 @@
                     <b>Breadth-first search</b> and <b>depth-first search</b> (BFS and DFS) are two different methods to accomplishing the task of finding a specific node in a graph. While both algorithms have the same goal — searching for a node — the main difference between these two methods is in how they search; while BFS prioritizes closer nodes (breadth), DFS will go as deep as possible into the graph first (depth).
                 </div>
 
+                <div class="article-content-sectiontitle color-black mb-3">Breadth-first search</div>
+
                 <div class="article-content color-black mb-3">
                     Here is a visualization of BFS:
                 </div>
@@ -114,6 +116,469 @@
                 <div class="article-content color-black mb-3">
                     In short, the strategy is to start with a node, mark down all adjacent nodes, then process the queued nodes one by one in the order that they were added to the queue. In the end, every node that could be reached from the starting node is processed, meaning as long as the node you are searching for is connected, you will find it.
                 </div>
+
+                <div class="article-content color-black mb-3">
+                    In short, the strategy is to start with a node, mark down all adjacent nodes, then process the queued nodes one by one in the order that they were added to the queue. In the end, every node that could be reached from the starting node is processed, meaning as long as the node you are searching for is connected, you will find it.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here’s what the implementation of BFS for the diagram above looks like. In this example, we use a 2D array to represent the edges; a <div class="mono-text">True</div> at <div class="mono-text">edges[i][j]</div> denotes that node <div class="mono-text">i</div> and node <div class="mono-text">j</div> have an edge connecting them.
+                </div>
+
+                <div class="tabs mb-12">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5"># set up nodes and edges
+edges = [[False]*7 for i in range(7)]
+edges[1][2] = True
+edges[1][4] = True
+edges[1][5] = True
+edges[2][3] = True
+edges[3][4] = True
+edges[4][6] = True
+edges[5][6] = True
+
+# this tells the computer if we've visited this node before so we don't process it again
+visited = [False] * 7
+
+# target can be any node you want
+target_node = 3
+
+# set up our processing queue
+queue = [1]
+
+while len(queue) > 0:
+    # get the next node in the queue and remove it from the queue
+    current_node = queue[0]
+    queue.pop(0)
+    
+    # if we've visited the node, we can skip it
+    if visited[current_node]:
+        continue
+    
+    print("Currently on node " + str(current_node))
+    
+    # identify when we've found the target node
+    if current_node == target_node:
+        print("Found target node!")
+    
+    # traverse the graph
+    for i in range(7):
+        if edges[current_node][i]:
+            queue.append(i)
+        
+    # print the current queue
+    print("Current queue: " + str(queue))
+    print()
+    
+    # mark our current node as visited
+    visited[current_node] = True
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1 <br>
+> Current queue: [2, 4, 5]<br>
+> <br>
+> Currently on node 2<br>
+> Current queue: [4, 5, 3]<br>
+> <br>
+> Currently on node 4<br>
+> Current queue: [5, 3, 6]<br>
+> <br>
+> Currently on node 5<br>
+> Current queue: [3, 6, 6]<br>
+> <br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Current queue: [6, 6, 4]<br>
+> <br>
+> Currently on node 6<br>
+> Current queue: [6, 4]
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">import java.util.*;
+public class BFS {
+    public static void main(String[] args){
+        // set up nodes and edges
+        boolean[][] edges = {{false, false, false, false, false, false, false}, {false, false, true, false, true, true, false}, {false, false, false, true, false, false, false}, {false, false, false, false, true, false, false}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, false}};
+        
+        // this tells the computer if we've visited this node before so we don't process it again
+        boolean[] visited = new boolean[7];
+        
+        // target can be any node you want
+        int target_node = 3;
+        
+        // set up our processing queue
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+        queue.add(1);
+        
+        while(!queue.isEmpty()) {
+            // get the next node in the queue and remove it from the queue
+            int current_node = queue.remove();
+            
+            // if we've visited the node, we can skip it
+            if(visited[current_node]) {
+                continue;
+            }
+            
+            System.out.println("Currently on node " + current_node);
+            
+            // identify when we've found the target node
+            if(current_node == target_node) {
+                System.out.println("Found target node!");
+            }
+            
+            // traverse the graph
+            for(int i = 0; i < 7; i++) {
+                if(edges[current_node][i]) {
+                    queue.add(i);
+                }
+            }
+            
+            // print the current queue
+            System.out.print("Current queue: ");
+            for(int x : queue) {
+                System.out.print(x + " ");
+            } 
+            System.out.println();
+            System.out.println();
+            
+            // mark our current node as visited
+            visited[current_node] = true;
+        }
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1 <br>
+> Current queue: 2 4 5<br>
+> <br>
+> Currently on node 2<br>
+> Current queue: 4 5 3<br>
+> <br>
+> Currently on node 4<br>
+> Current queue: 5 3 6<br>
+> <br>
+> Currently on node 5<br>
+> Current queue: 3 6 6<br>
+> <br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Current queue: 6 6 4<br>
+> <br>
+> Currently on node 6<br>
+> Current queue: 6 4
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <bits/stdc++.h>
+
+using namespace std;
+
+// set up nodes and edges
+bool edges[7][7] = {{false, false, false, false, false, false, false}, {false, false, true, false, true, true, false}, {false, false, false, true, false, false, false}, {false, false, false, false, true, false, false}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, false}};
+
+// this tells the computer if we've visited this node before so we don't process it again
+bool visited[7] = {};
+
+// target can be any node you want
+int target_node = 3;
+
+// this function prints the queue
+void print_queue(queue<int> q) {
+  while (!q.empty())
+  {
+    cout << q.front() << " ";
+    q.pop();
+  }
+}
+
+int main() {
+    // set up our processing queue
+    queue<int> q;
+    q.push(1);
+    
+    while(!q.empty()) {
+        // get the next node in the queue and remove it from the queue
+        int current_node = q.front();
+        q.pop();
+        
+        // if we've visited the node, we can skip it
+        if(visited[current_node]) {
+            continue;
+        }
+        
+        cout << "Currently on node " << current_node << "\n";
+        
+        // identify when we've found the target node
+        if(current_node == target_node) {
+            cout << "Found target node!\n";
+        }
+        
+        // traverse the graph
+        for(int i = 0; i < 7; i++) {
+            if(edges[current_node][i]) {
+                q.push(i);
+            }
+        }
+        
+        // print the current queue
+        cout << "Current queue: ";
+        print_queue(q);
+        cout << "\n\n";
+        
+        // mark our current node as visited
+        visited[current_node] = true;
+    }
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1 <br>
+> Current queue: 2 4 5<br>
+> <br>
+> Currently on node 2<br>
+> Current queue: 4 5 3<br>
+> <br>
+> Currently on node 4<br>
+> Current queue: 5 3 6<br>
+> <br>
+> Currently on node 5<br>
+> Current queue: 3 6 6<br>
+> <br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Current queue: 6 6 4<br>
+> <br>
+> Currently on node 6<br>
+> Current queue: 6 4
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Depth-first search</div>
+
+                <div class="article-content color-black mb-3">
+                    How does BFS compare to DFS?
+                </div>
+
+                <img src="bfs-dfs-img-2.png" alt="bfs-dfs-img-2.png" class="mb-12 block-center full-width">
+
+                <div class="article-content color-black mb-3">
+                    As seen in the diagram above, DFS does not wait for a node to check its neighbors first. It immediately begins processing the first neighbor it finds, waiting until that node is fully processed before checking any other neighbors. Consequently, nodes that further away have a chance to be visited much faster.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here’s what the implementation of DFS looks like. It uses the same method to store nodes and edges as the BFS implementation.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5"># set up nodes and edges
+edges = [[False]*7 for i in range(7)]
+edges[1][2] = True
+edges[1][4] = True
+edges[1][5] = True
+edges[2][3] = True
+edges[3][4] = True
+edges[4][6] = True
+edges[5][6] = True
+
+# this tells the computer if we've visited this node before so we don't process it again
+visited = [False] * 7
+
+# target can be any node you want
+target_node = 3
+    
+def dfs(current_node):
+    # if we've visited the node, we can skip it
+    if visited[current_node]:
+        return
+    
+    # mark our current node as visited
+    visited[current_node] = True
+    
+    print("Currently on node " + str(current_node))
+    
+    # identify when we've found the target node
+    if current_node == target_node:
+        print("Found target node!")
+    
+    # traverse the graph
+    for i in range(7):
+        if edges[current_node][i]:
+            dfs(i)
+
+# call the function
+dfs(1)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1<br>
+> Currently on node 2<br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Currently on node 4<br>
+> Currently on node 6<br>
+> Currently on node 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">import java.util.*;
+public class DFS {
+    public static void main(String[] args){
+        // set up nodes and edges
+        boolean[][] edges = {{false, false, false, false, false, false, false}, {false, false, true, false, true, true, false}, {false, false, false, true, false, false, false}, {false, false, false, false, true, false, false}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, false}};
+        
+        // this tells the computer if we've visited this node before so we don't process it again
+        boolean[] visited = new boolean[7];
+        
+        // target can be any node you want
+        int target_node = 3;
+        
+        dfs(1, edges, visited, target_node);
+    }
+    
+    static void dfs(int current_node, boolean[][] edges, boolean[] visited, int target_node) {
+        // if we've visited the node, we can skip it
+        if(visited[current_node]) {
+            return;
+        }
+        
+        // mark our current node as visited
+        visited[current_node] = true;
+        
+        System.out.println("Currently on node " + current_node);
+        
+        // identify when we've found the target node
+        if(current_node == target_node) {
+            System.out.println("Found target node!");
+        }
+        
+        // traverse the graph
+        for(int i = 0; i < 7; i++) {
+            if(edges[current_node][i]) {
+                dfs(i, edges, visited, target_node);
+            }
+        }
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1<br>
+> Currently on node 2<br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Currently on node 4<br>
+> Currently on node 6<br>
+> Currently on node 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <bits/stdc++.h>
+
+using namespace std;
+
+// set up nodes and edges
+bool edges[7][7] = {{false, false, false, false, false, false, false}, {false, false, true, false, true, true, false}, {false, false, false, true, false, false, false}, {false, false, false, false, true, false, false}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, true}, {false, false, false, false, false, false, false}};
+
+// this tells the computer if we've visited this node before so we don't process it again
+bool visited[7] = {};
+
+// target can be any node you want
+int target_node = 3;
+
+void dfs(int current_node) {
+    // if we've visited the node, we can skip it
+    if(visited[current_node]) {
+        return;
+    }
+    
+    // mark our current node as visited
+    visited[current_node] = true;
+    
+    cout << "Currently on node " << current_node << "\n";
+    
+    // identify when we've found the target node
+    if(current_node == target_node) {
+        cout << "Found target node!\n";
+    }
+    
+    // traverse the graph
+    for(int i = 0; i < 7; i++) {
+        if(edges[current_node][i]) {
+            dfs(i);
+        }
+    }
+}
+
+int main() {
+    dfs(1);
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Currently on node 1<br>
+> Currently on node 2<br>
+> Currently on node 3<br>
+> Found target node!<br>
+> Currently on node 4<br>
+> Currently on node 6<br>
+> Currently on node 5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Both the BFS and DFS implementations are extremely inefficient (and non-scalable) ways of storing edges/nodes and traversing the graph, only used for demonstration purposes. Please Google more efficient implementations if you plan on using BFS or DFS.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    When deciding between BFS vs. DFS, you need to consider where your target node is probably located. If it’s far away from the starting node (like in most mazes), DFS has a slight chance to find it early because it fully traverses every pathway before returning to the start. However, BFS is guaranteed to find it after processing most of the other nodes since it searches every node close to the starting node before moving on. In this case, DFS is the better choice. Conversely, if a node is located close to the starting node, BFS is guaranteed to find it very quickly, whereas DFS will keep searching very far away and only has a slight chance of finding the node as promptly as BFS. In this case, BFS is the better choice.
+                </div>
+
+
+                
             </div>
         </div>
     </div>

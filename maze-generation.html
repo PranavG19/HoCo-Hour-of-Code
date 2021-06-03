@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Maze Generation</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">9pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Math</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Maze generation and its various algorithms
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    Who doesn’t love a good maze? Small, little puzzles for children to solve or for farmers to grow. Everyone knows the basic principles behind every maze, but have you ever tried making one yourself? Give it a shot. Spend a couple of minutes drawing out a maze and see what you can come up with.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Not so easy, is it? Now imagine drawing a gigantic, elaborate maze, one with millions of unique paths that no human could ever solve. Such a task would be a serious challenge for even the most skilled artists and architects, but not for a computer. How can we program a computer to create a maze for us? Well, let’s start by formalizing what a maze consists of. To simplify things, let’s assume that we are working with a rectangular maze composed of only vertical and horizontal lines.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    A maze has these properties:
+                    <ul>
+                        <li class="mb-2">Exactly one entry point and one exit point</li>
+                        <li class="mb-2">Exactly one path going from the entry to the exit (excluding paths involving backtracking)</li>
+                        <li class="mb-2">Every path other than the correct one should result in a dead-end</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Using these parameters, we can make some abstractions about our problem. Between any two given points in our maze, there should be exactly one path from the start to that point (if we never backtrack), and it should be possible to reach any location in the maze. If you’ve read the previous articles, this should remind you of a tree. Recall that one property of a tree is a graph where there is exactly one path between every set of two nodes. We can then simplify this problem to constructing a tree out of a group of nodes.
+                </div>
+
+                <div class="article-content color-black">
+                    Visualize our maze as a grid of rectangular cells. Each cell has 4 walls, and we want to break a number of these walls such that we satisfy our constraint that there is exactly one path between any two cells. After doing so, all that’s left is to break two of the outer walls to create a starting and ending point.
+                </div>
+                
+                <img src="maze-generation-img-1.png" alt="maze-generation-img-1.png" class="full-width block-center">
+
+                <div class="article-content color-black">
+                    The graph equivalent of breaking a wall between two cells is constructing an edge between the two nodes representing those cells. So essentially, we have a collection of nodes where each node has up to four potential connections. Our task is choosing some number of those neighbors to connect to with an edge, forming a tree containing all of the nodes. This is known as a <b>spanning tree</b>. We could easily make a simple maze (shown below) that fits all the constraints, but that wouldn’t make an exciting maze. We want something more challenging to solve.
+                </div>
+
+                <img src="maze-generation-img-2.png" alt="maze-generation-img-2.png" class="w-60p block-center">
+
+                <div class="article-content color-black">
+                    To make a more complex maze, we need to randomize our algorithm. We can randomly choose walls to break until we get a spanning tree. If you’ve heard of the <b>minimum spanning tree</b> problem, a <b>random spanning tree</b> is the same idea but being random rather than the minimum. Many different algorithms accomplish this that all vary based on running speed and how it randomly makes decisions. Some random spanning tree algorithms are biased toward long, narrow corridors (recursive backtracking), while others create shorter dead ends (Kruskal’s algorithm, Prim’s algorithm), and others use a perfectly random uniform distribution (Wilson’s algorithm). Some algorithms start with a grid full of walls and break them to form paths, while others begin with a blank slate and place walls.
+                </div>
+
+                <img src="maze-generation-img-3.png" alt="maze-generation-img-3.png" class="full-width block-center">
+
+                <div class="article-content color-black">
+                    Ultimately, all of these maze generation algorithms may have a different way of producing the spanning tree, but they all have the same central idea: forming a spanning tree out of a set of nodes. So next time you ever find yourself needing to draw a maze, however often or rare that may be, think about how a computer would do it. Try it out right now. Start with a grid of squares and erase walls until you have a maze, then compare it to what you drew at the beginning of this article!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,335 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Libraries</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">6pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    How to use built-in, high-quality code written by others
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    One of the core reasons humans thrive on Earth is our unique ability to communicate with each other using language. We use language to share knowledge and build on our predecessors' work to create progress.
+                </div>
+
+                <img src="libraries-img-1.jpeg" alt="libraries-img-1.jpeg" class="block-center w-60p mb-3">
+
+                <div class="article-content color-black mb-3">
+                    <b>Libraries</b> are the programming equivalent of passing essential knowledge down. They store important previously-written code that most programmers are bound to use at some point. However, in terms of how they are used, a programming library is less like a brick-and-mortar library and more like a car. When people sit in a car, they assume the brake pedal will slow the vehicle down, the gas pedal will speed it up, and the wheel will turn it. However, most people do not understand the underlying mechanisms that make those actions possible. This lack of understanding doesn’t hinder the driver. In fact, it helps the driver because they don’t need to know how each of the tens of thousands of moving parts in the car affects its motion. Instead, they just need to understand how two pedals, a lever, and a wheel affect the car’s motion. Drivers can assume the underlying parts work and focus on their primary goal of getting from point A to point B. Soon, self-driving cars could reduce the level of understanding necessary to drive a car even further into just identifying the destination.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Programming libraries are very similar. They package and hide away the complex moving parts so the programmer can focus on “driving.” Libraries enable programmers to focus on big picture ideas while assuming the small details will be executed flawlessly. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Libraries must be imported first before being used. This is because hundreds of libraries cover thousands of use cases that programmers do not want to worry about (e.g., random number generation, reading files, advanced math, app development, etc.). All of these libraries can be useful yet include a ridiculous amount of code, and forcing your computer to load all of them every time you run a program is resource and memory-intensive. Therefore, most programming languages simply package important code into libraries that can be imported when you need them instead of all the time.
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Important libraries such as the String library are imported automatically because they are used in the vast majority of applications.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s take a look at an example. The “String” library is used to store and manipulate text. You can perform many useful operations with it. First, we need to import the string library:
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        The String library is imported by default in all Python programs
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        The String library is imported by default in all Java programs
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5 mb-3">#include &lt;string&gt;</code></pre>
+                        C++ is a lower-level language and doesn’t import the String library by default.
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    We can do a variety of things using the String library:
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>Add strings together:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">a = "Hello "
+b = "World!"
+c = a + b
+print(c)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">String a = "Hello ";
+String b = "World!";
+String c = a+b;
+System.out.println(c);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">string a = "Hello ";
+string b = "World!";
+string c = a+b;
+cout << c;
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>Turn all the characters lowercase:</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">a = "Hello World!"
+b = a.lower()
+print(b)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > hello world!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">String a = "Hello World!";
+String b = a.toLowerCase();
+System.out.println(b);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > hello world!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">string a = "Hello World!";
+transform(a.begin(), a.end(), a.begin(), ::tolower);
+cout << a;
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > hello world!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black">
+                    <ul>
+                        <li>Find a specific character (in this case the 5th character because strings, like arrays, are 0-indexed):</li>
+                    </ul>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-10" checked="checked">
+                    <label for="tab-10">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">a = "Hello World!"
+b = a[4]
+print(b)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > o
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-11">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">String a = "Hello World!";
+char b = a.charAt(4);
+System.out.println(b);
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > o
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">string a = "Hello World!";
+char b = a[4];
+cout << b;
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > o
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    These operations would usually take tens or hundreds of lines of code to perform. However, because previous developers wrote the code for these operations and packaged it into the String library, modern programmers can perform these complex operations with a single line of code. So instead of worrying about whether their string-adding algorithm works, programmers today can focus on addressing far more complicated problems and leave the finer details to their predecessors’ code. See the “Functions” article for how you can build libraries that future programmers will rely on. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    It’s clear libraries have many pros. However, there is one major con that every programmer should be aware of (but in most careers will not need to worry about): Libraries are not flexible. Using the earlier car analogy, hiding the tiny moving parts can help the programmer focus on the overall goal. But what if the overall goal requires the programmer to focus on the tiny moving parts? You can think of this as fine-tuning a car for speed. Ideally, a driver should remove unnecessary parts from the vehicle (e.g., air conditioning, cd player) to maximize speed. Restricting a driver to only using the pedals, wheel, and stick will bottleneck it. Similarly, programmers who use libraries lose the flexibility of removing unnecessary code or fine-tuning the code because the library hides it away. Programmers who need ultra-fast code need to delve deeper than surface-level libraries (which are generally designed to be fast but not ultra-fast) in search of performance gains.
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,637 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Loops</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">10pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Control Flow</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    How to run the same code without copy-pasting it
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    Suppose you wanted to print the numbers 0-9. Here’s one way you could do it:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">print("0")
+print("1")
+print("2")
+print("3")
+print("4")
+print("5")
+print("6")
+print("7")
+print("8")
+print("9")</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>
+                    </div>
+                    
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">System.out.println("0");
+System.out.println("1");
+System.out.println("2");
+System.out.println("3");
+System.out.println("4");
+System.out.println("5");
+System.out.println("6");
+System.out.println("7");
+System.out.println("8");
+System.out.println("9");
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">cout << "0" << "\n";
+cout << "1" << "\n";
+cout << "2" << "\n";
+cout << "3" << "\n";
+cout << "4" << "\n";
+cout << "5" << "\n";
+cout << "6" << "\n";
+cout << "7" << "\n";
+cout << "8" << "\n";
+cout << "9";
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>The “\n” puts the subsequent output on the next line.
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    While this code works, it doesn’t <b>scale</b>- If you wanted to instead print the numbers 0-999, it would take a lot of time, effort, and characters to repeatedly print using the same method.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    What we can do instead is use a <b>loop</b>. Loops are another method to control the flow of a program when you want to run the same block of code multiple times, but only want to write it once. This code does the exact same thing as the previous 10 lines.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">for i in range(10):
+    print(i)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 10; i++) {
+   cout << i << "\n";
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+                            > 1 <br>
+                            > 2 <br>
+                            > 3 <br>
+                            > 4 <br>
+                            > 5 <br>
+                            > 6 <br>
+                            > 7 <br>
+                            > 8 <br>
+                            > 9
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-12">
+                    Note: In Java and C++, the operation <div class="mono-text">++</div> is equivalent to <div class="mono-text">+= 1</div> or adding 1 to the variable. The <div class="mono-text">++</div> operator doesn’t exist in Python!
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">For-loop</div>
+
+                <div class="article-content color-black mb-3">
+                    The previous example used a type of loop called a <b>for-loop</b>. The syntax to a for-loop that executes a block of code <div class="mono-text">x</div> times looks like this:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">for i in range(x):
+    # code block
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < x; i++) {
+    // code block
+}
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < x; i++) {
+   // code block
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In Java and C++, the more general form of a for-loop is this:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-11" checked="checked">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">for(/* statement 1 */; /* statement 2 */; /* statement 3 */) {
+    //code block
+}</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">for(/* statement 1 */; /* statement 2 */; /* statement 3 */) {
+    //code block
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In these languages, the three statements control the flow of the program in the following steps: 
+                    <ol>
+                        <li class="mb-2">Statement 1 is executed, and it is used to define a variable that is referenced and modified in statements 2 and 3.</li>
+                        <li class="mb-2">Statement 2 is a boolean dependent on the variable defined in statement 1, and if statement 2 is True, continue to step 3. If it is false, the for-loop stops.</li>
+                        <li class="mb-2">Execute the code block.</li>
+                        <li class="mb-2">Statement 3 is executed, and it is used to modify the variable defined in statement 1. Return to step 2.</li>
+                    </ol>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: The for-loop will not stop executing the code block if statement 2 is never false. This behavior is called an <b>infinite loop</b> because your program runs until your computer is out of power, the program is terminated, your computer runs out of memory, or some other external cause of program failure.
+                </div>
+
+
+                <div class="article-content color-black mb-3">
+                    Let’s follow those steps and take a look at how the code in this example is executed:
+                </div>
+
+                <div class="tabs mb-3">
+
+                    <input type="radio" name="tabs5" id="tab-14" checked="checked">
+                    <label for="tab-14">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 2; i++) {
+    System.out.println("The code block was executed");
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > The code block was executed <br>
+                            > The code block was executed
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-15">
+                    <label for="tab-15">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 2; i++) {
+   cout << "The code block was executed";
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > The code block was executed <br>
+                            > The code block was executed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ol>
+                        <li class="mb-2">The computer is on step 1. Statement 1 is executed, which means the variable i is declared with an initial value of 0.</li>
+                        <li class="mb-2">The computer is on step 2. The variable i is currently 0, so the boolean i < 2 is true, and we can proceed to step 3.</li>
+                        <li class="mb-2">The computer is on step 3. The code block is executed, and “The code block was executed” is printed to the console.</li>
+                        <li class="mb-2">The computer is on step 4. Statement 3 is executed, which means the variable i is incremented by 1 and now has value 1. We then return to step 2.</li>
+                        <li class="mb-2">The computer is on step 2. The variable i is currently 1, so the statement i < 2 is true, and we can proceed to step 3.</li>
+                        <li class="mb-2">The computer is on step 3. The code block is executed, and “The code block was executed” is printed to the console.</li>
+                        <li class="mb-2">The computer is on step 4. Statement 3 is executed, which means the variable i is incremented by 1 and now has value 2. We then return to step 2.</li>
+                        <li class="mb-2">The computer is on step 2. The variable i is currently 2, so the statement i < 2 is false, and we exit the for-loop.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    In Python, the for-loop’s code block is simply executed the number of times specified between the parentheses of the range function.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    Python uses a variation of the for-loop similar to the for-each loop in Java and C++. Because its behavior is more advanced and very different from a normal for-loop, going into additional depth is outside the scope of this event.
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">While loop</div>
+
+                <div class="article-content color-black mb-3">
+                    <b>While loops</b> are simpler to write and understand compared to for-loops.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    The syntax for a while loop look like this:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs6" id="tab-16" checked="checked">
+                    <label for="tab-16">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">while statement:
+    code block
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-17">
+                    <label for="tab-17">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">while(statement) {
+    code block
+}
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-18">
+                    <label for="tab-18">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">while(statement) {
+    code block
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    A while loop executes the code block repeatedly while the statement is true. It controls the flow of a program in two steps:
+                    <ol>
+                        <li class="mb-2">Check if the statement is true. If the statement is true, proceed to step 2. If the statement is false, exit the while loop</li>
+                        <li class="mb-2">Execute the code block and return to step 1</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s follow how a while loop executes a similar program to our for-loop demonstration.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs7" id="tab-20" checked="checked">
+                    <label for="tab-20">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int i = 0;
+while(i < 2) {
+    System.out.println("The code block was executed");
+    i++;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > The code block was executed <br>
+                            > The code block was executed
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs7" id="tab-21">
+                    <label for="tab-21">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int i = 0;
+while(i < 2) {
+    cout << "The code block was executed";
+    i++;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > The code block was executed <br>
+                            > The code block was executed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    <ol>
+                        <li class="mb-2">The computer runs all the code before the while-loop, which creates a variable i that will determine when we exit the while-loop.</li>
+                        <li class="mb-2">The computer is on step 1. i currently has value 0, so the boolean i < 2 is true, and we proceed to step 2.</li>
+                        <li class="mb-2">The computer is on step 2. The code block is executed. This prints “The code block was executed,” and i is incremented by 1 (now has value 1). The computer returns to step 1.</li>
+                        <li class="mb-2">The computer is on step 1. i currently has value 1, so the boolean i < 2 is true, and we proceed to step 2.</li>
+                        <li class="mb-2">The computer is on step 2. The code block is executed. This prints “The code block was executed,” and i is incremented by 1 (now has value 2). The computer returns to step 1.</li>
+                        <li class="mb-2">The computer is on step 1. i currently has value 2, so the boolean i < 2 is false, and we exit the while-loop.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Statement 2 in a for-loop and the statement in a while-loop have the same purpose- they define precisely when a program should stop executing the code block. However, the difference between them is that a for-loop forces the programmer to explicitly define conditions under which a program should stop running a code block.
+                </div>
+
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orange mb-3">
+                    Common Mistake: The simplicity of while loops comes at a cost: it is much easier to accidentally create an infinite loop using a while loop since it doesn’t force you to create exit conditions. Functionally, however, for-loops and while-loops are about the same.
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    In some cases, you may want to create an infinite / very long loop intentionally. For example, video games need to constantly update your screen with new calculations, rendering, and special effects. In cases like these, a while-loop that runs for a very long time is necessary.
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Nested Loop</div>
+
+                <div class="article-content color-black mb-3">
+                    Like the if-statements we looked at in the “Booleans” article, loops can be placed inside one another. A loop inside another loop is called a <b>nested loop</b>. For example, this code prints the numbers 0-2 three times.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs8" id="tab-22" checked="checked">
+                    <label for="tab-22">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">for i in range(3):
+    for j in range(3):
+        print(j)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs8" id="tab-23">
+                    <label for="tab-23">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
+        System.out.println(j);
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs8" id="tab-24">
+                    <label for="tab-24">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
+        cout << j;
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+> 0 <br>
+> 1 <br>
+> 2 <br>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

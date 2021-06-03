@@ -1,0 +1,658 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Functions</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">13pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Syntax</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Control Flow</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Compartmentalizing your code for reuse
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    A common theme you have seen throughout this section is avoiding rewriting the same code multiple times. <b>Functions</b> are the key to achieving this in programming. A function is a way of organizing code that enables a programmer to reuse it. They are useful because once the code to complete a task has been written once, you can reuse that code to complete the same task anywhere you want with a single line that “calls” (runs) the function.
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Functions are <b>self-contained</b>, which means any code executed within the function won’t influence anything outside the function. We call this a <b>black box</b> because everything inside the function is obscured from the outside code. It simply sees input go in and output come out. <br> <br>
+                    
+                    This is especially useful when collaborating in teams. If programmer A writes a function and programmer B needs to use it, programmer B does not need to understand how it works. They only need to understand what inputs to give the function and what outputs come out of it; none of the inner processes or code matters to programmer B.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Functions are composed of 4 components:
+                    <ul>
+                        <li class="mb-2">The function itself - The syntax used to denote a function is dependent on the language. In certain languages, you may also need to include additional keywords that describe the function’s behavior, such as the <b>scope</b> of the function (where it can be called from) and the data type of the output.</li>
+                        <li class="mb-2">The name of the function - This is used to <b>call</b> (run) the function when you need it.</li>
+                        <li class="mb-2">The <b>parameters</b> - Although functions are self-contained, one pipeline to get outside code/variables/data inside the function is to “pass it into” the function through parameters. We go into more depth on how to create this pipeline later in the article.</li>
+                        <li class="mb-2">The code block - This is the code that will run every time a function is called.</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    When a program reaches a function call, the program follows this order of control:
+                    <ol>
+                        <li class="mb-2">The program exits the current body of code and enters the function.</li>
+                        <li class="mb-2">The code block runs from top to bottom.</li>
+                        <li class="mb-2">Upon finishing the code block or being forced out of the block with the keyword return, the program returns to the original body of code.</li>
+                        <li class="mb-2">Any data returned by the function is used in place of the original function call. All other data is removed from the programmer’s memory.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s define a basic function named <div class="mono-text">hello_world</div> that simply prints “Hello World!” and then let’s call the function. Entry points for Java and C++ have been included because functions are defined outside of the normal main function.
+                </div>
+
+                <!-- Steps to add additional code: -->
+                <!-- 1. change radio name to unique name shared among all tabs -->
+                <!-- 2. change all tab ids to unique ids, and copy the unique id to the label -->
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs1" id="tab-1" checked="checked">
+                    <label for="tab-1">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def hello_world():
+    print("Hello World!")
+
+hello_world()
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-2">
+                    <label for="tab-2">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
+    public static void main(String[] args) {
+        hello_world();
+    }
+     
+    public static void hello_world() {
+        System.out.println("Hello World!");
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs1" id="tab-3">
+                    <label for="tab-3">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+void hello_world() {
+    cout << "Hello World!";
+}
+
+int main()
+{
+    hello_world();
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-lightorange padding-3 color-orangered border-box lborder-orange mb-3">
+                    Common Mistake: If you run your code and nothing is happening, you might have forgotten to call your function! Defining the function does not run the code. Even experienced programmers forget to call their function sometimes(although they realize their mistake quickly).
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    No parameters were being “passed into” (given to) the above function. Let’s expand it to talk about our favorite foods by adding a parameter for our favorite food and then printing it.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def hello_world(favorite_food):
+    print("Hello World!")
+    print("My favorite food is " + favorite_food + ".")
+
+hello_world("pizza")
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+                            > My favorite food is pizza.
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
+    public static void main(String[] args) {
+        hello_world("pizza");
+    }
+     
+    public static void hello_world(String favorite_food) {
+        System.out.println("Hello World!");
+        System.out.println("My favorite food is " + favorite_food + ".");
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+                            > My favorite food is pizza.
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+void hello_world(string favorite_food) {
+    cout << "Hello World!" << "\n";
+    cout << "My favorite food is " << favorite_food << ".";
+}
+
+int main()
+{
+    hello_world("pizza");
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+                            > My favorite food is pizza.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To create and use a parameter, we first needed to give the parameter a name inside the parentheses beside the function definition header. It was <div class="mono-text">favorite_food</div> in this case. We then used the parameter <div class="mono-text">favorite_food</div> as a variable in the function, adding it to “My favorite food is” like a string. Notice that the function doesn’t determine the value of <div class="mono-text">favorite_food</div>. Instead, it is the function call that determines the value.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To use the function and pass a value to the parameter, we called the function, and between the parentheses beside the function call, we specified the parameter’s value. This is when <div class="mono-text">favorite_food</div> is given its value.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Our code would throw an error if the value of <div class="mono-text">favorite_food</div> isn’t passed through a parameter inside the function call’s parentheses and instead simply defined as a variable outside the function. This is shown below:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def hello_world(favorite_food):
+    print("Hello World!")
+    print("My favorite food is " + favorite_food + ".")
+
+favorite_food = "pizza"
+hello_world()
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > TypeError: hello_world() missing 1 required positional argument: 'favorite_food'
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
+    public static void main(String[] args) {
+        String favorite_food = "pizza";
+        hello_world();
+    }
+     
+    public static void hello_world(String favorite_food) {
+        System.out.println("Hello World!");
+        System.out.println("My favorite food is " + favorite_food + ".");
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > HelloWorld.java:4: error: method hello_world in class HelloWorld cannot be applied to given types; <br>
+        hello_world(); <br>
+        ^ <br>
+  required: String <br>
+  found: no arguments <br>
+
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+void hello_world(string favorite_food) {
+    cout << "Hello World!" << "\n";
+    cout << "My favorite food is " << favorite_food << ".";
+}
+
+int main()
+{
+    string favorite_food = "pizza";
+    hello_world();
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > error: too few arguments to function ‘void hello_world(std::string)’ <br>
+     hello_world(); <br>
+                 ^ 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Although, it is possible to pass a variable as the parameter instead of explicitly using the string “pizza.”
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-10" checked="checked">
+                    <label for="tab-10">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def hello_world(favorite_food):
+    print("Hello World!")
+    print("My favorite food is " + favorite_food + ".")
+
+favorite_food = “pizza”
+hello_world(favorite_food)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+> My favorite food is pizza.
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-11">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class HelloWorld{
+    public static void main(String[] args) {
+        String favorite_food = "pizza";
+        hello_world(favorite_food);
+    }
+     
+    public static void hello_world(String favorite_food) {
+        System.out.println("Hello World!");
+        System.out.println("My favorite food is " + favorite_food + ".");
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+> My favorite food is pizza.
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+void hello_world(string favorite_food) {
+    cout << "Hello World!" << "\n";
+    cout << "My favorite food is " << favorite_food << ".";
+}
+
+int main()
+{
+    string favorite_food = "pizza";
+    hello_world(favorite_food);
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > Hello World! <br>
+> My favorite food is pizza.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    One last notable property of a function is using the “return” keyword that serves two purposes:
+                    <ol>
+                        <li class="mb-2">Immediately terminate a function and return to the function call.</li>
+                        <li class="mb-2">Return the data following the return keyword.</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    When data is returned, it is substituted for that function call. For example, we could write a function that adds two numbers and returns the result (and ignores all code after the return keyword). Then, we can store this result into a variable and print it.
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs5" id="tab-13" checked="checked">
+                    <label for="tab-13">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def add(a, b):
+    return a+b
+
+x = 2
+y = 3
+z = add(x,y)
+print(z)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-14">
+                    <label for="tab-14">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class add2numbers{
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 3;
+        int z = add(x,y);
+        System.out.println(z);
+    }
+     
+    public static int add(int a, int b) {
+        return a+b;
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs5" id="tab-15">
+                    <label for="tab-15">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+int add(int a, int b) {
+    return a+b;
+}
+
+int main()
+{
+    int x = 2;
+    int y = 3;
+    int z = add(2,3);
+    cout << z;
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: In Java and C++, the returned data type must be included next to the function name, and each of the parameter data types must be included next to each parameter name. This makes it easy for your IDE to detect possible data type conversion errors (e.g., trying to pass in an integer to a parameter of data type string). Python can’t do this until runtime because they don’t require data types. <br> <br>
+                    If you don’t want your function to return anything, use the “void” keyword.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here is one last example of a function accomplishing the more complex task of calculating the factorial of <div class="mono-text">num</div>:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs6" id="tab-16" checked="checked">
+                    <label for="tab-16">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def factorial(num):
+    ans = 1;
+    for i in range(1, num + 1):
+        ans *= i
+    return ans
+
+print(factorial(8))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 40320
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-17">
+                    <label for="tab-17">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class getfactorial{
+    public static void main(String[] args) {
+        System.out.println(factorial(8));
+    }
+    public static int factorial(int num){
+        int ans = 1;
+        for (int i = 1; i <= num; i++){
+              ans *= i;
+        }
+        return ans;
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 40320
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs6" id="tab-18">
+                    <label for="tab-18">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include <iostream>
+
+using namespace std;
+
+int factorial(int num) {
+    int ans = 1;
+    for (int i = 1; i <= num; i++){
+        ans *= i;
+    }
+    return ans;
+}
+
+int main()
+{
+    cout << factorial(8);
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 40320
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Why use functions?</div>
+
+                <div class="article-content color-black mb-3">
+                    Functions are the key to <b>abstraction</b> (the idea that we hide unnecessary code) in computer programming. Breaking a program down into functions makes them simpler to manage, easier to test, and better to reuse. In the absence of functions, programs would contain a lot of unnecessary duplicate code, would lack separation of utility, and be a nightmare to manage, debug, and test.
+                </div>
+                
+                <div class="article-content color-black mb-3">
+                    Here are the primary benefits of using functions:
+                    <ol>
+                        <li class="mb-2">Encapsulates and separates tasks - The programmer only needs to know what the code does, not how it does it. Good functions divide code into segments, which splits more extensive programs into smaller pieces.</li>
+                        <li class="mb-2">Increases reusability - Copy and pasting code in programs add unnecessary complexity, maintenance, and introduces more places for the code to accidentally go wrong. Functions not only allow you to reuse the code anywhere in your program, but it also allows other programmers to reuse your code.</li>
+                        <li class="mb-2">Makes testing and debugging much easier - Without functions, programs would be much more challenging to understand and debug. When programs are divided into functions, programmers can “test once, deploy everywhere,” substantially reducing testing time. In addition, functions increase readability, making them easier to maintain and follow.</li>
+                        <li class="mb-2">Divides data and logic - Functions help separate steps from actual data. Functions execute code independent of the data passed in. This can help keep you reuse short-term variables and prevent unwanted modifications.</li>
+                        <li class="mb-2">Saves time - All programming languages have libraries, which are built-in functions, that you can use to accomplish common tasks that would otherwise take hundreds of lines to achieve. Examples include print statements, basic arithmetic operators, and similar tasks we take for granted. Imagine how much time would be wasted if you had to write all of this from scratch.</li>
+                    </ol>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: The difference between libraries and functions is libraries only contain very commonly used pieces of code and are uneditable. In addition, libraries are guaranteed to be relatively high-quality and previously extensively tested, whereas you write functions- you need to test and refine them yourself.
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

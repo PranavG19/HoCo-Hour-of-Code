@@ -226,6 +226,14 @@
     width: 4rem;
 }
 
+.w-60p {
+    width: 60%;
+}
+
+.w-50p {
+    width: 50%;
+}
+
 .lm-16 {
     margin-left: 4rem;
 }

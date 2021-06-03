@@ -1,0 +1,443 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title" style="font-size: 3.6rem;">Dynamic Programming</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">17pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Math</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    Optimizing recursion using dynamic programming
+                </div>
+
+                <!-- Content -->
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mt-12 mb-3">
+                    Note: This article takes a look at a technique that makes recursion much faster. See the recursion article for more context.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s review the Fibonacci sequence. The first two numbers are 0 and 1, and every number after that is the sum of the previous two numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Take a minute to look at this sequence. Say you needed to find a specific value in this sequence - the 89th, for example. How would you use recursion to find that value? Remember a recursive function is a function that calls itself to break down major problems into smaller subproblems, then breaks those subproblems into even smaller subproblems. What would the base case for this recursive function be? The recursive case?
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    As mentioned above, the first two numbers of this sequence are 0 and 1. This is the base case. Every other number is the sum of the previous two numbers, which can eventually be broken down into the first and second Fibonacci numbers using the recursive case. This code calculates the <div class="mono-text">n</div>th Fibonacci number:
+                </div>
+                
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def fib(n):
+    # base case 1
+    if n == 1:
+        return 0
+        
+    # base case 2
+    if n == 2:
+        return 1
+    
+    # recursive case
+    return fib(n - 1) + fib(n - 2)
+    
+    
+# Unit tests to make sure our code is working
+print(fib(1))
+print(fib(2))
+print(fib(3))
+print(fib(4))
+print(fib(5))
+print(fib(6))
+print(fib(7))
+print(fib(8))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class FibonacciNumbers {
+    public static void main(String []args) {
+        // Unit tests to make sure our code is working
+        System.out.println(fib(1));
+        System.out.println(fib(2));
+        System.out.println(fib(3));
+        System.out.println(fib(4));
+        System.out.println(fib(5));
+        System.out.println(fib(6));
+        System.out.println(fib(7));
+        System.out.println(fib(8));
+    }
+     
+    static int fib(int n) {
+        // base case 1
+        if(n == 1) {
+            return 0;
+        }
+        
+        // base case 2
+        if(n == 2) {
+            return 1;
+        }
+        
+        // recursive case
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include &lt;iostream>
+
+using namespace std;
+
+int fib(int n) {
+    // base case 1
+    if(n == 1) {
+        return 0;
+    }
+    
+    // base case 2
+    if(n == 2) {
+        return 1;
+    }
+    
+    // recursive case
+    return fib(n - 1) + fib(n - 2);
+}
+
+int main() {
+    // Unit tests to make sure our code is working
+    cout << fib(1) << "\n";
+    cout << fib(2) << "\n";
+    cout << fib(3) << "\n";
+    cout << fib(4) << "\n";
+    cout << fib(5) << "\n";
+    cout << fib(6) << "\n";
+    cout << fib(7) << "\n";
+    cout << fib(8) << "\n";
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 2<br>
+> 3<br>
+> 5<br>
+> 8<br>
+> 13
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Notice that when you call <div class="mono-text">fib(n)</div>, the function needs to find the values of <div class="mono-text">fib(n-1)</div> and <div class="mono-text">fib(n-2)</div>. Solving for these smaller fibonacci numbers are subproblems — they are smaller problems that need to be solved in order to solve the whole problem.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here is the issue: if you want to calculate a very large Fibonacci number (for example, the 100th Fibonacci number) it takes ages. Look at how calculating <div class="mono-text">fib(6)</div> runs:
+                </div>
+
+                <img src="dynamic-programming-img-1.png" alt="dynamic-programming-img-1.png" class="mb-12 full-width block-center">
+
+                <div class="article-content color-black mb-3">
+                    As you can see, just calling this function for a number as small as 6 takes 15 calculations. It gets ugly very quickly with higher numbers. But take a closer look. Are there some calls to <div class="mono-text">fib()</div> that are identical? <div class="mono-text">fib(4)</div> is called twice, and each time it calls <div class="mono-text">fib(3)</div> and <div class="mono-text">fib(2)</div>. Then, each <div class="mono-text">fib(3)</div> calls <div class="mono-text">fib(2)</div> and <div class="mono-text">fib(1)</div>. That’s a lot of repetitive calls! <i>It would be easier to just call <div class="mono-text">fib(4)</div> once, and then save that number to use later because it never changes.</i> You wouldn’t have to re-evaluate that subproblem again for that Fibonacci number no matter how many times it comes up!
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This technique of storing the solutions to subproblems that are repeatedly solved is called <b>dynamic programming</b>. Dynamic programming is a powerful technique that has applications for a wide variety of problems. For instance, think of a shortest path algorithm— what is the best way to get from A to B? Well, if it is possible to find the best way to just get from A to some point in between, we can treat it as a sub-problem to evaluate, turning this daunting problem into smaller steps.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    There are two requirements that need to be fulfilled in order to apply dynamic programming to a problem:
+                    <ul>
+                        <li class="mb-2"><b>Overlapping subproblems</b> - there are (1) subproblems and (2) the solutions to some (or all) of the subproblems need to be used more than once</li>
+                        <li class="mb-2"><b>Optimal substructure</b> - the larger problem can be broken down into subproblems.</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Let’s modify the <div class="mono-text">fib()</div> function to apply dynamic programming in 3 steps:
+                    <ol>
+                        <li class="mb-2">Create an array called <div class="mono-text">dp</div> to store the solutions to our subproblems when we calculate them. In this array, <div class="mono-text">dp[x]</div> is equivalent to the output of <div class="mono-text">fib(x)</div>.</li>
+                        <li class="mb-2">Add another base case that checks if we’ve already solved a subproblem and return the previously-calculated solution if we’ve already solved it.</li>
+                        <li class="mb-2">Add code to the recursive case that stores solved subproblems into <div class="mono-text">dp</div>.</li>
+                    </ol>
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">dp = [0] * 10000
+
+def fib(n):
+    # base case - subproblem we’ve already solved
+    if dp[n] != 0:
+        return dp[n]
+    
+    # base case - fib(1)
+    if n == 1:
+        return 0
+        
+    # base case - fib(2)
+    if n == 2:
+        return 1
+    
+    # recursive case
+    dp[n] = fib(n - 1) + fib(n - 2)
+    return dp[n]
+    
+    
+# Unit tests to make sure our code is working
+print(fib(1))
+print(fib(2))
+print(fib(3))
+print(fib(40))
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 63245986
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">public class FibonacciNumbers {
+    public static void main(String []args) {
+        // Unit tests to make sure our code is working
+        System.out.println(fib(1));
+        System.out.println(fib(2));
+        System.out.println(fib(3));
+        System.out.println(fib(40));
+    }
+    static int[] dp = new int[10000];
+    static int fib(int n) {
+        // base case - subproblem we’ve already solved
+        if(dp[n] != 0) {
+            return dp[n];
+        }
+        
+        // base case - fib(1)
+        if(n == 1) {
+            return 0;
+        }
+        
+        // base case - fib(2)
+        if(n == 2) {
+            return 1;
+        }
+        
+        // recursive case
+        dp[n] = fib(n - 1) + fib(n - 2);
+        return dp[n];
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 63245986
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">#include &lt;iostream>
+
+using namespace std;
+
+int dp[10000] = {};
+
+int fib(int n) {
+    // base case - subproblem we’ve already solved
+    if(dp[n] != 0) {
+        return dp[n];
+    }
+    
+    // base case - fib(1)
+    if(n == 1) {
+        return 0;
+    }
+    
+    // base case - fib(2)
+    if(n == 2) {
+        return 1;
+    }
+    
+    // recursive case
+    dp[n] = fib(n - 1) + fib(n - 2);
+    return dp[n];
+}
+
+int main() {
+    // Unit tests to make sure our code is working
+    cout << fib(1) << "\n";
+    cout << fib(2) << "\n";
+    cout << fib(3) << "\n";
+    cout << fib(40) << "\n";
+
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 0 <br>
+> 1<br>
+> 1<br>
+> 63245986
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Dynamic programming is a powerful optimization technique that can greatly reduce recursion runtimes. While we’ve only seen one example with fibonacci numbers in this article, there are many other applications for dynamic programming and we encourage everyone to continue learning about it (e.g., Dijkstra's algorithm, Tower of Hanoi, egg drop puzzle, matrix multiplication)!
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

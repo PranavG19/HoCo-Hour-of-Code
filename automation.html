@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Automation</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">10pts</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    An introduction to automation principles
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    Let’s be honest, humans are lazy. We procrastinate, save things for later, and don’t do our homework until 11:00 pm on a Sunday. But being lazy isn’t always a bad thing. In fact, our intrinsic laziness has been one of the most potent motivators behind innovation throughout history. We build tools, machines, and other various gadgets to raise our quality of life. Cars, factory machinery, and coffee makers were all made to speed up our lives, allowing us to spend less time on monotonous tasks and be more productive in the long run. With computers and programming, it’s now easier and more efficient than ever to automate simple, tedious tasks.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Take a look at one of the most dull tasks we regularly experience: getting homework done. Although actually automating the homework itself is complex and will probably hurt you in the long run, we can easily automate other aspects of the process. For example, It would be convenient to have a simple to-do list of all our assignments to quickly know how much we still have to do. Luckily, Canvas all of this for us already:
+                </div>
+
+                <img src="automation-img-1.png" alt="automation-img-1.png" class="mb-12 w-50p block-center">
+
+                <div class="article-content color-black mb-3">
+                    Unfortunately, most of us only care about our assignments, not class announcements or meet times. And clicking on all the Xs every week is way too much work. So we can go a step further and build a web extension to modify the to-do list to show us what we want. 
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    To get the actual data that we want, we can make <b>Application Programming Interface</b> (API) calls to the Canvas API to request our assignment information. An API call is just a request by a client (your web browser) for some data from a server (Canvas). APIs are created by an app’s developers so that other 3rd party developers can interact with an application and develop extensions using it, often to automate or extend the original application’s functionality. Our web extension can automatically request this data from the API and display it, so we don’t have to find it manually. Our final result is below:
+                </div>
+
+                <img src="automation-img-2.png" alt="automation-img-2.png" class="mb-12 w-50p block-center">
+                <img src="automation-img-3.png" alt="automation-img-3.png" class="mb-12 full-width block-center">
+
+                <div class="article-content color-black mb-3">
+                    Although we still have to get our homework done, we can now access our assignments in the same place and easily track our progress throughout the week, saving us the time of monotonously sifting through course pages to find them.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here’s another example: your email inbox is probably filled with emails from all kinds of businesses, schools, newsletters, and whatever found its way into your inbox. You probably don’t want to read a single one because many of them weren’t specifically meant for you; an automated system just sent them with you on their email list. These automated systems can even send you personalized emails based on any data they have about you, but at the end of the day, you can tell pretty quickly whether a real person wrote an email. Similarly, social media posts on large accounts are often posted automatically at scheduled times, calendar reminders display notifications when necessary, and alarm clocks wake you up at the same time every morning. Simple scheduled automation systems like these streamline our workflow and allow us to focus on other, more important things instead of having to remember to do the same routine, scheduled tasks.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Most automation systems usually run as <b>background processes</b> on a computer, server, phone, or other electronic devices. A background process just means that the process doesn’t require user input, so it can just run in the background without disrupting a user. This is especially common with automation because the point of automation is to minimize user input: the best-automated processes are those that don’t require a person to lift a single finger.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    The beauty of automation partly lies in <b>abstraction</b>. Ideally, once a process is automated, you no longer have to think about it. You don’t need to think about it or even know how it works, just that it does. This is the main idea behind abstraction: you should only know what you need to know. There are probably hundreds or even thousands of background processes running on your device at any given point in time. Each process automates some specific task, so you don’t have to think about it or even know what it is. As a result, you don’t need to understand how a computer works to use one. Ultimately, automating routine tasks gives us more time to focus on more meaningful and challenging tasks that interest us, enabling us to be more productive and live fuller lives. Or be even lazier. Whichever you prefer.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,675 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HoCo Hour of Code</title>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="article-styles.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/tomorrow-night-blue.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar-shadow full-width margin-0 padding-0">
+        <div class="max-w-6xl block-center">
+            <nav class="navbar">
+                <div class="flex justify-between h-16">
+                    <div class="flex justify-left items-center">
+                        <a href="index.html">
+                            <img src="logo.svg" alt="logo.svg" class="h-16">
+                        </a>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Home
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="articles.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Articles
+                                </div>
+                            </a>
+                        </div>
+                        <div style="width: 4rem"></div>
+                        <div class="hvr-underline-reveal">
+                            <a href="leaderboard.html" class="navbar-font color-grey margin-4 full-height">
+                                <div class="navbar-tile">
+                                    Leaderboard
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-left items-center">
+                        <div class="hvr-underline-reveal">
+                            <a href="index.html" class="navbar-font color-grey h-16 margin-4">
+                                <div class="navbar-tile">
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative pt-6 pb-32 full-width block-center padding-0" style="border: 0 solid white">
+        <div class="max-w-2xl block-center">
+            <div class="flex flex-column lm-4 rm-4">
+                <div class="color-grey mb-1">Sponsored by ________</div>
+                <div class="h-48 full-width rounded-md bg-hcpss-offwhite mb-12 text-center lh-12 fs-2 color-grey">Your
+                    sponsored message here</div>
+                <!-- Title -->
+                <div class="full-width article-title">Sorting</div>
+
+                <!-- Tags -->
+                <div class="flex">
+                    <div class="article-tag bg-hcpss-blue color-white rounded-md padding-1 rm-2">16pts</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Python</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Java</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">C++</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Algorithms</div>
+                    <div class="article-tag bg-blue2 color-blue5 rounded-md padding-1 rm-2">Data</div>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="article-subtitle color-grey mt-2">
+                    What is sorting, how to sort, and mergesort.
+                </div>
+
+                <!-- Content -->
+                <div class="article-content color-black mt-6 mb-3">
+                    Sorting is one of the most fundamental tasks every programmer should understand (and know how to solve). The most common variation of sorting is: Given an array of integers, order the array in ascending order. For example, if we are given [1, 3, 5, 2, 4], we want to sort it into [1, 2, 3, 4, 5].
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Most languages include a built-in library for sorting, but it’s essential to understand the underlying mechanism for such a critical algorithm.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    The most intuitive sorting algorithm that closely matches how humans sort is <b>selection sort</b>. Selection sort essentially finds the smallest element and sets it as the 1st element. Then, it finds the 2nd smallest element and sets it as the 2nd element, and so on. Formally, selection sort follows this flow:
+                    <ol>
+                        <li class="mb-2">Set the <b>unsorted window</b> (the portion of the array that is unsorted) as indices 0 to N-1</li>
+                        <li class="mb-2">Iterate through the array and find the smallest element in the unsorted window</li>
+                        <li class="mb-2">Swap the smallest element with the first element in the unsorted window</li>
+                        <li class="mb-2">Add 1 to the beginning of the previous unsorted window’s range</li>
+                        <li class="mb-2">Repeat steps 2-4 until the window is the last element in the array</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Here is what selection sort’s implementation looks like:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs2" id="tab-4" checked="checked">
+                    <label for="tab-4">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">arr = [5, 6, 2, 4, 3, 1]
+
+for i in range(6):
+    min_element = arr[i]
+    min_idx = i
+    # i and 6 are the unsorted window's range
+    for j in range (i+1, 6):         if arr[j] < min_element:
+            min_element = arr[j]
+            min_idx = j
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+print(arr)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > [1, 2, 3, 4, 5, 6]
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-5">
+                    <label for="tab-5">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">int[] arr = {5, 6, 2, 4, 3, 1};
+for(int i = 0; i < 6; i++) {
+    int min_element = arr[i];
+    int min_idx = i;
+    // i and 6 are the unsorted window's range
+    for(int j = i+1; j < 6; j++) {
+        if(arr[j] < min_element) {
+            min_element = arr[j];
+            min_idx = j;
+        }
+    }
+    
+    int temp = arr[i];
+    arr[i] = arr[min_idx];
+    arr[min_idx] = temp;
+}
+
+for(int x : arr) {
+    System.out.print(x + " ");
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 1 2 3 4 5 6 
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs2" id="tab-6">
+                    <label for="tab-6">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">int arr[] = {5, 6, 2, 4, 3, 1};
+for(int i = 0; i < 6; i++) {
+    int min_element = arr[i];
+    int min_idx = i;
+    // i and 6 are the unsorted window's range
+    for(int j = i+1; j < 6; j++) {
+        if(arr[j] < min_element) {
+            min_element = arr[j];
+            min_idx = j;
+        }
+    }
+    
+    int temp = arr[i];
+    arr[i] = arr[min_idx];
+    arr[min_idx] = temp;
+}
+
+for(int x : arr) {
+    cout << x << " ";
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2">
+                            > 1 2 3 4 5 6 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-12">
+                    The issue with using selection sort, however, is that it’s way too slow. Suppose <div class="mono-text">N</div> is the size of the array. In that case, every selection sort will take ~<div class="mono-text">N<sup>2</sup></div> operations to complete (it takes <div class="mono-text">N</div> operations to find the minimum element, and you need to find the minimum element <div class="mono-text">N</div> times, hence <div class="mono-text">N*N</div> operations). Better sorting algorithms only need ~<div class="mono-text">N*log<sub>2</sub>(N)</div> operations, which is significantly faster (~6k times faster for an array of size 100k). This next section will cover one particular sorting algorithm, mergesort, that operates at that speed. 
+                </div>
+
+                <div class="article-content-sectiontitle color-black mb-3">Mergesort</div>
+                
+                <div class="article-content color-black mb-3">
+                    Mergesort capitalizes on the idea that two sorted arrays can be “merged” into a single sorted array using <div class="mono-text">N</div> operations, where <div class="mono-text">N</div> is the size of the merged array. This is performed by greedily adding the smallest element from both arrays (which can be determined in <div class="mono-text">2</div> operations because the arrays are sorted) to the merged array, then removing that element. The implementation of this operation looks like this:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs3" id="tab-7" checked="checked">
+                    <label for="tab-7">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5">def merge(L, R):
+    arr = [0] * (len(L) + len(R))
+    L_idx = R_idx = arr_idx = 0
+    
+    while L_idx < len(L) and R_idx < len(R):
+        if L[L_idx] < R[R_idx]:
+            arr[arr_idx] = L[L_idx]
+            L_idx += 1
+        else:
+            arr[arr_idx] = R[R_idx]
+            R_idx += 1
+        arr_idx += 1
+    
+    while L_idx < len(L):
+        arr[arr_idx] = L[L_idx]
+        L_idx += 1
+        arr_idx += 1
+    
+    while R_idx < len(R):
+        arr[arr_idx] = R[R_idx]
+        R_idx += 1
+        arr_idx += 1
+    
+    return arr
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-8">
+                    <label for="tab-8">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">static int[] merge(int[] L, int[] R) {
+    int[] arr = new int[L.length + R.length];
+    int L_idx = 0, R_idx = 0, arr_idx = 0;
+    
+    while(L_idx < L.length && R_idx < R.length) {
+        if(L[L_idx] < R[R_idx]) {
+            arr[arr_idx] = L[L_idx];
+            L_idx++;
+        } else {
+            arr[arr_idx] = R[R_idx];
+            R_idx++;
+        }
+        arr_idx++;
+    }
+    
+    while(L_idx < L.length) {
+        arr[arr_idx] = L[L_idx];
+        L_idx++;
+        arr_idx++;
+    }
+    
+    while(R_idx < R.length) {
+        arr[arr_idx] = R[R_idx];
+        R_idx++;
+        arr_idx++;
+    }
+    
+    return arr;
+}
+</code></pre>
+                    </div>
+
+                    <input type="radio" name="tabs3" id="tab-9">
+                    <label for="tab-9">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">vector&lt;int> merge(vector&lt;int> L, vector&lt;int> R) {
+    vector&lt;int> arr(L.size() + R.size());
+    int L_idx = 0, R_idx = 0, arr_idx = 0;
+    
+    while(L_idx < L.size() && R_idx < R.size()) {
+        if(L[L_idx] < R[R_idx]) {
+            arr[arr_idx] = L[L_idx];
+            L_idx++;
+        } else {
+            arr[arr_idx] = R[R_idx];
+            R_idx++;
+        }
+        arr_idx++;
+    }
+    
+    while(L_idx < L.size()) {
+        arr[arr_idx] = L[L_idx];
+        L_idx++;
+        arr_idx++;
+    }
+    
+    while(R_idx < R.size()) {
+        arr[arr_idx] = R[R_idx];
+        R_idx++;
+        arr_idx++;
+    }
+    
+    return arr;
+}
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    How does having the merge operation help? Three critical ideas make the merge operation useful for sorting:
+                    <ul>
+                        <li class="mb-2">Arrays of size <div class="mono-text">1</div> are “sorted.”</li>
+                        <li class="mb-2">You can split an array of any size into arrays of size <div class="mono-text">1</div> by continuously splitting the array in half, then splitting those arrays in half, and so on. This takes ~<div class="mono-text">N</div> operations in total to complete, distributed across ~<div class="mono-text">log<sub>2</sub>(N)</div> “layers” of splitting (see diagram below).</li>
+                        <li class="mb-2">An entire layer of <div class="mono-text">X</div> arrays can be merged into <div class="mono-text">X/2</div> arrays using ~<div class="mono-text">N</div> operations. Since there are <div class="mono-text">log<sub>2</sub>(N)</div> layers, this will, in total, take ~<div class="mono-text">N*log<sub>2</sub>(N)</div> operations.</li>
+                    </ul>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    So, the mergesort algorithm works in 2 phases:
+                    <ol>
+                        <li class="mb-2">Split the original array in half a bunch of times until it’s all arrays of size 1. This will result in ~<div class="mono-text">log<sub>2</sub>(N)</div> layers</li>
+                        <li class="mb-2">Starting from the layer of arrays of size <div class="mono-text">1</div>, merge arrays using <div class="mono-text">N</div> operations per layer until the starting layer is reached and the entire array is sorted</li>
+                    </ol>
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    This is a visual depiction of mergesort:
+                </div>
+
+                <img src="sorting-img-1.png" alt="sorting-img-1.png" class="mb-12 w-60p block-center">
+
+                <div class="article-content color-black mb-3">
+                    Here’s what the implementation for mergesort looks like. These implementations uses a technique called sorting in-place, which means that no extra memory is allocated- everything happens to the original array:
+                </div>
+
+                <div class="tabs mb-3">
+                    <input type="radio" name="tabs4" id="tab-10" checked="checked">
+                    <label for="tab-10">Python</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="python rounded-md code-text mt-2 padding-0.5"># Python program for implementation of MergeSort
+def mergeSort(arr):
+    if len(arr) > 1:
+ 
+         # Finding the mid of the array
+        mid = len(arr)//2
+ 
+        # Dividing the array elements
+        L = arr[:mid]
+ 
+        # into 2 halves
+        R = arr[mid:]
+ 
+        # Sorting the first half
+        mergeSort(L)
+ 
+        # Sorting the second half
+        mergeSort(R)
+ 
+        i = j = k = 0
+ 
+        # Copy data to temp arrays L[] and R[]
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+ 
+        # Checking if any element was left
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+ 
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+ 
+# Code to print the list
+ 
+ 
+def printList(arr):
+    for i in range(len(arr)):
+        print(arr[i], end=" ")
+    print()
+ 
+ 
+# Driver Code
+if __name__ == '__main__':
+    arr = [12, 11, 13, 5, 6, 7]
+    print("Given array", end="\n")
+    printList(arr)
+    mergeSort(arr)
+    print("Sorted array", end="\n")
+    printList(arr)
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Given array <br>
+> 12 11 13 5 6 7 <br>
+> Sorted array<br>
+> 5 6 7 11 12 13
+                        </div>Credit: Mayank Khanna & GeeksForGeeks
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-11">
+                    <label for="tab-11">Java</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="java rounded-md code-text mt-2 padding-0.5">/* Java program for Merge Sort */
+class MergeSort
+{
+    // Merges two subarrays of arr[].
+    // First subarray is arr[l..m]
+    // Second subarray is arr[m+1..r]
+    void merge(int arr[], int l, int m, int r)
+    {
+        // Find sizes of two subarrays to be merged
+        int n1 = m - l + 1;
+        int n2 = r - m;
+ 
+        /* Create temp arrays */
+        int L[] = new int[n1];
+        int R[] = new int[n2];
+ 
+        /*Copy data to temp arrays*/
+        for (int i = 0; i < n1; ++i)
+            L[i] = arr[l + i];
+        for (int j = 0; j < n2; ++j)
+            R[j] = arr[m + 1 + j];
+ 
+        /* Merge the temp arrays */
+ 
+        // Initial indexes of first and second subarrays
+        int i = 0, j = 0;
+ 
+        // Initial index of merged subarry array
+        int k = l;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+ 
+        /* Copy remaining elements of L[] if any */
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+ 
+        /* Copy remaining elements of R[] if any */
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+ 
+    // Main function that sorts arr[l..r] using
+    // merge()
+    void sort(int arr[], int l, int r)
+    {
+        if (l < r) {
+            // Find the middle point
+            int m =l+ (r-l)/2;
+ 
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+ 
+            // Merge the sorted halves
+            merge(arr, l, m, r);
+        }
+    }
+ 
+    /* A utility function to print array of size n */
+    static void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; ++i)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        int arr[] = { 12, 11, 13, 5, 6, 7 };
+ 
+        System.out.println("Given Array");
+        printArray(arr);
+ 
+        MergeSort ob = new MergeSort();
+        ob.sort(arr, 0, arr.length - 1);
+ 
+        System.out.println("\nSorted array");
+        printArray(arr);
+    }
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Given array <br>
+> 12 11 13 5 6 7 <br>
+> Sorted array<br>
+> 5 6 7 11 12 13
+                        </div>Credit: Rajat Mishra & GeeksForGeeks
+                    </div>
+
+                    <input type="radio" name="tabs4" id="tab-12">
+                    <label for="tab-12">C++</label>
+                    <div class="tab">
+                        Code:
+                        <pre
+                            class="margin-0 padding-0"><code class="cpp rounded-md code-text mt-2 padding-0.5">// C++ program for Merge Sort
+#include <iostream>
+using namespace std;
+ 
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+void merge(int arr[], int l, int m, int r)
+{
+    int n1 = m - l + 1;
+    int n2 = r - m;
+ 
+    // Create temp arrays
+    int L[n1], R[n2];
+ 
+    // Copy data to temp arrays L[] and R[]
+    for (int i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = arr[m + 1 + j];
+ 
+    // Merge the temp arrays back into arr[l..r]
+ 
+    // Initial index of first subarray
+    int i = 0;
+ 
+    // Initial index of second subarray
+    int j = 0;
+ 
+    // Initial index of merged subarray
+    int k = l;
+ 
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        }
+        else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+ 
+    // Copy the remaining elements of
+    // L[], if there are any
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+ 
+    // Copy the remaining elements of
+    // R[], if there are any
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+ 
+// l is for left index and r is
+// right index of the sub-array
+// of arr to be sorted */
+void mergeSort(int arr[],int l,int r){
+    if(l>=r){
+        return;//returns recursively
+    }
+    int m =l+ (r-l)/2;
+    mergeSort(arr,l,m);
+    mergeSort(arr,m+1,r);
+    merge(arr,l,m,r);
+}
+ 
+// UTILITY FUNCTIONS
+// Function to print an array
+void printArray(int A[], int size)
+{
+    for (int i = 0; i < size; i++)
+        cout << A[i] << " ";
+}
+ 
+// Driver code
+int main()
+{
+    int arr[] = { 12, 11, 13, 5, 6, 7 };
+    int arr_size = sizeof(arr) / sizeof(arr[0]);
+ 
+    cout << "Given array \n";
+    printArray(arr, arr_size);
+ 
+    mergeSort(arr, 0, arr_size - 1);
+ 
+    cout << "\nSorted array \n";
+    printArray(arr, arr_size);
+    return 0;
+}
+</code></pre>
+                        <div class="h-8"></div>
+                        Output:
+                        <div class="output-text bg-code-blue rounded-md color-white padding-0.5 mt-2 mb-3">
+                            > Given array <br>
+> 12 11 13 5 6 7 <br>
+> Sorted array<br>
+> 5 6 7 11 12 13
+                        </div>Credit: Mayank Tyagi & GeeksForGeeks
+                    </div>
+                </div>
+
+                <div class="full-width bg-blue1 padding-3 color-blue5 border-box lborder-blue3 mb-3">
+                    Note: Built-in libraries usually implement a much more complex sorting algorithm for additional speed gains in certain scenarios.
+                </div>
+
+                <div class="article-content color-black mb-3">
+                    Sorting is a very common task in programming, often combined with other algorithms (such as binary search, which you will see in the next article) to create powerful performance gains. 
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

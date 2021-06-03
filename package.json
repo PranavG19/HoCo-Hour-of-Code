@@ -1,0 +1,20 @@
+{
+  "name": "hocohoc-redesigned",
+  "version": "1.0.0",
+  "description": "Howard County Hour of Code website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo firebase hi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achen4290/hocohoc-redesigned.git"
+  },
+  "author": "HoCoHOC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achen4290/hocohoc-redesigned/issues"
+  },
+  "homepage": "https://github.com/achen4290/hocohoc-redesigned#readme"
+}

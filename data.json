@@ -396,6 +396,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"What website is a good place to start making games on?",
 						"Codeforces",
 						"Hackerrank",
@@ -406,12 +407,14 @@
 				{
 					"answer": 0,
 					"info": [
-						"The two main components to game design are ___________ and ____________."
+						"fr",
+						"The two main components to game design are ___________ and ____________. Seperate answer with a space"
 					]
 				},
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"What function does the design part serve?",
 						"Codes the functionality of the game",
 						"Erases unnecessary code",
@@ -422,12 +425,14 @@
 				{
 					"answer": 0,
 					"info": [
-						"The two ways to code your game in code.org are __________ and _____________."
+						"fr",
+						"The two ways to code your game in code.org are __________ and _____________. Seperate answer with a space"
 					]
 				},
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"What language is code.org based around?",
 						"Python",
 						"Java",
@@ -438,6 +443,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"Why is text mode recommended for more experienced programmers?",
 						"Blocks are more visually appealing",
 						"Syntax can be difficult to remember",
@@ -448,6 +454,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"Why is code.org beginner friendly?",
 						"It codes the game for you",
 						"It provides many useful built-in functions",
@@ -458,6 +465,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"What does the “onEvent” function do?",
 						"Runs whatever is inside the function when the event occurs",
 						"Sets a timer for the event",
@@ -468,6 +476,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"What is the final project in Ap Computer Science Principles?",
 						"Make USACO platinum",
 						"Create a game",
@@ -478,6 +487,7 @@
 				{
 					"answer": 0,
 					"info": [
+						"mc",
 						"How can you get good at making games?",
 						"Practice",
 						"Have natural talent",
@@ -639,6 +649,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"mc",
 						"What is true about trees?",
 						"There is exactly one path between any two nodes",
 						"There is exactly one cycle in the graph",
@@ -707,6 +718,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What do variables do in programming?",
 						"Represent an unknown value",
 						"Store data",
@@ -717,6 +729,7 @@
 				{
 					"answer": 4,
 					"info": [
+						"mc",
 						"Which of the following is not a component of a variable’s declaration?",
 						"Data type",
 						"Name",
@@ -727,6 +740,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What is the output of the following code? <br> int a = 25; <br> int b = 20; <br> System.out.println(a/b);",
 						"1.25",
 						"1",
@@ -737,6 +751,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What do integer variables do in Java and C++ when they are given a non-integer value?",
 						"Throw a “Not integer” error",
 						"Round down",
@@ -747,24 +762,28 @@
 				{
 					"answer": "12",
 					"info": [
+						"fr",
 						"What is the output of the following code? <br> int a = 3; <br> a *= 4; <br>,System.out.println(a);"
 					]
 				},
 				{
 					"answer": "10",
 					"info": [
+						"fr",
 						"What is the output of the following code? <br> int a = 2; <br> int b = 4; <br> a /= 2; <br> b += 6; <br> System.out.println(a*b);"
 					]
 				},
 				{
 					"answer": "3",
 					"info": [
+						"fr",
 						"Fill in the blank in the code to produce the given output. <br> Code: <br> int a = __; <br> int b = 2; <br> System.out.println(a*b*3); <br> Output: <br> > 18"
 					]
 				},
 				{
 					"answer": "15",
 					"info": [
+						"fr",
 						"Fill in the blank in the code to produce the given output. <br> Code:  <br> int x = __; <br> int y = 3; <br> System.out.println((x-y-6)*4); <br> Output: <br> > 24 <br>"
 					]
 				}
@@ -776,6 +795,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What do variables do in programming?",
 						"Represent an unknown value",
 						"Store data",
@@ -784,8 +804,9 @@
 					]
 				},
 				{
-					"answer": 2,
+					"answer": 1,
 					"info": [
+						"mc",
 						"Which of the following describes all of the components required in a Python variable declaration?",
 						"Name, Value",
 						"Name, Value, Data type",
@@ -796,6 +817,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What is the output of the following code? <br> a = 40 <br> b = 20 <br> print (a/b)",
 						"Error: Invalid Math",
 						"2.0",
@@ -806,6 +828,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"How to integer behave in Python when they are given a non-integer value?",
 						"Throw a “Not integer” error",
 						"They turn into the non-integer data type (called float or double)",
@@ -816,24 +839,28 @@
 				{
 					"answer": "0.5",
 					"info": [
+						"fr",
 						"What is the output of the following code? <br> a = 2 <br> a /= 4 <br> print(a)"
 					]
 				},
 				{
 					"answer": "11.0",
 					"info": [
+						"fr",
 						"What is the output of the following code? <br> a = 2 <br> b = 4  <br> a /= 2 <br> b += 7 <br> print(a*b)"
 					]
 				},
 				{
 					"answer": "4",
 					"info": [
+						"fr",
 						"Fill in the blank in the code to produce the given output. <br> Code: <br> a = __ <br> b = 4 <br> print(a*b*3); <br> Output: <br> > 48"
 					]
 				},
 				{
 					"answer": "12",
 					"info": [
+						"fr",
 						"Fill in the blank in the code to produce the given output. <br> Code: <br>  x = _ <br> y = 3 <br> print((x-y-6)*3) <br> Output: <br> > 9"
 					]
 				}
@@ -845,6 +872,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What does BFS stand for?",
 						"Binary fast search",
 						"Binary fast sorting",
@@ -856,6 +884,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What does DFS stand for?",
 						"Depth-following sorting",
 						"Dearth first search",
@@ -867,6 +896,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"tf",
 						"Will BFS prioritize closer nodes over further nodes?",
 						"Yes",
 						"No"
@@ -876,6 +906,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"tf",
 						"Will DFS prioritize closer nodes over further nodes?",
 						"Yes",
 						"No"
@@ -885,6 +916,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"Which of the following will ALWAYS visit every reachable node in a graph?",
 						"BFS",
 						"DFS",
@@ -896,6 +928,7 @@
 				{
 					"answer": 4,
 					"info": [
+						"mc",
 						"Which of the following can reach nodes that are not connected to the start node?",
 						"BFS",
 						"DFS",
@@ -911,6 +944,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"mc",
 						"What is flood fill?",
 						"Starting from one point and visiting other nodes by “filling” outward",
 						"Starting from one point and processing everything about that point (i.e., “filling” up info on it)",
@@ -922,6 +956,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"tf",
 						"True or False: flood fill can be implemented using BFS.",
 						"True",
 						"False"
@@ -931,6 +966,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"tf",
 						"True or False: Flood fill cannot be implemented using DFS.",
 						"True",
 						"False"
@@ -940,6 +976,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"Which of the following tools is most similar to flood fill?",
 						"Straight-line drawing tool",
 						"Bucket tool",
@@ -951,6 +988,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"tf",
 						"True or False: Flood fill can help with filling a bounded region.",
 						"True",
 						"False"
@@ -960,6 +998,7 @@
 				{
 					"answer": 4,
 					"info": [
+						"mc",
 						"Starting from one node, in a standard flood fill which nodes should you visit?",
 						"The node 2 to the right",
 						"The node at the corners of the bounded region",
@@ -975,6 +1014,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What is a graph (in graph theory)?",
 						"A function - y in terms of x, etc",
 						"A function specifically in terms of time (something with respect to time, etc.)",
@@ -986,6 +1026,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"mc",
 						"What connects nodes in a graph?",
 						"Edges",
 						"Connections",
@@ -997,6 +1038,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"tf",
 						"True or false: you can go both ways across a bidirectional edge.",
 						"True",
 						"False"
@@ -1006,6 +1048,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"tf",
 						"True or false: you can go both ways across a directed edge.",
 						"True",
 						"False"
@@ -1015,6 +1058,7 @@
 				{
 					"answer": 4,
 					"info": [
+						"mc",
 						"What is true about a graph theory tree?",
 						"All edges are directed and pointed upward, like tree branches",
 						"All edges are directed and pointed downward, like tree roots",
@@ -1026,6 +1070,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What does DAG stand for?",
 						"Directed anticlockwise graph",
 						"Directed acyclic graph",
@@ -1041,6 +1086,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What is direct recursion?",
 						"A function recurring throughout a program",
 						"A function calling itself",
@@ -1052,6 +1098,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What is a base case in recursion?",
 						"A case where the function needs to call itself",
 						"A case where the function needs to call another function ",
@@ -1063,6 +1110,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"mc",
 						"What is a recursive case in recursion?",
 						"A case where the function needs to call itself",
 						"A case where the function needs to call another function ",
@@ -1074,6 +1122,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What is indirect recursion?",
 						"A function recurring throughout a program",
 						"A function calling itself",
@@ -1085,6 +1134,7 @@
 				{
 					"answer": 3,
 					"info": [
+						"mc",
 						"What is the default Java stack limit (how many layers deep can a function call itself)?",
 						"20",
 						"1k",
@@ -1096,6 +1146,7 @@
 				{
 					"answer": 1,
 					"info": [
+						"mc",
 						"What are the two components of every recursive function?",
 						"Base case, recursive case",
 						"Base case, indirect case",
@@ -1107,6 +1158,7 @@
 				{
 					"answer": 2,
 					"info": [
+						"mc",
 						"What is a common problem you should watch out for when writing recursive functions?",
 						"Missing semi-colons",
 						"Infinite recursion",

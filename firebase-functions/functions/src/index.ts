@@ -4,9 +4,6 @@ import admin = require("firebase-admin");
 admin.initializeApp();
 
 const db = admin.database();
-const questionLengths = [
-	6, 8, 8, 1, 1, 1, 10, 1, 1, 10, 1, 10, 6, 6, 6, 7, 10, 7, 6, 1,
-];
 
 exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const uid = context?.auth?.uid;
@@ -63,8 +60,12 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 exports.createUser = functions.https.onCall(async (data) => {
 	const uid: string = data.uid;
 	const school: string = data.school;
+	const questionLengths: number[] = [
+		6, 8, 8, 111, 111, 111, 10, 111, 111, 10, 111, 10, 6, 6, 6, 7, 10, 7, 6,
+		111,
+	];
 
-	let randomNumbersGenerated: number[] = [];
+	const randomNumbersGenerated: number[] = [];
 	for (let i = 0; i < questionLengths.length; i++) {
 		const temp = [];
 		let j = 0;
@@ -75,8 +76,9 @@ exports.createUser = functions.https.onCall(async (data) => {
 				j++;
 			}
 		}
-		randomNumbersGenerated = [...randomNumbersGenerated, ...temp];
+		randomNumbersGenerated.push(...temp);
 	}
+
 	db.ref("users/" + uid).set({
 		score: [0, 0, 0],
 		school: school,

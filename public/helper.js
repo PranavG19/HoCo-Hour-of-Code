@@ -167,10 +167,12 @@ const renderLeaderboard = () => {
 
 const renderScore = () => {
 	if ($(".score")[0]) {
-		$(".score").text(localStore.totalScore + " pts / 60 max");
-		$(".score-bar").css({ width: (localStore.totalScore / 60) * 100 + "%" });
+		ts = localStore.totalScore || 0;
+		s = localStore.score || [0, 0, 0];
+		$(".score").text(ts + " pts / 60 max");
+		$(".score-bar").css({ width: (ts / 60) * 100 + "%" });
 		for (let i = 1; i < 4; i++) {
-			$(".sect" + i).text(localStore.score[i - 1]);
+			$(".sect" + i).text(s[i - 1]);
 		}
 	}
 };
@@ -272,7 +274,6 @@ const getQuestions = async (questionName, numbers, cat, school) => {
 
 let locked = false;
 const answerChecker = (questions, questionName, numbers, cat, school) => {
-	console.log(cat);
 	$("#submit").on("click", (e) => {
 		if (locked) {
 			alert(
@@ -336,7 +337,7 @@ const answerChecker = (questions, questionName, numbers, cat, school) => {
 							.set(localStore.questionsSolved)
 							.then((snapshot) => {
 								$(".quiz").append(
-									`<div id="quizResultsCorrect" style="text-align: center; background: chartreuse; border-radius: 50px; padding: 15px; margin-bottom: 0px; margin-top: 30px">
+									`<div id="quizResultsCorrect" style="text-align: center; background: lightGreen; border-radius: 50px; padding: 15px; margin-bottom: 0px; margin-top: 30px">
 												<p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Correct</p>
 												</div>`
 								);

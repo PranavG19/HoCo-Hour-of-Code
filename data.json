@@ -115,6 +115,73 @@
 				}
 			]
 		},
+		"BFS & DFS": {
+			"pts": 16,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What does BFS stand for?",
+						"Binary fast search",
+						"Binary fast sorting",
+						"Breadth-first search",
+						"Binary-first sorting"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What does DFS stand for?",
+						"Depth-following sorting",
+						"Dearth first search",
+						"Depth-first search",
+						"Depth-fade sorting"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"Will BFS prioritize closer nodes over further nodes?",
+						"Yes",
+						"No"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Will DFS prioritize closer nodes over further nodes?",
+						"Yes",
+						"No"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"Which of the following will ALWAYS visit every reachable node in a graph?",
+						"BFS",
+						"DFS",
+						"Both",
+						"Neither"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Which of the following can reach nodes that are not connected to the start node?",
+						"BFS",
+						"DFS",
+						"Both",
+						"Neither"
+					]
+				}
+			]
+		},
 		"Binary Search": {
 			"pts": 15,
 			"questions": [
@@ -300,6 +367,71 @@
 				}
 			]
 		},
+		"Flood Fill": {
+			"pts": 13,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What is flood fill?",
+						"Starting from one point and visiting other nodes by “filling” outward",
+						"Starting from one point and processing everything about that point (i.e., “filling” up info on it)",
+						"Overloading a system with as much data as possible",
+						"Dumping water over your computer"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: flood fill can be implemented using BFS.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or False: Flood fill cannot be implemented using DFS.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"Which of the following tools is most similar to flood fill?",
+						"Straight-line drawing tool",
+						"Bucket tool",
+						"Spambot",
+						"Color picker"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: Flood fill can help with filling a bounded region.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"Starting from one node, in a standard flood fill which nodes should you visit?",
+						"The node 2 to the right",
+						"The node at the corners of the bounded region",
+						"Every node that is NOT connected to the selected node",
+						"Every node that IS connected to the selected node"
+					]
+				}
+			]
+		},
 		"Functions & Parameters": {
 			"pts": 13,
 			"questions": [
@@ -392,7 +524,7 @@
 			]
 		},
 		"Game Making": {
-			"info": [
+			"questions": [
 				{
 					"answer": 0,
 					"info": [
@@ -580,6 +712,73 @@
 				}
 			]
 		},
+		"Graphs": {
+			"pts": 7,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is a graph (in graph theory)?",
+						"A function - y in terms of x, etc",
+						"A function specifically in terms of time (something with respect to time, etc.)",
+						"A collection of nodes connected by edges",
+						"A collection of nodes"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What connects nodes in a graph?",
+						"Edges",
+						"Connections",
+						"Links",
+						"Bridges"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or false: you can go both ways across a bidirectional edge.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or false: you can go both ways across a directed edge.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mc",
+						"What is true about a graph theory tree?",
+						"All edges are directed and pointed upward, like tree branches",
+						"All edges are directed and pointed downward, like tree roots",
+						"All edges are directed and point toward a center point, like how tree roots collect nutrients (maybe)",
+						"The number of edges is exactly the number of nodes minus one"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What does DAG stand for?",
+						"Directed anticlockwise graph",
+						"Directed acyclic graph",
+						"Dijkstra’s acyclic graph",
+						"DAG acrylic graph"
+					]
+				}
+			]
+		},
 		"Hello World": {
 			"pts": 4,
 			"questions": [
@@ -708,6 +907,88 @@
 						"Prim’s algorithm",
 						"Recursive backtracking",
 						"Wilson’s algorithm"
+					]
+				}
+			]
+		},
+		"Recursion": {
+			"pts": 14,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What is direct recursion?",
+						"A function recurring throughout a program",
+						"A function calling itself",
+						"A function calling another function which calls the first function",
+						"A function that calls another function within it"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is a base case in recursion?",
+						"A case where the function needs to call itself",
+						"A case where the function needs to call another function ",
+						"A case where we know the solution to the function",
+						"A case that is based"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What is a recursive case in recursion?",
+						"A case where the function needs to call itself",
+						"A case where the function needs to call another function ",
+						"A case where the function should not call itself again and use some outside information",
+						"Every case"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is indirect recursion?",
+						"A function recurring throughout a program",
+						"A function calling itself",
+						"A function calling another function which calls the first function",
+						"A function that calls another function within it"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mc",
+						"What is the default Java stack limit (how many layers deep can a function call itself)?",
+						"20",
+						"1k",
+						"10k",
+						"5 MB"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mc",
+						"What are the two components of every recursive function?",
+						"Base case, recursive case",
+						"Base case, indirect case",
+						"Recursive case, direct case",
+						"Indirect case, direct case"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mc",
+						"What is a common problem you should watch out for when writing recursive functions?",
+						"Missing semi-colons",
+						"Infinite recursion",
+						"Hard-to-read code",
+						"Terminating too quickly"
 					]
 				}
 			]
@@ -866,304 +1147,686 @@
 				}
 			]
 		},
-		"BFS & DFS": {
+		"Booleans": {
+			"pts": 10,
+			"questions": [
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"What are the two values that can be stored in a boolean variable?",
+						"Good, Bad",
+						"-1, 1",
+						"Deprecated, Modern",
+						"True, False"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: The two possible answers for a true or false question can be stored as a boolean",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What three components make up an if-statement?",
+						"The boolean, the loop, the if-statement",
+						"If-statement itself, the body of code, the boolean",
+						"A what-if clause, a noun, and a verb",
+						"If-statement itself, the boolean, and a pointer to the code to run"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What differentiates an if-statement from an if-else statement?",
+						"If the given boolean is true, the “else” code block is ran",
+						"It has another body of code that runs only if the given boolean is false",
+						"The else body of code runs only if the if-else statement matches the else-if statement",
+						"They are the same"
+					]
+				},
+				{
+					"answer": "True",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = True <br> b = 6 <br> c = 7 <br> if a: <br> print(b==c)"
+					]
+				},
+				{
+					"answer": "False",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = 7 <br> b = 5 <br> c = 1 <br> if c: <br> print(b>a)"
+					]
+				},
+				{
+					"answer": "False",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)<br> a = 6 <br> b = 4 <br> c = False <br> if c: <br> print(b>a) <br> else: <br> print(a<b)"
+					]
+				},
+				{
+					"answer": "3",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = 4 <br> b = 2 <br> c = 7 <br> d = 5 <br> if d > c: <br> if b < a: <br> print(1) <br> else: <br> print(2) <br> else: <br> print(3)"
+					]
+				}
+			]
+		},
+		"Loops": {
+			"pts": 10,
+			"questions": [
+				{
+					"answer": 0,
+					"info": [
+						"tf",
+						"True or False: Statement 1 in a for-loop is the same as the statement in a while loop.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What is the purpose of a for-loop?",
+						"Running the same code multiple times",
+						"Running the same code multiple times for each entry into the main function",
+						"Looping through various parts of your code",
+						"For all given loops, run the same code multiple times"
+					]
+				},
+
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"Which statement in a for-loop can run more than once?",
+						"Statement 1",
+						"Statement 2",
+						"Statement 3 and Statement 2",
+						"Statement 1 and Statement 2"
+					]
+				},
+
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What is the order that the statements in the for-loop are initially executed?",
+						"Statement 1, Statement 3, Statement 2",
+						"Statement 3, Statement 1, Statement 2",
+						"Statement 2, Statement 3, Statement 1",
+						"Statement 1, Statement 2, Statement 3"
+					]
+				},
+
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What is the disadvantage to using while loops instead of for-loops?",
+						"There are more statements",
+						"It’s much easier to create an infinite loop",
+						"There are less statements",
+						"It doesn’t have any disadvantages"
+					]
+				},
+
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What is the disadvantage to using for-loops instead of while loops?",
+						"It’s more complex because it requires more statements",
+						"It’s less complex because it requires less statements",
+						"It doesn’t have any disadvantages",
+						"It’s much easier to create an infinite loop"
+					]
+				},
+
+				{
+					"answer": "-1",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> a = 0 <br> b = 1 <br> for i in range(5): <br> a += b <br> b -= a <br> print(a)"
+					]
+				},
+				{
+					"answer": "15",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> a = 0 <br> b = 1 <br> for i in range(5): <br> a += b <br> b += 1 <br> print(a)"
+					]
+				},
+				{
+					"answer": "-2",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> a = 1 <br> b = 2 <br> c = 3 <br> for i in range(3): <br> a += b <br> a -= c <br> print(a)"
+					]
+				},
+				{
+					"answer": "1",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> b = 3 <br> a = 6 <br> for i in range(10): <br> b += 1 <br> if b > a: <br> rint(1) <br> else: <br> print(2)"
+					]
+				}
+			]
+		},
+		"Arrays": {
+			"pts": 8,
+			"questions": [
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"Why should you be careful when declaring arrays with too many dimensions?",
+						"It will take too much memory",
+						"Most modern computers cannot handle 5D calculations",
+						"Modifying arrays above 4 dimensions requires a graphics card",
+						"It is difficult to access and modify"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What is a data structure?",
+						"A structured method to declaring variables and storing it as data",
+						"A programming structure designed to hold data",
+						"Data that has become large enough to necessitate a custom hardware structure to support it",
+						"The backbone of databases"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"Which of the following languages are not 0-indexed?",
+						"Python",
+						"C++",
+						"Java",
+						"MATLAB"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"Which of the following indices accesses the 1st element in a 0-indexed array?",
+						"0",
+						"1",
+						"2",
+						"-1"
+					]
+				},
+				{
+					"answer": 0,
+					"info": [
+						"mcq",
+						"What needs to be provided when an array is initialized?",
+						"Data type and storage type",
+						"Data structure type",
+						"Data type and size",
+						"Size and data structure"
+					]
+				},
+				{
+					"answer": "5",
+					"info": [
+						"fr",
+						"What index is required to access the 4th element in an array?"
+					]
+				},
+				{
+					"answer": "10",
+					"info": [
+						"fr",
+						"What is the output of the following code? <br> arr = [5, 3, 2, 4, 1] <br> sum = 0 <br> for i in range(3): <br> sum += arr[i] <br> print(sum)"
+					]
+				},
+				{
+					"answer": "7",
+					"info": [
+						"fr",
+						"What is the output of the following code? <br> arr = [2, 5, 4, 3, 1] <br> print(arr[0] + arr[2] + arr[4])"
+					]
+				},
+				{
+					"answer": "11",
+					"info": [
+						"fr",
+						"What is the output of the following code? <br> arr = [3, 6, 10, 4, 2] <br> x = 20 <br> for i in range(2): <br> x -= arr[i] <br> print(x)"
+					]
+				}
+			]
+		},
+		"Libraries": {
+			"pts": 6,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is the purpose of libraries in programming?",
+						"To help the programmer focus on big-picture ideas while relying on the library to execute the details",
+						"To give programmers a reference tool that they can access to help them program",
+						"To store programming books",
+						"To help the programmer focus on the small details while relying on the library to make big-picture decisions"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"Why do libraries need to be imported?",
+						"Books overseas are often better than books at home",
+						"It would be too resource-intensive to always load every library",
+						"There was no way for programming language designers to include libraries’ features into the language",
+						"It is difficult to use them by default"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: The string library is automatically imported in Python",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or False: Libraries are built by experienced developers and run all of its tasks as fast as possible.",
+						"True",
+						"False"
+					]
+				},
+
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"Why are libraries inflexible?",
+						"The laws of physics binds them to a single physical location as a building",
+						"They are imported via HTTP protocol and cannot be modified under international law",
+						"They hide their code away",
+						"All computer programs must be inflexible to operate"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Why would a library be imported by default?",
+						"The vast majority of applications use the library, so the programming language’s designers built the language to import the library by default",
+						"To save space",
+						"To save HTTP protocol bandwidth",
+						"By definition, no library is imported by default"
+					]
+				}
+			]
+		},
+		"Sorting": {
 			"pts": 16,
 			"questions": [
 				{
-					"answer": 3,
+					"answer": 1,
 					"info": [
-						"mc",
-						"What does BFS stand for?",
-						"Binary fast search",
-						"Binary fast sorting",
-						"Breadth-first search",
-						"Binary-first sorting"
-					]
-				},
-
-				{
-					"answer": 3,
-					"info": [
-						"mc",
-						"What does DFS stand for?",
-						"Depth-following sorting",
-						"Dearth first search",
-						"Depth-first search",
-						"Depth-fade sorting"
+						"mcq",
+						"What is the output to this code? <br> arr = [3, 6, 10, 4, 2] <br> arr.sort() <br> print(arr)",
+						"[2, 3, 4, 6, 10]",
+						"[10, 6, 4, 3, 2]",
+						"Error",
+						"[3, 6, 10, 4, 2]"
 					]
 				},
 
 				{
 					"answer": 1,
 					"info": [
-						"tf",
-						"Will BFS prioritize closer nodes over further nodes?",
-						"Yes",
-						"No"
+						"mcq",
+						"How many operations does selection sort take to sort an array of size N (for logs assume base 2)?",
+						"N * N",
+						"N * log(N)",
+						"log(N) * log(N)",
+						"N"
 					]
 				},
 
 				{
 					"answer": 2,
 					"info": [
-						"tf",
-						"Will DFS prioritize closer nodes over further nodes?",
-						"Yes",
-						"No"
+						"mcq",
+						"How many operations does merge sort take to sort an array of size N (for logs assume base 2)?",
+						"N * N",
+						"N * log(N)",
+						"log(N) * log(N)",
+						"N"
 					]
 				},
 
 				{
-					"answer": 3,
+					"answer": 2,
 					"info": [
-						"mc",
-						"Which of the following will ALWAYS visit every reachable node in a graph?",
-						"BFS",
-						"DFS",
-						"Both",
-						"Neither"
+						"mcq",
+						"What is an algorithm that is often combined with sorting to speed up a program significantly?",
+						"Mandelbrot Set Algorithm",
+						"Floyd-Warshall Algorithm",
+						"Binary Search",
+						"Bi-disjoint Search"
 					]
 				},
 
 				{
-					"answer": 4,
+					"answer": "7",
 					"info": [
-						"mc",
-						"Which of the following can reach nodes that are not connected to the start node?",
-						"BFS",
-						"DFS",
-						"Both",
-						"Neither"
+						"fr",
+						"What is the output of this code? <br> arr = [1, 3, 4, 2, 5] <br> arr.sort() <br> print(arr[3] + arr[2])"
+					]
+				},
+				{
+					"answer": "10",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> arr = [4, 5, 1, 2, 3] <br> arr.sort() <br> arr[4] = arr[2] <br> arr[3] = arr[1] <br> print((arr[1] + arr[4]) * arr[3])"
+					]
+				},
+				{
+					"answer": "6",
+					"info": [
+						"fr",
+						"What is the output of this code? <br> arr = [3, 2, 4, 1, 5] <br> for i in range(4): <br> arr[i] += arr[i+1] <br> arr.sort() <br> print(arr[4])"
 					]
 				}
 			]
 		},
-		"Flood Fill": {
-			"pts": 13,
-			"questions": [
-				{
-					"answer": 1,
-					"info": [
-						"mc",
-						"What is flood fill?",
-						"Starting from one point and visiting other nodes by “filling” outward",
-						"Starting from one point and processing everything about that point (i.e., “filling” up info on it)",
-						"Overloading a system with as much data as possible",
-						"Dumping water over your computer"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"True or False: flood fill can be implemented using BFS.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"tf",
-						"True or False: Flood fill cannot be implemented using DFS.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mc",
-						"Which of the following tools is most similar to flood fill?",
-						"Straight-line drawing tool",
-						"Bucket tool",
-						"Spambot",
-						"Color picker"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"True or False: Flood fill can help with filling a bounded region.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 4,
-					"info": [
-						"mc",
-						"Starting from one node, in a standard flood fill which nodes should you visit?",
-						"The node 2 to the right",
-						"The node at the corners of the bounded region",
-						"Every node that is NOT connected to the selected node",
-						"Every node that IS connected to the selected node"
-					]
-				}
-			]
-		},
-		"Graphs": {
-			"pts": 7,
-			"questions": [
-				{
-					"answer": 3,
-					"info": [
-						"mc",
-						"What is a graph (in graph theory)?",
-						"A function - y in terms of x, etc",
-						"A function specifically in terms of time (something with respect to time, etc.)",
-						"A collection of nodes connected by edges",
-						"A collection of nodes"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mc",
-						"What connects nodes in a graph?",
-						"Edges",
-						"Connections",
-						"Links",
-						"Bridges"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"True or false: you can go both ways across a bidirectional edge.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"tf",
-						"True or false: you can go both ways across a directed edge.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 4,
-					"info": [
-						"mc",
-						"What is true about a graph theory tree?",
-						"All edges are directed and pointed upward, like tree branches",
-						"All edges are directed and pointed downward, like tree roots",
-						"All edges are directed and point toward a center point, like how tree roots collect nutrients (maybe)",
-						"The number of edges is exactly the number of nodes minus one"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mc",
-						"What does DAG stand for?",
-						"Directed anticlockwise graph",
-						"Directed acyclic graph",
-						"Dijkstra’s acyclic graph",
-						"DAG acrylic graph"
-					]
-				}
-			]
-		},
-		"Recursion": {
+		"OOP": {
 			"pts": 14,
 			"questions": [
 				{
-					"answer": 2,
-					"info": [
-						"mc",
-						"What is direct recursion?",
-						"A function recurring throughout a program",
-						"A function calling itself",
-						"A function calling another function which calls the first function",
-						"A function that calls another function within it"
-					]
-				},
-
-				{
 					"answer": 3,
 					"info": [
-						"mc",
-						"What is a base case in recursion?",
-						"A case where the function needs to call itself",
-						"A case where the function needs to call another function ",
-						"A case where we know the solution to the function",
-						"A case that is based"
+						"mcq",
+						"What does OOP stand for?",
+						"Oriented-Object Programming",
+						"Object-Oriented Python",
+						"Object-Oriented Programming",
+						"Object-Ordered Processes"
 					]
 				},
 
 				{
 					"answer": 1,
 					"info": [
-						"mc",
-						"What is a recursive case in recursion?",
-						"A case where the function needs to call itself",
-						"A case where the function needs to call another function ",
-						"A case where the function should not call itself again and use some outside information",
-						"Every case"
+						"mcq",
+						"What two concepts does OOP encourage that makes it the most dominant programming paradigm?",
+						"Code reuse, modularization",
+						"Modularization, code rerunning",
+						"Objects, Polymorphism",
+						"Classes, flexibility"
 					]
 				},
 
 				{
 					"answer": 3,
 					"info": [
-						"mc",
-						"What is indirect recursion?",
-						"A function recurring throughout a program",
-						"A function calling itself",
-						"A function calling another function which calls the first function",
-						"A function that calls another function within it"
-					]
-				},
-
-				{
-					"answer": 3,
-					"info": [
-						"mc",
-						"What is the default Java stack limit (how many layers deep can a function call itself)?",
-						"20",
-						"1k",
-						"10k",
-						"5 MB"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mc",
-						"What are the two components of every recursive function?",
-						"Base case, recursive case",
-						"Base case, indirect case",
-						"Recursive case, direct case",
-						"Indirect case, direct case"
+						"mcq",
+						"Which of the following is not a feature of OOP?",
+						"Classes",
+						"Objects",
+						"Integration",
+						"Polymorphism"
 					]
 				},
 
 				{
 					"answer": 2,
 					"info": [
-						"mc",
-						"What is a common problem you should watch out for when writing recursive functions?",
-						"Missing semi-colons",
-						"Infinite recursion",
-						"Hard-to-read code",
-						"Terminating too quickly"
+						"mcq",
+						"What is an OOP class?",
+						"A way to organize objects using polymorphism",
+						"A way to organize concepts that have certain ideas in common",
+						"A fancy word that means integrating objects into classes",
+						"A defining concept behind OOP"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an OOP object?",
+						"A variable under the OOP programming paradigm",
+						"An instance of a class",
+						"A class of an instance",
+						"A class under the OOP programming paradigm"
+					]
+				},
+
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"What two components are part of every class?",
+						"Polymorphism, Objects",
+						"States, Objects",
+						"Methods, Polymorphism",
+						"States, Methods"
+					]
+				},
+
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Which of the following is an implementation of a method within the class but with different parameters?",
+						"Over-riding",
+						"Over-loading"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"Which of the following is an implementation of the same method within a child class?",
+						"Over-riding",
+						"Over-loading"
+					]
+				},
+
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is inheritance in OOP?",
+						"A way to organize classes to store their differences more efficiently",
+						"Passing variables between objects with a parent-child relationship",
+						"Reallocating memory to a child object when a parent variable is deleted",
+						"A way to organize objects to store their differences more efficiently"
+					]
+				}
+			]
+		},
+		"Greedy": {
+			"pts": 15,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an algorithm?",
+						"A mathematical formula",
+						"A specific set of instructions",
+						"A problem in your code",
+						"The header of your code"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"The goal of a greedy algorithm is to",
+						"Write the least lines of code",
+						"Determine the globally optimal solution from locally optimal solutions",
+						"Write the code in the shortest amount of time",
+						"Make the most money from your code"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Where does the greedy algorithm get its name?",
+						"The English word “greedy” has a similar meaning to what the algorithm does",
+						"It created the word “greedy”",
+						"It was randomly named",
+						"It is an ironic name"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"Which of the following is NOT a common real-world use case of greedy algorithms?",
+						"Traveling-salesman problem",
+						"Fast Fourier Transform",
+						"Vertex cover",
+						"K-center clustering"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Is there a set code to solve all greedy problems?",
+						"Yes",
+						"No"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Which of the following represents a greedy solution?",
+						"Finding the largest sum of 3 elements from an array",
+						"Sorting a list",
+						"Finding connected components in a graph",
+						"Printing the 3rd element of a list"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"Greedy algorithms are often used in the real world to  _________.",
+						"Produce a perfect, globally optimal solution",
+						"Produce an approximate local solution",
+						"Produce a perfect, locally optimal solution",
+						"Produce an approximate global solution "
+					]
+				}
+			]
+		},
+		"Web Development": {
+			"pts": 6,
+			"questions": [
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"What are the two branches of web development?",
+						"HTTP and HTTPS",
+						"Frontend and backend",
+						"Fullstack and Node.js",
+						"HTML and CSS"
+					]
+				},
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"Which of the following is not an example of a CSS-based framework?",
+						"Reactstrap",
+						"Materially UI",
+						"Tailwind CSS",
+						"Chakra UI"
+					]
+				},
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"Which of the following is not a front-end language?",
+						"HTML",
+						"HTTP",
+						"CSS",
+						"JavaScript"
+					]
+				},
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"What is a front-end framework?",
+						"A design system that provides a template for web developers",
+						"A package distribution system that developers use to design front-ends",
+						"Pieces of code that make developing a website with complex features much more effortless",
+						"Anything that isn’t one of the three front-end languages (HTML, CSS, JS)"
+					]
+				},
+
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"What do backend engineers work with a lot?",
+						"User interface and experience",
+						"Server hardware",
+						"Graphics card engineering",
+						"Databases"
+					]
+				},
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"What is an example of a relational database?",
+						"MongoDB",
+						"Python",
+						"MySQL",
+						"Google"
+					]
+				},
+				{
+					"anwer": 0,
+					"info": [
+						"mcq",
+						"What is the difference between SQL and NoSQL databases?",
+						"SQL databases are easier to use but less scalable",
+						"SQL databases are more difficult to use but more scalable",
+						"SQL databases store data in sequence instead of randomly",
+						"NoSQL supports random-access memory calls"
 					]
 				}
 			]
@@ -1180,12 +1843,19 @@
 		"Mt Hebron High School": 8,
 		"Oakland Mills High School": 79,
 		"Reservoir High School": 50,
-		"River Hill High School": 280,
+		"River Hill High School": 296,
 		"Wilde Lake High School": 81
 	},
 	"users": {
 		"HD7KYJqC6ST4GaRVzcM4qEkbTjM2": {
-			"questionsSolved": ["placeholder", "Hello World", "Dynamic Programming"],
+			"questionsSolved": [
+				"placeholder",
+				"Hello World",
+				"Dynamic Programming",
+				"Variables 1",
+				"Variables 2",
+				"Graphs"
+			],
 			"randomNumbers": [
 				4, 1, 3, 4, 3, 0, 1, 2, 4, 0, 4, 2, 4, 1, 2, 1, 0, 3, 2, 0, 4, 1, 3, 2,
 				0, 3, 1, 2, 4, 3, 4, 2, 0, 0, 4, 3, 1, 3, 4, 2, 3, 0, 4, 2, 1, 3, 1, 4,
@@ -1193,7 +1863,17 @@
 				4, 1, 2
 			],
 			"school": "River Hill High School",
-			"score": [4, 4, 0]
+			"score": [9, 11, 0]
+		},
+		"UQkVUWG6cpQ85Y9sOzwHtpLgXSx2": {
+			"questionsSolved": ["placeholder", "Hello World"],
+			"randomNumbers": [
+				3, 4, 2, 1, 0, 2, 2, 7, 0, 57, 24, 75, 3, 96, 51, 91, 43, 61, 9, 0, 5,
+				29, 20, 37, 72, 28, 13, 0, 6, 2, 10, 46, 48, 9, 5, 8, 1, 4, 5, 3, 4, 1,
+				3, 1, 2, 5, 3, 6, 6, 9, 5, 0, 3, 6, 1, 5, 3, 61, 53, 32
+			],
+			"school": "River Hill High School",
+			"score": [4, 0, 0]
 		},
 		"testUser": "test"
 	}

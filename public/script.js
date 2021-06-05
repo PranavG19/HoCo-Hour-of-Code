@@ -38,18 +38,18 @@ try {
 }
 
 const students = {
-	"Atholton High School": 1460,
-	"Centennial High School": 999, /// Placholder
-	"Glenelg High School": 1196,
-	"Hammond High School": 1394,
-	"Howard High School": 1910,
-	"Long Reach High School": 999,
-	"Marriotts Ridge High School": 1472,
-	"Mt Hebron High School": 1695, /// Placholder
-	"Oakland Mills High School": 999,
-	"Reservoir High School": 1624,
-	"River Hill High School": 1378,
-	"Wilde Lake High School": 999, /// Placholder
+	"Atholton High School": 1472,
+	"Centennial High School": 1467,
+	"Glenelg High School": 1263,
+	"Hammond High School": 1316,
+	"Howard High School": 1828,
+	"Long Reach High School": 1595,
+	"Marriotts Ridge High School": 1597,
+	"Mt Hebron High School": 1635,
+	"Oakland Mills High School": 1269,
+	"Reservoir High School": 1788,
+	"River Hill High School": 1470,
+	"Wilde Lake High School": 1379,
 };
 
 const questionOrder = [

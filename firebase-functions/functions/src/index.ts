@@ -61,8 +61,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 	const uid: string = data.uid;
 	const school: string = data.school;
 	const questionLengths: number[] = [
-		6, 8, 8, 111, 111, 111, 10, 111, 111, 10, 111, 10, 6, 6, 6, 7, 10, 7, 6,
-		111,
+		6, 8, 8, 8, 10, 9, 6, 10, 9, 7, 7, 7, 10, 6, 6, 6, 7, 10, 7, 6, 7,
 	];
 
 	const randomNumbersGenerated: number[] = [];

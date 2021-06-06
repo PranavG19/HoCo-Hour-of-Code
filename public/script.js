@@ -224,7 +224,7 @@ if ($("#articles")[0]) {
 			console.log("." + question);
 			$("." + question)
 				.removeClass("hcpss-black bg-hcpss-offwhite")
-				.addClass("color-white bg-neongreen")
+				.addClass("color-white bg-limegreen")
 				.text("Completed");
 		}
 	}

@@ -188,7 +188,6 @@ const renderQuestions = (questions, questionName) => {
 			`<hr><div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0;">Quiz</div>`
 		);
 	}
-
 	for (let i = 0; i < questions.length; i++) {
 		if (questions[i][0] == "mc" || questions[i][0] == "mcq") {
 			$(".quiz").append(`
@@ -237,11 +236,9 @@ const renderQuestions = (questions, questionName) => {
 				} </div>
 				<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
 				questions[i][3]
-			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='rounded-md code-text mt-2 padding-0.5 ${questions[
 				i
-			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
-				questions[i][2]
-			}</code></pre></div> </div> </div>
+			][3].toLowerCase()}'>${questions[i][2]}</code></pre></div> </div> </div>
 				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
 			</fieldset>`);
 		} else if (questions[i][0] == "mcc") {
@@ -252,11 +249,9 @@ const renderQuestions = (questions, questionName) => {
 			} </div>
 			<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
 				questions[i][3]
-			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='rounded-md code-text mt-2 padding-0.5 ${questions[
 				i
-			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
-				questions[i][2]
-			}</code></pre></div> </div> </div>
+			][3].toLowerCase()}'>${questions[i][2]}</code></pre></div> </div>
 
                 <input type="radio" id="${i}.1" name="group-${i}" value="${i}.1" style="margin: 0px 0 10px 30px">
                 <label for="${i}.1" class="article-content color-black"> ${
@@ -283,16 +278,14 @@ const renderQuestions = (questions, questionName) => {
 				} </div>
 				<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
 				questions[i][4]
-			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='rounded-md code-text mt-2 padding-0.5 ${questions[
 				i
-			][4].toLowerCase()} rounded-md code-text mt-2 padding-0.5' style='margin-bottom: 10px'>${
+			][4].toLowerCase()}' style='margin-bottom: 10px'>${
 				questions[i][2]
 			}</code></pre><br>
-			Output: <pre class="margin-0 padding-0"><code class='${questions[
+			Output: <pre class="margin-0 padding-0"><code class='rounded-md code-text mt-2 padding-0.5 ${questions[
 				i
-			][4].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
-				questions[i][3]
-			}</code></pre></div> </div> </div>
+			][4].toLowerCase()}'>${questions[i][3]}</code></pre></div> </div> </div>
 				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
 			</fieldset>`);
 		}
@@ -333,7 +326,9 @@ const getQuestions = async (questionName, numbers, cat, school) => {
 		}
 		localStorage.setItem(questionName, JSON.stringify(data));
 		localStore[questionName] = data;
+		location.reload();
 	}
+
 	renderQuestions(localStore[questionName], questionName);
 	answerChecker(localStore[questionName], questionName, numbers, cat, school);
 };

@@ -493,33 +493,41 @@
 					"answer": "17",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> Code: <br> def foo(a, b, c): <br> return a+b+(2*c) <br> print(foo(3,4,5))"
+						"What is the output of this code?",
+						"def foo(a, b, c): <br>    return a+b+(2*c) <br>    print(foo(3,4,5))",
+						"Python"
 					]
 				},
 				{
 					"answer": "good day!",
 					"info": [
-						"fr",
-						"Given the code and its output, fill in the blank: <br> Code: <br> def foo(a, b): <br> return a+b <br> print(foo('Have a ','_______')) <br> Output: <br> > Have a good day!"
+						"fro",
+						"Given the code and its output, fill in the blank:",
+						"def foo(a, b): <br>    return a+b <br>print(foo('Have a ','_______'))",
+						"> Have a good day!",
+						"Python"
 					]
 				},
 				{
 					"answer": "8",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> Code: <br> def pow(a, b): <br> return a**b <br> print(pow(2,3))"
+						"What is the output of this code?",
+						"def pow(a, b): <br>    return a**b <br>print(pow(2,3))"
 					]
 				},
 				{
 					"answer": "12",
 					"info": [
 						"fr",
-						"Given this code and its output, fill in the blank. <br> Code: <br> def foo(a, b, ____): <br> return a+b+c <br> print(foo(3,4,5)) <br> Output: <br> > 12"
+						"Given this code and its output,fill in the blank.",
+						"def foo(a, b, ____): <br>    return a+b+c <br>print(foo(3,4,5))",
+						"> 12"
 					]
 				},
 				{
 					"answer": "return",
-					"info": ["fr", "What keyword is used to exit a function forcibly?"]
+					"info": ["frs", "What keyword is used to exit a function forcibly?"]
 				}
 			]
 		},
@@ -539,8 +547,8 @@
 				{
 					"answer": 0,
 					"info": [
-						"fr",
-						"The two main components to game design are ___________ and ____________. Seperate answer with a space"
+						"frs",
+						"The two main components to game design are ___________ and ____________. Seperate answers with a space"
 					]
 				},
 				{
@@ -557,8 +565,8 @@
 				{
 					"answer": 0,
 					"info": [
-						"fr",
-						"The two ways to code your game in code.org are __________ and _____________. Seperate answer with a space"
+						"frs",
+						"The two ways to code your game in code.org are __________ and _____________. Seperate answers with a space"
 					]
 				},
 				{
@@ -830,14 +838,19 @@
 					"answer": "Hour of code",
 					"info": [
 						"fr",
-						"What does this code print? <br> print(“Hour of code”)"
+						"What does this code print?",
+						"print(“Hour of code”)",
+						"Python"
 					]
 				},
 				{
 					"answer": "Sushi!",
 					"info": [
-						"fr",
-						"Given the output, fill in the blank in the code. <br> print(“____”) <br> Output: <br> > Sushi!"
+						"fro",
+						"Given the output, fill in the blank in the code.",
+						"print(“____”)",
+						"> Sushi!",
+						"Python"
 					]
 				}
 			]
@@ -990,6 +1003,30 @@
 						"Hard-to-read code",
 						"Terminating too quickly"
 					]
+				},
+				{
+					"answer": "3",
+					"info": [
+						"fr",
+						"def foo(n): <br>    if n == 0: <br>        return<br>    elif n == 3:<br>        print(n)<br>else:<br>foo(n-1)",
+						"Python"
+					]
+				},
+				{
+					"answer": "aaaaaaaa",
+					"info": [
+						"fr",
+						"def foo(a, b):<br>    if b == 0:<br>        print(a)<br>    else:<br>        foo(a+a, b-1)<br><br>foo('a', 3)",
+						"Python"
+					]
+				},
+				{
+					"answer": "0",
+					"info": [
+						"fr",
+						"def foo(a, b):<br>    if b == 10:<br>        print(a)<br>    else:<br>        foo(a+a, b+1)<br><br>foo(0, 5)",
+						"Python"
+					]
 				}
 			]
 		},
@@ -1021,8 +1058,10 @@
 				{
 					"answer": 2,
 					"info": [
-						"mc",
-						"What is the output of the following code? <br> int a = 25; <br> int b = 20; <br> System.out.println(a/b);",
+						"mcc",
+						"What is the output of the following code?",
+						"int a = 25; <br>int b = 20; <br>System.out.println(a/b);",
+						"Java",
 						"1.25",
 						"1",
 						"5/4",
@@ -1044,28 +1083,36 @@
 					"answer": "12",
 					"info": [
 						"fr",
-						"What is the output of the following code? <br> int a = 3; <br> a *= 4; <br>,System.out.println(a);"
+						"What is the output of the following code?",
+						"int a = 3; <br>a *= 4; <br>System.out.println(a);",
+						"Java"
 					]
 				},
 				{
 					"answer": "10",
 					"info": [
 						"fr",
-						"What is the output of the following code? <br> int a = 2; <br> int b = 4; <br> a /= 2; <br> b += 6; <br> System.out.println(a*b);"
+						"What is the output of the following code?",
+						"int a = 2; <br>int b = 4; <br>a /= 2; <br>b += 6; <br>System.out.println(a*b);",
+						"Java"
 					]
 				},
 				{
 					"answer": "3",
 					"info": [
-						"fr",
-						"Fill in the blank in the code to produce the given output. <br> Code: <br> int a = __; <br> int b = 2; <br> System.out.println(a*b*3); <br> Output: <br> > 18"
+						"fro",
+						"Fill in the blank in the code to produce the given output.",
+						"int a = __; <br>int b = 2; <br>System.out.println(a*b*3);",
+						"> 18"
 					]
 				},
 				{
 					"answer": "15",
 					"info": [
-						"fr",
-						"Fill in the blank in the code to produce the given output. <br> Code:  <br> int x = __; <br> int y = 3; <br> System.out.println((x-y-6)*4); <br> Output: <br> > 24 <br>"
+						"fro",
+						"Fill in the blank in the code to produce the given output.",
+						"int x = __; <br>int y = 3; <br>System.out.println((x-y-6)*4);",
+						"> 24 <br>"
 					]
 				}
 			]
@@ -1098,8 +1145,10 @@
 				{
 					"answer": 2,
 					"info": [
-						"mc",
-						"What is the output of the following code? <br> a = 40 <br> b = 20 <br> print (a/b)",
+						"mcc",
+						"What is the output of the following code?",
+						"a = 40 <br>b = 20<br>print(a/b)",
+						"Python",
 						"Error: Invalid Math",
 						"2.0",
 						"2",
@@ -1121,28 +1170,38 @@
 					"answer": "0.5",
 					"info": [
 						"fr",
-						"What is the output of the following code? <br> a = 2 <br> a /= 4 <br> print(a)"
+						"What is the output of the following code?",
+						"a = 2 <br>a /= 4 <br>print(a)",
+						"Python"
 					]
 				},
 				{
 					"answer": "11.0",
 					"info": [
 						"fr",
-						"What is the output of the following code? <br> a = 2 <br> b = 4  <br> a /= 2 <br> b += 7 <br> print(a*b)"
+						"What is the output of the following code?",
+						"a = 2 <br>b = 4  <br>a /= 2 <br>b += 7 <br>print(a*b)",
+						"Python"
 					]
 				},
 				{
 					"answer": "4",
 					"info": [
-						"fr",
-						"Fill in the blank in the code to produce the given output. <br> Code: <br> a = __ <br> b = 4 <br> print(a*b*3); <br> Output: <br> > 48"
+						"fro",
+						"Fill in the blank in the code to produce the given output.",
+						"a = __ <br>b = 4 <br>print(a*b*3);",
+						"> 48",
+						"Python"
 					]
 				},
 				{
 					"answer": "12",
 					"info": [
-						"fr",
-						"Fill in the blank in the code to produce the given output. <br> Code: <br>  x = _ <br> y = 3 <br> print((x-y-6)*3) <br> Output: <br> > 9"
+						"fro",
+						"Fill in the blank in the code to produce the given output.",
+						"x = _ <br>y = 3 <br>print((x-y-6)*3)",
+						"> 9",
+						"Python"
 					]
 				}
 			]
@@ -1197,28 +1256,36 @@
 					"answer": "True",
 					"info": [
 						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = True <br> b = 6 <br> c = 7 <br> if a: <br> print(b==c)"
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = True <br>b = 6 <br>c = 7 <br>if a: <br>    print(b==c)",
+						"Python"
 					]
 				},
 				{
 					"answer": "False",
 					"info": [
 						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = 7 <br> b = 5 <br> c = 1 <br> if c: <br> print(b>a)"
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 7 <br>b = 5 <br>c = 1 <br>if c: <br>    print(b>a)",
+						"Python"
 					]
 				},
 				{
 					"answer": "False",
 					"info": [
 						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)<br> a = 6 <br> b = 4 <br> c = False <br> if c: <br> print(b>a) <br> else: <br> print(a<b)"
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 6 <br>b = 4 <br>c = False <br>if c: <br>    print(b>a) <br>else: <br>    print(a<b)",
+						"Python"
 					]
 				},
 				{
 					"answer": "3",
 					"info": [
 						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”) <br> a = 4 <br> b = 2 <br> c = 7 <br> d = 5 <br> if d > c: <br> if b < a: <br> print(1) <br> else: <br> print(2) <br> else: <br> print(3)"
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 4 <br>b = 2 <br>c = 7 <br>d = 5 <br>if d > c: <br>    if b < a: <br>        print(1) <br>    else: <br>    print(2) <br>else: <br>    print(3)",
+						"Python"
 					]
 				}
 			]
@@ -1300,28 +1367,36 @@
 					"answer": "-1",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> a = 0 <br> b = 1 <br> for i in range(5): <br> a += b <br> b -= a <br> print(a)"
+						"What is the output of this code?",
+						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b -= a <br>print(a)",
+						"Python"
 					]
 				},
 				{
 					"answer": "15",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> a = 0 <br> b = 1 <br> for i in range(5): <br> a += b <br> b += 1 <br> print(a)"
+						"What is the output of this code?",
+						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b += 1 <br>print(a)",
+						"Python"
 					]
 				},
 				{
 					"answer": "-2",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> a = 1 <br> b = 2 <br> c = 3 <br> for i in range(3): <br> a += b <br> a -= c <br> print(a)"
+						"What is the output of this code?",
+						"a = 1 <br>b = 2 <br>c = 3 <br>for i in range(3): <br>    a += b <br>    a -= c <br> print(a)",
+						"Python"
 					]
 				},
 				{
 					"answer": "1",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> b = 3 <br> a = 6 <br> for i in range(10): <br> b += 1 <br> if b > a: <br> rint(1) <br> else: <br> print(2)"
+						"What is the output of this code?",
+						"b = 3 <br> a = 6 <br>for i in range(10): <br>    b += 1 <br>if b > a: <br>    print(1) <br>else: <br>    print(2)",
+						"Python"
 					]
 				}
 			]
@@ -1498,8 +1573,10 @@
 				{
 					"answer": 1,
 					"info": [
-						"mcq",
-						"What is the output to this code? <br> arr = [3, 6, 10, 4, 2] <br> arr.sort() <br> print(arr)",
+						"mcc",
+						"What is the output to this code?",
+						"arr = [3, 6, 10, 4, 2] <br>arr.sort() <br>print(arr)",
+						"Python",
 						"[2, 3, 4, 6, 10]",
 						"[10, 6, 4, 3, 2]",
 						"Error",
@@ -1547,21 +1624,26 @@
 					"answer": "7",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> arr = [1, 3, 4, 2, 5] <br> arr.sort() <br> print(arr[3] + arr[2])"
+						"What is the output of this code?",
+						"arr = [1, 3, 4, 2, 5] <br>arr.sort() <br>print(arr[3] + arr[2])",
+						"Python"
 					]
 				},
 				{
 					"answer": "10",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> arr = [4, 5, 1, 2, 3] <br> arr.sort() <br> arr[4] = arr[2] <br> arr[3] = arr[1] <br> print((arr[1] + arr[4]) * arr[3])"
+						"What is the output of this code?",
+						"arr = [4, 5, 1, 2, 3] <br>arr.sort() <br>arr[4] = arr[2] <br>arr[3] = arr[1] <br>print((arr[1] + arr[4]) * arr[3])",
+						"Python"
 					]
 				},
 				{
 					"answer": "6",
 					"info": [
 						"fr",
-						"What is the output of this code? <br> arr = [3, 2, 4, 1, 5] <br> for i in range(4): <br> arr[i] += arr[i+1] <br> arr.sort() <br> print(arr[4])"
+						"What is the output of this code?",
+						"arr = [3, 2, 4, 1, 5] <br>for i in range(4): <br>    arr[i] += arr[i+1] <br>arr.sort() <br>print(arr[4])"
 					]
 				}
 			]

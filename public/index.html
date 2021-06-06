@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="article-styles.css">
   <script src="typewriter.js"></script>
+  <script type="text/javascript">
+    function login_disabled() {
+      alert('Login will be available on June 7th');
+    }
+    </script>
 </head>
 
 <body>
@@ -57,8 +62,8 @@
 
           <div class="flex justify-left items-center">
             <div class="hvr-underline-reveal">
-              <a href="" class="navbar-font color-grey h-16 margin-4 login">
-                <div class="navbar-tile username">
+              <a href="#" onClick="login_disabled();" class="navbar-font color-grey h-16 margin-4">
+                <div class="navbar-tile">
                   Login
                 </div>
               </a>
@@ -85,7 +90,7 @@
         <div class="pt-6"></div>
         <div class="flex justify-left full-width">
           <div class="hvr-shadow">
-            <a href="#">
+            <a href="articles.html">
               <div class="color-white rounded-md btn-1 bg-hcpss-blue">
                 View Articles
               </div>
@@ -93,8 +98,13 @@
           </div>
           <div style="width: 0.75rem"></div>
           <div class="hvr-shadow">
+<<<<<<< HEAD
             <a href="#" class="login">
               <div class="bg-lightblue rounded-md btn-1 hcpss-blue login-button">
+=======
+            <a href="#" onClick="login_disabled();">
+              <div class="bg-lightblue rounded-md btn-1 hcpss-blue">
+>>>>>>> cf2f97f4cf05b114ebea6f7a69acee9484bc17a4
                 Login
               </div>
             </a>
@@ -230,25 +240,39 @@
             <div class="flex flex-column">
                 <div class="article-contributors-type">Authors</div>
                 <div class="article-contributors-name">
-                    John Doe <br>
-                    Mason Adams <br>
-                    Steven Smith
+                    Ethan Li <br>
+                    Andrew Chen <br>
+                    Julian Park <br>
+                    Rayhan Zirvi <br>
+                    Jeff Cheng <br>
+                    Austin Zou <br>
+                    Pace Ockerman <br>
+                    David Pang <br>
+                    Anthony Fei
                 </div>
             </div>
             <div class="flex flex-column lm-4">
                 <div class="article-contributors-type">Editors</div>
                 <div class="article-contributors-name">
-                    John Doe <br>
-                    Mason Adams <br>
-                    Steven Smith
+                  Andrew Chen <br>
+                  Ethan Li <br>
+                  Rayhan Zirvi <br>
+                  Julian Park <br>
+                  Austin Zou <br>
+                  Jeff Cheng <br>
+                  David Pang <br>
+                  Pace Ockerman <br>
+                  Anthony Fei <br>
+                  Sarmad Alamgir
                 </div>
             </div>
             <div class="flex flex-column lm-4">
                 <div class="article-contributors-type">Reviewers</div>
                 <div class="article-contributors-name">
-                    John Doe <br>
-                    Mason Adams <br>
-                    Steven Smith
+                    Anthony Fei <br>
+                    Sarmad Alamgir <br>
+                    Rayhan Zirvi <br>
+                    Andrew Chen
                 </div>
             </div>
         </div>

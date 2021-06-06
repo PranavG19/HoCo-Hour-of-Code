@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(event){
-  var waittime = 1500; //time it waits between typing and deleting
+  let waittime = 1500; //time it waits between typing and deleting
 
   //array with texts to type in typewriter
-  var dataText = [" if-statements.", " Java.", " sorting.", " variables.", " greedy.", " for-loops.", " dynamic programming.", " maze generation.", " game development.", " libraries."];
+  let dataText = [" if-statements.", " Java.", " sorting.", " variables.", " greedy.", " for-loops.", " dynamic programming.", " maze generation.", " libraries.", " arrays.", " automation.", " algorithms.", " binary search.", " recursion."];
   
   function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         StartTextAnimation(0);
       }, 500);
     }
-    else if (i < dataText[i].length) {
+    else if (i < dataText.length) {
       setTimeout(typeWriter(dataText[i], 0, function() {
         delWriter(dataText[i], dataText[i].length-1, function(){
           StartTextAnimation(i+1);

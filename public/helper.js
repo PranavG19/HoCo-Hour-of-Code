@@ -190,7 +190,7 @@ const renderQuestions = (questions, questionName) => {
 	}
 
 	for (let i = 0; i < questions.length; i++) {
-		if (questions[i][0] == "mc") {
+		if (questions[i][0] == "mc" || questions[i][0] == "mcq") {
 			$(".quiz").append(`
             <fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">
                 <div class='article-subtitle color-black mt-4 mb-4'> ${questions[i][1]} </div>
@@ -226,7 +226,16 @@ const renderQuestions = (questions, questionName) => {
 		} else {
 			$(".quiz").append(`
 			<fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">	
-				<div class='article-subtitle color-black mt-4 mb-4' style='margin-bottom: 15px;'> ${questions[i][1]} </div>
+				<div class='article-subtitle color-black mt-4 mb-4' style='margin-bottom: 15px;'> ${
+					questions[i][1]
+				} </div>
+				<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
+				question[i][3]
+			}</label> <div class="tab"><pre class="margin-0 padding-0"><code class='${question[
+				i
+			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
+				questions[i][1]
+			}</code></pre></div> </div> </div>
 				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
 			</fieldset>`);
 		}

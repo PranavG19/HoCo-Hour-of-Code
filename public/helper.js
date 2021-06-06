@@ -223,6 +223,58 @@ const renderQuestions = (questions, questionName) => {
                 <input type="radio" id="${i}.2" name="group-${i}" value="${i}.2" style="margin: 0 0 10px 30px">
                 <label for="${i}.2" class="article-content color-black"> ${questions[i][3]} </label><br>
             </fieldset>`);
+		} else if (questions[i][0] == "frs") {
+			$(".quiz").append(`
+			<fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">	
+				<div class='article-subtitle color-black mt-4 mb-4' style='margin-bottom: 15px;'> ${questions[i][1]} </div>
+				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
+			</fieldset>`);
+		} else if (questions[i][0] == "fr") {
+			$(".quiz").append(`
+			<fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">	
+				<div class='article-subtitle color-black mt-4 mb-4' style='margin-bottom: 15px;'> ${
+					questions[i][1]
+				} </div>
+				<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
+				questions[i][3]
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
+				i
+			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
+				questions[i][2]
+			}</code></pre></div> </div> </div>
+				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
+			</fieldset>`);
+		} else if (questions[i][0] == "mcc") {
+			$(".quiz").append(`
+            <fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">
+			<div class='article-subtitle color-black mt-4 mb-4' style='margin-bottom: 15px;'> ${
+				questions[i][1]
+			} </div>
+			<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
+				questions[i][3]
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
+				i
+			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
+				questions[i][2]
+			}</code></pre></div> </div> </div>
+
+                <input type="radio" id="${i}.1" name="group-${i}" value="${i}.1" style="margin: 0px 0 10px 30px">
+                <label for="${i}.1" class="article-content color-black"> ${
+				questions[i][4]
+			} </label><br>
+                <input type="radio" id="${i}.2" name="group-${i}" value="${i}.2" style="margin: 0 0 10px 30px">
+                <label for="${i}.2" class="article-content color-black"> ${
+				questions[i][5]
+			} </label><br>
+                <input type="radio" id="${i}.3" name="group-${i}" value="${i}.3" style="margin: 0 0 10px 30px">
+                <label for="${i}.3" class="article-content color-black"> ${
+				questions[i][6]
+			} </label><br>
+                <input type="radio" id="${i}.4" name="group-${i}" value="${i}.4" style="margin: 0 0 10px 30px">
+                <label for="${i}.4" class="article-content color-black"> ${
+				questions[i][7]
+			} </label>
+            </fieldset>`);
 		} else {
 			$(".quiz").append(`
 			<fieldset id='group-${i}' style="margin-bottom: 15px; border: none;">	
@@ -230,11 +282,16 @@ const renderQuestions = (questions, questionName) => {
 					questions[i][1]
 				} </div>
 				<div class="tabs mb-3"> <input type="radio" name="question-${i}" id="tab-question-${i}" checked="checked"> <label for="tab-question-${i}">${
-				question[i][3]
-			}</label> <div class="tab"><pre class="margin-0 padding-0"><code class='${question[
+				questions[i][4]
+			}</label> <div class="tab">Code: <pre class="margin-0 padding-0"><code class='${questions[
 				i
-			][3].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
-				questions[i][1]
+			][4].toLowerCase()} rounded-md code-text mt-2 padding-0.5' style='margin-bottom: 10px'>${
+				questions[i][2]
+			}</code></pre><br>
+			Output: <pre class="margin-0 padding-0"><code class='${questions[
+				i
+			][4].toLowerCase()} rounded-md code-text mt-2 padding-0.5'>${
+				questions[i][3]
 			}</code></pre></div> </div> </div>
 				<input type="text" id="${i}.1" name="group-${i}" style="padding: 5px; font-size: 14px;" value=""></input>
 			</fieldset>`);

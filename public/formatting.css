@@ -1,447 +1,447 @@
 .max-w-6xl {
-    max-width: 72rem
+	max-width: 72rem;
 }
 
 .max-w-4xl {
-    max-width: 57rem;
+	max-width: 57rem;
 }
 
 .max-w-2xl {
-    max-width: 42rem;
+	max-width: 42rem;
 }
 
 .w-1\.5xl {
-    width: 32.5rem;
+	width: 32.5rem;
 }
 
 .h-1xl {
-    height: 18rem;
+	height: 18rem;
 }
 
 .max-h-1xl {
-    max-height: 21rem;
+	max-height: 21rem;
 }
 
 .relative {
-    position: relative;
+	position: relative;
 }
 
 .flex {
-    display: flex;
+	display: flex;
 }
 
 .inline {
-    display: inline;
+	display: inline;
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .justify-left {
-    justify-content: left;
+	justify-content: left;
 }
 
 .justify-right {
-    justify-content: right;
+	justify-content: right;
 }
 
 .justify-between {
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .justify-center {
-    justify-content: center;
+	justify-content: center;
 }
 
 .justify-around {
-    justify-content: space-around;
+	justify-content: space-around;
 }
 
 .justify-end {
-    justify-content: end;
+	justify-content: end;
 }
 
 .align-end {
-    align-content: flex-end;
+	align-content: flex-end;
 }
 
 .align-center {
-    align-content: center;
+	align-content: center;
 }
 
 .flex-column {
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .items-center {
-    align-items: center;
+	align-items: center;
 }
 
 .inline-center {
-    text-align: center;
+	text-align: center;
 }
 
 .block-center {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .bg-white {
-    background-color: white;
+	background-color: white;
 }
 
 .bg-lightorange {
-    background-color: #FFEFD5;
+	background-color: #ffefd5;
 }
 
 .bg-lightred {
-    background-color: #ffcccb;
+	background-color: #ffcccb;
 }
 
 .bg-hcpss-offwhite {
-    background-color: #F4F4EF;
+	background-color: #f4f4ef;
 }
 
 .bg-lightblue {
-    background-color: #DBEAFD;
+	background-color: #dbeafd;
 }
 
 .bg-hcpss-blue {
-    background-color: #3594D2;
+	background-color: #3594d2;
 }
 
 .bg-blue1 {
-    background-color: #eef0f6;
+	background-color: #eef0f6;
 }
 
 .bg-blue2 {
-    background-color: #cfdaec;
+	background-color: #cfdaec;
 }
 
 .bg-blue3 {
-    background-color: #9cb9d1;
+	background-color: #9cb9d1;
 }
 
 .bg-blue4 {
-    background-color: #759cd8;
+	background-color: #759cd8;
 }
 
 .bg-blue5 {
-    background-color: #094d74;
+	background-color: #094d74;
 }
 
 .bg-gold {
-    background-color: gold;
+	background-color: gold;
 }
 
 .bg-silver {
-    background-color: silver;
+	background-color: silver;
 }
 
 .bg-bronze {
-    background-color: #CD7F32;
+	background-color: #cd7f32;
 }
 
 .bg-grey {
-    background-color: lightgray;
+	background-color: lightgray;
 }
 
 .h-60p {
-    height: 60%;
+	height: 60%;
 }
 
 .h-40p {
-    height: 40%;
+	height: 40%;
 }
 
 .h-20p {
-    height: 20%;
+	height: 20%;
 }
 
 .h-48 {
-    height: 12rem;
+	height: 12rem;
 }
 
 .h-32 {
-    height: 8rem;
+	height: 8rem;
 }
 
 .h-24 {
-    height: 6rem;
+	height: 6rem;
 }
 
 .h-22 {
-    height: 5.5rem;
+	height: 5.5rem;
 }
 
 .h-20 {
-    height: 5rem;
+	height: 5rem;
 }
 
 .h-18 {
-    height: 4.5rem;
+	height: 4.5rem;
 }
 
 .h-16 {
-    height: 4rem;
+	height: 4rem;
 }
 
 .h-7 {
-    height: 1.75rem;
+	height: 1.75rem;
 }
 
 .h-8 {
-    height: 2rem;
+	height: 2rem;
 }
 
 .h-4 {
-    height: 1rem;
+	height: 1rem;
 }
 
 .w-7 {
-    width: 1.75rem;
+	width: 1.75rem;
 }
 
 .w-4 {
-    width: 1rem;
+	width: 1rem;
 }
 
 .w-24 {
-    width: 6rem;
+	width: 6rem;
 }
 
 .w-22 {
-    width: 5.5rem;
+	width: 5.5rem;
 }
 
 .w-20 {
-    width: 5rem;
+	width: 5rem;
 }
 
 .w-18 {
-    width: 4.5rem;
+	width: 4.5rem;
 }
 
 .w-16 {
-    width: 4rem;
+	width: 4rem;
 }
 
 .w-60p {
-    width: 60%;
+	width: 60%;
 }
 
 .w-50p {
-    width: 50%;
+	width: 50%;
 }
 
 .lm-16 {
-    margin-left: 4rem;
+	margin-left: 4rem;
 }
 
 .lm-4 {
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .lm-2 {
-    margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 .margin-4 {
-    margin: 1rem
+	margin: 1rem;
 }
 
 .rm-16 {
-    margin-right: 4rem;
+	margin-right: 4rem;
 }
 
 .rm-8 {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 .rm-4 {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .rm-2 {
-    margin-right: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 .margin-0 {
-    margin: 0rem;
+	margin: 0rem;
 }
 
 .padding-0 {
-    padding: 0rem;
+	padding: 0rem;
 }
 
 .padding-1 {
-    padding: 0.25rem;
+	padding: 0.25rem;
 }
 
 .padding-8px {
-    padding: 8px;
+	padding: 8px;
 }
 
 .padding-0\.5 {
-    padding: 0.5rem;
+	padding: 0.5rem;
 }
 
 .padding-3 {
-    padding: 1.75rem;
+	padding: 1.75rem;
 }
 
 .padding-6 {
-    padding: 1.5rem;
+	padding: 1.5rem;
 }
 
 .pt-4 {
-    padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 .pt-6 {
-    padding-top: 1.5rem;
+	padding-top: 1.5rem;
 }
 
 .pt-18 {
-    padding-top: 4.5rem;
+	padding-top: 4.5rem;
 }
 
 .pt-24 {
-    padding-top: 6rem;
+	padding-top: 6rem;
 }
 
 .pb-32 {
-    padding-bottom: 8rem;
+	padding-bottom: 8rem;
 }
 
 .pb-20 {
-    padding-bottom: 5rem;
+	padding-bottom: 5rem;
 }
 
 .pb-16 {
-    padding-bottom: 4rem;
+	padding-bottom: 4rem;
 }
 
 .pb-8 {
-    padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 .pb-0 {
-    padding-bottom: 0rem;
+	padding-bottom: 0rem;
 }
 
 .pl-0\.25 {
-    padding-left: 0.25rem;
+	padding-left: 0.25rem;
 }
 
 .pl-2 {
-   padding-left: 2rem; 
+	padding-left: 2rem;
 }
 
 .pr-2 {
-    padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 .pr-0\.25 {
-    padding-right: 0.25rem;
+	padding-right: 0.25rem;
 }
 
 .mb-0 {
-    margin-bottom: 0rem;
+	margin-bottom: 0rem;
 }
 
 .mb-12 {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .mb-16 {
-    margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .mb-3 {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .mb-2 {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .mb-1 {
-    margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .mt-2 {
-    margin-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 .mt-6 {
-    margin-top: 1.5rem;
+	margin-top: 1.5rem;
 }
 
 .mt-12 {
-    margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 .mt-24 {
-    margin-top: 6rem;
+	margin-top: 6rem;
 }
 
 .full-width {
-    width: 100%;
+	width: 100%;
 }
 
 .half-width {
-    width: 50%;
+	width: 50%;
 }
 
 .width-30 {
-    width: 30%;
+	width: 30%;
 }
 
 .width-40 {
-    width: 40%;
+	width: 40%;
 }
 
 .width-70 {
-    width: 70%;
+	width: 70%;
 }
 
 .width-90 {
-    width: 90%;
+	width: 90%;
 }
 
 .width-60 {
-    width: 60%;
+	width: 60%;
 }
 
 .overflow-width {
-    width: 120%;
+	width: 120%;
 }
 
 .full-height {
-    height: 100%;
+	height: 100%;
 }
 
 .half-height {
-    height: 50%
+	height: 50%;
 }
 
 .height-1 {
-    height: 1rem;
+	height: 1rem;
 }
 
 .height-1\.5 {
-    height: 1.5rem;
+	height: 1.5rem;
 }
 
 .rounded-md {
-    border-radius: .375rem;
+	border-radius: 0.375rem;
 }
 
 .rounded-full {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 .border-box {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }

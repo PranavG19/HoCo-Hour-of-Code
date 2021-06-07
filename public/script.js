@@ -84,8 +84,26 @@ const questionOrder = [
 $(".login").on("click", function (e) {
 	e.preventDefault();
 	if (firebase.auth().currentUser) {
-		logout();
-		location.reload();
+		if ($("#logout")[0]) {
+			$("#logout").fadeOut(300, () => {
+				$("#logout").remove();
+			});
+		} else {
+			let w = $(".username").width();
+			console.log(w);
+			$(
+				`<div id='logout' class='logoutMenu' style='width: ${w}px;'>Logout?<div>`
+			)
+				.hide()
+				.appendTo($(".username").parent().parent().parent())
+				.fadeIn(300, () => {
+					$("#logout").on("click", () => {
+						console.log("hi");
+						logout();
+						location.reload();
+					});
+				});
+		}
 	} else {
 		login();
 	}
@@ -95,13 +113,12 @@ firebase.auth().onAuthStateChanged(function (user) {
 	if (user) {
 		if (!user.email.endsWith("@inst.hcpss.org")) {
 			logout();
-			$("body")
-				.prepend(
-					`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">
+			$("body").prepend(
+				`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">
                                 <p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Please Login With HCPSS Account!</p>
                                 </div>`
-				)
-				.scrollTop(0);
+			);
+			window.scrollTo(0, 0);
 			setTimeout(() => {
 				location.reload();
 			}, 6000);
@@ -121,7 +138,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 						snapshot.val().school !== (undefined || null || "")
 					) {
 						const data = snapshot.val();
-						store(
+						stoeloade(
 							data.school,
 							data.score,
 							data.questionsSolved,
@@ -141,6 +158,11 @@ firebase.auth().onAuthStateChanged(function (user) {
 							.css({ background: "lightcoral", color: "white" });
 					}
 				})
+				.then(() => {
+					if (localStore.school && ($("#articles")[0] || $(".quiz"))) {
+						location.reload();
+					}
+				})
 				.catch((error) => {
 					console.error(error);
 				});
@@ -155,7 +177,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 if ($(".leaderboard-wrapper")[0]) {
-	if (!localStore.leaderboard || time(15)) {
+	if (!localStore.leaderboard || time(60)) {
 		rt.ref("schools/")
 			.get()
 			.then((snapshot) => {
@@ -193,7 +215,7 @@ if ($(".hours")[0]) {
 			$(".users").text(data);
 		});
 
-	if (!localStore.leaderboard || time(15)) {
+	if (!localStore.leaderboard || time(60)) {
 		rt.ref("schools/")
 			.get()
 			.then((snapshot) => {
@@ -226,6 +248,19 @@ if ($(".hours")[0]) {
 }
 
 if ($(".quiz")[0]) {
+	if (!firebase.auth().currentUser) {
+		$(".quiz").append(
+			`<div id='noQuiz'><hr>
+			<div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0; display: flex; flex-direction: row; justify-content: center; align-items: center">
+				<div>Login to unlock the quiz!</div>
+				<div class= "hvr-darken color-white rounded-md btn-1" id="loginButton" style="transform: scale(.75)">Login</div>
+          	</div></div>`
+		);
+		$("#loginButton").on("click", () => {
+			login();
+		});
+	}
+
 	const question = $(".quiz").attr("name").replaceAll("_", " ");
 	const cat = $(".quiz").attr("cat");
 	const questionNum = questionOrder.indexOf(question);
@@ -272,7 +307,6 @@ if ($("#articles")[0]) {
 }
 
 if (!localStore.mobile) {
-	console.log("hi");
 	$(document.body).append(`
 		<div class='mobile-wrapper' id="mobile-wrapper">
 				  <p class='mobile-text'>This website works best on a laptop/larger screens. Press ok if you understand and still wish to continue</p>

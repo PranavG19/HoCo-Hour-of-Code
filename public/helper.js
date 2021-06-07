@@ -121,7 +121,6 @@ const time = function (t) {
 
 function sumLeaderboard(lb) {
 	sum = 0;
-	console.log("hi");
 	for (let i = 0; i < lb.length; i++) {
 		sum += lb[i][1];
 	}
@@ -187,6 +186,7 @@ const renderScore = () => {
 };
 
 const renderQuestions = (questions, questionName) => {
+	$("#noQuiz").remove();
 	const completed = localStore.questionsSolved.indexOf(questionName) !== -1;
 	if (completed) {
 		$(".quiz").append(
@@ -310,7 +310,7 @@ const updateScore = (uid) => {
 	rt.ref("users/" + uid)
 		.get()
 		.then((snapshot) => {
-			const data = snapshot.val();
+			const data = snapshot.vaogin();
 			store(data.school, data.score, data.questionsSolved);
 			renderScore();
 		});
@@ -409,7 +409,7 @@ const answerChecker = (questions, questionName, numbers, cat, school) => {
 								$(".quiz").append(
 									`<div id="quizResultsCorrect" style="text-align: center; background: lightGreen; border-radius: 50px; padding: 15px; margin-bottom: 0px; margin-top: 30px">
 												<p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Correct</p>
-												</div>`
+												</>`
 								);
 								document.getElementById("quizResultsCorrect").scrollIntoView();
 								const userRef = rt.ref("users/" + user.uid);

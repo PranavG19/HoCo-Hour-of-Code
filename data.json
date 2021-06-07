@@ -209,7 +209,7 @@
 				}
 			]
 		},
-		"BFS & DFS": {
+		"BFS DFS": {
 			"pts": 16,
 			"questions": [
 				{
@@ -427,7 +427,7 @@
 					]
 				},
 				{
-					"answer": "True",
+					"answer": "False",
 					"info": [
 						"fr",
 						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
@@ -1906,36 +1906,55 @@
 		"Glenelg High School": 0,
 		"Hammond High School": 0,
 		"Howard High School": 0,
-		"Long Reach High School": 0,
+		"Long Reach High School": 60,
 		"Marriotts Ridge High School": 0,
 		"Mt Hebron High School": 0,
 		"Oakland Mills High School": 0,
 		"Reservoir High School": 0,
-		"River Hill High School": 8,
+		"River Hill High School": 13,
 		"Wilde Lake High School": 0
 	},
 	"users": {
 		"HD7KYJqC6ST4GaRVzcM4qEkbTjM2": {
-			"questionsSolved": ["placeholder", "Hello World"],
-			"randomNumbers": [
-				2, 1, 0, 5, 1, 2, 6, 5, 2, 1, 0, 2, 2, 5, 6, 6, 7, 2, 3, 0, 1, 9, 4, 0,
-				5, 7, 3, 1, 4, 3, 5, 2, 0, 3, 6, 5, 8, 7, 0, 2, 3, 4, 5, 2, 3, 4, 0, 3,
-				0, 4, 2, 6, 2, 4, 4, 6, 2, 5, 4, 0, 5, 0, 6
+			"questionsSolved": [
+				"placeholder",
+				"Hello World",
+				"Variables 1",
+				"Variables 2",
+				"Booleans",
+				"Loops",
+				"Arrays",
+				"Libraries",
+				"Functions",
+				"OOP",
+				"Greedy",
+				"Recursion",
+				"Sorting",
+				"Binary Search",
+				"Graphs",
+				"BFS DFS",
+				"Flood Fill",
+				"Automation"
 			],
-			"school": "River Hill High School",
-			"score": [55, 0, 0]
+			"randomNumbers": [
+				2, 0, 3, 3, 2, 1, 6, 2, 7, 5, 2, 4, 4, 6, 0, 3, 5, 2, 1, 0, 3, 0, 9, 1,
+				3, 2, 8, 1, 4, 6, 6, 0, 3, 0, 1, 5, 3, 5, 0, 4, 0, 3, 3, 5, 2, 3, 0, 1,
+				0, 3, 6, 0, 9, 5, 0, 2, 4, 5, 1, 4, 5, 2, 4
+			],
+			"school": "Long Reach High School",
+			"score": [76, 83, 23]
 		},
 		"UQkVUWG6cpQ85Y9sOzwHtpLgXSx2": {
-			"questionsSolved": ["placeholder", "Hello World"],
+			"questionsSolved": ["placeholder"],
 			"randomNumbers": [
-				3, 4, 2, 1, 0, 2, 2, 7, 0, 57, 24, 75, 3, 96, 51, 91, 43, 61, 9, 0, 5,
-				29, 20, 37, 72, 28, 13, 0, 6, 2, 10, 46, 48, 9, 5, 8, 1, 4, 5, 3, 4, 1,
-				3, 1, 2, 5, 3, 6, 6, 9, 5, 0, 3, 6, 1, 5, 3, 61, 53, 32
+				0, 5, 4, 6, 2, 4, 2, 0, 7, 4, 7, 5, 6, 9, 4, 6, 8, 0, 2, 1, 4, 1, 2, 8,
+				8, 6, 5, 4, 6, 2, 1, 3, 5, 4, 6, 0, 4, 8, 6, 4, 0, 3, 4, 1, 0, 4, 1, 5,
+				6, 4, 3, 9, 6, 3, 1, 4, 2, 2, 1, 4, 0, 6, 1
 			],
 			"school": "River Hill High School",
-			"score": [4, 0, 0]
+			"score": [0, 0, 0]
 		},
-		"count": 1,
+		"count": 2,
 		"testUser": "test"
 	}
 }

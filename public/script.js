@@ -68,7 +68,7 @@ const questionOrder = [
 	"Merge Sort",
 	"Binary Search",
 	"Graphs",
-	"BFS & DFS",
+	"BFS_DFS",
 	"Flood Fill",
 	"Sorting",
 	"Dynamic Programming",
@@ -138,7 +138,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 						snapshot.val().school !== (undefined || null || "")
 					) {
 						const data = snapshot.val();
-						stoeloade(
+						store(
 							data.school,
 							data.score,
 							data.questionsSolved,

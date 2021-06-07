@@ -85,5 +85,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 		randomNumbers: randomNumbersGenerated,
 	});
 
+	db.ref("users/count").set(admin.database.ServerValue.increment(1));
+
 	return randomNumbersGenerated;
 });

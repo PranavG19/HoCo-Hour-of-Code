@@ -119,6 +119,15 @@ const time = function (t) {
 	return true;
 };
 
+function sumLeaderboard(lb) {
+	sum = 0;
+	console.log("hi");
+	for (let i = 0; i < lb.length; i++) {
+		sum += lb[i][1];
+	}
+	return sum;
+}
+
 const renderLeaderboard = () => {
 	for (var s in localStore.leaderboard) {
 		$(`

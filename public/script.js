@@ -20,6 +20,7 @@ let localStore = {
 	leaderboard: undefined,
 	leaderboardTime: undefined,
 	randomNumbers: undefined,
+	mobile: undefined,
 };
 
 for (item in localStore) {
@@ -184,6 +185,47 @@ if ($(".leaderboard-wrapper")[0]) {
 	}
 }
 
+if ($(".hours")[0]) {
+	rt.ref("users/count")
+		.get()
+		.then((snapshot) => {
+			const data = snapshot.val();
+			$(".users").text(data);
+		});
+
+	if (!localStore.leaderboard || time(15)) {
+		rt.ref("schools/")
+			.get()
+			.then((snapshot) => {
+				const data = snapshot.val();
+				var orderedLeaderboard = [];
+
+				for (let school in data) {
+					orderedLeaderboard.push([school, data[school]]);
+				}
+
+				orderedLeaderboard.sort(function (a, b) {
+					return b[1] - a[1];
+				});
+
+				localStorage.setItem("leaderboard", JSON.stringify(orderedLeaderboard));
+				localStore.leaderboard = orderedLeaderboard;
+
+				const d = new Date();
+				localStorage.setItem("leaderboardTime", JSON.stringify(d));
+				localStore.leaderboardTime = d;
+			})
+			.then(() => {
+				$(".hours").text(
+					Math.floor(sumLeaderboard(localStore.leaderboard) / 60)
+				);
+			});
+	} else {
+		console.log(sumLeaderboard(localStore.leaderboard));
+		$(".hours").text(sumLeaderboard(localStore.leaderboard));
+	}
+}
+
 if ($(".quiz")[0]) {
 	const question = $(".quiz").attr("name").replaceAll("_", " ");
 	const cat = $(".quiz").attr("cat");
@@ -228,4 +270,13 @@ if ($("#articles")[0]) {
 				.text("Completed");
 		}
 	}
+}
+
+if (!localStore.mobile) {
+	console.log("hi");
+	$("body")
+		.append(`<div style='width: 100%; padding: 10px; background: grey; opacity: .95; position: fixed; bottom: 0; height: 50px; display: flex; flex-direction: row; jusfity-content: center; align-items: center;'>
+		<div><p style='margin: 0px; color: white'>This website works best on a laptop/larger screens. Press ok if you understand and still wish to continue</p></div>
+		<div class= "hvr-darken color-white rounded-md btn-1" id="mobile">Understood</div>
+	</div>`);
 }

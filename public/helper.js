@@ -4,12 +4,16 @@ const login = () => {
 };
 
 const logout = () => {
+	console.log("hi")
 	firebase
 		.auth()
 		.signOut()
 		.then(() => {
 			localStorage.clear();
 			$(".username").text("Login");
+			$(".login-button")
+				.text("Login")
+				.css({ background: "#dbeafd", color: "#3594D2" });
 		})
 		.catch(function (error) {
 			console.log(error);

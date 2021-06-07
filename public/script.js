@@ -80,23 +80,28 @@ const questionOrder = [
 $(".login").on("click", function (e) {
 	e.preventDefault();
 	if (firebase.auth().currentUser) {
-		if ($("#logout")[0]) {
-			$("#logout").fadeOut(300, () => {
-				$("#logout").remove();
-			});
-		} else {
-			let w = $(".username").width();
-			$(
-				`<div id='logout' class='logoutMenu' style='width: ${w}px;'>Logout?<div>`
-			)
-				.hide()
-				.appendTo($(".username").parent().parent().parent())
-				.fadeIn(300, () => {
-					$("#logout").on("click", () => {
-						logout();
-						location.reload();
-					});
+		if ($(this).hasClass("navbar-font")) {
+			if ($("#logout")[0]) {
+				$("#logout").fadeOut(300, () => {
+					$("#logout").remove();
 				});
+			} else {
+				let w = $(".username").width();
+				$(
+					`<div id='logout' class='logoutMenu' style='width: ${w}px;'>Logout?<div>`
+				)
+					.hide()
+					.appendTo($(".username").parent().parent().parent())
+					.fadeIn(300, () => {
+						$("#logout").on("click", () => {
+							logout();
+							location.reload();
+						});
+					});
+			}
+		} else {
+			console.log("bye");
+			logout();
 		}
 	} else {
 		login();

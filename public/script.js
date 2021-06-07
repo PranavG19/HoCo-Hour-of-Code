@@ -86,7 +86,6 @@ $(".login").on("click", function (e) {
 			});
 		} else {
 			let w = $(".username").width();
-			console.log(w);
 			$(
 				`<div id='logout' class='logoutMenu' style='width: ${w}px;'>Logout?<div>`
 			)

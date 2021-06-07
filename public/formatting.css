@@ -528,10 +528,11 @@
 	text-align: center;
 }
 
-.mobile-button {
+.mobile-button-text {
 	margin: 30px;
+	font-size: 60px;
 	color: white;
-	width: 100px;
+	width: 400px;
 	text-align: center;
 }
 

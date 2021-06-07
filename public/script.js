@@ -317,7 +317,7 @@ if (!localStore.mobile) {
 	$(document.body).append(`
 		<div class='mobile-wrapper' id="mobile-wrapper">
 				  <p class='mobile-text'>This website works best on a laptop/larger screens. Press ok if you understand and still wish to continue</p>
-				  <div class="hvr-darken color-white rounded-md btn-1 mobile-button" id="mobile">Ok</div>
+				  <div class="hvr-darken color-white rounded-lg btn-mobile mobile-button-text" id="mobile">Ok</div>
 		  </div>`);
 	$("#mobile").on("click", () => {
 		localStore.mobile = true;

@@ -47,11 +47,28 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 			.then((snapshot) => {
 				pts = snapshot.val();
 			});
+
+		let userPoints: number = data.userPoints;
+		await db
+			.ref("/users/" + uid + "/score")
+			.get()
+			.then((snapshot) => {
+				const temp = snapshot.val();
+				userPoints = temp[0] + temp[1] + temp[2];
+			});
+
 		const scoreRef = db.ref("users/" + uid + "/score/" + cat);
 		scoreRef.set(admin.database.ServerValue.increment(pts));
 
 		const schoolRef = db.ref("schools/" + school);
-		schoolRef.set(admin.database.ServerValue.increment(pts));
+		if (userPoints >= 60) {
+			return true;
+		} else if (userPoints + pts >= 60) {
+			const points: number = 60 - userPoints;
+			schoolRef.set(admin.database.ServerValue.increment(points));
+		} else {
+			schoolRef.set(admin.database.ServerValue.increment(pts));
+		}
 	}
 
 	return isAnswerCorrect;

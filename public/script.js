@@ -106,7 +106,7 @@ $(".login").on("click", function (e) {
 
 firebase.auth().onAuthStateChanged(function (user) {
 	if (user) {
-		if (!user.email.endsWith("@inst.hcpss.org")) {
+		if (!(user.email.endsWith("@inst.hcpss.org") || user.email.endsWith("@hcpss.org"))) {
 			logout();
 			$("body").prepend(
 				`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">

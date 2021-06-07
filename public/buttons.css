@@ -5,6 +5,11 @@
     padding-right: 1.5rem;
 }
 
+.btn-mobile {
+    opacity: 1;
+    padding: 3rem;
+}
+
 .btn-1 a:link { text-decoration: none; }
 .btn-1 a:visited { text-decoration: none; }
 .btn-1 a:hover { text-decoration: none; }

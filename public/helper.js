@@ -128,19 +128,36 @@ function sumLeaderboard(lb) {
 	return sum;
 }
 
+function sortFunction(a, b) {
+	if (a[1] === b[1]) {
+		return 0;
+	} else {
+		return a[1] > b[1] ? -1 : 1;
+	}
+}
+
 const renderLeaderboard = () => {
+	let lb = [];
+	for (var s in localStore.leaderboard) {
+		lb.push([
+			localStore.leaderboard[s][0],
+			Math.floor(
+				10000 *
+					(localStore.leaderboard[s][1] /
+						(students[localStore.leaderboard[s][0]] * 60))
+			),
+		]);
+	}
+	lb.sort(sortFunction);
+
 	for (var s in localStore.leaderboard) {
 		$(`
         <div class="h-16">
             <div class="leaderboard-name text-right">
-                ${localStore.leaderboard[s][0]}
+                ${lb[s][0]}
             </div>
             <div class="leaderboard-points text-right">
-                ${Math.floor(
-									10000 *
-										(localStore.leaderboard[s][1] /
-											(students[localStore.leaderboard[s][0]] * 60))
-								)}
+                ${lb[s][1]}
             </div>
         </div>`)
 			.hide()
@@ -148,7 +165,7 @@ const renderLeaderboard = () => {
 			.fadeIn(s * 150);
 	}
 
-	const maxScore = localStore.leaderboard[0][1];
+	const maxScore = lb[0][1];
 
 	for (var s in localStore.leaderboard) {
 		let bg;
@@ -162,7 +179,7 @@ const renderLeaderboard = () => {
 			bg = "bg-blue2";
 		}
 
-		const w = (localStore.leaderboard[s][1] / maxScore) * 100;
+		const w = (lb[s][1] / maxScore) * 100;
 
 		const bar = $(`
         <div class="h-16">

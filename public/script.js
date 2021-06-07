@@ -238,7 +238,7 @@ if ($(".hours")[0]) {
 				);
 			});
 	} else {
-		$(".hours").text(sumLeaderboard(localStore.leaderboard));
+		$(".hours").text(Math.floor(sumLeaderboard(localStore.leaderboard) / 60));
 	}
 }
 

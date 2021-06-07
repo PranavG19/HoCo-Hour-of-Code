@@ -75,9 +75,6 @@ const questionOrder = [
 	"Automation",
 	"Google Maps",
 	"Maze Generation",
-	"Game Development",
-	"Desktop Apps",
-	"Mobile Apps",
 	"Web Development",
 ];
 

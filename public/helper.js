@@ -53,7 +53,7 @@ const renderModal = (user) => {
 	background-color: white;
 	padding: 20px 10px 50px 10px;'>
       <div class='modal-title'>
-      <h3 style='margin: 0;'>Select Which High School You Attend </h3>
+      <h3 style='margin: 0;'>Which high school do you attend? (Note: selecting a different school will only benefit that school and you will be ineligible for raffle prizes)</h3>
     </div>
       <select id='modalSelect' style='margin-top: 20px;'>
         <option value=""></option>
@@ -190,7 +190,7 @@ const renderQuestions = (questions, questionName) => {
 	const completed = localStore.questionsSolved.indexOf(questionName) !== -1;
 	if (completed) {
 		$(".quiz").append(
-			`<hr><div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0;">Quiz - <strong>Completed</strong></div>`
+			`<hr><div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0;">Quiz - <strong class="color-white bg-limegreen rounded-md padding-1">Completed</strong></div>`
 		);
 	} else {
 		$(".quiz").append(

@@ -131,3 +131,13 @@
 	font-size: 1rem;
 	font-weight: 300;
 }
+
+.stats-number {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.stats-description {
+	font-size: 1.25rem;
+	font-weight: 500;
+}

@@ -554,7 +554,7 @@
 	border-radius: 5px;
 	text-align: center;
 	padding: 10px;
-	border: 1px solid grey;
+	border: 1px solid lightgrey;
 	background: white;
 	z-index: 1000;
 	transition: 100ms;
@@ -569,7 +569,7 @@
 	border-width: 5px;
 	border-style: solid;
 	transform: rotate(180deg);
-	border-color: grey transparent transparent transparent;
+	border-color: lightgrey transparent transparent transparent;
 }
 
 .logoutMenu:hover {

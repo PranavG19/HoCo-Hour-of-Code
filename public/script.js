@@ -82,9 +82,7 @@ $(".login").on("click", function (e) {
 	if (firebase.auth().currentUser) {
 		if ($(this).hasClass("navbar-font")) {
 			if ($("#logout")[0]) {
-				$("#logout").fadeOut(300, () => {
-					$("#logout").remove();
-				});
+				$("#logout").remove();
 			} else {
 				let w = $(".username").width();
 				$(
@@ -94,6 +92,7 @@ $(".login").on("click", function (e) {
 					.appendTo($(".username").parent().parent().parent())
 					.fadeIn(300, () => {
 						$("#logout").on("click", () => {
+							$("#logout").remove();
 							logout();
 							location.reload();
 						});

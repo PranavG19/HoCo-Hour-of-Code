@@ -1,5 +1,99 @@
 {
 	"questions": {
+		"Arrays": {
+			"pts": 8,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Why should you be careful when declaring arrays with too many dimensions?",
+						"It will take too much memory",
+						"Most modern computers cannot handle 5D calculations",
+						"Modifying arrays above 4 dimensions requires a graphics card",
+						"It is difficult to access and modify"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is a data structure?",
+						"A structured method to declaring variables and storing it as data",
+						"A programming structure designed to hold data",
+						"Data that has become large enough to necessitate a custom hardware structure to support it",
+						"The backbone of databases"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"Which of the following languages are not 0-indexed?",
+						"Python",
+						"C++",
+						"Java",
+						"MATLAB"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Which of the following indices accesses the 1st element in a 0-indexed array?",
+						"0",
+						"1",
+						"2",
+						"-1"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"What needs to be provided when an array is initialized?",
+						"Data type and storage type",
+						"Data structure type",
+						"Data type and size",
+						"Size and data structure"
+					]
+				},
+				{
+					"answer": "5",
+					"info": [
+						"fr",
+						"What index is required to access the 4th element in an array?"
+					]
+				},
+				{
+					"answer": "10",
+					"info": [
+						"fr",
+						"What is the output of the following code?",
+						"arr = [5, 3, 2, 4, 1] <br>sum = 0 <br>for i in range(3): <br>    sum += arr[i] <br>print(sum)",
+						"Python"
+					]
+				},
+				{
+					"answer": "7",
+					"info": [
+						"fr",
+						"What is the output of the following code?",
+						"arr = [2, 5, 4, 3, 1] <br>print(arr[0] + arr[2] + arr[4])",
+						"Python"
+					]
+				},
+				{
+					"answer": "11",
+					"info": [
+						"fr",
+						"What is the output of the following code?",
+						"arr = [3, 6, 10, 4, 2] <br>x = 20 <br>for i in range(2): <br>    x -= arr[i] <br>print(x)",
+						"Python"
+					]
+				}
+			]
+		},
 		"Automation": {
 			"pts": 10,
 			"questions": [
@@ -287,6 +381,89 @@
 				}
 			]
 		},
+		"Booleans": {
+			"pts": 10,
+			"questions": [
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"What are the two values that can be stored in a boolean variable?",
+						"Good, Bad",
+						"-1, 1",
+						"Deprecated, Modern",
+						"True, False"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: The two possible answers for a true or false question can be stored as a boolean",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What three components make up an if-statement?",
+						"The boolean, the loop, the if-statement",
+						"If-statement itself, the body of code, the boolean",
+						"A what-if clause, a noun, and a verb",
+						"If-statement itself, the boolean, and a pointer to the code to run"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What differentiates an if-statement from an if-else statement?",
+						"If the given boolean is true, the “else” code block is ran",
+						"It has another body of code that runs only if the given boolean is false",
+						"The else body of code runs only if the if-else statement matches the else-if statement",
+						"They are the same"
+					]
+				},
+				{
+					"answer": "True",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = True <br>b = 6 <br>c = 7 <br>if a: <br>    print(b==c)",
+						"Python"
+					]
+				},
+				{
+					"answer": "False",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 7 <br>b = 5 <br>c = 1 <br>if c: <br>    print(b>a)",
+						"Python"
+					]
+				},
+				{
+					"answer": "False",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 6 <br>b = 4 <br>c = False <br>if c: <br>    print(b>a) <br>else: <br>    print(a<b)",
+						"Python"
+					]
+				},
+				{
+					"answer": "3",
+					"info": [
+						"fr",
+						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
+						"a = 4 <br>b = 2 <br>c = 7 <br>d = 5 <br>if d > c: <br>    if b < a: <br>        print(1) <br>    else: <br>    print(2) <br>else: <br>    print(3)",
+						"Python"
+					]
+				}
+			]
+		},
 		"Dynamic Programming": {
 			"pts": 17,
 			"questions": [
@@ -532,6 +709,7 @@
 			]
 		},
 		"Game Making": {
+			"pts": 4,
 			"questions": [
 				{
 					"answer": 0,
@@ -635,8 +813,7 @@
 						"You can't be good"
 					]
 				}
-			],
-			"pts": 4
+			]
 		},
 		"Google Maps": {
 			"pts": 6,
@@ -787,6 +964,86 @@
 				}
 			]
 		},
+		"Greedy": {
+			"pts": 15,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an algorithm?",
+						"A mathematical formula",
+						"A specific set of instructions",
+						"A problem in your code",
+						"The header of your code"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"The goal of a greedy algorithm is to",
+						"Write the least lines of code",
+						"Determine the globally optimal solution from locally optimal solutions",
+						"Write the code in the shortest amount of time",
+						"Make the most money from your code"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Where does the greedy algorithm get its name?",
+						"The English word “greedy” has a similar meaning to what the algorithm does",
+						"It created the word “greedy”",
+						"It was randomly named",
+						"It is an ironic name"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"Which of the following is NOT a common real-world use case of greedy algorithms?",
+						"Traveling-salesman problem",
+						"Fast Fourier Transform",
+						"Vertex cover",
+						"K-center clustering"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Is there a set code to solve all greedy problems?",
+						"Yes",
+						"No"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Which of the following represents a greedy solution?",
+						"Finding the largest sum of 3 elements from an array",
+						"Sorting a list",
+						"Finding connected components in a graph",
+						"Printing the 3rd element of a list"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"Greedy algorithms are often used in the real world to  _________.",
+						"Produce a perfect, globally optimal solution",
+						"Produce an approximate local solution",
+						"Produce a perfect, locally optimal solution",
+						"Produce an approximate global solution "
+					]
+				}
+			]
+		},
 		"Hello World": {
 			"pts": 4,
 			"questions": [
@@ -850,6 +1107,178 @@
 						"Given the output, fill in the blank in the code.",
 						"print(“____”)",
 						"> Sushi!",
+						"Python"
+					]
+				}
+			]
+		},
+		"Libraries": {
+			"pts": 6,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is the purpose of libraries in programming?",
+						"To help the programmer focus on big-picture ideas while relying on the library to execute the details",
+						"To give programmers a reference tool that they can access to help them program",
+						"To store programming books",
+						"To help the programmer focus on the small details while relying on the library to make big-picture decisions"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"Why do libraries need to be imported?",
+						"Books overseas are often better than books at home",
+						"It would be too resource-intensive to always load every library",
+						"There was no way for programming language designers to include libraries’ features into the language",
+						"It is difficult to use them by default"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"True or False: The string library is automatically imported in Python",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or False: Libraries are built by experienced developers and run all of its tasks as fast as possible.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"Why are libraries inflexible?",
+						"The laws of physics binds them to a single physical location as a building",
+						"They are imported via HTTP protocol and cannot be modified under international law",
+						"They hide their code away",
+						"All computer programs must be inflexible to operate"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"Why would a library be imported by default?",
+						"The vast majority of applications use the library, so the programming language’s designers built the language to import the library by default",
+						"To save space",
+						"To save HTTP protocol bandwidth",
+						"By definition, no library is imported by default"
+					]
+				}
+			]
+		},
+		"Loops": {
+			"pts": 10,
+			"questions": [
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"True or False: Statement 1 in a for-loop is the same as the statement in a while loop.",
+						"True",
+						"False"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is the purpose of a for-loop?",
+						"Running the same code multiple times",
+						"Running the same code multiple times for each entry into the main function",
+						"Looping through various parts of your code",
+						"For all given loops, run the same code multiple times"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"Which statement in a for-loop can run more than once?",
+						"Statement 1",
+						"Statement 2",
+						"Statement 3 and Statement 2",
+						"Statement 1 and Statement 2"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"What is the order that the statements in the for-loop are initially executed?",
+						"Statement 1, Statement 3, Statement 2",
+						"Statement 3, Statement 1, Statement 2",
+						"Statement 2, Statement 3, Statement 1",
+						"Statement 1, Statement 2, Statement 3"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is the disadvantage to using while loops instead of for-loops?",
+						"There are more statements",
+						"It’s much easier to create an infinite loop",
+						"There are less statements",
+						"It doesn’t have any disadvantages"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is the disadvantage to using for-loops instead of while loops?",
+						"It’s more complex because it requires more statements",
+						"It’s less complex because it requires less statements",
+						"It doesn’t have any disadvantages",
+						"It’s much easier to create an infinite loop"
+					]
+				},
+				{
+					"answer": "-1",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b -= a <br>print(a)",
+						"Python"
+					]
+				},
+				{
+					"answer": "15",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b += 1 <br>print(a)",
+						"Python"
+					]
+				},
+				{
+					"answer": "-2",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"a = 1 <br>b = 2 <br>c = 3 <br>for i in range(3): <br>    a += b <br>    a -= c <br> print(a)",
+						"Python"
+					]
+				},
+				{
+					"answer": "1",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"b = 3 <br> a = 6 <br>for i in range(10): <br>    b += 1 <br>if b > a: <br>    print(1) <br>else: <br>    print(2)",
 						"Python"
 					]
 				}
@@ -920,6 +1349,106 @@
 						"Prim’s algorithm",
 						"Recursive backtracking",
 						"Wilson’s algorithm"
+					]
+				}
+			]
+		},
+		"OOP": {
+			"pts": 14,
+			"questions": [
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"What does OOP stand for?",
+						"Oriented-Object Programming",
+						"Object-Oriented Python",
+						"Object-Oriented Programming",
+						"Object-Ordered Processes"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What two concepts does OOP encourage that makes it the most dominant programming paradigm?",
+						"Code reuse, modularization",
+						"Modularization, code rerunning",
+						"Objects, Polymorphism",
+						"Classes, flexibility"
+					]
+				},
+				{
+					"answer": 3,
+					"info": [
+						"mcq",
+						"Which of the following is not a feature of OOP?",
+						"Classes",
+						"Objects",
+						"Integration",
+						"Polymorphism"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an OOP class?",
+						"A way to organize objects using polymorphism",
+						"A way to organize concepts that have certain ideas in common",
+						"A fancy word that means integrating objects into classes",
+						"A defining concept behind OOP"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an OOP object?",
+						"A variable under the OOP programming paradigm",
+						"An instance of a class",
+						"A class of an instance",
+						"A class under the OOP programming paradigm"
+					]
+				},
+				{
+					"answer": 4,
+					"info": [
+						"mcq",
+						"What two components are part of every class?",
+						"Polymorphism, Objects",
+						"States, Objects",
+						"Methods, Polymorphism",
+						"States, Methods"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"tf",
+						"Which of the following is an implementation of a method within the class but with different parameters?",
+						"Over-riding",
+						"Over-loading"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"tf",
+						"Which of the following is an implementation of the same method within a child class?",
+						"Over-riding",
+						"Over-loading"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"What is inheritance in OOP?",
+						"A way to organize classes to store their differences more efficiently",
+						"Passing variables between objects with a parent-child relationship",
+						"Reallocating memory to a child object when a parent variable is deleted",
+						"A way to organize objects to store their differences more efficiently"
 					]
 				}
 			]
@@ -1026,6 +1555,83 @@
 						"fr",
 						"def foo(a, b):<br>    if b == 10:<br>        print(a)<br>    else:<br>        foo(a+a, b+1)<br><br>foo(0, 5)",
 						"Python"
+					]
+				}
+			]
+		},
+		"Sorting": {
+			"pts": 16,
+			"questions": [
+				{
+					"answer": 1,
+					"info": [
+						"mcc",
+						"What is the output to this code?",
+						"arr = [3, 6, 10, 4, 2] <br>arr.sort() <br>print(arr)",
+						"Python",
+						"[2, 3, 4, 6, 10]",
+						"[10, 6, 4, 3, 2]",
+						"Error",
+						"[3, 6, 10, 4, 2]"
+					]
+				},
+				{
+					"answer": 1,
+					"info": [
+						"mcq",
+						"How many operations does selection sort take to sort an array of size N (for logs assume base 2)?",
+						"N * N",
+						"N * log(N)",
+						"log(N) * log(N)",
+						"N"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"How many operations does merge sort take to sort an array of size N (for logs assume base 2)?",
+						"N * N",
+						"N * log(N)",
+						"log(N) * log(N)",
+						"N"
+					]
+				},
+				{
+					"answer": 2,
+					"info": [
+						"mcq",
+						"What is an algorithm that is often combined with sorting to speed up a program significantly?",
+						"Mandelbrot Set Algorithm",
+						"Floyd-Warshall Algorithm",
+						"Binary Search",
+						"Bi-disjoint Search"
+					]
+				},
+				{
+					"answer": "7",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"arr = [1, 3, 4, 2, 5] <br>arr.sort() <br>print(arr[3] + arr[2])",
+						"Python"
+					]
+				},
+				{
+					"answer": "10",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"arr = [4, 5, 1, 2, 3] <br>arr.sort() <br>arr[4] = arr[2] <br>arr[3] = arr[1] <br>print((arr[1] + arr[4]) * arr[3])",
+						"Python"
+					]
+				},
+				{
+					"answer": "6",
+					"info": [
+						"fr",
+						"What is the output of this code?",
+						"arr = [3, 2, 4, 1, 5] <br>for i in range(4): <br>    arr[i] += arr[i+1] <br>arr.sort() <br>print(arr[4])"
 					]
 				}
 			]
@@ -1206,641 +1812,11 @@
 				}
 			]
 		},
-		"Booleans": {
-			"pts": 10,
-			"questions": [
-				{
-					"answer": 4,
-					"info": [
-						"mcq",
-						"What are the two values that can be stored in a boolean variable?",
-						"Good, Bad",
-						"-1, 1",
-						"Deprecated, Modern",
-						"True, False"
-					]
-				},
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"True or False: The two possible answers for a true or false question can be stored as a boolean",
-						"True",
-						"False"
-					]
-				},
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What three components make up an if-statement?",
-						"The boolean, the loop, the if-statement",
-						"If-statement itself, the body of code, the boolean",
-						"A what-if clause, a noun, and a verb",
-						"If-statement itself, the boolean, and a pointer to the code to run"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What differentiates an if-statement from an if-else statement?",
-						"If the given boolean is true, the “else” code block is ran",
-						"It has another body of code that runs only if the given boolean is false",
-						"The else body of code runs only if the if-else statement matches the else-if statement",
-						"They are the same"
-					]
-				},
-				{
-					"answer": "True",
-					"info": [
-						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
-						"a = True <br>b = 6 <br>c = 7 <br>if a: <br>    print(b==c)",
-						"Python"
-					]
-				},
-				{
-					"answer": "False",
-					"info": [
-						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
-						"a = 7 <br>b = 5 <br>c = 1 <br>if c: <br>    print(b>a)",
-						"Python"
-					]
-				},
-				{
-					"answer": "False",
-					"info": [
-						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
-						"a = 6 <br>b = 4 <br>c = False <br>if c: <br>    print(b>a) <br>else: <br>    print(a<b)",
-						"Python"
-					]
-				},
-				{
-					"answer": "3",
-					"info": [
-						"fr",
-						"What is the output of this code? (Note: Python capitalizes the first letter of a boolean’s value / uses “True” and “False”)",
-						"a = 4 <br>b = 2 <br>c = 7 <br>d = 5 <br>if d > c: <br>    if b < a: <br>        print(1) <br>    else: <br>    print(2) <br>else: <br>    print(3)",
-						"Python"
-					]
-				}
-			]
-		},
-		"Loops": {
-			"pts": 10,
-			"questions": [
-				{
-					"answer": 0,
-					"info": [
-						"tf",
-						"True or False: Statement 1 in a for-loop is the same as the statement in a while loop.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What is the purpose of a for-loop?",
-						"Running the same code multiple times",
-						"Running the same code multiple times for each entry into the main function",
-						"Looping through various parts of your code",
-						"For all given loops, run the same code multiple times"
-					]
-				},
-
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"Which statement in a for-loop can run more than once?",
-						"Statement 1",
-						"Statement 2",
-						"Statement 3 and Statement 2",
-						"Statement 1 and Statement 2"
-					]
-				},
-
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What is the order that the statements in the for-loop are initially executed?",
-						"Statement 1, Statement 3, Statement 2",
-						"Statement 3, Statement 1, Statement 2",
-						"Statement 2, Statement 3, Statement 1",
-						"Statement 1, Statement 2, Statement 3"
-					]
-				},
-
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What is the disadvantage to using while loops instead of for-loops?",
-						"There are more statements",
-						"It’s much easier to create an infinite loop",
-						"There are less statements",
-						"It doesn’t have any disadvantages"
-					]
-				},
-
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What is the disadvantage to using for-loops instead of while loops?",
-						"It’s more complex because it requires more statements",
-						"It’s less complex because it requires less statements",
-						"It doesn’t have any disadvantages",
-						"It’s much easier to create an infinite loop"
-					]
-				},
-
-				{
-					"answer": "-1",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b -= a <br>print(a)",
-						"Python"
-					]
-				},
-				{
-					"answer": "15",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"a = 0 <br>b = 1 <br>for i in range(5): <br>    a += b <br>    b += 1 <br>print(a)",
-						"Python"
-					]
-				},
-				{
-					"answer": "-2",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"a = 1 <br>b = 2 <br>c = 3 <br>for i in range(3): <br>    a += b <br>    a -= c <br> print(a)",
-						"Python"
-					]
-				},
-				{
-					"answer": "1",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"b = 3 <br> a = 6 <br>for i in range(10): <br>    b += 1 <br>if b > a: <br>    print(1) <br>else: <br>    print(2)",
-						"Python"
-					]
-				}
-			]
-		},
-		"Arrays": {
-			"pts": 8,
-			"questions": [
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"Why should you be careful when declaring arrays with too many dimensions?",
-						"It will take too much memory",
-						"Most modern computers cannot handle 5D calculations",
-						"Modifying arrays above 4 dimensions requires a graphics card",
-						"It is difficult to access and modify"
-					]
-				},
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What is a data structure?",
-						"A structured method to declaring variables and storing it as data",
-						"A programming structure designed to hold data",
-						"Data that has become large enough to necessitate a custom hardware structure to support it",
-						"The backbone of databases"
-					]
-				},
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"Which of the following languages are not 0-indexed?",
-						"Python",
-						"C++",
-						"Java",
-						"MATLAB"
-					]
-				},
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"Which of the following indices accesses the 1st element in a 0-indexed array?",
-						"0",
-						"1",
-						"2",
-						"-1"
-					]
-				},
-				{
-					"answer": 0,
-					"info": [
-						"mcq",
-						"What needs to be provided when an array is initialized?",
-						"Data type and storage type",
-						"Data structure type",
-						"Data type and size",
-						"Size and data structure"
-					]
-				},
-				{
-					"answer": "5",
-					"info": [
-						"fr",
-						"What index is required to access the 4th element in an array?"
-					]
-				},
-				{
-					"answer": "10",
-					"info": [
-						"fr",
-						"What is the output of the following code?",
-						"arr = [5, 3, 2, 4, 1] <br>sum = 0 <br>for i in range(3): <br>    sum += arr[i] <br>print(sum)",
-						"Python"
-					]
-				},
-				{
-					"answer": "7",
-					"info": [
-						"fr",
-						"What is the output of the following code?",
-						"arr = [2, 5, 4, 3, 1] <br>print(arr[0] + arr[2] + arr[4])",
-						"Python"
-					]
-				},
-				{
-					"answer": "11",
-					"info": [
-						"fr",
-						"What is the output of the following code?",
-						"arr = [3, 6, 10, 4, 2] <br>x = 20 <br>for i in range(2): <br>    x -= arr[i] <br>print(x)",
-						"Python"
-					]
-				}
-			]
-		},
-		"Libraries": {
-			"pts": 6,
-			"questions": [
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"What is the purpose of libraries in programming?",
-						"To help the programmer focus on big-picture ideas while relying on the library to execute the details",
-						"To give programmers a reference tool that they can access to help them program",
-						"To store programming books",
-						"To help the programmer focus on the small details while relying on the library to make big-picture decisions"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"Why do libraries need to be imported?",
-						"Books overseas are often better than books at home",
-						"It would be too resource-intensive to always load every library",
-						"There was no way for programming language designers to include libraries’ features into the language",
-						"It is difficult to use them by default"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"True or False: The string library is automatically imported in Python",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"tf",
-						"True or False: Libraries are built by experienced developers and run all of its tasks as fast as possible.",
-						"True",
-						"False"
-					]
-				},
-
-				{
-					"answer": 3,
-					"info": [
-						"mcq",
-						"Why are libraries inflexible?",
-						"The laws of physics binds them to a single physical location as a building",
-						"They are imported via HTTP protocol and cannot be modified under international law",
-						"They hide their code away",
-						"All computer programs must be inflexible to operate"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"Why would a library be imported by default?",
-						"The vast majority of applications use the library, so the programming language’s designers built the language to import the library by default",
-						"To save space",
-						"To save HTTP protocol bandwidth",
-						"By definition, no library is imported by default"
-					]
-				}
-			]
-		},
-		"Sorting": {
-			"pts": 16,
-			"questions": [
-				{
-					"answer": 1,
-					"info": [
-						"mcc",
-						"What is the output to this code?",
-						"arr = [3, 6, 10, 4, 2] <br>arr.sort() <br>print(arr)",
-						"Python",
-						"[2, 3, 4, 6, 10]",
-						"[10, 6, 4, 3, 2]",
-						"Error",
-						"[3, 6, 10, 4, 2]"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"How many operations does selection sort take to sort an array of size N (for logs assume base 2)?",
-						"N * N",
-						"N * log(N)",
-						"log(N) * log(N)",
-						"N"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"How many operations does merge sort take to sort an array of size N (for logs assume base 2)?",
-						"N * N",
-						"N * log(N)",
-						"log(N) * log(N)",
-						"N"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What is an algorithm that is often combined with sorting to speed up a program significantly?",
-						"Mandelbrot Set Algorithm",
-						"Floyd-Warshall Algorithm",
-						"Binary Search",
-						"Bi-disjoint Search"
-					]
-				},
-
-				{
-					"answer": "7",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"arr = [1, 3, 4, 2, 5] <br>arr.sort() <br>print(arr[3] + arr[2])",
-						"Python"
-					]
-				},
-				{
-					"answer": "10",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"arr = [4, 5, 1, 2, 3] <br>arr.sort() <br>arr[4] = arr[2] <br>arr[3] = arr[1] <br>print((arr[1] + arr[4]) * arr[3])",
-						"Python"
-					]
-				},
-				{
-					"answer": "6",
-					"info": [
-						"fr",
-						"What is the output of this code?",
-						"arr = [3, 2, 4, 1, 5] <br>for i in range(4): <br>    arr[i] += arr[i+1] <br>arr.sort() <br>print(arr[4])"
-					]
-				}
-			]
-		},
-		"OOP": {
-			"pts": 14,
-			"questions": [
-				{
-					"answer": 3,
-					"info": [
-						"mcq",
-						"What does OOP stand for?",
-						"Oriented-Object Programming",
-						"Object-Oriented Python",
-						"Object-Oriented Programming",
-						"Object-Ordered Processes"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"What two concepts does OOP encourage that makes it the most dominant programming paradigm?",
-						"Code reuse, modularization",
-						"Modularization, code rerunning",
-						"Objects, Polymorphism",
-						"Classes, flexibility"
-					]
-				},
-
-				{
-					"answer": 3,
-					"info": [
-						"mcq",
-						"Which of the following is not a feature of OOP?",
-						"Classes",
-						"Objects",
-						"Integration",
-						"Polymorphism"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What is an OOP class?",
-						"A way to organize objects using polymorphism",
-						"A way to organize concepts that have certain ideas in common",
-						"A fancy word that means integrating objects into classes",
-						"A defining concept behind OOP"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What is an OOP object?",
-						"A variable under the OOP programming paradigm",
-						"An instance of a class",
-						"A class of an instance",
-						"A class under the OOP programming paradigm"
-					]
-				},
-
-				{
-					"answer": 4,
-					"info": [
-						"mcq",
-						"What two components are part of every class?",
-						"Polymorphism, Objects",
-						"States, Objects",
-						"Methods, Polymorphism",
-						"States, Methods"
-					]
-				},
-
-				{
-					"answer": 2,
-					"info": [
-						"tf",
-						"Which of the following is an implementation of a method within the class but with different parameters?",
-						"Over-riding",
-						"Over-loading"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"tf",
-						"Which of the following is an implementation of the same method within a child class?",
-						"Over-riding",
-						"Over-loading"
-					]
-				},
-
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"What is inheritance in OOP?",
-						"A way to organize classes to store their differences more efficiently",
-						"Passing variables between objects with a parent-child relationship",
-						"Reallocating memory to a child object when a parent variable is deleted",
-						"A way to organize objects to store their differences more efficiently"
-					]
-				}
-			]
-		},
-		"Greedy": {
-			"pts": 15,
-			"questions": [
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"What is an algorithm?",
-						"A mathematical formula",
-						"A specific set of instructions",
-						"A problem in your code",
-						"The header of your code"
-					]
-				},
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"The goal of a greedy algorithm is to",
-						"Write the least lines of code",
-						"Determine the globally optimal solution from locally optimal solutions",
-						"Write the code in the shortest amount of time",
-						"Make the most money from your code"
-					]
-				},
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"Where does the greedy algorithm get its name?",
-						"The English word “greedy” has a similar meaning to what the algorithm does",
-						"It created the word “greedy”",
-						"It was randomly named",
-						"It is an ironic name"
-					]
-				},
-				{
-					"answer": 2,
-					"info": [
-						"mcq",
-						"Which of the following is NOT a common real-world use case of greedy algorithms?",
-						"Traveling-salesman problem",
-						"Fast Fourier Transform",
-						"Vertex cover",
-						"K-center clustering"
-					]
-				},
-				{
-					"answer": 2,
-					"info": [
-						"tf",
-						"Is there a set code to solve all greedy problems?",
-						"Yes",
-						"No"
-					]
-				},
-				{
-					"answer": 1,
-					"info": [
-						"mcq",
-						"Which of the following represents a greedy solution?",
-						"Finding the largest sum of 3 elements from an array",
-						"Sorting a list",
-						"Finding connected components in a graph",
-						"Printing the 3rd element of a list"
-					]
-				},
-				{
-					"answer": 4,
-					"info": [
-						"mcq",
-						"Greedy algorithms are often used in the real world to  _________.",
-						"Produce a perfect, globally optimal solution",
-						"Produce an approximate local solution",
-						"Produce a perfect, locally optimal solution",
-						"Produce an approximate global solution "
-					]
-				}
-			]
-		},
 		"Web Development": {
 			"pts": 6,
 			"questions": [
 				{
-					"anwer": 0,
+					"anwer": 2,
 					"info": [
 						"mcq",
 						"What are the two branches of web development?",
@@ -1851,7 +1827,7 @@
 					]
 				},
 				{
-					"anwer": 0,
+					"anwer": 2,
 					"info": [
 						"mcq",
 						"Which of the following is not an example of a CSS-based framework?",
@@ -1862,7 +1838,7 @@
 					]
 				},
 				{
-					"anwer": 0,
+					"anwer": 2,
 					"info": [
 						"mcq",
 						"Which of the following is not a front-end language?",
@@ -1873,7 +1849,7 @@
 					]
 				},
 				{
-					"anwer": 0,
+					"anwer": 3,
 					"info": [
 						"mcq",
 						"What is a front-end framework?",
@@ -1883,9 +1859,8 @@
 						"Anything that isn’t one of the three front-end languages (HTML, CSS, JS)"
 					]
 				},
-
 				{
-					"anwer": 0,
+					"anwer": 4,
 					"info": [
 						"mcq",
 						"What do backend engineers work with a lot?",
@@ -1896,7 +1871,7 @@
 					]
 				},
 				{
-					"anwer": 0,
+					"anwer": 3,
 					"info": [
 						"mcq",
 						"What is an example of a relational database?",
@@ -1907,7 +1882,7 @@
 					]
 				},
 				{
-					"anwer": 0,
+					"anwer": 1,
 					"info": [
 						"mcq",
 						"What is the difference between SQL and NoSQL databases?",
@@ -1921,18 +1896,18 @@
 		}
 	},
 	"schools": {
-		"Atholton High School": 26,
-		"Centennial High School": 24,
-		"Glenelg High School": 22,
-		"Hammond High School": 109,
-		"Howard High School": 13,
-		"Long Reach High School": 19,
-		"Marriotts Ridge High School": 2,
-		"Mt Hebron High School": 8,
-		"Oakland Mills High School": 79,
-		"Reservoir High School": 50,
-		"River Hill High School": 296,
-		"Wilde Lake High School": 81
+		"Atholton High School": 0,
+		"Centennial High School": 0,
+		"Glenelg High School": 0,
+		"Hammond High School": 0,
+		"Howard High School": 0,
+		"Long Reach High School": 0,
+		"Marriotts Ridge High School": 0,
+		"Mt Hebron High School": 0,
+		"Oakland Mills High School": 0,
+		"Reservoir High School": 0,
+		"River Hill High School": 4,
+		"Wilde Lake High School": 0
 	},
 	"users": {
 		"HD7KYJqC6ST4GaRVzcM4qEkbTjM2": {

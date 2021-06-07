@@ -216,3 +216,16 @@ if ($(".quiz")[0]) {
 		}
 	}
 }
+
+if ($("#articles")[0]) {
+	if (localStore.questionsSolved) {
+		for (let i = 0; i < localStore.questionsSolved.length; i++) {
+			const question = localStore.questionsSolved[i].replaceAll(" ", "_");
+			console.log("." + question);
+			$("." + question)
+				.removeClass("hcpss-black bg-hcpss-offwhite")
+				.addClass("color-white bg-limegreen")
+				.text("Completed");
+		}
+	}
+}

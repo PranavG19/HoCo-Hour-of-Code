@@ -43,17 +43,18 @@ const renderModal = (user) => {
 	height: 100vh;
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.3);'>
-    <div class='modal' style='height: 100px;
+    <div class='modal' style='
 	width: 450px;
-	border-radius: 20px;
+	border-radius: 0.375rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	padding: 20px 10px 50px 10px;'>
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;'>
       <div class='modal-title'>
-      <h3 style='margin: 0;'>Which high school do you attend? (Note: selecting a different school will only benefit that school and you will be ineligible for raffle prizes)</h3>
+      <h3 style='margin: 0;'>Which high school do you attend?</h3>
+	  <div style="margin: 0; color: grey; font-size: 0.75rem">Note: Selecting the wrong school will make you ineligible for prizes</div>
     </div>
       <select id='modalSelect' style='margin-top: 20px;'>
         <option value=""></option>

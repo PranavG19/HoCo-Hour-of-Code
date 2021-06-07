@@ -1824,7 +1824,7 @@
 			"pts": 6,
 			"questions": [
 				{
-					"anwer": 2,
+					"answer": 2,
 					"info": [
 						"mcq",
 						"What are the two branches of web development?",
@@ -1835,7 +1835,7 @@
 					]
 				},
 				{
-					"anwer": 2,
+					"answer": 2,
 					"info": [
 						"mcq",
 						"Which of the following is not an example of a CSS-based framework?",
@@ -1846,7 +1846,7 @@
 					]
 				},
 				{
-					"anwer": 2,
+					"answer": 2,
 					"info": [
 						"mcq",
 						"Which of the following is not a front-end language?",
@@ -1857,7 +1857,7 @@
 					]
 				},
 				{
-					"anwer": 3,
+					"answer": 3,
 					"info": [
 						"mcq",
 						"What is a front-end framework?",
@@ -1868,7 +1868,7 @@
 					]
 				},
 				{
-					"anwer": 4,
+					"answer": 4,
 					"info": [
 						"mcq",
 						"What do backend engineers work with a lot?",
@@ -1879,7 +1879,7 @@
 					]
 				},
 				{
-					"anwer": 3,
+					"answer": 3,
 					"info": [
 						"mcq",
 						"What is an example of a relational database?",
@@ -1890,7 +1890,7 @@
 					]
 				},
 				{
-					"anwer": 1,
+					"answer": 1,
 					"info": [
 						"mcq",
 						"What is the difference between SQL and NoSQL databases?",

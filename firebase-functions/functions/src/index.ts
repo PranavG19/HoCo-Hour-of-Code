@@ -74,7 +74,25 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	return isAnswerCorrect;
 });
 
-exports.createUser = functions.https.onCall(async (data) => {
+exports.createUser = functions.https.onCall(async (data, context) => {
+	const email: string | undefined = context?.auth?.token?.email;
+	const id = context?.auth?.uid;
+	if (email == (undefined || null) || !email.endsWith("@inst.hcpss.org")) {
+		return false;
+	}
+
+	let seen = false;
+	db.ref("users/" + id + "/school")
+		.get()
+		.then((snapshot) => {
+			if (snapshot.exists()) {
+				seen = true;
+			}
+		});
+	if (seen) {
+		return false;
+	}
+
 	const uid: string = data.uid;
 	const school: string = data.school;
 	const questionLengths: number[] = [

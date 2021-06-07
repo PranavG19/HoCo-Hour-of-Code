@@ -323,20 +323,25 @@ const getQuestions = async (questionName, numbers, cat, school) => {
 	} catch {
 		localStore[questionName] = undefined;
 	}
-	if (localStore[questionName] === (undefined || null)) {
+	if (
+		localStore[questionName] === (undefined || null) ||
+		localStore[questionName].length < 1
+	) {
 		data = [];
 		for (var i = 0; i < numbers.length; i++) {
+			numbers[i];
 			await rt
 				.ref("questions/" + questionName + "/questions/" + numbers[i] + "/info")
 				.get()
 				.then((snapshot) => {
+					console.log("hi");
 					const d = snapshot.val();
 					data.push(d);
 				});
 		}
 		localStorage.setItem(questionName, JSON.stringify(data));
 		localStore[questionName] = data;
-		location.reload();
+		// location.reload();
 	}
 
 	renderQuestions(localStore[questionName], questionName);

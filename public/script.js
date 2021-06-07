@@ -97,7 +97,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 			logout();
 			$("body")
 				.prepend(
-					`<div style="text-align: center; background: lightcoral; border-radius: 50px; padding: 15px; margin-bottom: 10px;">
+					`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">
                                 <p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Please Login With HCPSS Account!</p>
                                 </div>`
 				)
@@ -221,7 +221,6 @@ if ($(".hours")[0]) {
 				);
 			});
 	} else {
-		console.log(sumLeaderboard(localStore.leaderboard));
 		$(".hours").text(sumLeaderboard(localStore.leaderboard));
 	}
 }
@@ -274,9 +273,14 @@ if ($("#articles")[0]) {
 
 if (!localStore.mobile) {
 	console.log("hi");
-	$("body")
-		.append(`<div style='width: 100%; padding: 10px; background: grey; opacity: .95; position: fixed; bottom: 0; height: 50px; display: flex; flex-direction: row; jusfity-content: center; align-items: center;'>
-		<div><p style='margin: 0px; color: white'>This website works best on a laptop/larger screens. Press ok if you understand and still wish to continue</p></div>
-		<div class= "hvr-darken color-white rounded-md btn-1" id="mobile">Understood</div>
-	</div>`);
+	$(document.body).append(`
+		<div class='mobile-wrapper' id="mobile-wrapper">
+				  <p class='mobile-text'>This website works best on a laptop/larger screens. Press ok if you understand and still wish to continue</p>
+				  <div class="hvr-darken color-white rounded-md btn-1 mobile-button" id="mobile">Ok</div>
+		  </div>`);
+	$("#mobile").on("click", () => {
+		localStore.mobile = true;
+		localStorage.setItem("mobile", JSON.stringify(true));
+		$("#mobile-wrapper").remove();
+	});
 }

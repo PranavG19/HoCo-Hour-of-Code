@@ -139,7 +139,7 @@ const renderLeaderboard = () => {
                 ${Math.floor(
 									10000 *
 										(localStore.leaderboard[s][1] /
-											students[localStore.leaderboard[s][0]])
+											(students[localStore.leaderboard[s][0]] * 60))
 								)}
             </div>
         </div>`)
@@ -178,8 +178,8 @@ const renderScore = () => {
 	if ($(".score")[0]) {
 		ts = localStore.totalScore || 0;
 		s = localStore.score || [0, 0, 0];
-		$(".score").text(ts + " pts / 220 max");
-		$(".score-bar").css({ width: (ts / 220) * 100 + "%" });
+		$(".score").text(Math.min(60, ts) + " pts / 60 max");
+		$(".score-bar").css({ width: Math.min(100, (ts / 60) * 100) + "%" });
 		for (let i = 1; i < 4; i++) {
 			$(".sect" + i).text(s[i - 1]);
 		}

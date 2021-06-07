@@ -30,6 +30,14 @@
 	display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
+.grid-center {
+    place-items: center;
+}
+
 .inline {
 	display: inline;
 }

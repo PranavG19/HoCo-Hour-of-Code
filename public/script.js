@@ -68,7 +68,7 @@ const questionOrder = [
 	"Sorting",
 	"Binary Search",
 	"Graphs",
-	"BFS_DFS",
+	"BFS DFS",
 	"Flood Fill",
 	"Dynamic Programming",
 	"Automation",
@@ -93,7 +93,6 @@ $(".login").on("click", function (e) {
 				.appendTo($(".username").parent().parent().parent())
 				.fadeIn(300, () => {
 					$("#logout").on("click", () => {
-						console.log("hi");
 						logout();
 						location.reload();
 					});
@@ -106,7 +105,12 @@ $(".login").on("click", function (e) {
 
 firebase.auth().onAuthStateChanged(function (user) {
 	if (user) {
-		if (!(user.email.endsWith("@inst.hcpss.org") || user.email.endsWith("@hcpss.org"))) {
+		if (
+			!(
+				user.email.endsWith("@inst.hcpss.org") ||
+				user.email.endsWith("@hcpss.org")
+			)
+		) {
 			logout();
 			$("body").prepend(
 				`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">
@@ -167,6 +171,55 @@ firebase.auth().onAuthStateChanged(function (user) {
 			$(".login-button")
 				.text("Logout")
 				.css({ background: "lightcoral", color: "white" });
+		}
+	}
+
+	if ($(".quiz")[0]) {
+		if (user) {
+			const question = $(".quiz").attr("name").replaceAll("_", " ");
+			const cat = $(".quiz").attr("cat");
+			const questionNum = questionOrder.indexOf(question);
+			if (questionNum !== -1) {
+				if (localStore.school) {
+					try {
+						getQuestions(
+							question,
+							localStore.randomNumbers.slice(
+								questionNum * 3,
+								questionNum * 3 + 3
+							),
+							cat,
+							localStore.school
+						);
+					} catch {
+						setTimeout(() => {
+							localStore.randomNumbers = JSON.parse(
+								localStorage.getItem("randomNumbers")
+							);
+							getQuestions(
+								question,
+								localStore.randomNumbers.slice(
+									questionNum * 3,
+									questionNum * 3 + 3
+								),
+								cat,
+								localStore.school
+							);
+						}, 1000);
+					}
+				}
+			}
+		} else {
+			$(".quiz").append(
+				`<div id='noQuiz'><hr>
+				<div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0; display: flex; flex-direction: row; justify-content: center; align-items: center">
+					<div>Login to unlock the quiz!</div>
+					<div class= "hvr-darken color-white rounded-md btn-1" id="loginButton" style="transform: scale(.75)">Login</div>
+				  </div></div>`
+			);
+			$("#loginButton").on("click", () => {
+				login();
+			});
 		}
 	}
 });
@@ -239,52 +292,6 @@ if ($(".hours")[0]) {
 			});
 	} else {
 		$(".hours").text(Math.floor(sumLeaderboard(localStore.leaderboard) / 60));
-	}
-}
-
-if ($(".quiz")[0]) {
-	if (!firebase.auth().currentUser) {
-		$(".quiz").append(
-			`<div id='noQuiz'><hr>
-			<div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0; display: flex; flex-direction: row; justify-content: center; align-items: center">
-				<div>Login to unlock the quiz!</div>
-				<div class= "hvr-darken color-white rounded-md btn-1" id="loginButton" style="transform: scale(.75)">Login</div>
-          	</div></div>`
-		);
-		$("#loginButton").on("click", () => {
-			login();
-		});
-	}
-
-	const question = $(".quiz").attr("name").replaceAll("_", " ");
-	const cat = $(".quiz").attr("cat");
-	const questionNum = questionOrder.indexOf(question);
-	if (questionNum !== -1) {
-		if (localStore.school) {
-			try {
-				getQuestions(
-					question,
-					localStore.randomNumbers.slice(questionNum * 3, questionNum * 3 + 3),
-					cat,
-					localStore.school
-				);
-			} catch {
-				setTimeout(() => {
-					localStore.randomNumbers = JSON.parse(
-						localStorage.getItem("randomNumbers")
-					);
-					getQuestions(
-						question,
-						localStore.randomNumbers.slice(
-							questionNum * 3,
-							questionNum * 3 + 3
-						),
-						cat,
-						localStore.school
-					);
-				}, 1000);
-			}
-		}
 	}
 }
 

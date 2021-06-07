@@ -556,7 +556,7 @@
 	border: 1px solid lightgrey;
 	background: white;
 	z-index: 1000;
-	transition: 100ms;
+	color: #5f5f5f;
 }
 
 .logoutMenu::after {
@@ -575,6 +575,7 @@
 	background: lightcoral;
 	border: 1px solid white;
 	color: white;
+	transition: 200ms;
 }
 
 .logoutMenu:hover::after {

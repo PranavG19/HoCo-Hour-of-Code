@@ -90,7 +90,7 @@ $(".login").on("click", function (e) {
 				)
 					.hide()
 					.appendTo($(".username").parent().parent().parent())
-					.fadeIn(300, () => {
+					.fadeIn(500, () => {
 						$("#logout").on("click", () => {
 							$("#logout").remove();
 							logout();

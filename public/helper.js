@@ -43,17 +43,18 @@ const renderModal = (user) => {
 	height: 100vh;
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.3);'>
-    <div class='modal' style='height: 100px;
+    <div class='modal' style='
 	width: 450px;
-	border-radius: 20px;
+	border-radius: 0.375rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	padding: 20px 10px 50px 10px;'>
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;'>
       <div class='modal-title'>
-      <h3 style='margin: 0;'>Select Which High School You Attend </h3>
+      <h3 style='margin: 0;'>Which high school do you attend?</h3>
+	  <div style="margin: 0; color: grey; font-size: 0.75rem">Note: Selecting the wrong school will make you ineligible for prizes</div>
     </div>
       <select id='modalSelect' style='margin-top: 20px;'>
         <option value=""></option>
@@ -190,7 +191,7 @@ const renderQuestions = (questions, questionName) => {
 	const completed = localStore.questionsSolved.indexOf(questionName) !== -1;
 	if (completed) {
 		$(".quiz").append(
-			`<hr><div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0;">Quiz - <strong>Completed</strong></div>`
+			`<hr><div class='article-content-sectiontitle color-black' style="margin: 1.5rem 0;">Quiz - <strong class="color-white bg-limegreen rounded-md padding-1">Completed</strong></div>`
 		);
 	} else {
 		$(".quiz").append(

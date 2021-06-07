@@ -110,7 +110,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 			logout();
 			$("body").prepend(
 				`<div style="text-align: center; background: lightcoral; border-radius: 0px; padding: 15px; margin-bottom: 10px;">
-                                <p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Please Login With HCPSS Account!</p>
+                                <p style="margin: 0; font-size: 20px; font-weight: 600; color: white">Please login with an HCPSS account!</p>
                                 </div>`
 			);
 			window.scrollTo(0, 0);

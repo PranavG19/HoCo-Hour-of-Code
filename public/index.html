@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="hover.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="article-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="typewriter.js"></script>
+  <script src="section-scroll.js"></script>
   <script type="text/javascript">
     function login_disabled() {
       alert('Login will be available on June 7th');
@@ -127,9 +129,54 @@
     </div>
   </div>
 
-  <div class="relative pt-6 pb-6 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white">
-    <div class="max-w-6xl block-center">
-      <h2 class="text-center full-width">Prizes</h2>
+  <div class="relative pt-6 pb-6 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white; padding-bottom: 3rem;">
+    <div class="max-w-4xl block-center">
+      <h2 class="text-center full-width">Prizes
+        <a href="#points-info">
+          <div class="hvr-pop">
+            <img src="info-icon.png" alt="info-icon.png" class="margin-0 padding-0" style="width: 30px">
+          </div>
+        </a>
+      </h2>
+      <div class="flex justify-around">
+        <div class="flex flex-column w-45p rounded-md bg-white">
+          <div class="text-center color-white prize-title pt-4 pb-4 bg-hcpss-blue top-rounded-md">Individual Prizes</div>
+          <div class="margin-0 padding-4 prize-content color-grey">
+            <ul class="margin-0 pt-0 mt-2 mb-2">
+              <li>500x 1 month of Replit's <a href="https://replit.com/site/pricing">Hacker plan</a> ($7)</li>
+              <li>4x $25 Art of Problem Solving gift cards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-column w-45p rounded-md bg-white">
+          <div class="text-center color-white prize-title pt-4 pb-4 bg-hcpss-blue top-rounded-md">School Prizes</div>
+          <div class="margin-0 padding-4 prize-content color-grey">
+            <ul class="margin-0 pt-0 mt-2 mb-2">
+              <li>Winner's banner (3'x6')</li>
+              <li>$300 to the winning school</li>
+              <li>$300 to a randomly drawn school</li>
+              <li>Bragging rights</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="relative pt-6 pb-6 full-width bg-hcpss-blue block-center margin-0" style="border: 0 solid white;">
+    <div class="max-w-4xl block-center flex justify-center">
+      <div class="bg-white margin-0 padding-0 rounded-lg flex width-70 block-center">
+        <div class="pt-2 pb-2 w-50p text-center" style="border-right: 2px solid #3594D2">
+          <div class="stats-number pt-6 color-blue5">0</div>
+          <div class="stats-description pb-6 color-grey">students registered.</div>
+        </div>
+        <div class="pt-2 pb-2 w-50p text-center">
+          <div class="stats-number pt-6 color-blue5">0</div>
+          <div class="stats-description pb-6 color-grey">hours served.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -155,7 +202,7 @@
             When is the Hour of Code?
           </div>
           <div class="normal-text color-grey">
-            This event, Howard County’s Hour of Code, is a 5-day event taking place from May 24 to May 28, 2021.
+            This event, Howard County’s Hour of Code, is a 5-day event taking place from June 7 to June 11, 2021.
           </div>
         </div>
 
@@ -225,7 +272,7 @@
           </div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3" id="points-info">
           <div class="question color-black mb-1">
             How do the points/prizes work?
           </div>
@@ -234,7 +281,7 @@
             <b>Individual Prizes</b> are awarded by a county-wide raffle at the end of the event. Each of your individual points counts as 1 raffle ticket (35 points --> 35 tickets) for a maximum of 60 tickets in this raffle. <br>
             <br>
 
-            <b>School Points</b> are designed so if every student at your school earned their maximum 60 individual points, the school would have 10,000 school points. It's essentially a <i>percentage</i> equivalent (how much your school has participated / how much could they have participated) and converted to 10,000 points. <br>
+            <b>School Points</b> are designed so if every student at your school earned their maximum 60 individual points, the school would have 10,000 school points. It's essentially a percentage equivalent to (how much your school has participated / how much could they have participated) and converted to 10,000 points. <br>
             <b>School Prizes</b> have 3 components:
             <ul>
               <li>HoCoHOC Winner Banner - Awarded to the winning school</li>
@@ -292,6 +339,7 @@
                     Anthony Fei <br>
                     Sarmad Alamgir <br>
                     Rayhan Zirvi <br>
+                    Pranav Krishnan <br>
                     Andrew Chen
                 </div>
             </div>
@@ -301,14 +349,6 @@
               <div class="article-contributors-name">
                   Andrew Chen <br>
                   Pranav Krishnan <br>
-
-              </div>
-            </div>
-
-            <div class="flex flex-column lm-4">
-              <div class="article-contributors-type">Beta Testers</div>
-              <div class="article-contributors-name">
-                  John Doe<br>
 
               </div>
             </div>
@@ -345,13 +385,58 @@
   </div>
 
   <div class="relative pt-6 pb-32 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white">
-    <div class="max-w-6xl block-center">
+    <div class="max-w-4xl block-center flex flex-column justify-center">
       <h2 class="text-center full-width">Sponsors</h2>
+      <div class="text-center full-width sponsor-title" style="color: gold">Gold Sponsors</div>
+      <div class="flex flex-wrap mt-6 mb-12 justify-around">
+        <div class="flex flex-column">
+          <a href="https://replit.com/">
+              <img src="sponsors/logo-replit.png" alt="logo-replit.png" class="block-center margin-0 padding-0 mb-3" style="width: 700px">
+          </a>
+          <div class="text-center sponsor-description color-grey"><a href="https://replit.com/">Replit</a></div>
+        </div>
+      </div>
+      <div class="text-center full-width sponsor-title" style="color: silver">Silver Sponsors</div>
+      <div class="flex flex-wrap mt-6 mb-12 justify-around">
+        <div class="flex flex-column">
+          <a href="https://www.thorntech.com/">
+              <img src="sponsors/logo-thorn-technologies.png" alt="logo-thorn-technologies.png" class="block-center margin-0 padding-0 mb-3" style="width: 400px">
+          </a>
+          <div class="text-center sponsor-description color-grey"><a href="https://www.thorntech.com/">Thorn Technologies</a></div>
+        </div>
+        <div class="flex flex-column">
+          <a href="https://www.leangap.org/">
+              <img src="sponsors/logo-leangap.png" alt="logo-leangap.png" class="block-center margin-0 padding-0 mb-3" style="width: 400px">
+          </a>
+          <div class="text-center sponsor-description color-grey"><a href="https://www.leangap.org/">Leangap</a></div>
+        </div>
+      </div>
+      <div class="text-center full-width sponsor-title" style="color: burlywood">Bronze Sponsors</div>
+      <div class="flex flex-wrap mt-6 mb-12 justify-around">
+        <div class="flex flex-column">
+          <a href="https://www.vanguardsmiles.com/">
+              <img src="sponsors/logo-vanguard-orthodontics.png" alt="logo-vanguard-orthodontics.png" class="block-center margin-0 padding-0 mb-3" style="width: 200px">
+          </a>
+          <div class="text-center sponsor-description color-grey"><a href="https://www.vanguardsmiles.com/">Vanguard Orthodontics</a></div>
+        </div>
+        <div class="flex flex-column">
+          <a href="https://artofproblemsolving.com/">
+              <img src="sponsors/logo-aops.png" alt="logo-aops.png" class="block-center margin-0 padding-0 mb-3" style="width: 200px">
+          </a>
+          <div class="text-center sponsor-description color-grey"><a href="https://artofproblemsolving.com/">Art of Problem Solving</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative pt-6 pb-32 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white">
+    <div class="max-w-4xl block-center flex flex-column justify-center">
+      
     </div>
   </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>

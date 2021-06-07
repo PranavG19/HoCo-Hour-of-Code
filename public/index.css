@@ -121,3 +121,33 @@
 	transform: rotateY(162deg);
 	animation-delay: 0.9s;
 }
+
+.prize-title {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.prize-content {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.stats-number {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.stats-description {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.sponsor-title {
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+
+.sponsor-description {
+	font-size: 1.2rem;
+	font-weight: 400;
+}

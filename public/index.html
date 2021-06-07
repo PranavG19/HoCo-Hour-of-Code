@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="hover.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="article-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="typewriter.js"></script>
+  <script src="section-scroll.js"></script>
   <script type="text/javascript">
     function login_disabled() {
       alert('Login will be available on June 7th');
@@ -129,7 +131,13 @@
 
   <div class="relative pt-6 pb-6 full-width bg-hcpss-offwhite block-center padding-0" style="border: 0 solid white">
     <div class="max-w-4xl block-center">
-      <h2 class="text-center full-width">Prizes</h2>
+      <h2 class="text-center full-width">Prizes
+        <a href="#points-info">
+          <div class="hvr-pop">
+            <img src="info-icon.png" alt="info-icon.png" class="margin-0 padding-0" style="width: 30px">
+          </div>
+        </a>
+      </h2>
       <div class="flex justify-around">
         <div class="flex flex-column w-45p rounded-md bg-white">
           <div class="text-center color-white prize-title pt-4 pb-4 bg-hcpss-blue top-rounded-md">Individual Prizes</div>
@@ -247,7 +255,7 @@
           </div>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3" id="points-info">
           <div class="question color-black mb-1">
             How do the points/prizes work?
           </div>
@@ -314,6 +322,7 @@
                     Anthony Fei <br>
                     Sarmad Alamgir <br>
                     Rayhan Zirvi <br>
+                    Pranav Krishnan <br>
                     Andrew Chen
                 </div>
             </div>
@@ -323,14 +332,6 @@
               <div class="article-contributors-name">
                   Andrew Chen <br>
                   Pranav Krishnan <br>
-
-              </div>
-            </div>
-
-            <div class="flex flex-column lm-4">
-              <div class="article-contributors-type">Beta Testers</div>
-              <div class="article-contributors-name">
-                  John Doe<br>
 
               </div>
             </div>
@@ -373,7 +374,7 @@
   </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>

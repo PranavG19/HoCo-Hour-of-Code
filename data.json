@@ -61,7 +61,7 @@
 				{
 					"answer": "5",
 					"info": [
-						"fr",
+						"frs",
 						"What index is required to access the 4th element in an array?"
 					]
 				},
@@ -209,7 +209,7 @@
 				}
 			]
 		},
-		"BFS DFS": {
+		"BFS & DFS": {
 			"pts": 16,
 			"questions": [
 				{
@@ -697,7 +697,7 @@
 				{
 					"answer": "12",
 					"info": [
-						"fr",
+						"fro",
 						"Given this code and its output,fill in the blank.",
 						"def foo(a, b, ____): <br>    return a+b+c <br>print(foo(3,4,5))",
 						"> 12",
@@ -1539,6 +1539,7 @@
 					"answer": "3",
 					"info": [
 						"fr",
+						"What is the output of this code?",
 						"def foo(n): <br>    if n == 0: <br>        return<br>    elif n == 3:<br>        print(n)<br>else:<br>foo(n-1)",
 						"Python"
 					]
@@ -1547,6 +1548,7 @@
 					"answer": "aaaaaaaa",
 					"info": [
 						"fr",
+						"What is the output of this code?",
 						"def foo(a, b):<br>    if b == 0:<br>        print(a)<br>    else:<br>        foo(a+a, b-1)<br><br>foo('a', 3)",
 						"Python"
 					]
@@ -1555,6 +1557,7 @@
 					"answer": "0",
 					"info": [
 						"fr",
+						"What is the output of this code?",
 						"def foo(a, b):<br>    if b == 10:<br>        print(a)<br>    else:<br>        foo(a+a, b+1)<br><br>foo(0, 5)",
 						"Python"
 					]
@@ -1932,7 +1935,7 @@
 				"Sorting",
 				"Binary Search",
 				"Graphs",
-				"BFS DFS",
+				"BFS & DFS",
 				"Flood Fill",
 				"Automation"
 			],

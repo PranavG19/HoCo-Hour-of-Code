@@ -82,7 +82,9 @@ $(".login").on("click", function (e) {
 	if (firebase.auth().currentUser) {
 		if ($(this).hasClass("navbar-font")) {
 			if ($("#logout")[0]) {
-				$("#logout").remove();
+				$("#logout").fadeOut(500,() => {
+					$("#logout").remove();
+				});
 			} else {
 				let w = $(".username").width();
 				$(

@@ -115,7 +115,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 	const email = context?.auth?.token?.email;
 	console.log("email" + email);
 
-	const nextSchool = async function () {
+	const nextSchool = async function() {
 		const fakePoints: any[] = [];
 
 		await db
@@ -168,7 +168,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 			}
 		}
 		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
-		for(let i = 0; i < proportion.length; i++) {
+		for (let i = 0; i < proportion.length; i++) {
 			if (i !== minIndex) {
 				proportion[i] = 2;
 			}
@@ -182,7 +182,10 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 			sum += proportion[index][1];
 			index++;
 		}
+		console.log("school: " + school);
+		console.log("sum: " + sum);
 		console.log("index: " + index);
+		console.log("proportion[index][0]: " + proportion[index][0]);
 
 		return proportion[index][0];
 	};
@@ -222,7 +225,7 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 		return false;
 	}
 
-	const nextSchool = function () {
+	const nextSchool = function() {
 		const fakePoints: any[] = [];
 
 		db.ref("schools/")

@@ -115,7 +115,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 	const email = context?.auth?.token?.email;
 	console.log("email" + email);
 
-	const nextSchool = async function() {
+	const nextSchool = async function () {
 		const fakePoints: any[] = [];
 
 		await db
@@ -173,11 +173,11 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		let sum = 0;
 		let index = 0;
 
-		console.log("index: " + index);
 		while (sum < school) {
 			sum += proportion[index][1];
 			index++;
 		}
+		console.log("index: " + index);
 
 		return proportion[index][0];
 	};
@@ -217,7 +217,7 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 		return false;
 	}
 
-	const nextSchool = function() {
+	const nextSchool = function () {
 		const fakePoints: any[] = [];
 
 		db.ref("schools/")

@@ -159,18 +159,18 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		console.log("fakePoints: " + fakePoints);
 		console.log("proportion: " + proportion);
 
-		let min = proportion[0];
+		let min = proportion[0][1];
 		let minIndex = 0;
 		for (let i = 1; i < proportion.length; i++) {
-			if (proportion[i] > min) {
-				min = proportion[i];
+			if (proportion[i][1] > min) {
+				min = proportion[i][1];
 				minIndex = i;
 			}
 		}
-		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+		proportion[minIndex][1] = 100 - 2 * (proportion.length - 1);
 		for(let i = 0; i < proportion.length; i++) {
 			if (i !== minIndex) {
-				proportion[i] = 2;
+				proportion[i][1] = 2;
 			}
 		}
 

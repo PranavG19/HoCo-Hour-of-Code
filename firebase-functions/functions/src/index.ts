@@ -115,7 +115,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 	const email = context?.auth?.token?.email;
 	console.log("email" + email);
 
-	const nextSchool = function() {
+	const nextSchool = function () {
 		const fakePoints: any[] = [];
 
 		db.ref("schools/")
@@ -123,6 +123,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 			.then((snapshot) => {
 				const data = snapshot.val();
 				for (const school in data) {
+					console.log(school);
 					if (school) {
 						fakePoints.push([school, data[school]]);
 					}
@@ -136,6 +137,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 			.then((snapshot) => {
 				const data = snapshot.val();
 				for (const school in data) {
+					console.log(school);
 					if (school) {
 						actualPoints.push([school, data[school]]);
 					}
@@ -213,7 +215,7 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 		return false;
 	}
 
-	const nextSchool = function() {
+	const nextSchool = function () {
 		const fakePoints: any[] = [];
 
 		db.ref("schools/")

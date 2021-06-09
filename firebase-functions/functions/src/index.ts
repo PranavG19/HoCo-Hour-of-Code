@@ -168,6 +168,11 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 			}
 		}
 		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+		for(let i = 1; i < proportion.length; i++) {
+			if (i !== minIndex) {
+				proportion[i] = 2;
+			}
+		}
 
 		const school = Math.floor(Math.random() * 99) + 1;
 		let sum = 0;

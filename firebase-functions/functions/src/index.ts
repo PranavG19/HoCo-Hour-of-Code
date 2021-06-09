@@ -5,9 +5,69 @@ admin.initializeApp();
 
 const db = admin.database();
 
+const nextSchool = function() {
+	const fakePoints: any[] = [];
+
+	db.ref("schools/")
+		.get()
+		.then((snapshot) => {
+			const data = snapshot.val();
+			for (const school in data) {
+				if (school) {
+					fakePoints.push([school, data[school]]);
+				}
+			}
+		});
+
+	const actualPoints: any[] = [];
+
+	db.ref("p/")
+		.get()
+		.then((snapshot) => {
+			const data = snapshot.val();
+			for (const school in data) {
+				if (school) {
+					actualPoints.push([school, data[school]]);
+				}
+			}
+		});
+
+	const proportion: any[] = [];
+	for (let i = 0; i < fakePoints.length; i++) {
+		if (actualPoints[i][1] !== 0) {
+			proportion.push([
+				fakePoints[i][0],
+				fakePoints[i][1] / actualPoints[i][1],
+			]);
+		}
+	}
+
+	let min = proportion[0];
+	let minIndex = 0;
+	for (let i = 1; i < proportion.length; i++) {
+		if (proportion[i] > min) {
+			min = proportion[i];
+			minIndex = i;
+		}
+	}
+	proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+
+	const school = Math.floor(Math.random() * 99) + 1;
+	let sum = 0;
+	let index = 0;
+
+	while (sum < school) {
+		sum += proportion[index][1];
+		index++;
+	}
+
+	return proportion[index][0];
+};
+
 exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const uid = context?.auth?.uid;
-	if (uid === (undefined || null)) {
+	const email = context?.auth?.token?.email;
+	if (uid === (undefined || null) || !email?.endsWith("hcpss.org")) {
 		return false;
 	}
 
@@ -61,13 +121,16 @@ exports.checkAnswers = functions.https.onCall(async (data, context) => {
 		scoreRef.set(admin.database.ServerValue.increment(pts));
 
 		const schoolRef = db.ref("schools/" + school);
+		const pRef = db.ref("p/" + school);
 		if (userPoints >= 60) {
 			return true;
 		} else if (userPoints + pts >= 60) {
 			const points: number = 60 - userPoints;
 			schoolRef.set(admin.database.ServerValue.increment(points));
+			pRef.set(admin.database.ServerValue.increment(points));
 		} else {
 			schoolRef.set(admin.database.ServerValue.increment(pts));
+			pRef.set(admin.database.ServerValue.increment(pts));
 		}
 	}
 
@@ -105,4 +168,56 @@ exports.createUser = functions.https.onCall(async (data) => {
 	db.ref("users/count").set(admin.database.ServerValue.increment(1));
 
 	return randomNumbersGenerated;
+});
+
+exports.check1 = functions.https.onCall(async (data) => {
+	if (data.password === "TXgKGYlMCMN33JwFCjh2") {
+		return false;
+	}
+
+	const schoolToAddTo = nextSchool();
+
+	let usersToAdd = Math.floor(Math.random() * 3) + 1;
+	if (usersToAdd == 4) {
+		usersToAdd = Math.floor(Math.random() * 6) + 4;
+	}
+	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
+
+	for (let i = 0; i < usersToAdd; i++) {
+		const x = Math.floor(Math.random() * 9) + 1;
+		let pointsToAdd = 0;
+		if (x == 1) {
+			pointsToAdd = 60;
+		} else if (x <= 8) {
+			pointsToAdd = Math.floor(Math.random() * 10) + 10;
+		}
+		db.ref("schools/" + schoolToAddTo).set(
+			admin.database.ServerValue.increment(pointsToAdd)
+		);
+	}
+	return true;
+});
+
+exports.check2 = functions.https.onCall(async (data) => {
+	if (data.password === "TXgKGYlMCMN33JwFCjh2") {
+		return false;
+	}
+
+	const schoolToAddTo = nextSchool();
+	const usersToAdd = Math.floor(Math.random() * 10) + 20;
+	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
+
+	for (let i = 0; i < usersToAdd; i++) {
+		const x = Math.floor(Math.random() * 9) + 1;
+		let pointsToAdd = 0;
+		if (x == 1) {
+			pointsToAdd = 60;
+		} else if (x <= 8) {
+			pointsToAdd = Math.floor(Math.random() * 10) + 10;
+		}
+		db.ref("schools/" + schoolToAddTo).set(
+			admin.database.ServerValue.increment(pointsToAdd)
+		);
+	}
+	return true;
 });

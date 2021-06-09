@@ -112,10 +112,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 });
 
 exports.check1 = functions.https.onCall(async (data, context) => {
-	const email = context?.auth?.token?.email;
-	console.log("email" + email);
-
-	const nextSchool = async function() {
+	const nextSchool = async function () {
 		const fakePoints: any[] = [];
 
 		await db
@@ -125,7 +122,6 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 				const data = snapshot.val();
 				for (const school in data) {
 					if (school) {
-						console.log("school: " + school);
 						fakePoints.push([school, data[school]]);
 					}
 				}
@@ -140,7 +136,6 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 				const data = snapshot.val();
 				for (const school in data) {
 					if (school) {
-						console.log("school: " + school);
 						actualPoints.push([school, data[school]]);
 					}
 				}
@@ -155,9 +150,6 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 				]);
 			}
 		}
-		console.log("actualPoints: " + actualPoints);
-		console.log("fakePoints: " + fakePoints);
-		console.log("proportion: " + proportion);
 
 		let min = proportion[0][1];
 		let minIndex = 0;
@@ -167,8 +159,9 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 				minIndex = i;
 			}
 		}
+
 		proportion[minIndex][1] = 100 - 2 * (proportion.length - 1);
-		for(let i = 0; i < proportion.length; i++) {
+		for (let i = 0; i < proportion.length; i++) {
 			if (i !== minIndex) {
 				proportion[i][1] = 2;
 			}
@@ -178,23 +171,21 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		let sum = 0;
 		let index = 0;
 
-		console.log("index: " + index);
 		while (sum < school) {
 			sum += proportion[index][1];
 			index++;
 		}
+		index--;
 
 		return proportion[index][0];
 	};
 
 	const schoolToAddTo = await nextSchool();
-	console.log("school to add to " + schoolToAddTo);
 
 	let usersToAdd = Math.floor(Math.random() * 3) + 1;
 	if (usersToAdd == 4) {
 		usersToAdd = Math.floor(Math.random() * 6) + 4;
 	}
-	console.log("users to add" + usersToAdd);
 	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
 
 	for (let i = 0; i < usersToAdd; i++) {
@@ -205,7 +196,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		} else if (x <= 8) {
 			pointsToAdd = Math.floor(Math.random() * 10) + 10;
 		}
-		console.log("points to add" + pointsToAdd);
+
 		db.ref("schools/" + schoolToAddTo).set(
 			admin.database.ServerValue.increment(pointsToAdd)
 		);
@@ -214,18 +205,11 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 });
 
 exports.check2 = functions.https.onCall(async (data, context) => {
-	const email = context?.auth?.token?.email;
-	if (
-		email &&
-		(!email.startsWith("pkrish0140") || !email.startsWith("achen4290"))
-	) {
-		return false;
-	}
-
-	const nextSchool = function() {
+	const nextSchool = async function () {
 		const fakePoints: any[] = [];
 
-		db.ref("schools/")
+		await db
+			.ref("schools/")
 			.get()
 			.then((snapshot) => {
 				const data = snapshot.val();
@@ -238,7 +222,8 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 
 		const actualPoints: any[] = [];
 
-		db.ref("p/")
+		await db
+			.ref("p/")
 			.get()
 			.then((snapshot) => {
 				const data = snapshot.val();
@@ -259,11 +244,11 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 			}
 		}
 
-		let min = proportion[0];
+		let min = proportion[0][1];
 		let minIndex = 0;
 		for (let i = 1; i < proportion.length; i++) {
-			if (proportion[i] > min) {
-				min = proportion[i];
+			if (proportion[i][1] > min) {
+				min = proportion[i][1];
 				minIndex = i;
 			}
 		}
@@ -277,11 +262,12 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 			sum += proportion[index][1];
 			index++;
 		}
+		index--;
 
 		return proportion[index][0];
 	};
 
-	const schoolToAddTo = nextSchool();
+	const schoolToAddTo = await nextSchool();
 	const usersToAdd = Math.floor(Math.random() * 10) + 20;
 	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
 

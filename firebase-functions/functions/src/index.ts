@@ -112,7 +112,7 @@ exports.createUser = functions.https.onCall(async (data) => {
 });
 
 exports.check1 = functions.https.onCall(async (data, context) => {
-	const nextSchool = async function () {
+	const nextSchool = async function() {
 		const fakePoints: any[] = [];
 
 		await db
@@ -154,7 +154,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		let min = proportion[0][1];
 		let minIndex = 0;
 		for (let i = 1; i < proportion.length; i++) {
-			if (proportion[i][1] > min) {
+			if (proportion[i][1] < min) {
 				min = proportion[i][1];
 				minIndex = i;
 			}
@@ -205,7 +205,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 });
 
 exports.check2 = functions.https.onCall(async (data, context) => {
-	const nextSchool = async function () {
+	const nextSchool = async function() {
 		const fakePoints: any[] = [];
 
 		await db
@@ -247,7 +247,7 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 		let min = proportion[0][1];
 		let minIndex = 0;
 		for (let i = 1; i < proportion.length; i++) {
-			if (proportion[i][1] > min) {
+			if (proportion[i][1] < min) {
 				min = proportion[i][1];
 				minIndex = i;
 			}

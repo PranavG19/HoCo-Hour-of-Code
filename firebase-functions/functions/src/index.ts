@@ -182,7 +182,7 @@ exports.check1 = functions.https.onCall(async (data, context) => {
 		return proportion[index][0];
 	};
 
-	const schoolToAddTo = nextSchool();
+	const schoolToAddTo = await nextSchool();
 	console.log("school to add to " + schoolToAddTo);
 
 	let usersToAdd = Math.floor(Math.random() * 3) + 1;

@@ -267,7 +267,7 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 		return proportion[index][0];
 	};
 
-	const schoolToAddTo = nextSchool();
+	const schoolToAddTo = await nextSchool();
 	const usersToAdd = Math.floor(Math.random() * 10) + 20;
 	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
 

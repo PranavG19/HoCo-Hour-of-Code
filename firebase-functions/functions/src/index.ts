@@ -5,69 +5,10 @@ admin.initializeApp();
 
 const db = admin.database();
 
-const nextSchool = function() {
-	const fakePoints: any[] = [];
-
-	db.ref("schools/")
-		.get()
-		.then((snapshot) => {
-			const data = snapshot.val();
-			for (const school in data) {
-				if (school) {
-					fakePoints.push([school, data[school]]);
-				}
-			}
-		});
-
-	const actualPoints: any[] = [];
-
-	db.ref("p/")
-		.get()
-		.then((snapshot) => {
-			const data = snapshot.val();
-			for (const school in data) {
-				if (school) {
-					actualPoints.push([school, data[school]]);
-				}
-			}
-		});
-
-	const proportion: any[] = [];
-	for (let i = 0; i < fakePoints.length; i++) {
-		if (actualPoints[i][1] !== 0) {
-			proportion.push([
-				fakePoints[i][0],
-				fakePoints[i][1] / actualPoints[i][1],
-			]);
-		}
-	}
-
-	let min = proportion[0];
-	let minIndex = 0;
-	for (let i = 1; i < proportion.length; i++) {
-		if (proportion[i] > min) {
-			min = proportion[i];
-			minIndex = i;
-		}
-	}
-	proportion[minIndex] = 100 - 2 * (proportion.length - 1);
-
-	const school = Math.floor(Math.random() * 99) + 1;
-	let sum = 0;
-	let index = 0;
-
-	while (sum < school) {
-		sum += proportion[index][1];
-		index++;
-	}
-
-	return proportion[index][0];
-};
-
 exports.checkAnswers = functions.https.onCall(async (data, context) => {
 	const uid = context?.auth?.uid;
 	const email = context?.auth?.token?.email;
-	if (uid === (undefined || null) || !email?.endsWith("hcpss.org")) {
+	if (uid === (undefined || null) || (email && !email.endsWith("hcpss.org"))) {
 		return false;
 	}
 
@@ -170,17 +111,81 @@ exports.createUser = functions.https.onCall(async (data) => {
 	return randomNumbersGenerated;
 });
 
-exports.check1 = functions.https.onCall(async (data) => {
-	if (data.password === "TXgKGYlMCMN33JwFCjh2") {
-		return false;
-	}
+exports.check1 = functions.https.onCall(async (data, context) => {
+	const email = context?.auth?.token?.email;
+	console.log("email" + email);
+
+	const nextSchool = function() {
+		const fakePoints: any[] = [];
+
+		db.ref("schools/")
+			.get()
+			.then((snapshot) => {
+				const data = snapshot.val();
+				for (const school in data) {
+					if (school) {
+						fakePoints.push([school, data[school]]);
+					}
+				}
+			});
+
+		const actualPoints: any[] = [];
+
+		db.ref("p/")
+			.get()
+			.then((snapshot) => {
+				const data = snapshot.val();
+				for (const school in data) {
+					if (school) {
+						actualPoints.push([school, data[school]]);
+					}
+				}
+			});
+
+		const proportion: any[] = [];
+		for (let i = 0; i < fakePoints.length; i++) {
+			if (actualPoints[i][1] !== 0) {
+				proportion.push([
+					fakePoints[i][0],
+					fakePoints[i][1] / actualPoints[i][1],
+				]);
+			}
+		}
+		console.log("actualPoints: " + actualPoints);
+		console.log("fakePoints: " + fakePoints);
+		console.log("proportion: " + proportion);
+
+		let min = proportion[0];
+		let minIndex = 0;
+		for (let i = 1; i < proportion.length; i++) {
+			if (proportion[i] > min) {
+				min = proportion[i];
+				minIndex = i;
+			}
+		}
+		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+
+		const school = Math.floor(Math.random() * 99) + 1;
+		let sum = 0;
+		let index = 0;
+
+		console.log("index: " + index);
+		while (sum < school) {
+			sum += proportion[index][1];
+			index++;
+		}
+
+		return proportion[index][0];
+	};
 
 	const schoolToAddTo = nextSchool();
+	console.log("school to add to " + schoolToAddTo);
 
 	let usersToAdd = Math.floor(Math.random() * 3) + 1;
 	if (usersToAdd == 4) {
 		usersToAdd = Math.floor(Math.random() * 6) + 4;
 	}
+	console.log("users to add" + usersToAdd);
 	db.ref("users/count").set(admin.database.ServerValue.increment(usersToAdd));
 
 	for (let i = 0; i < usersToAdd; i++) {
@@ -191,6 +196,7 @@ exports.check1 = functions.https.onCall(async (data) => {
 		} else if (x <= 8) {
 			pointsToAdd = Math.floor(Math.random() * 10) + 10;
 		}
+		console.log("points to add" + pointsToAdd);
 		db.ref("schools/" + schoolToAddTo).set(
 			admin.database.ServerValue.increment(pointsToAdd)
 		);
@@ -198,10 +204,73 @@ exports.check1 = functions.https.onCall(async (data) => {
 	return true;
 });
 
-exports.check2 = functions.https.onCall(async (data) => {
-	if (data.password === "TXgKGYlMCMN33JwFCjh2") {
+exports.check2 = functions.https.onCall(async (data, context) => {
+	const email = context?.auth?.token?.email;
+	if (
+		email &&
+		(!email.startsWith("pkrish0140") || !email.startsWith("achen4290"))
+	) {
 		return false;
 	}
+
+	const nextSchool = function() {
+		const fakePoints: any[] = [];
+
+		db.ref("schools/")
+			.get()
+			.then((snapshot) => {
+				const data = snapshot.val();
+				for (const school in data) {
+					if (school) {
+						fakePoints.push([school, data[school]]);
+					}
+				}
+			});
+
+		const actualPoints: any[] = [];
+
+		db.ref("p/")
+			.get()
+			.then((snapshot) => {
+				const data = snapshot.val();
+				for (const school in data) {
+					if (school) {
+						actualPoints.push([school, data[school]]);
+					}
+				}
+			});
+
+		const proportion: any[] = [];
+		for (let i = 0; i < fakePoints.length; i++) {
+			if (actualPoints[i][1] !== 0) {
+				proportion.push([
+					fakePoints[i][0],
+					fakePoints[i][1] / actualPoints[i][1],
+				]);
+			}
+		}
+
+		let min = proportion[0];
+		let minIndex = 0;
+		for (let i = 1; i < proportion.length; i++) {
+			if (proportion[i] > min) {
+				min = proportion[i];
+				minIndex = i;
+			}
+		}
+		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+
+		const school = Math.floor(Math.random() * 99) + 1;
+		let sum = 0;
+		let index = 0;
+
+		while (sum < school) {
+			sum += proportion[index][1];
+			index++;
+		}
+
+		return proportion[index][0];
+	};
 
 	const schoolToAddTo = nextSchool();
 	const usersToAdd = Math.floor(Math.random() * 10) + 20;

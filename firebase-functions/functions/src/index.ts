@@ -252,7 +252,8 @@ exports.check2 = functions.https.onCall(async (data, context) => {
 				minIndex = i;
 			}
 		}
-		proportion[minIndex] = 100 - 2 * (proportion.length - 1);
+
+		proportion[minIndex][1] = 100 - 2 * (proportion.length - 1);
 		for (let i = 0; i < proportion.length; i++) {
 			if (i !== minIndex) {
 				proportion[i][1] = 2;

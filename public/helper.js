@@ -4,7 +4,7 @@ const login = () => {
 };
 
 const logout = () => {
-	console.log("hi")
+	console.log("hi");
 	firebase
 		.auth()
 		.signOut()
@@ -322,9 +322,9 @@ const renderQuestions = (questions, questionName) => {
 		}
 	}
 	if (!completed) {
-		$(".quiz").append(
-			`<div class= "hvr-darken color-white rounded-md btn-1" id="submit">Submit</div>`
-		);
+		// $(".quiz").append(
+		// 	`<div class= "hvr-darken color-white rounded-md btn-1" id="submit">Submit</div>`
+		// );
 	}
 };
 

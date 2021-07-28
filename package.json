@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/achen4290/hocohoc-redesigned/issues"
   },
-  "homepage": "https://github.com/achen4290/hocohoc-redesigned#readme"
+  "homepage": "https://github.com/achen4290/hocohoc-redesigned#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "firebase-admin": "^9.9.0"
+  }
 }

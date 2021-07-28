@@ -1,0 +1,2975 @@
+{
+	"0W1AYr7vHmXzBEmy2gTu2BQ7HSk2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Greedy",
+			"Automation",
+			"Maze Generation",
+			"Web Development",
+			"Loops"
+		],
+		"randomNumbers": [
+			0, 3, 5, 3, 4, 1, 2, 6, 1, 3, 6, 1, 1, 2, 5, 3, 5, 6, 4, 2, 0, 7, 2, 8, 4,
+			6, 5, 0, 6, 1, 0, 1, 5, 1, 0, 3, 3, 4, 5, 4, 0, 3, 0, 3, 1, 3, 4, 2, 5, 1,
+			2, 7, 0, 3, 4, 1, 3, 2, 5, 0, 2, 4, 0
+		],
+		"school": "Centennial High School",
+		"score": [25, 15, 25]
+	},
+	"0rDEe8MOzqfhoBf6POhHnzbGzgt1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			5, 3, 2, 3, 1, 5, 2, 4, 3, 2, 4, 6, 4, 3, 1, 6, 5, 2, 1, 2, 0, 2, 6, 9, 6,
+			3, 1, 5, 6, 4, 0, 6, 4, 2, 6, 1, 8, 5, 0, 3, 4, 2, 5, 3, 0, 4, 3, 5, 1, 5,
+			2, 8, 9, 6, 5, 0, 6, 4, 2, 5, 5, 6, 2
+		],
+		"school": "Glenelg High School",
+		"score": [15, 0, 0]
+	},
+	"0sozbgxk8ifGBOKi2iIA1Mc6vJw1": {
+		"questionsSolved": ["placeholder", "Loops"],
+		"randomNumbers": [
+			5, 4, 0, 7, 6, 4, 2, 3, 5, 0, 6, 4, 1, 4, 8, 8, 5, 1, 0, 3, 5, 3, 0, 4, 7,
+			6, 1, 4, 0, 6, 5, 2, 6, 1, 4, 3, 9, 1, 6, 2, 5, 1, 3, 1, 2, 2, 5, 0, 3, 6,
+			0, 2, 1, 3, 6, 4, 1, 4, 1, 0, 5, 2, 6
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"0uTPMgcgzkUPmb4ErNM1wJMkG643": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 1, 0, 0, 7, 3, 1, 5, 0, 4, 5, 3, 7, 1, 2, 2, 8, 6, 3, 5, 4, 9, 6, 0, 8,
+			1, 5, 4, 6, 3, 4, 5, 2, 5, 1, 3, 6, 5, 9, 2, 3, 0, 0, 2, 3, 3, 1, 4, 5, 0,
+			3, 3, 8, 9, 5, 4, 3, 2, 1, 5, 2, 4, 6
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"17KUGLk8U6auJ7VkY09t9CCHd7F3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 3, 1, 2, 7, 0, 5, 1, 6, 1, 2, 4, 5, 3, 2, 8, 0, 3, 2, 4, 0, 9, 0, 8, 2,
+			1, 7, 0, 2, 6, 1, 3, 2, 3, 2, 4, 3, 5, 1, 3, 1, 2, 5, 2, 3, 3, 4, 5, 6, 1,
+			3, 0, 5, 7, 1, 2, 3, 5, 3, 4, 2, 4, 0
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"1C6vbdlav7gVywTU3EeqcsNNQKq2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			5, 3, 2, 6, 1, 2, 5, 4, 0, 6, 0, 1, 2, 0, 8, 5, 8, 6, 5, 4, 3, 2, 6, 7, 1,
+			7, 0, 0, 2, 1, 5, 3, 0, 3, 0, 1, 4, 6, 8, 5, 4, 1, 3, 4, 2, 4, 0, 2, 0, 2,
+			4, 8, 9, 1, 4, 5, 2, 4, 0, 1, 1, 2, 3
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"1kM45zVKKTeFJtO1xXhcCsMNDdu2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			3, 2, 5, 4, 0, 6, 3, 0, 2, 5, 7, 0, 7, 8, 0, 4, 6, 3, 2, 0, 5, 6, 1, 2, 6,
+			0, 4, 5, 6, 0, 0, 5, 2, 2, 0, 1, 8, 1, 0, 5, 4, 1, 2, 5, 3, 3, 4, 5, 0, 3,
+			5, 8, 4, 2, 3, 6, 1, 2, 4, 1, 4, 0, 1
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"1ncKuPY4uMg0gTfojCYZh2rPmhz2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 4, 1, 2, 5, 6, 7, 4, 5, 5, 1, 3, 4, 9, 1, 1, 4, 3, 5, 2, 1, 8, 9, 5, 2,
+			3, 0, 6, 1, 0, 1, 2, 3, 5, 0, 2, 0, 3, 5, 4, 1, 2, 0, 4, 1, 4, 3, 2, 5, 0,
+			6, 6, 3, 8, 6, 4, 2, 0, 3, 1, 2, 1, 4
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"1r61tDpucWd2gciE3QXjEao7lIk2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			5, 0, 1, 0, 1, 6, 6, 3, 5, 2, 7, 3, 9, 2, 7, 5, 1, 4, 0, 1, 2, 3, 9, 6, 3,
+			1, 5, 6, 1, 5, 2, 4, 3, 1, 5, 4, 7, 1, 0, 5, 1, 0, 0, 2, 3, 5, 1, 4, 1, 0,
+			5, 9, 1, 4, 2, 1, 6, 1, 4, 2, 1, 2, 6
+		],
+		"school": "Howard High School",
+		"score": [25, 0, 0]
+	},
+	"22XNGsdnNjTbFTS9RE3sGWplYIs1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans"
+		],
+		"randomNumbers": [
+			4, 3, 0, 6, 0, 1, 4, 7, 6, 2, 1, 0, 6, 3, 5, 1, 4, 2, 1, 3, 0, 9, 0, 4, 0,
+			5, 4, 0, 5, 2, 4, 3, 1, 6, 4, 5, 3, 4, 1, 5, 0, 1, 5, 3, 0, 5, 4, 3, 3, 5,
+			2, 0, 9, 1, 0, 2, 4, 1, 2, 0, 0, 1, 4
+		],
+		"school": "Glenelg High School",
+		"score": [20, 0, 0]
+	},
+	"22wqqSmfy1Xp5JJe3xskHt5i4nM2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			2, 1, 0, 4, 6, 0, 7, 1, 2, 7, 3, 1, 8, 4, 3, 7, 5, 0, 5, 0, 1, 3, 2, 8, 8,
+			5, 4, 5, 0, 4, 6, 0, 4, 3, 2, 0, 6, 2, 1, 3, 5, 4, 2, 5, 1, 5, 4, 1, 5, 6,
+			1, 0, 9, 2, 6, 1, 3, 3, 4, 2, 6, 0, 1
+		],
+		"school": "Centennial High School",
+		"score": [76, 0, 0]
+	},
+	"2C2IUrWzdsYauXw0Alg6GSOeKTw2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Greedy",
+			"Sorting"
+		],
+		"randomNumbers": [
+			0, 2, 1, 1, 4, 2, 5, 7, 0, 7, 3, 5, 9, 7, 2, 8, 2, 7, 5, 0, 1, 6, 2, 9, 1,
+			7, 5, 4, 1, 6, 2, 1, 6, 5, 3, 6, 3, 2, 5, 2, 0, 3, 2, 0, 4, 2, 3, 1, 3, 4,
+			5, 5, 2, 1, 3, 2, 0, 5, 2, 0, 0, 4, 3
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [35, 31, 0]
+	},
+	"2UcxbzJzP2Q9L61Hu3oDLTjOoMp2": {
+		"questionsSolved": [
+			"placeholder",
+			"Binary Search",
+			"Dynamic Programming",
+			"BFS DFS",
+			"Flood Fill",
+			"Hello World"
+		],
+		"randomNumbers": [
+			5, 2, 1, 2, 4, 6, 0, 4, 3, 1, 2, 0, 9, 3, 6, 4, 6, 5, 3, 2, 0, 1, 3, 8, 5,
+			8, 7, 5, 6, 2, 0, 4, 1, 6, 4, 0, 3, 7, 0, 2, 1, 3, 2, 0, 3, 4, 2, 1, 3, 5,
+			4, 3, 1, 2, 4, 3, 1, 2, 5, 1, 6, 1, 5
+		],
+		"school": "River Hill High School",
+		"score": [4, 61, 0]
+	},
+	"2eHBGW3yexVyASO0h3suFtqWQLH3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 3, 2, 7, 0, 3, 1, 0, 6, 5, 0, 3, 3, 5, 9, 7, 6, 3, 4, 1, 0, 7, 2, 3, 7,
+			8, 3, 4, 1, 5, 6, 1, 5, 3, 5, 0, 2, 5, 7, 4, 0, 1, 4, 3, 5, 4, 5, 1, 3, 1,
+			0, 3, 1, 4, 2, 6, 3, 3, 2, 4, 1, 3, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"3NolspS0FfMp4OvgQ8XwsVM4ivs2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 0, 1, 0, 7, 4, 5, 2, 6, 7, 3, 5, 3, 8, 4, 4, 0, 6, 4, 5, 2, 5, 2, 3, 1,
+			2, 4, 3, 6, 4, 3, 0, 2, 1, 2, 0, 7, 6, 8, 4, 2, 3, 1, 3, 2, 1, 4, 0, 3, 4,
+			5, 9, 3, 5, 5, 1, 4, 1, 4, 2, 0, 3, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"3V1riOzC9ZXOq0MUENpJ85rGnNC2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 1, 2, 2, 4, 0, 6, 5, 0, 3, 0, 2, 1, 5, 2, 2, 0, 1, 0, 4, 3, 7, 2, 4, 5,
+			1, 8, 1, 4, 3, 3, 0, 4, 0, 3, 1, 7, 5, 9, 5, 0, 1, 5, 3, 4, 3, 1, 4, 0, 3,
+			6, 9, 5, 7, 6, 1, 4, 5, 4, 0, 4, 2, 0
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"3pT0nIxG8aZX2EACTif3VjNOukY2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Greedy",
+			"Recursion",
+			"Dynamic Programming"
+		],
+		"randomNumbers": [
+			2, 1, 3, 2, 5, 6, 2, 5, 3, 7, 3, 5, 6, 5, 0, 0, 6, 4, 4, 2, 1, 1, 7, 0, 4,
+			3, 7, 4, 6, 5, 1, 6, 5, 4, 5, 0, 1, 9, 7, 1, 3, 4, 0, 1, 2, 2, 3, 4, 3, 0,
+			6, 0, 6, 5, 5, 4, 3, 4, 2, 0, 2, 6, 3
+		],
+		"school": "Glenelg High School",
+		"score": [25, 46, 0]
+	},
+	"42LxeoJsUpT4qpfoGvBDFmFBLcG2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Libraries"
+		],
+		"randomNumbers": [
+			1, 5, 2, 5, 6, 4, 1, 2, 7, 3, 4, 5, 9, 8, 3, 6, 1, 8, 5, 1, 4, 5, 1, 0, 8,
+			0, 2, 4, 5, 1, 3, 0, 5, 2, 0, 3, 0, 3, 4, 0, 4, 5, 1, 3, 2, 0, 3, 1, 1, 5,
+			6, 7, 0, 9, 2, 6, 5, 3, 0, 1, 1, 6, 4
+		],
+		"school": "Howard High School",
+		"score": [31, 0, 0]
+	},
+	"47y9qrCEDPT7bg30kYshbixYN7H3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			2, 4, 1, 4, 5, 7, 3, 6, 2, 2, 1, 0, 2, 3, 8, 8, 2, 6, 0, 1, 2, 3, 0, 8, 3,
+			6, 2, 0, 4, 5, 6, 0, 3, 1, 2, 6, 0, 3, 1, 5, 2, 0, 2, 0, 5, 3, 5, 2, 2, 6,
+			3, 0, 8, 1, 4, 2, 5, 5, 1, 0, 5, 1, 3
+		],
+		"school": "River Hill High School",
+		"score": [15, 0, 0]
+	},
+	"4C8zblzdIpahdXRXscd402MU3nw1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 5, 4, 1, 0, 4, 0, 3, 7, 2, 3, 5, 3, 9, 0, 8, 7, 0, 5, 4, 3, 9, 6, 7,
+			6, 0, 2, 1, 3, 5, 1, 2, 3, 0, 5, 4, 9, 1, 3, 2, 5, 3, 4, 0, 5, 2, 1, 5, 4,
+			6, 8, 2, 6, 6, 1, 0, 5, 3, 1, 1, 6, 0
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"4JnoZmz7Thc5AiAQfdx1IYblO3Y2": {
+		"questionsSolved": [
+			"placeholder",
+			"Loops",
+			"Binary Search",
+			"Flood Fill",
+			"Dynamic Programming",
+			"Recursion"
+		],
+		"randomNumbers": [
+			3, 5, 1, 6, 3, 2, 7, 4, 2, 7, 5, 0, 4, 9, 1, 4, 6, 0, 5, 1, 0, 7, 9, 1, 2,
+			1, 0, 6, 4, 5, 2, 0, 6, 2, 5, 3, 3, 9, 0, 5, 3, 1, 4, 3, 2, 1, 5, 3, 6, 4,
+			0, 6, 7, 4, 1, 3, 0, 1, 2, 3, 0, 2, 1
+		],
+		"school": "Glenelg High School",
+		"score": [10, 59, 0]
+	},
+	"4L6AbUE7WYZ7HHpfsPiE0q4dSN63": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Functions",
+			"OOP",
+			"Automation",
+			"Maze Generation",
+			"Web Development",
+			"Google Maps",
+			"Greedy",
+			"Recursion",
+			"Libraries",
+			"Sorting",
+			"Binary Search",
+			"Graphs",
+			"BFS DFS",
+			"Flood Fill",
+			"Dynamic Programming"
+		],
+		"randomNumbers": [
+			3, 1, 2, 7, 2, 0, 5, 4, 1, 0, 3, 2, 7, 9, 5, 4, 0, 6, 1, 5, 0, 3, 8, 0, 1,
+			5, 4, 6, 4, 1, 1, 2, 4, 2, 4, 5, 2, 7, 9, 1, 5, 3, 3, 5, 0, 0, 5, 2, 2, 4,
+			0, 1, 0, 8, 6, 3, 4, 5, 3, 4, 3, 6, 2
+		],
+		"school": "River Hill High School",
+		"score": [76, 113, 31]
+	},
+	"4wxb21uMveanam58SuGGLfrAdj43": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Dynamic Programming",
+			"Sorting",
+			"Functions",
+			"Loops"
+		],
+		"randomNumbers": [
+			1, 5, 2, 0, 5, 6, 5, 2, 0, 3, 7, 4, 1, 3, 9, 5, 4, 2, 0, 5, 1, 9, 6, 2, 0,
+			7, 6, 4, 6, 5, 6, 0, 3, 5, 4, 2, 7, 8, 3, 4, 2, 1, 4, 0, 5, 3, 2, 5, 3, 1,
+			5, 8, 1, 0, 1, 2, 3, 5, 2, 1, 3, 1, 5
+		],
+		"school": "River Hill High School",
+		"score": [27, 33, 0]
+	},
+	"5LeBj7LaBGZv1L8LG2MhuNLih212": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 2, 3, 5, 2, 7, 0, 1, 3, 3, 0, 7, 6, 2, 7, 3, 7, 2, 0, 5, 3, 1, 2, 7, 0,
+			1, 6, 4, 2, 1, 6, 1, 5, 6, 3, 1, 8, 2, 6, 4, 0, 1, 0, 5, 3, 2, 1, 0, 6, 0,
+			5, 8, 1, 0, 3, 2, 5, 5, 3, 1, 0, 3, 2
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"5X1v3wrd0zNngukW6zI6t8xtaxE3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 5, 1, 5, 1, 3, 4, 2, 0, 1, 3, 6, 1, 5, 3, 8, 3, 5, 2, 5, 1, 4, 7, 8, 2,
+			7, 1, 6, 3, 2, 3, 4, 0, 2, 5, 0, 1, 3, 7, 5, 2, 1, 2, 3, 0, 1, 0, 2, 3, 6,
+			2, 4, 7, 9, 4, 0, 3, 3, 0, 1, 3, 2, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"5n9iL6n8GtPHNgAide8upF4tLGo2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 2, 5, 0, 1, 5, 2, 4, 0, 5, 2, 7, 3, 7, 1, 4, 3, 7, 3, 2, 4, 4, 1, 0, 2,
+			6, 7, 0, 4, 6, 1, 5, 4, 6, 2, 5, 3, 7, 4, 3, 0, 1, 0, 1, 3, 2, 4, 3, 3, 2,
+			1, 4, 9, 7, 5, 6, 0, 2, 1, 3, 4, 6, 1
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"6HhRLfrmaZgBEl0xKXvpFru8EI93": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 0, 4, 2, 7, 6, 4, 2, 1, 1, 6, 4, 0, 6, 9, 5, 2, 6, 4, 0, 2, 4, 3, 6, 0,
+			8, 3, 5, 0, 3, 4, 0, 3, 4, 1, 2, 9, 2, 0, 2, 0, 5, 3, 2, 0, 5, 2, 4, 0, 4,
+			6, 6, 0, 9, 1, 4, 6, 3, 2, 4, 1, 5, 0
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"6Rnk6UckYwPWpbviVaI2O5Svmiq2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			1, 4, 2, 0, 7, 5, 7, 5, 0, 0, 3, 6, 1, 0, 9, 8, 2, 7, 1, 5, 4, 9, 8, 1, 6,
+			8, 5, 1, 5, 6, 3, 4, 5, 3, 2, 4, 7, 9, 3, 0, 2, 3, 4, 3, 1, 3, 0, 4, 2, 5,
+			6, 3, 9, 2, 6, 3, 1, 0, 5, 4, 4, 1, 3
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"6TVpEgScKaQjo8ZNgc47akVu9GB3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 1, 4, 5, 7, 2, 6, 5, 4, 5, 2, 3, 6, 4, 0, 1, 0, 3, 0, 3, 2, 1, 9, 7, 6,
+			0, 2, 6, 1, 2, 0, 6, 2, 0, 1, 3, 7, 5, 6, 4, 1, 3, 4, 3, 0, 0, 2, 4, 5, 4,
+			1, 3, 1, 4, 4, 1, 6, 1, 2, 0, 4, 2, 1
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"6c0wLIM0r9XKNT4BuPJI1F4xnmh1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			0, 2, 5, 2, 7, 1, 3, 2, 4, 6, 7, 2, 8, 4, 1, 7, 5, 1, 2, 3, 1, 6, 3, 1, 0,
+			4, 1, 0, 4, 2, 1, 0, 6, 3, 4, 0, 4, 8, 2, 4, 5, 2, 2, 3, 1, 1, 3, 4, 5, 3,
+			1, 5, 6, 9, 3, 0, 4, 1, 3, 4, 0, 6, 3
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"6jdFTdUQvcSveiJGPOuPXxoRlr93": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 3, 2, 2, 4, 3, 7, 1, 2, 1, 4, 7, 5, 1, 7, 5, 4, 0, 0, 3, 1, 6, 2, 4, 2,
+			8, 7, 2, 6, 1, 5, 6, 2, 1, 4, 6, 2, 6, 3, 1, 5, 3, 4, 2, 1, 5, 2, 4, 1, 5,
+			0, 9, 8, 5, 3, 4, 5, 3, 0, 1, 6, 3, 1
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"6w08E0q8FJe8OUNCzjOsxIkXYF93": {
+		"questionsSolved": ["placeholder", "Booleans", "Loops"],
+		"randomNumbers": [
+			2, 1, 4, 5, 0, 6, 2, 4, 5, 3, 5, 1, 8, 2, 5, 5, 4, 2, 0, 3, 2, 1, 4, 7, 7,
+			3, 6, 6, 3, 1, 5, 0, 2, 2, 4, 5, 6, 1, 3, 2, 1, 3, 5, 1, 3, 3, 5, 4, 5, 2,
+			0, 1, 7, 8, 3, 0, 6, 1, 3, 5, 6, 5, 1
+		],
+		"school": "Glenelg High School",
+		"score": [20, 0, 0]
+	},
+	"7QAnNY0dcxMhe3MsA6tgDjLblAY2": {
+		"questionsSolved": [
+			"placeholder",
+			"Variables 2",
+			"Variables 1",
+			"Booleans",
+			"Loops",
+			"Hello World",
+			"Arrays",
+			"Functions",
+			"Google Maps"
+		],
+		"randomNumbers": [
+			3, 5, 4, 6, 0, 3, 1, 6, 3, 0, 2, 3, 1, 6, 0, 0, 8, 6, 0, 1, 5, 0, 5, 9, 7,
+			5, 8, 2, 1, 4, 6, 3, 2, 5, 0, 4, 2, 7, 6, 5, 3, 4, 3, 1, 0, 0, 1, 5, 5, 0,
+			6, 6, 4, 0, 6, 1, 2, 5, 3, 4, 3, 2, 6
+		],
+		"school": "Centennial High School",
+		"score": [56, 0, 6]
+	},
+	"7REXmBvAUjNt3PJs6eNpgRJTDZJ3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 4, 2, 7, 4, 5, 7, 3, 4, 6, 7, 5, 0, 5, 4, 3, 4, 5, 2, 1, 3, 6, 0, 5, 4,
+			8, 0, 4, 0, 5, 0, 4, 6, 2, 5, 4, 0, 9, 6, 1, 2, 3, 0, 1, 5, 3, 1, 4, 2, 3,
+			0, 5, 2, 3, 5, 6, 4, 5, 1, 4, 5, 4, 3
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"7Z12DnVtrjbA037nfc3GxYBrZCE3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Functions",
+			"Arrays",
+			"OOP",
+			"Binary Search",
+			"Google Maps"
+		],
+		"randomNumbers": [
+			5, 2, 0, 0, 1, 7, 7, 3, 1, 6, 7, 0, 5, 7, 4, 8, 5, 1, 5, 3, 4, 5, 1, 8, 8,
+			2, 3, 2, 0, 4, 3, 5, 1, 2, 4, 3, 7, 4, 2, 3, 1, 2, 0, 4, 2, 2, 4, 0, 4, 1,
+			2, 5, 8, 1, 6, 1, 2, 4, 0, 3, 6, 2, 3
+		],
+		"school": "Glenelg High School",
+		"score": [70, 15, 6]
+	},
+	"7xQI11udIUOyc7PLZMP8msd4Ms53": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"OOP",
+			"Greedy",
+			"Recursion",
+			"Sorting",
+			"Binary Search",
+			"Automation",
+			"Graphs",
+			"BFS DFS",
+			"Flood Fill",
+			"Dynamic Programming",
+			"Google Maps",
+			"Maze Generation",
+			"Web Development",
+			"Functions"
+		],
+		"randomNumbers": [
+			5, 4, 0, 0, 5, 7, 7, 4, 1, 2, 5, 1, 3, 0, 9, 0, 7, 1, 3, 5, 1, 5, 7, 4, 3,
+			5, 0, 6, 5, 3, 6, 3, 0, 5, 6, 4, 1, 0, 5, 1, 5, 0, 1, 0, 2, 1, 2, 4, 1, 4,
+			5, 3, 9, 1, 6, 4, 1, 3, 2, 5, 6, 5, 3
+		],
+		"school": "River Hill High School",
+		"score": [76, 113, 31]
+	},
+	"8GogyNacz9VHqPbhrArsdcq2ndG3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP",
+			"Greedy",
+			"Automation",
+			"Web Development",
+			"Google Maps",
+			"Binary Search",
+			"Recursion",
+			"Sorting",
+			"Dynamic Programming",
+			"Flood Fill",
+			"Graphs",
+			"BFS DFS",
+			"Maze Generation"
+		],
+		"randomNumbers": [
+			0, 3, 5, 3, 4, 1, 4, 2, 7, 1, 3, 7, 9, 4, 0, 0, 6, 2, 1, 2, 3, 2, 5, 0, 4,
+			7, 6, 1, 4, 6, 6, 4, 0, 0, 2, 4, 8, 0, 5, 4, 2, 5, 4, 3, 1, 0, 4, 5, 5, 3,
+			1, 6, 5, 8, 6, 0, 1, 3, 1, 2, 4, 5, 6
+		],
+		"school": "River Hill High School",
+		"score": [76, 113, 31]
+	},
+	"8HYUHGKq1aYkekV94kg8TqRYXHD3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 2, 1, 7, 1, 3, 1, 5, 4, 0, 2, 1, 8, 1, 6, 5, 1, 6, 0, 1, 3, 1, 9, 3, 6,
+			8, 3, 2, 5, 1, 5, 4, 6, 3, 0, 6, 0, 9, 6, 3, 1, 0, 2, 4, 3, 3, 5, 4, 0, 5,
+			3, 5, 1, 7, 0, 3, 4, 3, 5, 4, 5, 3, 4
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"8acujgm2tjYET3d70ozwqoUANe83": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 3, 1, 5, 0, 1, 5, 0, 6, 5, 4, 2, 9, 3, 2, 4, 5, 2, 0, 3, 1, 6, 4, 0, 7,
+			1, 0, 2, 0, 1, 1, 2, 3, 6, 0, 5, 9, 7, 1, 5, 4, 2, 0, 3, 5, 4, 5, 2, 4, 5,
+			3, 5, 9, 1, 5, 4, 1, 3, 4, 0, 0, 6, 4
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"8bGYijAkYbeMwzxK9ANDKNXk0iV2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			2, 3, 5, 3, 5, 4, 2, 4, 6, 0, 4, 2, 2, 7, 0, 3, 2, 1, 4, 5, 3, 6, 8, 4, 5,
+			3, 2, 1, 4, 0, 5, 6, 3, 0, 4, 6, 6, 5, 2, 1, 0, 2, 3, 4, 1, 3, 1, 0, 6, 2,
+			4, 6, 3, 5, 5, 0, 1, 2, 5, 0, 2, 0, 1
+		],
+		"school": "Centennial High School",
+		"score": [25, 0, 0]
+	},
+	"8nd5hrDANagbnfZ37hTHXxquM2u2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			0, 1, 4, 7, 3, 0, 1, 0, 7, 6, 0, 3, 8, 0, 7, 8, 4, 1, 0, 1, 5, 5, 6, 7, 3,
+			4, 5, 2, 4, 3, 0, 4, 2, 0, 5, 3, 6, 8, 4, 2, 1, 5, 5, 0, 1, 2, 4, 5, 5, 0,
+			4, 5, 2, 0, 3, 1, 4, 2, 1, 3, 6, 3, 0
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"8oIcQJYormeXKLgOugx9fg25dZK2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 1, 2, 0, 7, 2, 4, 5, 6, 5, 2, 3, 3, 4, 8, 4, 2, 5, 5, 1, 0, 1, 0, 8, 5,
+			1, 4, 6, 3, 0, 2, 3, 1, 1, 6, 3, 5, 6, 0, 4, 3, 2, 1, 3, 2, 4, 5, 1, 5, 4,
+			2, 5, 0, 9, 1, 6, 3, 3, 0, 5, 2, 0, 1
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"988AjV2jHZW5pdEJzvReC9pk4bR2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Loops",
+			"Functions",
+			"Greedy",
+			"Graphs"
+		],
+		"randomNumbers": [
+			0, 4, 5, 6, 0, 7, 0, 3, 2, 7, 2, 6, 0, 7, 4, 6, 8, 5, 4, 2, 3, 1, 4, 0, 2,
+			1, 4, 2, 0, 5, 5, 2, 6, 5, 3, 1, 8, 3, 1, 4, 5, 1, 5, 4, 1, 2, 5, 1, 4, 6,
+			0, 1, 6, 0, 2, 3, 1, 0, 3, 1, 2, 1, 3
+		],
+		"school": "River Hill High School",
+		"score": [38, 22, 0]
+	},
+	"9GUbkZg8i6WiKhmRadanSU6QdA63": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 1, 2, 7, 0, 3, 0, 1, 2, 1, 5, 0, 9, 2, 6, 2, 3, 7, 1, 3, 0, 2, 1, 8, 6,
+			8, 3, 3, 1, 4, 3, 2, 5, 0, 1, 5, 4, 8, 0, 4, 5, 1, 3, 4, 2, 0, 5, 3, 5, 1,
+			3, 4, 7, 2, 0, 6, 4, 3, 4, 5, 6, 0, 3
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"9f3PdPLmCzR3UgYRErlS5UgASSQ2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 2",
+			"Variables 1",
+			"Automation",
+			"Arrays",
+			"OOP",
+			"Libraries"
+		],
+		"randomNumbers": [
+			3, 5, 4, 1, 2, 6, 6, 1, 5, 6, 1, 3, 8, 6, 2, 6, 3, 4, 0, 5, 4, 8, 9, 5, 5,
+			6, 4, 1, 6, 4, 6, 0, 5, 6, 0, 4, 6, 5, 8, 1, 4, 0, 5, 0, 3, 2, 1, 5, 1, 2,
+			4, 7, 0, 4, 0, 3, 6, 3, 4, 0, 0, 5, 6
+		],
+		"school": "Centennial High School",
+		"score": [43, 0, 10]
+	},
+	"AADnBLoyXXUx7w88vJW6WgFAbev1": {
+		"questionsSolved": ["placeholder", "Booleans"],
+		"randomNumbers": [
+			0, 4, 2, 2, 1, 5, 6, 2, 7, 5, 3, 6, 2, 0, 9, 0, 1, 5, 2, 1, 3, 2, 9, 8, 3,
+			7, 1, 1, 3, 6, 1, 0, 3, 3, 0, 5, 6, 9, 1, 5, 0, 3, 1, 2, 4, 3, 5, 4, 6, 3,
+			5, 1, 3, 9, 1, 6, 0, 4, 2, 0, 3, 1, 6
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"AH5oD6CVPafQxSgBrjEZGvQDguF3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			2, 3, 4, 7, 4, 1, 4, 1, 2, 3, 0, 4, 8, 6, 5, 4, 0, 6, 5, 1, 0, 8, 7, 0, 6,
+			4, 0, 3, 4, 0, 3, 6, 1, 3, 5, 1, 9, 6, 4, 0, 5, 2, 0, 3, 2, 0, 1, 2, 1, 2,
+			5, 6, 0, 5, 1, 3, 5, 1, 4, 0, 4, 1, 0
+		],
+		"school": "River Hill High School",
+		"score": [4, 0, 0]
+	},
+	"AMWRg7JAJnODF9uP7IIRg37qF172": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops"
+		],
+		"randomNumbers": [
+			3, 2, 5, 5, 6, 7, 1, 6, 0, 2, 3, 7, 9, 8, 3, 7, 3, 5, 5, 3, 2, 8, 3, 5, 4,
+			2, 7, 4, 5, 1, 6, 2, 4, 3, 1, 5, 8, 1, 4, 4, 1, 5, 1, 4, 0, 3, 2, 4, 2, 0,
+			3, 8, 0, 2, 4, 2, 3, 3, 2, 1, 2, 0, 1
+		],
+		"school": "Glenelg High School",
+		"score": [35, 0, 0]
+	},
+	"AUuWgrl3imhf54cVyEPeX17dbzW2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 0, 2, 4, 3, 7, 1, 6, 3, 7, 3, 1, 9, 1, 8, 6, 7, 4, 1, 3, 2, 6, 5, 3, 1,
+			6, 3, 5, 4, 0, 4, 3, 0, 2, 0, 1, 9, 5, 0, 1, 3, 2, 3, 4, 1, 1, 2, 0, 3, 0,
+			5, 3, 0, 4, 0, 2, 3, 3, 4, 5, 1, 0, 3
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"Afhrw0jL9oU25XB12f5L0JlZeGj2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 3, 4, 6, 1, 0, 5, 4, 2, 0, 1, 5, 7, 0, 4, 2, 1, 8, 5, 4, 0, 3, 4, 0, 7,
+			2, 8, 2, 5, 4, 2, 5, 0, 5, 1, 0, 8, 3, 0, 2, 5, 1, 1, 3, 2, 1, 0, 3, 2, 1,
+			3, 2, 7, 5, 1, 6, 3, 2, 3, 5, 6, 3, 2
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"AfmLscWnhzZoZnE9npr6s3MEfGm2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			0, 5, 4, 2, 3, 7, 0, 1, 4, 3, 2, 0, 0, 2, 4, 3, 6, 7, 2, 3, 5, 4, 8, 9, 7,
+			4, 2, 0, 1, 4, 2, 1, 0, 3, 4, 0, 4, 1, 6, 2, 0, 3, 1, 0, 4, 4, 1, 0, 6, 5,
+			1, 4, 2, 6, 1, 3, 0, 5, 3, 0, 6, 0, 1
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [25, 0, 0]
+	},
+	"B4W14ht0SubkQ53uqctOp3GBAQj1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 4, 0, 3, 6, 5, 4, 3, 0, 3, 7, 1, 4, 0, 3, 6, 4, 5, 0, 3, 2, 1, 8, 6, 7,
+			1, 0, 5, 4, 2, 5, 3, 4, 5, 1, 2, 0, 1, 2, 5, 2, 0, 5, 2, 3, 1, 0, 2, 4, 2,
+			1, 1, 7, 5, 2, 5, 4, 1, 2, 0, 1, 3, 6
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"BVeSM4PZurfPaFQJasHuLfgHggJ3": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			2, 3, 1, 5, 2, 7, 6, 1, 2, 5, 3, 0, 6, 9, 4, 7, 2, 8, 1, 4, 0, 2, 1, 0, 6,
+			2, 3, 6, 2, 0, 5, 2, 1, 5, 3, 2, 5, 4, 8, 2, 0, 3, 2, 5, 4, 0, 2, 3, 1, 2,
+			4, 0, 5, 9, 2, 4, 0, 5, 0, 2, 2, 5, 3
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"BWhWQFrxmgcqekLphXrR7ask2JT2": {
+		"questionsSolved": [
+			"placeholder",
+			"Automation",
+			"Google Maps",
+			"Maze Generation",
+			"Dynamic Programming",
+			"Hello World",
+			"Sorting"
+		],
+		"randomNumbers": [
+			5, 1, 2, 0, 6, 1, 7, 4, 5, 1, 3, 2, 2, 3, 1, 6, 4, 2, 4, 3, 5, 8, 7, 5, 3,
+			7, 8, 0, 1, 2, 1, 0, 5, 0, 5, 1, 6, 5, 7, 3, 0, 5, 1, 2, 3, 2, 1, 3, 2, 1,
+			6, 3, 8, 0, 3, 4, 6, 2, 4, 5, 6, 1, 0
+		],
+		"school": "Centennial High School",
+		"score": [4, 33, 25]
+	},
+	"BrT1N39xK6UJWzECC43vuqV5htH3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 1, 5, 3, 1, 7, 5, 7, 2, 2, 0, 6, 5, 4, 2, 0, 1, 4, 0, 5, 3, 2, 4, 1, 4,
+			5, 8, 3, 5, 1, 3, 4, 2, 4, 2, 6, 3, 6, 9, 5, 4, 3, 1, 5, 2, 0, 1, 5, 0, 5,
+			4, 6, 8, 5, 0, 1, 2, 1, 2, 5, 0, 2, 5
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"C2Uto8B04FYv0svHFO8eGl4P1Jl1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 3, 4, 5, 3, 0, 3, 5, 4, 2, 6, 0, 9, 7, 0, 2, 1, 6, 2, 4, 0, 0, 7, 9, 4,
+			5, 1, 3, 5, 6, 2, 0, 6, 6, 2, 5, 8, 1, 7, 0, 1, 2, 5, 0, 4, 2, 3, 1, 5, 3,
+			0, 8, 5, 0, 3, 1, 0, 1, 4, 5, 0, 3, 4
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"CKxYEnAhE7VGGGf4apm4s4Vickf1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 0, 7, 2, 0, 3, 5, 6, 6, 5, 0, 5, 1, 2, 0, 7, 1, 4, 1, 0, 7, 9, 0, 4,
+			0, 1, 1, 3, 5, 3, 5, 4, 3, 0, 1, 6, 4, 9, 3, 0, 4, 2, 1, 5, 0, 3, 1, 3, 2,
+			1, 4, 5, 9, 0, 1, 2, 3, 0, 4, 1, 4, 6
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"Cg5ZCNqvPYeoSWQu276qFzB6fMf2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 5, 3, 2, 6, 7, 5, 7, 2, 2, 4, 5, 2, 7, 3, 8, 6, 5, 1, 2, 0, 8, 9, 4, 1,
+			2, 3, 0, 1, 2, 1, 4, 3, 2, 4, 1, 2, 4, 5, 5, 1, 3, 2, 4, 3, 5, 0, 2, 6, 5,
+			4, 8, 9, 7, 1, 2, 5, 2, 0, 5, 2, 4, 1
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"D7jlETaFf5PlBoyhdyTYPR0XGu13": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			3, 2, 0, 3, 7, 6, 5, 1, 7, 6, 5, 1, 9, 5, 8, 3, 6, 8, 0, 2, 4, 9, 1, 4, 5,
+			2, 3, 6, 0, 1, 6, 0, 4, 3, 5, 1, 0, 9, 6, 1, 4, 0, 0, 4, 5, 5, 3, 2, 1, 5,
+			6, 8, 9, 4, 1, 0, 6, 2, 1, 3, 6, 4, 1
+		],
+		"school": "River Hill High School",
+		"score": [10, 0, 0]
+	},
+	"DB5BEZdGUId4PXUoMVBnzyS4aHY2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			2, 3, 0, 7, 2, 6, 0, 6, 1, 7, 6, 3, 5, 7, 8, 8, 6, 4, 3, 4, 1, 2, 6, 7, 5,
+			1, 4, 4, 5, 2, 5, 2, 3, 6, 3, 5, 1, 2, 9, 1, 3, 4, 5, 4, 3, 0, 2, 4, 6, 4,
+			3, 9, 3, 8, 6, 1, 2, 0, 1, 4, 3, 0, 6
+		],
+		"school": "River Hill High School",
+		"score": [62, 0, 0]
+	},
+	"DGLq2gsiWVcZiSfvV47yOCD6MVy2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			4, 3, 0, 4, 1, 0, 6, 3, 0, 1, 6, 7, 6, 3, 9, 6, 3, 8, 0, 3, 1, 9, 1, 8, 7,
+			1, 5, 1, 0, 2, 2, 3, 0, 3, 6, 0, 7, 8, 2, 1, 4, 3, 4, 2, 3, 1, 2, 5, 1, 3,
+			2, 5, 2, 9, 4, 0, 5, 1, 3, 2, 4, 1, 3
+		],
+		"school": "Glenelg High School",
+		"score": [15, 0, 0]
+	},
+	"DPic4k4UVrS155X3auiqX0qhYYA3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans",
+			"Automation",
+			"Greedy",
+			"Binary Search"
+		],
+		"randomNumbers": [
+			3, 1, 4, 4, 0, 7, 6, 4, 5, 6, 1, 3, 3, 2, 8, 2, 6, 5, 5, 0, 1, 3, 8, 0, 6,
+			7, 2, 5, 6, 4, 1, 3, 5, 4, 3, 6, 2, 5, 1, 1, 3, 4, 3, 2, 0, 4, 0, 5, 0, 1,
+			3, 8, 3, 1, 6, 1, 4, 1, 0, 5, 6, 2, 1
+		],
+		"school": "Glenelg High School",
+		"score": [20, 30, 10]
+	},
+	"DRiDFK1FhwclB4MVRzKnEWUetTm2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			2, 4, 1, 3, 7, 4, 0, 4, 6, 0, 5, 7, 3, 2, 7, 0, 7, 4, 4, 1, 5, 4, 0, 6, 1,
+			5, 2, 2, 0, 5, 6, 4, 0, 4, 0, 1, 7, 1, 9, 5, 4, 1, 4, 2, 0, 0, 3, 1, 2, 6,
+			4, 7, 5, 9, 1, 3, 4, 0, 1, 2, 4, 2, 6
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"DYkAwRoEsaXlLCF1azfDfx4gkk72": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			4, 5, 2, 3, 2, 0, 5, 0, 4, 6, 0, 2, 0, 4, 5, 5, 8, 0, 3, 4, 5, 9, 3, 0, 2,
+			5, 4, 3, 4, 2, 2, 3, 6, 6, 3, 4, 5, 6, 8, 5, 1, 2, 2, 0, 1, 4, 5, 1, 1, 3,
+			0, 5, 2, 9, 2, 5, 0, 2, 1, 3, 3, 0, 2
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"DeqrYEy2E2ZauPwCbIxeZ8m3S8g2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Dynamic Programming",
+			"BFS DFS",
+			"Sorting",
+			"Google Maps",
+			"Web Development"
+		],
+		"randomNumbers": [
+			1, 0, 3, 4, 7, 3, 7, 3, 6, 2, 1, 4, 2, 0, 9, 1, 5, 2, 1, 5, 2, 5, 6, 4, 1,
+			6, 0, 6, 3, 5, 6, 3, 1, 6, 5, 1, 8, 0, 2, 2, 1, 3, 4, 3, 1, 0, 4, 5, 4, 6,
+			1, 8, 6, 7, 0, 2, 6, 0, 2, 1, 4, 6, 5
+		],
+		"school": "Reservoir High School",
+		"score": [4, 49, 12]
+	},
+	"DrbFBQAjhLg71MfJ0wcHB6ncKgb2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 4, 0, 1, 2, 3, 0, 1, 5, 6, 3, 1, 9, 2, 8, 6, 3, 1, 3, 4, 5, 6, 2, 9, 5,
+			6, 3, 2, 3, 6, 6, 2, 3, 2, 3, 1, 3, 5, 8, 2, 4, 1, 0, 4, 1, 2, 3, 5, 1, 4,
+			2, 6, 5, 4, 0, 3, 2, 1, 4, 0, 4, 6, 1
+		],
+		"school": "Atholton High School",
+		"score": [0, 0, 0]
+	},
+	"Du7Sw2UzhbdcwNlHgRSu83ojbHk1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 0, 3, 7, 4, 0, 6, 7, 3, 7, 1, 2, 9, 6, 1, 6, 5, 1, 4, 5, 1, 5, 9, 7,
+			1, 8, 0, 5, 2, 1, 2, 5, 5, 3, 1, 1, 9, 6, 5, 1, 4, 0, 3, 2, 5, 0, 3, 1, 5,
+			6, 2, 9, 1, 0, 6, 3, 2, 0, 3, 5, 4, 0
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [0, 0, 0]
+	},
+	"ESqNSresNiMQiZxr5WY4Rqry0v03": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 1, 5, 3, 1, 7, 4, 2, 5, 4, 1, 6, 8, 2, 9, 8, 2, 4, 2, 1, 4, 3, 2, 4, 7,
+			5, 3, 5, 4, 3, 0, 4, 3, 0, 3, 5, 7, 1, 4, 0, 1, 5, 4, 0, 5, 5, 0, 4, 2, 4,
+			5, 2, 3, 1, 6, 3, 0, 0, 2, 3, 1, 4, 3
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"EXgjl0a8ZnYBmREJP6lEPtvhjk23": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 0, 1, 4, 1, 5, 7, 0, 5, 3, 7, 0, 0, 7, 9, 2, 3, 0, 0, 3, 2, 5, 6, 0, 0,
+			3, 1, 5, 3, 6, 0, 3, 1, 6, 3, 1, 9, 3, 8, 5, 3, 0, 2, 4, 0, 2, 4, 3, 6, 0,
+			1, 4, 7, 3, 6, 4, 3, 0, 3, 1, 2, 4, 1
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"ElQ7fqqUaaf9k55aOuyGC0aafYH2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 4, 5, 7, 1, 6, 1, 2, 0, 1, 7, 4, 9, 0, 5, 8, 0, 1, 1, 4, 3, 5, 6, 7, 8,
+			7, 1, 5, 3, 1, 4, 6, 1, 4, 2, 6, 1, 3, 9, 0, 3, 1, 3, 1, 2, 2, 5, 4, 6, 4,
+			1, 9, 7, 5, 1, 3, 0, 5, 4, 2, 3, 2, 0
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"FQHZ3lVoW3UqNLl41ZvInnYUSZ93": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Dynamic Programming",
+			"Functions",
+			"OOP",
+			"Automation",
+			"BFS DFS"
+		],
+		"randomNumbers": [
+			4, 5, 1, 6, 3, 1, 2, 0, 7, 2, 3, 6, 2, 8, 6, 3, 1, 8, 0, 2, 3, 8, 0, 6, 6,
+			5, 3, 4, 0, 1, 6, 1, 4, 4, 2, 5, 8, 3, 1, 1, 4, 0, 4, 1, 2, 2, 1, 4, 6, 0,
+			4, 2, 7, 0, 3, 2, 1, 0, 5, 1, 0, 1, 2
+		],
+		"school": "Reservoir High School",
+		"score": [52, 33, 10]
+	},
+	"FYMt5FHfGHVGRCxBiWSC25PgFse2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			3, 2, 5, 4, 0, 3, 2, 4, 1, 4, 2, 5, 9, 1, 3, 4, 5, 8, 2, 5, 4, 2, 5, 3, 5,
+			6, 0, 6, 5, 2, 4, 0, 2, 2, 4, 6, 1, 5, 6, 2, 5, 3, 3, 4, 5, 5, 4, 1, 3, 4,
+			1, 2, 7, 6, 3, 2, 0, 2, 4, 5, 2, 3, 5
+		],
+		"school": "River Hill High School",
+		"score": [10, 0, 0]
+	},
+	"Fs12uzIMUSOBQxqh9m0t8ZEQeHq1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 5, 0, 5, 7, 3, 4, 0, 3, 3, 4, 7, 8, 3, 6, 3, 6, 1, 4, 5, 0, 5, 3, 2, 6,
+			3, 2, 6, 0, 4, 5, 3, 4, 3, 0, 1, 0, 1, 5, 2, 4, 1, 2, 1, 5, 0, 2, 3, 5, 6,
+			3, 5, 8, 4, 5, 3, 6, 2, 0, 1, 0, 4, 1
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"FukArqo8DIZi9wHDv50ZWH2u0Ql1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 3, 5, 5, 3, 4, 6, 4, 3, 3, 0, 1, 1, 0, 2, 3, 2, 1, 2, 0, 3, 9, 3, 4, 5,
+			2, 6, 4, 1, 5, 0, 4, 5, 5, 6, 3, 8, 1, 6, 1, 2, 3, 4, 2, 3, 0, 3, 1, 6, 5,
+			1, 9, 8, 6, 3, 0, 4, 0, 1, 5, 3, 1, 6
+		],
+		"school": "Reservoir High School",
+		"score": [0, 0, 0]
+	},
+	"GImCQ7zTgwhHkIaMLXvhgeIvLeK2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 3, 2, 1, 7, 3, 7, 6, 1, 3, 6, 5, 1, 8, 0, 4, 3, 6, 4, 3, 1, 2, 5, 7, 5,
+			8, 6, 2, 6, 3, 2, 4, 0, 3, 1, 4, 7, 5, 1, 1, 4, 5, 3, 0, 1, 4, 2, 1, 3, 4,
+			2, 9, 2, 8, 0, 6, 1, 0, 5, 4, 5, 4, 2
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"HD7KYJqC6ST4GaRVzcM4qEkbTjM2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP",
+			"Greedy",
+			"Recursion",
+			"Sorting",
+			"Binary Search",
+			"Graphs",
+			"BFS DFS",
+			"Flood Fill",
+			"Automation",
+			"Google Maps",
+			"Maze Generation",
+			"Dynamic Programming",
+			"Web Development"
+		],
+		"randomNumbers": [
+			2, 0, 3, 3, 2, 1, 6, 2, 7, 5, 2, 4, 4, 6, 0, 3, 5, 2, 1, 0, 3, 0, 9, 1, 3,
+			2, 8, 1, 4, 6, 6, 0, 3, 0, 1, 5, 3, 5, 0, 4, 0, 3, 3, 5, 2, 3, 0, 1, 0, 3,
+			6, 0, 9, 5, 0, 2, 4, 5, 1, 4, 5, 2, 4
+		],
+		"school": "Long Reach High School",
+		"score": [76, 83, 29]
+	},
+	"Hh8cRRxi94WvdWbftigm5nZunhy2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays"
+		],
+		"randomNumbers": [
+			0, 5, 2, 1, 6, 4, 7, 2, 6, 4, 5, 3, 7, 0, 1, 3, 8, 0, 5, 1, 4, 8, 5, 9, 5,
+			4, 0, 6, 5, 0, 4, 3, 1, 4, 0, 2, 7, 0, 8, 4, 2, 1, 1, 2, 3, 1, 4, 5, 4, 0,
+			2, 6, 1, 5, 3, 0, 1, 1, 3, 4, 5, 1, 6
+		],
+		"school": "Reservoir High School",
+		"score": [80, 0, 0]
+	},
+	"HxrBQ85EKfXNnS3nGu8Vmywce862": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			4, 0, 3, 7, 3, 1, 3, 4, 5, 7, 4, 2, 8, 0, 1, 7, 0, 1, 1, 4, 2, 3, 4, 5, 4,
+			7, 1, 1, 4, 6, 2, 3, 4, 3, 4, 2, 6, 0, 5, 3, 4, 2, 3, 2, 4, 5, 1, 3, 2, 6,
+			4, 0, 3, 4, 5, 4, 3, 0, 4, 5, 2, 3, 0
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [71, 0, 0]
+	},
+	"I5x3rMdPbAUwOABwPWF9NzcOSX73": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 3, 4, 5, 4, 7, 2, 5, 6, 5, 7, 6, 9, 0, 8, 4, 2, 7, 3, 4, 5, 4, 0, 8, 7,
+			1, 8, 2, 3, 4, 4, 3, 0, 1, 0, 6, 6, 0, 4, 5, 2, 0, 0, 4, 5, 5, 2, 3, 3, 0,
+			1, 7, 5, 6, 4, 1, 3, 5, 2, 3, 4, 6, 2
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"IH3n0Ygim5ch44ETmGTecOClnrm2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 2",
+			"Loops",
+			"Booleans",
+			"Binary Search",
+			"Recursion"
+		],
+		"randomNumbers": [
+			2, 3, 4, 5, 6, 7, 7, 2, 3, 0, 6, 4, 9, 1, 6, 0, 4, 3, 0, 3, 4, 7, 0, 2, 1,
+			0, 7, 0, 2, 6, 6, 0, 3, 1, 4, 0, 8, 9, 7, 3, 0, 2, 2, 4, 5, 3, 4, 5, 1, 5,
+			4, 3, 2, 6, 1, 4, 6, 0, 5, 2, 2, 0, 6
+		],
+		"school": "Glenelg High School",
+		"score": [29, 29, 0]
+	},
+	"IPmjk3vsySMTHeduTGPD95TQemT2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Arrays",
+			"Loops",
+			"OOP",
+			"Libraries",
+			"Functions"
+		],
+		"randomNumbers": [
+			5, 1, 0, 5, 7, 6, 7, 4, 5, 3, 1, 6, 9, 8, 5, 7, 0, 4, 1, 4, 2, 8, 7, 4, 2,
+			0, 6, 0, 1, 3, 0, 4, 1, 3, 4, 5, 4, 3, 5, 2, 3, 4, 1, 3, 0, 2, 3, 1, 0, 2,
+			6, 9, 7, 4, 6, 5, 2, 4, 5, 2, 4, 6, 2
+		],
+		"school": "River Hill High School",
+		"score": [61, 0, 0]
+	},
+	"IWwwmhuhMybAxYQrPqqjjQtij0s1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 5, 4, 0, 1, 5, 0, 7, 3, 0, 1, 3, 2, 1, 4, 6, 1, 7, 1, 2, 0, 5, 2, 9, 3,
+			4, 2, 4, 3, 0, 4, 0, 6, 3, 0, 4, 9, 8, 1, 1, 2, 3, 4, 1, 3, 3, 5, 0, 0, 6,
+			3, 8, 0, 9, 0, 6, 1, 0, 3, 2, 2, 0, 5
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"J8QcvbBUjJQc8DINlqlTOQwlVye2": {
+		"questionsSolved": ["placeholder", "Loops"],
+		"randomNumbers": [
+			3, 1, 0, 2, 5, 1, 5, 3, 2, 4, 1, 6, 1, 5, 2, 3, 1, 7, 2, 5, 0, 8, 9, 7, 4,
+			1, 5, 4, 1, 0, 5, 6, 2, 0, 2, 3, 0, 3, 5, 2, 3, 0, 2, 4, 5, 0, 1, 4, 5, 0,
+			4, 8, 2, 5, 1, 5, 6, 4, 3, 1, 3, 6, 2
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"JKWCEjBQJDUFJvinQQeKI9em6kS2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			1, 5, 2, 6, 4, 3, 7, 3, 6, 7, 6, 2, 3, 6, 8, 2, 7, 8, 5, 2, 1, 4, 6, 0, 8,
+			4, 0, 0, 1, 2, 4, 2, 1, 6, 0, 2, 4, 8, 5, 0, 4, 3, 3, 4, 1, 4, 2, 5, 1, 2,
+			6, 7, 4, 5, 4, 6, 5, 3, 4, 1, 5, 2, 0
+		],
+		"school": "River Hill High School",
+		"score": [25, 0, 0]
+	},
+	"JS96QVXxPcZ5YrdYxTuJHWpfro13": {
+		"questionsSolved": ["placeholder", "Booleans"],
+		"randomNumbers": [
+			4, 5, 2, 0, 4, 7, 5, 2, 6, 3, 4, 7, 2, 5, 3, 6, 1, 0, 0, 1, 4, 0, 5, 8, 8,
+			4, 1, 6, 5, 0, 3, 6, 4, 4, 6, 2, 9, 4, 6, 1, 4, 2, 5, 0, 2, 0, 4, 5, 1, 6,
+			0, 3, 4, 2, 1, 5, 4, 4, 0, 5, 3, 6, 0
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"JWsXobtoNeanhzGTiOe4ejv8sDr2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 3, 4, 7, 5, 6, 0, 2, 3, 6, 7, 0, 4, 5, 1, 3, 6, 2, 4, 1, 3, 6, 0, 3,
+			6, 5, 0, 4, 5, 5, 2, 6, 2, 1, 5, 2, 6, 7, 2, 3, 5, 3, 5, 0, 2, 1, 3, 4, 5,
+			2, 7, 9, 2, 0, 2, 3, 3, 4, 1, 2, 0, 6
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"Jswn857bRbPAYQq67b4NsR5Y85A3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"OOP"
+		],
+		"randomNumbers": [
+			0, 4, 1, 1, 5, 0, 7, 6, 0, 5, 2, 3, 4, 5, 1, 1, 2, 7, 4, 0, 5, 4, 6, 3, 2,
+			7, 4, 6, 2, 0, 1, 6, 4, 5, 3, 2, 5, 1, 2, 3, 2, 0, 2, 5, 1, 3, 4, 5, 4, 0,
+			2, 3, 9, 2, 2, 4, 0, 1, 5, 0, 5, 1, 6
+		],
+		"school": "Reservoir High School",
+		"score": [63, 0, 0]
+	},
+	"KDcSesat3oTci61hqUcUsS59D2X2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 3, 5, 1, 7, 0, 2, 3, 7, 5, 0, 1, 8, 4, 6, 2, 4, 6, 0, 5, 4, 2, 0, 8, 6,
+			8, 1, 4, 5, 6, 0, 3, 6, 6, 4, 0, 7, 6, 0, 5, 4, 0, 2, 3, 5, 5, 3, 4, 6, 5,
+			4, 6, 2, 4, 5, 1, 0, 3, 5, 1, 3, 5, 2
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [4, 0, 0]
+	},
+	"KlJLaWXvzHXUpMo1Yn1iBgMw7HQ2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 3, 1, 2, 1, 0, 6, 5, 3, 2, 7, 6, 0, 5, 3, 5, 4, 6, 5, 1, 3, 1, 4, 9, 5,
+			7, 4, 6, 4, 0, 3, 5, 1, 3, 5, 6, 6, 4, 2, 2, 0, 1, 2, 5, 1, 1, 4, 5, 2, 4,
+			1, 7, 8, 6, 4, 2, 5, 5, 3, 4, 1, 5, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"KrHMJxvX98PEU9MVeMEaCKCaW2I2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Automation",
+			"Sorting",
+			"Maze Generation"
+		],
+		"randomNumbers": [
+			0, 3, 2, 0, 4, 2, 1, 3, 2, 1, 2, 3, 2, 0, 9, 4, 2, 7, 4, 3, 5, 4, 0, 2, 4,
+			5, 2, 3, 0, 5, 0, 1, 4, 4, 6, 1, 7, 3, 0, 4, 2, 0, 3, 4, 5, 3, 0, 1, 1, 6,
+			4, 1, 6, 8, 4, 6, 1, 5, 1, 4, 0, 6, 1
+		],
+		"school": "River Hill High School",
+		"score": [35, 16, 19]
+	},
+	"L1LSTmwyh5RCpsBlg7hPMb9dmJP2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 2"],
+		"randomNumbers": [
+			3, 0, 2, 7, 4, 0, 4, 7, 1, 0, 1, 6, 1, 0, 3, 5, 1, 8, 2, 0, 3, 2, 1, 4, 4,
+			0, 5, 3, 6, 2, 0, 3, 5, 4, 6, 1, 5, 2, 1, 5, 0, 3, 1, 3, 2, 2, 1, 3, 0, 5,
+			2, 0, 5, 7, 4, 5, 2, 4, 2, 1, 2, 1, 5
+		],
+		"school": "Glenelg High School",
+		"score": [9, 0, 0]
+	},
+	"L44bUZU7GkVzuOr1kS3xEBwuoNY2": {
+		"questionsSolved": ["placeholder", "Variables 1", "Hello World"],
+		"randomNumbers": [
+			4, 2, 3, 6, 1, 7, 2, 1, 6, 3, 5, 0, 0, 2, 9, 6, 0, 5, 0, 4, 2, 7, 3, 0, 6,
+			2, 5, 6, 4, 2, 3, 6, 4, 1, 3, 2, 5, 7, 1, 0, 3, 1, 2, 4, 3, 2, 1, 4, 3, 6,
+			0, 1, 6, 4, 6, 4, 1, 3, 4, 0, 3, 1, 6
+		],
+		"school": "River Hill High School",
+		"score": [10, 0, 0]
+	},
+	"LCbnxCfySvZavNnVxFrD9uNnf902": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 3, 1, 7, 3, 0, 3, 1, 0, 2, 0, 3, 4, 1, 2, 5, 2, 4, 3, 4, 0, 2, 7, 1, 3,
+			7, 6, 2, 6, 3, 4, 5, 1, 1, 2, 3, 5, 1, 6, 5, 3, 2, 1, 3, 0, 1, 0, 5, 2, 0,
+			4, 6, 4, 9, 1, 4, 0, 5, 0, 3, 5, 6, 4
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"LjeNluNKzPhPMMB3vexHpctBlH12": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			0, 2, 3, 4, 7, 3, 0, 6, 3, 7, 1, 6, 0, 9, 3, 0, 5, 4, 1, 4, 2, 3, 4, 0, 0,
+			2, 8, 3, 6, 1, 0, 2, 5, 2, 1, 0, 3, 2, 9, 0, 3, 5, 1, 0, 4, 1, 0, 2, 4, 1,
+			2, 8, 2, 0, 2, 4, 0, 4, 3, 1, 0, 3, 5
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"Ltd4h1BcPYN96jlueWnk0O4dQOu2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 4, 1, 3, 1, 0, 4, 1, 5, 6, 0, 7, 5, 2, 9, 1, 2, 7, 3, 5, 2, 7, 3, 5, 6,
+			5, 3, 5, 3, 4, 6, 2, 5, 1, 2, 0, 3, 6, 7, 1, 3, 4, 4, 0, 3, 3, 2, 4, 0, 2,
+			5, 3, 4, 0, 5, 2, 3, 5, 1, 2, 4, 6, 2
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"MNTvUgv8StaD3q4Ki1PwUFBwdAz2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 1, 0, 1, 4, 3, 0, 4, 6, 5, 3, 0, 5, 1, 3, 0, 7, 2, 0, 2, 4, 7, 9, 2, 6,
+			8, 5, 3, 0, 5, 4, 5, 0, 2, 4, 0, 1, 4, 2, 2, 4, 1, 3, 4, 0, 2, 5, 0, 1, 6,
+			4, 8, 4, 5, 0, 3, 5, 4, 1, 2, 3, 0, 2
+		],
+		"school": "Glenelg High School",
+		"score": [4, 0, 0]
+	},
+	"MWY1OlCZxOPxdO1HQz7F886M6Xk2": {
+		"questionsSolved": [
+			"placeholder",
+			"Variables 1",
+			"Variables 2",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			2, 3, 4, 4, 1, 6, 5, 0, 4, 7, 6, 5, 3, 1, 0, 4, 0, 8, 2, 4, 0, 8, 1, 5, 6,
+			7, 8, 4, 6, 0, 1, 6, 4, 2, 4, 3, 2, 6, 7, 1, 3, 0, 0, 5, 2, 3, 4, 5, 1, 2,
+			5, 5, 6, 4, 2, 1, 0, 3, 5, 2, 2, 4, 0
+		],
+		"school": "River Hill High School",
+		"score": [62, 0, 0]
+	},
+	"MYAzL5o8jGd86Uddjn5gpCxn0LC2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Loops",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			0, 1, 5, 1, 0, 7, 6, 1, 5, 0, 6, 1, 5, 4, 8, 5, 4, 7, 3, 4, 5, 8, 5, 2, 2,
+			8, 6, 2, 5, 1, 2, 3, 0, 2, 4, 0, 9, 4, 0, 2, 4, 1, 3, 1, 5, 3, 4, 2, 2, 1,
+			0, 0, 6, 1, 0, 3, 6, 0, 5, 3, 6, 2, 5
+		],
+		"school": "Howard High School",
+		"score": [62, 0, 0]
+	},
+	"MqC3RSLIQxM5kW4Uksv9Rz7PEcl2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 5, 2, 3, 4, 5, 0, 3, 5, 6, 7, 5, 2, 7, 4, 8, 3, 7, 0, 3, 2, 4, 3, 8, 6,
+			2, 0, 2, 6, 0, 1, 0, 4, 2, 1, 5, 7, 6, 0, 3, 5, 2, 4, 3, 1, 5, 4, 2, 0, 5,
+			6, 0, 5, 3, 0, 5, 3, 2, 4, 0, 6, 0, 5
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"MwQRD8ekzBP3VZy7dTZHHSAr8gp2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 1, 2, 5, 3, 7, 4, 7, 3, 6, 5, 7, 7, 5, 1, 0, 7, 1, 4, 5, 0, 1, 2, 9, 7,
+			6, 8, 3, 5, 6, 1, 3, 0, 1, 5, 4, 8, 9, 3, 5, 1, 2, 0, 5, 4, 0, 2, 5, 0, 4,
+			6, 7, 0, 1, 6, 0, 2, 1, 3, 2, 1, 2, 5
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"N9tJGOsxVXgYVqSROzZrh4rptMj2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Functions",
+			"OOP",
+			"Dynamic Programming",
+			"BFS DFS"
+		],
+		"randomNumbers": [
+			4, 1, 5, 3, 0, 4, 6, 0, 4, 1, 2, 4, 1, 5, 0, 7, 4, 1, 4, 5, 3, 3, 6, 8, 8,
+			4, 3, 5, 1, 0, 6, 4, 2, 5, 3, 1, 4, 1, 0, 3, 2, 5, 1, 5, 0, 3, 1, 4, 2, 4,
+			0, 1, 0, 6, 3, 6, 4, 2, 4, 3, 4, 3, 6
+		],
+		"school": "Centennial High School",
+		"score": [37, 33, 0]
+	},
+	"NBJAPhJ9HhVpMJNotPXm1tiEm2x1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			5, 0, 3, 7, 5, 0, 4, 1, 3, 5, 1, 2, 3, 2, 5, 5, 2, 4, 3, 5, 2, 3, 0, 6, 4,
+			3, 2, 6, 4, 1, 1, 2, 0, 4, 2, 0, 4, 2, 5, 5, 1, 0, 3, 4, 1, 3, 1, 4, 2, 0,
+			4, 6, 7, 2, 5, 4, 0, 5, 1, 4, 2, 6, 4
+		],
+		"school": "Howard High School",
+		"score": [25, 0, 0]
+	},
+	"NH13oneWTudVHzED6C091qMRPeo2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 2, 1, 6, 0, 4, 3, 5, 4, 2, 0, 1, 3, 2, 9, 8, 4, 0, 2, 0, 4, 1, 7, 0, 3,
+			4, 6, 0, 3, 1, 6, 3, 4, 0, 3, 1, 2, 9, 3, 0, 4, 2, 5, 1, 4, 0, 5, 1, 3, 2,
+			1, 7, 1, 2, 5, 3, 2, 3, 4, 0, 6, 1, 0
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"NSJZoy5XDqfSlfsdOQxeDjJv3tf1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 2, 5, 7, 4, 1, 5, 2, 4, 7, 3, 5, 3, 9, 4, 7, 4, 2, 0, 3, 4, 3, 0, 4, 7,
+			1, 4, 3, 1, 0, 6, 2, 4, 0, 6, 4, 7, 8, 1, 0, 1, 3, 1, 4, 5, 2, 5, 4, 0, 5,
+			4, 0, 6, 9, 2, 4, 6, 5, 2, 0, 2, 4, 1
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"O53FdCXUMqUW4YxyT3EgcEUj6O33": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			4, 5, 3, 5, 0, 4, 6, 3, 0, 7, 4, 5, 1, 2, 0, 0, 7, 2, 0, 2, 5, 4, 6, 0, 2,
+			0, 4, 3, 0, 4, 0, 6, 2, 5, 1, 0, 5, 8, 3, 4, 5, 1, 0, 3, 2, 2, 0, 5, 4, 3,
+			0, 0, 3, 7, 3, 6, 2, 0, 1, 2, 1, 5, 4
+		],
+		"school": "River Hill High School",
+		"score": [76, 0, 0]
+	},
+	"OBK5uhFAW2QvYJdw2SKe6shPsY73": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 3, 1, 5, 4, 6, 0, 6, 1, 6, 3, 2, 5, 4, 0, 6, 0, 1, 1, 0, 2, 6, 2, 5, 2,
+			5, 1, 2, 6, 3, 5, 4, 2, 5, 3, 2, 4, 7, 3, 5, 1, 0, 4, 2, 1, 4, 2, 1, 4, 6,
+			5, 7, 6, 9, 0, 6, 5, 2, 3, 0, 4, 2, 1
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"OCigmhfB9uUfzvf8qbbgJ0zVKz43": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 0, 2, 4, 3, 0, 3, 5, 6, 6, 3, 5, 7, 8, 2, 4, 6, 0, 4, 1, 5, 5, 2, 6, 0,
+			8, 7, 2, 4, 6, 3, 4, 6, 3, 5, 4, 8, 0, 1, 3, 4, 2, 5, 1, 3, 5, 1, 4, 5, 4,
+			2, 0, 6, 1, 4, 3, 0, 2, 3, 1, 5, 4, 0
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"Oab9zTLcTobMSndwCZh2rAEW5PA3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans",
+			"Automation",
+			"Google Maps",
+			"Maze Generation",
+			"BFS DFS"
+		],
+		"randomNumbers": [
+			3, 2, 5, 7, 3, 6, 3, 4, 5, 3, 0, 7, 3, 7, 1, 3, 6, 5, 0, 1, 4, 4, 1, 8, 3,
+			6, 1, 5, 6, 4, 4, 1, 0, 1, 5, 4, 3, 4, 1, 5, 2, 0, 5, 1, 4, 0, 2, 4, 5, 4,
+			1, 6, 7, 5, 1, 3, 0, 5, 1, 4, 4, 2, 3
+		],
+		"school": "Glenelg High School",
+		"score": [20, 16, 25]
+	},
+	"OeGBcrpBAFai2DEWmGly7Hdf9I43": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			0, 4, 1, 4, 5, 6, 3, 6, 4, 2, 0, 7, 1, 7, 8, 2, 6, 0, 0, 5, 2, 0, 8, 5, 2,
+			4, 3, 3, 1, 6, 6, 5, 1, 4, 6, 2, 4, 1, 7, 2, 5, 3, 3, 4, 2, 3, 5, 1, 6, 4,
+			2, 4, 9, 2, 4, 3, 6, 1, 4, 3, 3, 2, 5
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"P0G8TytjRUPu8j8d1CBwOwjygZA2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 0, 2, 6, 0, 4, 2, 7, 2, 1, 6, 7, 4, 0, 1, 6, 8, 1, 4, 2, 5, 0, 7, 7,
+			2, 3, 0, 4, 3, 6, 4, 1, 5, 1, 6, 0, 6, 8, 2, 5, 1, 4, 2, 3, 2, 4, 3, 6, 4,
+			2, 6, 3, 9, 3, 5, 2, 3, 4, 1, 2, 1, 5
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"PWoEq9rgWzSo1ODyXaA1Y9gmaji1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 4, 2, 5, 4, 3, 4, 5, 3, 3, 6, 1, 5, 9, 8, 7, 6, 8, 5, 3, 4, 8, 2, 7, 2,
+			3, 7, 0, 5, 4, 4, 5, 3, 1, 0, 3, 8, 5, 3, 0, 2, 3, 2, 3, 4, 1, 3, 2, 4, 2,
+			3, 1, 3, 9, 5, 3, 2, 0, 5, 1, 0, 1, 6
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"PZIIW341eXNm6Xt7AyGbjGZGTDy1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 5, 0, 5, 6, 1, 7, 3, 6, 4, 6, 1, 4, 5, 8, 2, 5, 0, 3, 5, 4, 3, 8, 1, 2,
+			8, 5, 3, 4, 5, 6, 1, 2, 0, 5, 6, 4, 5, 0, 0, 3, 2, 2, 5, 1, 1, 4, 0, 4, 1,
+			5, 1, 8, 9, 0, 3, 5, 5, 4, 3, 1, 6, 3
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"QfMyGkRCNEYPPsSet4mM9Hlyzxo1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 1, 0, 3, 4, 6, 5, 7, 6, 7, 0, 4, 2, 7, 4, 2, 6, 3, 4, 3, 1, 6, 0, 3, 3,
+			5, 1, 4, 0, 2, 2, 3, 6, 1, 5, 0, 7, 8, 0, 2, 0, 3, 1, 4, 3, 3, 1, 0, 0, 2,
+			4, 7, 0, 1, 5, 4, 2, 2, 1, 4, 5, 4, 6
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"QxPe28VVdxdsEzjJNAfj85eM94c2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			0, 1, 2, 7, 3, 0, 6, 1, 7, 2, 5, 7, 2, 7, 1, 0, 6, 3, 0, 4, 5, 9, 8, 7, 3,
+			2, 5, 2, 6, 4, 0, 1, 5, 0, 1, 6, 3, 5, 8, 3, 0, 5, 2, 0, 1, 0, 4, 1, 5, 0,
+			4, 7, 2, 5, 3, 2, 6, 3, 5, 2, 2, 4, 5
+		],
+		"school": "River Hill High School",
+		"score": [25, 0, 0]
+	},
+	"RBUqUVmYFVYHjBGIW0VDHTpC7uE2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 4, 3, 0, 7, 6, 3, 5, 7, 4, 3, 0, 6, 9, 7, 6, 5, 8, 1, 5, 3, 9, 8, 4, 2,
+			6, 5, 2, 3, 5, 5, 3, 6, 2, 0, 5, 8, 1, 0, 5, 4, 1, 1, 5, 0, 4, 3, 5, 2, 1,
+			6, 1, 4, 7, 6, 1, 5, 4, 5, 2, 6, 3, 0
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"RxglUI8msMabJQPBUuTJtfN0Bxn1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP",
+			"Greedy"
+		],
+		"randomNumbers": [
+			1, 0, 2, 3, 4, 1, 1, 5, 0, 0, 7, 3, 7, 9, 2, 0, 2, 7, 5, 1, 2, 6, 1, 8, 6,
+			0, 5, 3, 6, 2, 4, 5, 2, 1, 6, 2, 7, 8, 1, 3, 2, 5, 5, 2, 0, 4, 3, 0, 6, 4,
+			3, 8, 0, 9, 4, 1, 3, 0, 5, 4, 3, 4, 5
+		],
+		"school": "Centennial High School",
+		"score": [76, 15, 0]
+	},
+	"S3irz6rWdWUGmjp40pbPLZ3Dlsl1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 2, 4, 6, 1, 7, 7, 6, 4, 1, 2, 3, 0, 1, 7, 4, 6, 5, 3, 5, 0, 8, 0, 1, 4,
+			5, 0, 1, 4, 5, 3, 2, 5, 0, 1, 5, 5, 1, 0, 2, 0, 1, 3, 4, 5, 5, 2, 3, 2, 3,
+			4, 6, 9, 2, 3, 6, 0, 0, 2, 3, 5, 0, 3
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"SI9sukYRdtcGPIJTllZA6QImO1p1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 4, 2, 4, 3, 2, 1, 3, 5, 1, 4, 7, 2, 8, 9, 4, 1, 3, 5, 3, 2, 6, 4, 3, 2,
+			4, 6, 2, 0, 3, 5, 0, 2, 5, 6, 3, 0, 5, 6, 5, 4, 0, 1, 0, 5, 5, 4, 0, 6, 3,
+			0, 7, 1, 9, 1, 4, 0, 1, 0, 5, 3, 0, 4
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"TLVKMxV5LaYdVTlyR1YJG5ZgPdo1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"OOP",
+			"Functions",
+			"Greedy",
+			"Loops"
+		],
+		"randomNumbers": [
+			3, 1, 2, 5, 2, 6, 6, 0, 3, 6, 1, 4, 2, 9, 1, 7, 6, 2, 0, 2, 4, 8, 5, 2, 8,
+			5, 3, 3, 1, 4, 1, 2, 5, 0, 2, 3, 3, 5, 6, 4, 5, 1, 4, 3, 1, 3, 5, 0, 6, 5,
+			0, 9, 3, 2, 4, 3, 1, 5, 1, 4, 3, 4, 0
+		],
+		"school": "River Hill High School",
+		"score": [52, 15, 0]
+	},
+	"TMncPEuVl3fC4iU3ROMNnT2dScv1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 3, 1, 2, 3, 5, 3, 6, 7, 0, 2, 1, 7, 6, 2, 0, 2, 7, 3, 5, 0, 8, 0, 9, 5,
+			6, 4, 1, 2, 3, 5, 3, 1, 0, 1, 2, 3, 7, 9, 1, 4, 3, 5, 2, 1, 4, 1, 0, 1, 6,
+			4, 1, 8, 2, 5, 4, 2, 0, 3, 4, 6, 0, 3
+		],
+		"school": "Mt Hebron High School",
+		"score": [0, 0, 0]
+	},
+	"TxPo9VxnNoTGQCeC7Ii10bGb8KB2": {
+		"questionsSolved": [
+			"placeholder",
+			"Automation",
+			"Web Development",
+			"Graphs",
+			"Google Maps"
+		],
+		"randomNumbers": [
+			5, 1, 4, 1, 6, 2, 6, 2, 5, 2, 5, 1, 0, 5, 2, 2, 3, 6, 2, 1, 5, 3, 9, 0, 6,
+			2, 0, 3, 6, 1, 3, 4, 0, 5, 1, 4, 8, 6, 3, 1, 0, 2, 4, 1, 5, 1, 3, 0, 1, 2,
+			3, 6, 2, 5, 2, 3, 0, 0, 4, 5, 4, 5, 0
+		],
+		"school": "Centennial High School",
+		"score": [0, 7, 22]
+	},
+	"Ty06l1kZL3MP9FbMMIheqnZeP0Y2": {
+		"questionsSolved": [
+			"placeholder",
+			"Variables 1",
+			"Hello World",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			3, 4, 0, 0, 2, 5, 0, 7, 2, 5, 3, 2, 7, 8, 5, 0, 8, 2, 5, 0, 1, 6, 7, 4, 1,
+			4, 8, 4, 3, 2, 6, 1, 0, 1, 0, 5, 8, 5, 7, 1, 3, 5, 1, 4, 2, 3, 0, 2, 4, 1,
+			6, 7, 6, 0, 2, 0, 6, 2, 1, 5, 6, 0, 4
+		],
+		"school": "Centennial High School",
+		"score": [25, 0, 0]
+	},
+	"Ty0JUh9BTSXsmnwrRkZsS9U3ZNx1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Greedy",
+			"Flood Fill",
+			"Dynamic Programming",
+			"Automation"
+		],
+		"randomNumbers": [
+			3, 2, 1, 2, 3, 1, 4, 7, 5, 5, 2, 6, 6, 0, 5, 1, 4, 6, 4, 0, 2, 7, 4, 9, 3,
+			4, 5, 3, 0, 4, 4, 2, 0, 6, 1, 0, 8, 0, 1, 3, 5, 2, 1, 3, 0, 4, 3, 5, 4, 3,
+			2, 5, 1, 4, 1, 5, 3, 4, 5, 1, 4, 3, 6
+		],
+		"school": "Centennial High School",
+		"score": [15, 45, 10]
+	},
+	"UQkVUWG6cpQ85Y9sOzwHtpLgXSx2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 1, 5, 0, 6, 3, 0, 7, 2, 7, 0, 2, 5, 2, 3, 5, 3, 2, 4, 2, 5, 4, 5, 8, 5,
+			0, 6, 0, 3, 2, 4, 6, 2, 2, 0, 4, 2, 8, 7, 4, 3, 1, 1, 4, 0, 4, 5, 2, 3, 6,
+			4, 8, 2, 7, 5, 3, 1, 5, 4, 3, 4, 6, 0
+		],
+		"school": "River Hill High School",
+		"score": [4, 0, 0]
+	},
+	"Ukp0pLXEGEVh6yrShqLtm2M0cZ02": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 2, 4, 3, 2, 6, 2, 1, 6, 4, 6, 2, 7, 0, 3, 6, 5, 2, 0, 4, 5, 8, 4, 6, 0,
+			4, 1, 1, 2, 3, 0, 4, 3, 6, 5, 3, 5, 1, 0, 0, 2, 4, 1, 2, 5, 2, 5, 1, 4, 6,
+			2, 0, 6, 1, 3, 0, 5, 4, 5, 3, 6, 1, 0
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"UzpOqy1B89SoSeny5oJ4tBuofY52": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 5, 4, 1, 0, 2, 3, 5, 2, 2, 7, 6, 2, 7, 4, 6, 1, 8, 2, 1, 3, 5, 1, 6, 8,
+			3, 0, 6, 3, 1, 3, 1, 0, 0, 6, 1, 0, 7, 3, 0, 5, 1, 5, 3, 1, 5, 2, 3, 1, 4,
+			5, 0, 3, 4, 0, 4, 6, 5, 0, 4, 2, 6, 1
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"V2q9xaUbluWNvTKLCPLBf1xcuU42": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 0, 5, 5, 4, 6, 1, 2, 7, 5, 1, 2, 2, 9, 0, 8, 4, 3, 3, 2, 1, 1, 8, 6, 7,
+			5, 4, 2, 3, 6, 1, 6, 5, 6, 2, 3, 4, 1, 2, 1, 3, 2, 1, 0, 5, 1, 3, 5, 3, 2,
+			0, 0, 3, 7, 0, 2, 1, 1, 3, 0, 6, 1, 2
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"V37q4VANprUhX0s4XBwynMuESU02": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			3, 2, 0, 5, 6, 2, 3, 7, 2, 5, 1, 7, 7, 5, 4, 0, 3, 5, 4, 0, 3, 7, 4, 6, 8,
+			2, 7, 1, 6, 3, 6, 5, 3, 5, 0, 6, 7, 6, 4, 0, 4, 5, 4, 2, 3, 2, 1, 5, 0, 2,
+			6, 2, 5, 0, 1, 3, 6, 0, 5, 4, 6, 1, 2
+		],
+		"school": "Centennial High School",
+		"score": [15, 0, 0]
+	},
+	"VXRDUoOmX9hhaxW9EYCnEYTIq7n2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			5, 2, 1, 1, 6, 7, 7, 6, 0, 3, 1, 4, 8, 6, 5, 1, 3, 0, 1, 0, 4, 2, 1, 9, 4,
+			1, 2, 4, 1, 0, 6, 5, 0, 2, 1, 5, 0, 3, 2, 5, 4, 1, 3, 2, 5, 3, 0, 4, 3, 2,
+			5, 1, 9, 5, 4, 0, 1, 0, 3, 2, 3, 5, 0
+		],
+		"school": "Centennial High School",
+		"score": [25, 0, 0]
+	},
+	"VXimOYPGYkY4JQEkUgGg9ymROOJ3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 1, 4, 6, 3, 7, 3, 6, 5, 1, 2, 5, 6, 7, 2, 7, 8, 2, 0, 4, 2, 5, 7, 1, 1,
+			6, 0, 2, 3, 4, 4, 2, 3, 1, 3, 0, 8, 5, 2, 1, 5, 4, 0, 1, 5, 0, 5, 3, 1, 0,
+			4, 0, 8, 4, 5, 4, 6, 4, 2, 5, 1, 6, 4
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"VkVmt6HVDjbNz1T0CF58s6Ei40T2": {
+		"questionsSolved": [
+			"placeholder",
+			"Libraries",
+			"OOP",
+			"Greedy",
+			"Binary Search"
+		],
+		"randomNumbers": [
+			2, 5, 3, 7, 4, 0, 6, 2, 1, 2, 4, 5, 8, 6, 1, 2, 4, 6, 0, 4, 5, 8, 5, 7, 1,
+			5, 2, 2, 6, 4, 6, 3, 2, 3, 4, 0, 6, 4, 7, 5, 4, 1, 3, 5, 1, 0, 1, 2, 5, 0,
+			2, 9, 4, 0, 5, 4, 1, 0, 4, 3, 3, 6, 1
+		],
+		"school": "Centennial High School",
+		"score": [20, 30, 0]
+	},
+	"VlBwpEYErJPVjKTR7W9lporFaoi2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 2"],
+		"randomNumbers": [
+			1, 0, 4, 3, 2, 5, 4, 3, 1, 4, 0, 7, 6, 4, 5, 8, 5, 7, 5, 4, 1, 2, 3, 0, 6,
+			3, 5, 2, 1, 3, 0, 1, 5, 3, 5, 1, 2, 6, 8, 5, 1, 0, 0, 4, 1, 0, 4, 5, 6, 4,
+			3, 0, 1, 8, 6, 4, 0, 0, 1, 4, 4, 2, 1
+		],
+		"school": "Glenelg High School",
+		"score": [9, 0, 0]
+	},
+	"Vqel7gBxhUd6EyKlYqYMj0u9XJg1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			1, 0, 5, 5, 4, 7, 2, 1, 3, 7, 6, 0, 1, 9, 3, 0, 8, 7, 2, 1, 3, 5, 2, 3, 6,
+			5, 1, 4, 5, 0, 3, 0, 2, 4, 3, 2, 7, 2, 3, 0, 5, 3, 0, 5, 4, 1, 4, 3, 3, 1,
+			5, 2, 9, 7, 5, 3, 6, 4, 3, 5, 1, 6, 3
+		],
+		"school": "Centennial High School",
+		"score": [15, 0, 0]
+	},
+	"VqiQoPJxnvSDJj8J4yda1IlJtsz2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Binary Search",
+			"Dynamic Programming",
+			"Web Development",
+			"Loops"
+		],
+		"randomNumbers": [
+			5, 2, 3, 0, 2, 1, 1, 5, 3, 5, 3, 4, 0, 6, 3, 8, 4, 1, 2, 4, 3, 5, 3, 6, 3,
+			0, 7, 6, 5, 3, 1, 2, 4, 5, 2, 4, 6, 3, 7, 0, 5, 4, 3, 4, 1, 2, 4, 3, 6, 1,
+			0, 6, 7, 3, 1, 3, 0, 1, 3, 2, 4, 1, 5
+		],
+		"school": "Centennial High School",
+		"score": [35, 32, 6]
+	},
+	"Vvoplc60rqUH2DfAswfvbOAvPzk2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Booleans",
+			"Functions",
+			"OOP",
+			"Automation",
+			"Maze Generation"
+		],
+		"randomNumbers": [
+			3, 1, 5, 0, 6, 2, 2, 1, 0, 4, 3, 1, 5, 8, 2, 0, 5, 2, 5, 1, 2, 3, 7, 1, 5,
+			3, 8, 6, 3, 4, 1, 5, 4, 4, 5, 1, 4, 3, 0, 2, 1, 0, 0, 3, 5, 5, 3, 2, 6, 0,
+			4, 3, 9, 2, 5, 1, 3, 5, 3, 4, 2, 0, 4
+		],
+		"school": "Glenelg High School",
+		"score": [41, 0, 19]
+	},
+	"W81NcAhgCATMTBAkJhei8T3mBen2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 2, 5, 6, 2, 1, 0, 4, 6, 2, 4, 6, 7, 5, 1, 5, 0, 3, 2, 4, 0, 6, 7, 2, 6,
+			1, 5, 4, 2, 1, 5, 1, 0, 2, 3, 1, 0, 8, 1, 3, 0, 4, 4, 3, 2, 5, 4, 2, 1, 2,
+			6, 7, 4, 1, 1, 3, 0, 5, 4, 3, 6, 2, 3
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"WMKZ57AwtjQbfiHxC7auhffF4AH2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Booleans",
+			"Libraries",
+			"Maze Generation"
+		],
+		"randomNumbers": [
+			2, 0, 5, 1, 7, 5, 3, 4, 6, 2, 5, 4, 2, 3, 7, 4, 3, 2, 2, 4, 3, 0, 8, 3, 0,
+			5, 3, 6, 4, 2, 0, 5, 1, 5, 6, 1, 1, 3, 0, 0, 2, 4, 3, 0, 2, 3, 1, 5, 6, 4,
+			0, 6, 5, 1, 3, 5, 4, 2, 3, 5, 6, 1, 4
+		],
+		"school": "Glenelg High School",
+		"score": [20, 0, 9]
+	},
+	"WWgrbbo6RofhZOaxXx79ZsBkRp43": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 5, 4, 3, 6, 7, 3, 5, 6, 4, 1, 6, 7, 4, 9, 0, 8, 7, 5, 4, 0, 0, 5, 3, 0,
+			2, 6, 3, 6, 5, 3, 1, 4, 1, 4, 0, 4, 9, 8, 4, 3, 5, 4, 2, 0, 0, 1, 3, 3, 4,
+			5, 1, 9, 3, 1, 5, 6, 2, 4, 0, 0, 6, 1
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"XNC7cx32yoaPJpSxU8XvXVIBLWW2": {
+		"questionsSolved": [
+			"placeholder",
+			"Greedy",
+			"Hello World",
+			"Loops",
+			"Web Development"
+		],
+		"randomNumbers": [
+			1, 5, 2, 2, 0, 1, 0, 3, 7, 7, 5, 4, 4, 9, 1, 6, 4, 8, 4, 5, 2, 4, 9, 0, 1,
+			2, 5, 5, 0, 4, 0, 3, 6, 4, 0, 6, 0, 1, 2, 2, 4, 0, 4, 0, 2, 0, 1, 5, 2, 1,
+			6, 8, 4, 7, 2, 6, 4, 5, 1, 0, 3, 2, 1
+		],
+		"school": "Howard High School",
+		"score": [14, 15, 6]
+	},
+	"Z5lrU98oLrPPACboVVxWsa23Ipg2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			3, 2, 0, 3, 7, 5, 1, 3, 0, 2, 4, 3, 0, 7, 6, 5, 3, 4, 4, 0, 5, 2, 7, 3, 3,
+			2, 5, 4, 5, 2, 3, 5, 6, 5, 1, 6, 3, 0, 2, 3, 0, 1, 2, 1, 0, 3, 4, 0, 0, 1,
+			2, 7, 3, 2, 2, 3, 5, 3, 0, 4, 6, 2, 3
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [76, 0, 0]
+	},
+	"aEAbmLidqRWhVCZpjxYBezH1pms2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 0, 1, 7, 0, 3, 0, 5, 7, 0, 3, 1, 8, 0, 1, 8, 2, 6, 4, 0, 1, 1, 3, 7, 1,
+			3, 4, 2, 5, 0, 0, 6, 5, 6, 5, 4, 8, 0, 4, 1, 4, 5, 4, 1, 2, 3, 0, 1, 4, 3,
+			6, 0, 1, 3, 1, 2, 4, 4, 0, 1, 5, 6, 2
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"aPZegm5lSVTb0s80iRV1HwxHFHB3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 4, 5, 7, 3, 4, 3, 6, 0, 5, 6, 3, 9, 8, 2, 7, 1, 0, 3, 0, 2, 4, 0, 6, 4,
+			5, 1, 1, 2, 4, 2, 4, 1, 0, 6, 5, 3, 9, 6, 3, 1, 0, 3, 1, 2, 1, 2, 4, 2, 0,
+			3, 7, 9, 5, 3, 2, 0, 5, 4, 1, 6, 3, 1
+		],
+		"school": "Mt Hebron High School",
+		"score": [0, 0, 0]
+	},
+	"bA6ykMOkvEWvqRg8e9fqSjmdh6N2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			5, 1, 3, 5, 2, 1, 4, 5, 7, 2, 6, 5, 5, 8, 4, 8, 0, 2, 0, 2, 4, 6, 4, 5, 3,
+			8, 1, 5, 1, 4, 2, 3, 1, 4, 0, 5, 5, 4, 3, 0, 2, 4, 0, 3, 2, 4, 5, 0, 2, 4,
+			5, 2, 5, 7, 4, 0, 5, 2, 4, 1, 1, 5, 3
+		],
+		"school": "Glenelg High School",
+		"score": [4, 0, 0]
+	},
+	"cKZBG0tCVPgzLGnqgM0VKSPaZkF2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 1, 2, 5, 7, 6, 0, 2, 5, 1, 7, 3, 0, 4, 1, 3, 0, 2, 0, 2, 5, 5, 0, 8, 7,
+			2, 8, 0, 1, 4, 0, 6, 1, 4, 6, 1, 5, 1, 6, 5, 3, 0, 5, 2, 1, 1, 0, 4, 5, 6,
+			0, 7, 1, 3, 5, 0, 3, 5, 4, 3, 5, 3, 2
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"cNzKpoKuOsSUYEvxBY27kw6OCEL2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 0, 1, 3, 2, 7, 0, 6, 3, 7, 6, 2, 4, 5, 2, 6, 7, 5, 3, 2, 0, 2, 3, 1, 1,
+			3, 8, 3, 6, 1, 2, 1, 4, 2, 5, 0, 1, 9, 5, 4, 3, 1, 0, 5, 2, 1, 5, 2, 5, 1,
+			4, 2, 9, 3, 5, 3, 0, 5, 0, 2, 5, 4, 6
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"cOKUL9zrGLW6MQXoEyhK0MCemmE2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			1, 5, 2, 4, 0, 6, 2, 4, 6, 1, 5, 0, 2, 9, 3, 4, 0, 7, 4, 0, 1, 7, 8, 0, 4,
+			7, 2, 5, 0, 3, 6, 1, 2, 0, 1, 3, 9, 4, 1, 2, 5, 4, 0, 1, 3, 0, 1, 4, 5, 0,
+			4, 5, 7, 4, 2, 1, 6, 3, 4, 5, 3, 2, 1
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"cYAHp9B4Q2S3SwOdirhNC4hqmlM2": {
+		"questionsSolved": ["placeholder", "Variables 1"],
+		"randomNumbers": [
+			4, 5, 3, 0, 6, 1, 7, 4, 2, 3, 7, 1, 6, 2, 5, 1, 8, 7, 2, 1, 3, 9, 0, 8, 1,
+			6, 3, 2, 5, 0, 3, 2, 6, 5, 3, 6, 7, 9, 2, 2, 1, 5, 1, 4, 3, 5, 3, 2, 0, 5,
+			2, 7, 6, 0, 2, 0, 1, 4, 1, 5, 5, 6, 3
+		],
+		"school": "Howard High School",
+		"score": [6, 0, 0]
+	},
+	"count": 1215,
+	"ctkshwggY7Qm9XedJKaXJUhpyJr2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			2, 3, 0, 2, 5, 3, 0, 1, 3, 6, 1, 5, 9, 3, 7, 5, 7, 6, 2, 0, 1, 4, 6, 2, 8,
+			0, 1, 0, 2, 6, 1, 5, 2, 0, 1, 2, 5, 9, 3, 5, 0, 4, 1, 2, 5, 5, 4, 0, 2, 1,
+			0, 2, 6, 5, 4, 6, 2, 4, 0, 1, 4, 3, 5
+		],
+		"school": "Glenelg High School",
+		"score": [4, 0, 0]
+	},
+	"d8H1LQLCsIaz6AFlnqZgNGaOSrg1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays"
+		],
+		"randomNumbers": [
+			3, 5, 1, 2, 7, 0, 0, 5, 1, 6, 1, 3, 5, 1, 2, 5, 7, 0, 5, 0, 4, 6, 7, 8, 7,
+			5, 6, 2, 1, 5, 2, 3, 0, 5, 2, 4, 8, 2, 7, 3, 1, 0, 3, 5, 2, 5, 4, 3, 6, 3,
+			0, 0, 6, 5, 1, 0, 5, 1, 0, 4, 0, 4, 3
+		],
+		"school": "River Hill High School",
+		"score": [43, 0, 0]
+	},
+	"dBEwTTrdnVXTwEn1FHk3Db1muJZ2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 4, 1, 3, 7, 4, 5, 6, 0, 6, 5, 4, 3, 6, 8, 0, 7, 1, 4, 5, 1, 3, 1, 9, 0,
+			7, 6, 4, 6, 3, 5, 0, 4, 6, 3, 1, 5, 9, 6, 2, 4, 3, 3, 0, 2, 5, 3, 2, 2, 1,
+			3, 2, 3, 8, 4, 1, 5, 4, 1, 0, 4, 5, 1
+		],
+		"school": "Reservoir High School",
+		"score": [0, 0, 0]
+	},
+	"dTcpmgwDIeOg2fLeHJRX7HqsvUf1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops"
+		],
+		"randomNumbers": [
+			3, 0, 2, 7, 0, 3, 1, 6, 2, 0, 4, 5, 5, 4, 0, 8, 4, 5, 2, 5, 4, 6, 8, 7, 2,
+			4, 8, 1, 5, 6, 1, 3, 0, 2, 3, 6, 6, 9, 4, 3, 1, 4, 3, 4, 2, 2, 1, 4, 3, 6,
+			2, 9, 8, 3, 2, 6, 3, 0, 1, 4, 0, 5, 3
+		],
+		"school": "Centennial High School",
+		"score": [35, 0, 0]
+	},
+	"dYdQV1IsccVVrtYva8dYBWMx1n22": {
+		"questionsSolved": ["placeholder", "Booleans"],
+		"randomNumbers": [
+			0, 1, 4, 2, 0, 5, 2, 3, 6, 4, 1, 0, 0, 2, 7, 5, 7, 1, 2, 1, 0, 7, 0, 6, 3,
+			6, 0, 6, 0, 4, 6, 3, 0, 3, 0, 5, 9, 6, 0, 2, 4, 0, 3, 4, 1, 2, 3, 5, 6, 0,
+			3, 8, 2, 7, 0, 6, 1, 1, 3, 4, 3, 5, 6
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"dmkVJWwy2NgYFncA8ykDEjwHVql2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 1, 2, 2, 7, 6, 5, 2, 0, 5, 2, 7, 5, 4, 7, 2, 7, 6, 4, 3, 0, 9, 8, 4, 7,
+			2, 0, 4, 1, 0, 3, 4, 5, 0, 2, 5, 3, 7, 6, 2, 5, 3, 0, 2, 5, 2, 1, 4, 6, 0,
+			5, 0, 7, 9, 1, 5, 0, 3, 4, 0, 1, 5, 0
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"dqi8Flggn2RIiPPmak1upsWwpsX2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 5, 3, 6, 7, 1, 2, 1, 6, 6, 3, 5, 7, 5, 9, 4, 5, 7, 0, 2, 3, 3, 1, 5, 6,
+			5, 7, 1, 0, 2, 5, 4, 2, 4, 2, 5, 5, 0, 3, 1, 0, 4, 1, 2, 3, 1, 3, 2, 6, 5,
+			3, 5, 2, 1, 4, 0, 2, 1, 4, 2, 3, 4, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"dy0fcyDn74WK2X351lMRc8vrPew2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 2, 0, 2, 6, 5, 7, 3, 2, 0, 6, 3, 5, 9, 4, 7, 6, 0, 5, 2, 4, 7, 5, 6, 8,
+			0, 7, 2, 1, 5, 3, 2, 5, 2, 3, 1, 0, 5, 8, 5, 3, 4, 3, 1, 2, 2, 1, 0, 5, 0,
+			6, 9, 7, 2, 0, 1, 5, 3, 5, 2, 0, 2, 3
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"e3GRW5gKsReFCAtzkT9cTr1QfLo2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 0, 5, 7, 6, 4, 0, 5, 7, 3, 2, 5, 6, 7, 9, 5, 1, 0, 2, 3, 0, 0, 9, 3, 2,
+			8, 4, 5, 0, 3, 1, 3, 5, 5, 4, 6, 9, 8, 7, 0, 5, 2, 2, 4, 5, 3, 4, 2, 1, 4,
+			2, 9, 0, 6, 6, 0, 1, 0, 3, 4, 1, 5, 4
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"e4QdYS4lMZVJ4U3G1geq9MuJTZf2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			5, 1, 3, 1, 7, 2, 0, 6, 7, 0, 2, 1, 8, 0, 3, 4, 7, 3, 1, 2, 0, 0, 6, 1, 8,
+			0, 6, 1, 5, 0, 0, 4, 5, 0, 3, 1, 0, 3, 8, 3, 5, 0, 1, 2, 5, 4, 1, 2, 1, 4,
+			6, 4, 5, 1, 0, 2, 6, 3, 5, 0, 0, 3, 2
+		],
+		"school": "River Hill High School",
+		"score": [4, 0, 0]
+	},
+	"e4kBVgbjMegBbgGZBAPR34RZlQJ3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 2, 4, 7, 5, 1, 3, 6, 0, 4, 1, 2, 1, 4, 0, 8, 5, 6, 0, 5, 4, 8, 1, 7, 7,
+			4, 8, 2, 0, 6, 0, 3, 2, 4, 0, 5, 3, 0, 7, 4, 5, 0, 3, 2, 4, 5, 4, 2, 4, 5,
+			2, 5, 2, 4, 1, 5, 4, 2, 4, 5, 1, 2, 4
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"eESdx1qGLWRRQF0BVvMsJfoJCcx1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Automation",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			0, 2, 1, 5, 2, 7, 6, 4, 2, 6, 5, 1, 2, 8, 6, 8, 7, 1, 2, 5, 1, 9, 6, 1, 3,
+			2, 1, 0, 2, 4, 6, 1, 3, 5, 6, 0, 9, 4, 3, 3, 4, 1, 1, 3, 5, 0, 4, 1, 2, 0,
+			3, 5, 6, 3, 2, 6, 3, 2, 0, 1, 6, 3, 2
+		],
+		"school": "Glenelg High School",
+		"score": [15, 0, 10]
+	},
+	"eGgXxjAlA1amSNuuAN88gjxaOjs1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 5, 1, 3, 5, 6, 4, 5, 7, 4, 7, 1, 5, 4, 7, 3, 6, 2, 1, 4, 2, 8, 3, 9, 4,
+			7, 3, 1, 4, 5, 6, 2, 4, 1, 4, 3, 5, 8, 0, 3, 2, 0, 5, 4, 1, 0, 5, 2, 3, 1,
+			0, 7, 6, 4, 2, 5, 1, 1, 3, 2, 6, 3, 4
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"eNBdCgH6SYSdylXiAzuijlw2yKT2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 2, 0, 2, 6, 1, 2, 4, 6, 6, 5, 3, 9, 8, 4, 6, 4, 5, 1, 2, 4, 7, 4, 3, 7,
+			8, 4, 5, 1, 3, 5, 1, 4, 6, 1, 5, 8, 9, 5, 0, 3, 2, 1, 3, 4, 1, 3, 5, 0, 6,
+			1, 3, 8, 2, 6, 0, 5, 0, 2, 4, 0, 5, 1
+		],
+		"school": "Atholton High School",
+		"score": [0, 0, 0]
+	},
+	"eoR8jEJwFhTOiqPRlvMMO24hDG82": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			1, 4, 2, 5, 0, 2, 1, 7, 5, 4, 2, 3, 1, 4, 3, 2, 1, 5, 0, 3, 4, 2, 5, 8, 0,
+			8, 2, 0, 3, 2, 0, 3, 2, 6, 4, 2, 8, 1, 0, 5, 3, 1, 0, 4, 1, 2, 1, 3, 0, 5,
+			1, 3, 6, 7, 5, 6, 0, 0, 3, 1, 2, 1, 0
+		],
+		"school": "Glenelg High School",
+		"score": [10, 0, 0]
+	},
+	"epf8jihUvqgzoasz4whl1UHlaYo1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			5, 3, 2, 3, 0, 7, 2, 6, 4, 1, 4, 3, 1, 8, 9, 4, 2, 3, 2, 0, 4, 1, 8, 4, 1,
+			2, 5, 5, 0, 1, 0, 6, 3, 3, 5, 0, 7, 2, 4, 0, 4, 3, 1, 3, 2, 3, 1, 4, 3, 1,
+			6, 5, 7, 4, 3, 5, 2, 0, 2, 5, 1, 0, 5
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"esSEhCAHmTbqJZPnPuPj1KqzDoJ2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans"
+		],
+		"randomNumbers": [
+			1, 5, 0, 3, 7, 0, 5, 0, 7, 2, 0, 5, 3, 2, 6, 2, 5, 3, 1, 5, 4, 3, 7, 2, 7,
+			2, 1, 0, 1, 4, 5, 6, 0, 5, 1, 4, 9, 0, 1, 4, 1, 0, 0, 4, 1, 1, 5, 0, 5, 4,
+			1, 4, 9, 0, 1, 4, 6, 0, 4, 2, 3, 4, 1
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [25, 0, 0]
+	},
+	"fJBOzY7wl9WEKAd2CRiUEgBYGrd2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 2, 0, 1, 7, 3, 7, 5, 1, 7, 2, 5, 1, 5, 3, 3, 4, 0, 2, 5, 4, 9, 5, 4, 6,
+			7, 2, 3, 6, 5, 5, 4, 2, 3, 4, 6, 4, 5, 0, 2, 0, 4, 5, 0, 3, 5, 2, 0, 5, 3,
+			2, 8, 3, 4, 1, 4, 0, 3, 5, 2, 3, 4, 0
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"fpjrVYOHnhSnZiDzavztBY1l08L2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 3, 5, 0, 2, 5, 5, 3, 6, 6, 7, 4, 2, 9, 7, 3, 2, 5, 1, 3, 0, 3, 8, 7, 1,
+			2, 7, 3, 0, 2, 1, 2, 0, 3, 5, 6, 2, 5, 6, 3, 0, 1, 4, 3, 2, 3, 0, 4, 4, 3,
+			6, 7, 4, 5, 5, 0, 1, 2, 0, 4, 5, 0, 4
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"frOIQOeYuOavWvZbQmkd3RBSAss2": {
+		"questionsSolved": [
+			"placeholder",
+			"Web Development",
+			"Automation",
+			"Dynamic Programming",
+			"OOP",
+			"Recursion"
+		],
+		"randomNumbers": [
+			1, 0, 2, 1, 0, 4, 4, 1, 5, 5, 2, 1, 9, 6, 3, 4, 8, 3, 5, 3, 1, 7, 6, 0, 5,
+			2, 7, 6, 2, 5, 2, 0, 6, 0, 3, 1, 1, 8, 5, 4, 2, 5, 5, 3, 1, 1, 2, 4, 4, 5,
+			2, 4, 7, 5, 1, 3, 0, 1, 3, 0, 5, 1, 6
+		],
+		"school": "Centennial High School",
+		"score": [14, 31, 16]
+	},
+	"gIoSdZKqVcblebLni1E7FjB1mm52": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 2, 1, 4, 2, 6, 1, 2, 5, 2, 4, 3, 8, 4, 7, 6, 7, 3, 0, 1, 2, 4, 7, 3, 4,
+			1, 8, 6, 1, 0, 6, 4, 3, 1, 4, 0, 4, 7, 5, 0, 3, 5, 5, 0, 3, 4, 0, 2, 2, 0,
+			3, 4, 7, 3, 3, 0, 2, 1, 4, 5, 6, 3, 5
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"gZml20G4VLTRAUT6k09p4dVmuq53": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 2"],
+		"randomNumbers": [
+			3, 0, 1, 1, 6, 2, 7, 0, 3, 4, 6, 2, 0, 5, 3, 8, 0, 5, 0, 2, 3, 0, 4, 3, 7,
+			4, 6, 5, 2, 0, 6, 3, 4, 1, 6, 3, 0, 1, 2, 4, 5, 0, 3, 4, 5, 2, 3, 5, 0, 6,
+			1, 9, 3, 0, 3, 6, 4, 0, 4, 3, 2, 4, 5
+		],
+		"school": "Centennial High School",
+		"score": [9, 0, 0]
+	},
+	"grDJ61ZDraSYw7M4XrpCJ6HtVBv2": {
+		"questionsSolved": ["placeholder", "Arrays", "Automation", "Variables 1"],
+		"randomNumbers": [
+			4, 2, 3, 7, 2, 4, 7, 3, 2, 3, 6, 0, 9, 5, 3, 2, 7, 0, 0, 5, 3, 1, 8, 3, 0,
+			1, 3, 1, 3, 5, 4, 6, 1, 2, 0, 5, 9, 8, 4, 4, 1, 0, 4, 3, 0, 1, 2, 5, 3, 2,
+			4, 2, 3, 0, 6, 1, 2, 2, 3, 1, 4, 1, 3
+		],
+		"school": "Howard High School",
+		"score": [14, 0, 10]
+	},
+	"h06OYqchzyQfqXasrBusLqsms7m2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			3, 2, 5, 0, 4, 3, 2, 7, 4, 1, 5, 0, 0, 7, 6, 4, 1, 5, 0, 1, 4, 1, 0, 3, 4,
+			1, 5, 0, 6, 4, 1, 2, 6, 0, 2, 4, 7, 8, 2, 3, 5, 1, 2, 1, 5, 1, 2, 5, 6, 1,
+			3, 1, 9, 5, 0, 6, 5, 3, 5, 1, 1, 4, 3
+		],
+		"school": "River Hill High School",
+		"score": [76, 0, 0]
+	},
+	"hji1vtClm4bQPxs8J3DBOJKmcPG2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 1, 4, 1, 0, 4, 7, 1, 2, 1, 0, 5, 9, 6, 7, 2, 3, 3, 2, 4, 6, 8, 1, 2,
+			3, 5, 6, 3, 1, 5, 3, 4, 4, 0, 1, 1, 3, 7, 5, 1, 4, 3, 5, 1, 0, 1, 3, 3, 4,
+			5, 1, 0, 9, 4, 2, 5, 5, 2, 3, 4, 3, 2
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"hm2Frr2hJpfycZQ4Nrz2A1SmcPg1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions",
+			"OOP"
+		],
+		"randomNumbers": [
+			0, 4, 1, 2, 1, 5, 1, 4, 0, 0, 7, 1, 5, 0, 3, 7, 0, 3, 1, 3, 2, 3, 9, 1, 5,
+			1, 3, 2, 3, 5, 6, 2, 1, 2, 4, 1, 3, 0, 4, 2, 1, 3, 2, 1, 3, 0, 3, 5, 3, 1,
+			4, 8, 5, 0, 0, 6, 5, 3, 5, 0, 1, 3, 5
+		],
+		"school": "Centennial High School",
+		"score": [76, 0, 0]
+	},
+	"kRuaH1XYmhOYYPSbuPm8bam69Mh2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			3, 2, 0, 1, 2, 6, 0, 5, 2, 2, 4, 3, 5, 8, 3, 0, 2, 4, 3, 1, 5, 1, 8, 2, 8,
+			0, 3, 5, 3, 1, 0, 2, 6, 4, 6, 5, 7, 0, 1, 0, 5, 1, 4, 2, 0, 1, 0, 5, 3, 0,
+			6, 2, 0, 6, 6, 2, 4, 2, 1, 3, 6, 4, 1
+		],
+		"school": "River Hill High School",
+		"score": [15, 0, 0]
+	},
+	"kko4vPSFtDMpNGemG9HymQCbRKQ2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 2, 3, 3, 7, 1, 0, 7, 5, 6, 7, 4, 5, 0, 6, 3, 0, 5, 5, 4, 1, 9, 7, 5, 3,
+			1, 0, 6, 4, 5, 6, 4, 0, 1, 4, 6, 5, 9, 8, 5, 2, 0, 3, 4, 0, 5, 1, 2, 0, 1,
+			4, 5, 0, 4, 1, 3, 4, 3, 5, 2, 1, 6, 4
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"kwztltiFclgNFOIDw5QcUPjyhZp2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 3, 1, 5, 2, 1, 3, 5, 4, 0, 7, 2, 5, 0, 9, 5, 8, 7, 0, 2, 3, 3, 8, 5, 7,
+			0, 1, 4, 2, 5, 5, 3, 6, 0, 1, 2, 3, 9, 7, 2, 5, 4, 5, 1, 4, 0, 4, 2, 2, 1,
+			3, 0, 8, 1, 5, 2, 0, 5, 2, 3, 5, 4, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"lyLgqPMqd5X2TTxzuKNrcuXGAX03": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Booleans",
+			"Web Development",
+			"Greedy",
+			"Recursion",
+			"Graphs",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			2, 0, 1, 7, 6, 0, 7, 3, 0, 1, 5, 4, 4, 6, 5, 3, 8, 6, 4, 0, 2, 2, 1, 4, 3,
+			0, 8, 0, 3, 1, 3, 5, 6, 4, 5, 2, 4, 6, 0, 3, 4, 1, 4, 1, 3, 1, 3, 0, 2, 5,
+			3, 1, 6, 3, 2, 1, 4, 2, 1, 4, 1, 4, 0
+		],
+		"school": "River Hill High School",
+		"score": [19, 36, 6]
+	},
+	"m2IpNLUtCqWKI9uZYq8Cc3JUeZo1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 3, 2, 1, 7, 0, 6, 2, 0, 5, 3, 0, 2, 7, 4, 2, 3, 4, 3, 0, 1, 2, 7, 9, 3,
+			2, 8, 2, 4, 1, 6, 5, 2, 1, 0, 4, 6, 0, 8, 2, 5, 4, 3, 2, 1, 5, 3, 2, 5, 4,
+			6, 3, 1, 2, 0, 3, 2, 5, 2, 0, 1, 3, 5
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [0, 0, 0]
+	},
+	"mBYe8BDyp3YBy1lpGhm1Ag22VTC3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Greedy",
+			"Web Development",
+			"Variables 2",
+			"Booleans",
+			"Recursion",
+			"OOP",
+			"Binary Search",
+			"Graphs"
+		],
+		"randomNumbers": [
+			3, 0, 5, 2, 1, 5, 6, 1, 5, 1, 5, 7, 2, 3, 4, 0, 4, 3, 3, 5, 4, 1, 8, 6, 7,
+			4, 5, 4, 0, 6, 1, 0, 6, 5, 1, 0, 1, 9, 2, 4, 5, 1, 3, 1, 5, 5, 3, 1, 2, 6,
+			1, 1, 3, 5, 1, 4, 6, 2, 1, 0, 5, 1, 2
+		],
+		"school": "River Hill High School",
+		"score": [33, 51, 6]
+	},
+	"mJCQR2wlWaQwyAZz3h3vL0by8Ep2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			3, 5, 4, 0, 7, 6, 7, 4, 2, 0, 4, 1, 6, 8, 3, 4, 5, 7, 2, 4, 3, 4, 8, 5, 2,
+			0, 3, 0, 1, 5, 0, 2, 3, 0, 3, 6, 4, 9, 2, 5, 0, 3, 0, 3, 4, 4, 5, 3, 5, 4,
+			3, 7, 9, 6, 3, 4, 6, 3, 0, 4, 2, 5, 6
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"mU5gKBUKFlQow3nBUDIkaEHpqtJ3": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 1, 2, 2, 1, 3, 2, 1, 5, 7, 5, 2, 9, 7, 8, 3, 0, 7, 3, 5, 2, 8, 7, 2, 0,
+			8, 3, 2, 5, 6, 4, 2, 0, 3, 4, 2, 3, 0, 8, 4, 1, 0, 3, 4, 2, 1, 5, 2, 3, 5,
+			4, 2, 7, 1, 1, 5, 6, 5, 1, 0, 1, 5, 6
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"moVNjY1jXDUkYufLFwN7hRsZXkp2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			1, 2, 4, 2, 5, 0, 5, 1, 7, 5, 6, 1, 7, 9, 4, 3, 0, 4, 2, 3, 1, 7, 2, 9, 3,
+			4, 2, 4, 2, 0, 5, 1, 2, 6, 3, 4, 1, 7, 6, 4, 3, 0, 2, 1, 4, 1, 0, 2, 2, 1,
+			3, 5, 3, 2, 6, 1, 0, 3, 2, 1, 6, 3, 0
+		],
+		"school": "Glenelg High School",
+		"score": [15, 0, 0]
+	},
+	"mybBtzJTSZYn7Cegm7LD18zPDCv2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 3, 0, 0, 2, 6, 0, 5, 1, 6, 0, 1, 5, 4, 1, 8, 3, 4, 3, 2, 4, 3, 2, 5, 0,
+			3, 6, 3, 4, 0, 2, 4, 5, 5, 4, 2, 6, 8, 9, 2, 4, 0, 3, 0, 4, 0, 1, 4, 6, 4,
+			5, 9, 1, 7, 1, 5, 0, 4, 1, 2, 6, 5, 2
+		],
+		"school": "River Hill High School",
+		"score": [4, 0, 0]
+	},
+	"oBf75QQJH3M7UFOp20yYjbsPrN92": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 2", "Arrays"],
+		"randomNumbers": [
+			2, 1, 5, 6, 2, 3, 1, 0, 6, 0, 4, 2, 5, 4, 2, 2, 4, 8, 2, 3, 4, 3, 6, 0, 7,
+			3, 2, 0, 4, 3, 1, 2, 6, 3, 2, 5, 7, 3, 2, 2, 1, 3, 1, 0, 2, 1, 3, 5, 3, 6,
+			0, 4, 5, 2, 0, 4, 3, 5, 1, 0, 2, 3, 1
+		],
+		"school": "Howard High School",
+		"score": [17, 0, 0]
+	},
+	"oJMhjx5U7Ihl9EbclQNIeaijQDj1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 0, 4, 7, 3, 4, 6, 1, 4, 0, 2, 3, 6, 8, 0, 1, 2, 5, 5, 4, 1, 6, 1, 0, 1,
+			8, 5, 2, 1, 3, 4, 3, 5, 5, 0, 3, 1, 0, 5, 4, 5, 2, 1, 0, 3, 1, 5, 0, 2, 3,
+			6, 7, 1, 4, 1, 3, 2, 5, 2, 3, 0, 4, 6
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"oXKenH5j7YPxpDM2W7afTPCvIRQ2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Libraries",
+			"OOP",
+			"Greedy",
+			"Recursion",
+			"BFS DFS"
+		],
+		"randomNumbers": [
+			3, 5, 0, 2, 0, 6, 2, 4, 6, 1, 4, 2, 3, 5, 7, 7, 4, 8, 3, 5, 2, 5, 3, 6, 2,
+			6, 4, 4, 0, 2, 3, 2, 6, 1, 3, 0, 6, 8, 5, 1, 3, 2, 1, 2, 0, 4, 0, 3, 2, 5,
+			6, 4, 8, 0, 1, 4, 2, 3, 5, 2, 2, 0, 4
+		],
+		"school": "River Hill High School",
+		"score": [24, 45, 0]
+	},
+	"oudFQA6t6qf7nDFMJMKelFfnXzr1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			0, 2, 4, 5, 6, 2, 0, 1, 3, 6, 1, 4, 9, 2, 1, 2, 8, 7, 3, 4, 0, 1, 6, 2, 2,
+			1, 7, 4, 1, 3, 3, 2, 0, 0, 3, 6, 2, 5, 6, 1, 2, 4, 2, 4, 0, 5, 1, 3, 1, 6,
+			5, 6, 7, 0, 5, 3, 6, 1, 2, 0, 3, 1, 2
+		],
+		"school": "Atholton High School",
+		"score": [4, 0, 0]
+	},
+	"pM58c0YTpTaS9lUNfrmJGPJiMTP2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			3, 0, 5, 6, 1, 5, 6, 1, 7, 6, 0, 5, 6, 8, 5, 5, 8, 6, 3, 2, 5, 2, 1, 3, 0,
+			7, 6, 2, 4, 6, 0, 2, 1, 4, 3, 6, 7, 0, 3, 5, 2, 0, 5, 3, 2, 4, 1, 0, 2, 1,
+			6, 7, 8, 0, 6, 0, 3, 2, 0, 1, 5, 6, 0
+		],
+		"school": "Howard High School",
+		"score": [15, 0, 0]
+	},
+	"pYYK4cZUORSgmyerWOHBRLOsWCs1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 1, 3, 4, 5, 2, 2, 6, 4, 2, 6, 7, 4, 2, 0, 0, 5, 1, 1, 2, 0, 9, 4, 6, 0,
+			6, 8, 2, 1, 5, 2, 3, 6, 2, 4, 0, 5, 2, 3, 0, 1, 5, 2, 3, 0, 5, 1, 4, 6, 1,
+			0, 9, 5, 4, 4, 5, 3, 1, 2, 5, 2, 0, 6
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"ph4RQVLUZ4btIIcpEMePIuiC4GG3": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			0, 4, 3, 3, 4, 0, 0, 5, 6, 5, 0, 7, 1, 8, 0, 3, 0, 6, 5, 0, 4, 4, 9, 5, 0,
+			3, 2, 3, 0, 4, 5, 0, 1, 1, 2, 5, 8, 3, 4, 5, 3, 4, 4, 5, 1, 1, 3, 2, 3, 2,
+			6, 3, 5, 7, 4, 3, 6, 2, 5, 3, 2, 5, 1
+		],
+		"school": "River Hill High School",
+		"score": [4, 0, 0]
+	},
+	"pxahaiYW2PRKBSuKdUm6sPtLkYO2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			2, 4, 0, 7, 2, 6, 0, 3, 4, 0, 1, 2, 5, 9, 1, 3, 8, 5, 2, 0, 1, 7, 4, 0, 4,
+			2, 5, 4, 2, 6, 0, 1, 2, 6, 1, 4, 8, 5, 4, 4, 0, 2, 3, 5, 0, 2, 4, 5, 1, 0,
+			5, 5, 0, 6, 1, 5, 6, 4, 3, 0, 1, 6, 3
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"qRIV9G2F62MkjRyzpCxoTxNjpNe2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 5, 3, 3, 1, 2, 3, 2, 0, 4, 0, 2, 4, 2, 0, 8, 0, 6, 1, 5, 2, 3, 6, 4, 7,
+			1, 5, 6, 3, 1, 2, 1, 6, 5, 6, 2, 0, 7, 6, 1, 5, 3, 0, 1, 4, 4, 2, 0, 1, 3,
+			5, 4, 7, 1, 5, 3, 1, 0, 3, 2, 2, 1, 3
+		],
+		"school": "Marriotts Ridge High School",
+		"score": [0, 0, 0]
+	},
+	"qUhTXbFwuKg2wxLPtKpJ2A5eyO63": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Functions",
+			"Variables 2",
+			"OOP"
+		],
+		"randomNumbers": [
+			0, 3, 1, 4, 2, 3, 3, 0, 4, 4, 0, 7, 5, 4, 7, 1, 6, 3, 1, 3, 5, 3, 0, 1, 6,
+			1, 4, 3, 5, 6, 0, 1, 6, 5, 3, 0, 4, 9, 5, 0, 3, 1, 5, 2, 0, 3, 0, 1, 2, 4,
+			1, 7, 9, 4, 6, 2, 4, 0, 2, 1, 5, 0, 2
+		],
+		"school": "River Hill High School",
+		"score": [70, 0, 0]
+	},
+	"qrIg4dBkWidEO5i41YenoMQo84u2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 4, 0, 1, 4, 0, 5, 1, 3, 7, 3, 1, 3, 2, 6, 2, 0, 3, 5, 2, 0, 7, 0, 4, 8,
+			1, 3, 2, 4, 3, 5, 4, 6, 4, 1, 0, 7, 2, 5, 4, 3, 5, 0, 5, 3, 2, 4, 5, 1, 3,
+			2, 4, 6, 2, 3, 2, 4, 0, 5, 4, 5, 0, 6
+		],
+		"school": "Centennial High School",
+		"score": [0, 0, 0]
+	},
+	"r20q54cbpPUfV5MZmIcFJVCeqW62": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Loops",
+			"Booleans"
+		],
+		"randomNumbers": [
+			2, 3, 5, 4, 3, 0, 5, 6, 1, 6, 2, 5, 1, 8, 5, 1, 7, 4, 3, 2, 4, 6, 5, 8, 4,
+			6, 2, 2, 6, 3, 5, 3, 0, 0, 1, 4, 3, 4, 1, 4, 1, 2, 3, 5, 0, 2, 4, 3, 2, 0,
+			5, 4, 0, 1, 3, 6, 0, 1, 0, 3, 6, 5, 4
+		],
+		"school": "Glenelg High School",
+		"score": [30, 0, 0]
+	},
+	"rk8r3KZWTVZ1SKxSUsHkVwzGwx43": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			4, 5, 3, 2, 3, 4, 0, 4, 1, 4, 5, 0, 6, 2, 0, 5, 3, 1, 4, 2, 1, 5, 4, 7, 2,
+			8, 4, 4, 3, 6, 0, 5, 6, 4, 5, 0, 5, 6, 8, 2, 0, 4, 0, 3, 5, 3, 4, 0, 5, 4,
+			2, 9, 8, 4, 6, 4, 2, 1, 4, 5, 1, 0, 6
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"rqaZ7kAzZKerDGh25L1o60JBUSY2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 0, 2, 6, 5, 0, 1, 4, 0, 5, 7, 6, 1, 5, 6, 7, 1, 0, 4, 0, 2, 3, 5, 4, 5,
+			4, 1, 2, 5, 0, 0, 5, 6, 2, 6, 1, 3, 4, 2, 4, 2, 5, 2, 5, 4, 1, 3, 5, 6, 1,
+			0, 9, 0, 1, 1, 4, 0, 0, 5, 4, 1, 6, 4
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"rt6mOJXWXja9TogP8p4EUgNwc392": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			5, 4, 0, 0, 3, 2, 6, 4, 1, 5, 1, 6, 5, 2, 3, 1, 4, 8, 5, 4, 1, 9, 3, 7, 1,
+			4, 7, 5, 0, 1, 5, 4, 3, 3, 0, 6, 3, 9, 1, 5, 0, 2, 2, 1, 5, 4, 0, 1, 5, 3,
+			4, 0, 2, 8, 3, 2, 1, 0, 3, 4, 3, 4, 0
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"tQde7DYpLyXxTv1WaxHUG5M8pCn1": {
+		"questionsSolved": ["placeholder", "Functions"],
+		"randomNumbers": [
+			4, 1, 0, 6, 4, 5, 4, 1, 2, 3, 0, 5, 9, 5, 1, 0, 2, 8, 2, 0, 5, 8, 9, 1, 8,
+			3, 6, 4, 0, 3, 2, 3, 1, 3, 6, 1, 8, 0, 4, 1, 4, 2, 0, 2, 5, 0, 2, 5, 0, 5,
+			2, 2, 6, 7, 0, 5, 3, 1, 0, 2, 3, 0, 6
+		],
+		"school": "Howard High School",
+		"score": [13, 0, 0]
+	},
+	"testUser": "test",
+	"tmUEZGFg5WMy5QCTO73V0vU9ffN2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 5, 0, 7, 2, 4, 1, 5, 3, 2, 6, 5, 2, 5, 7, 1, 7, 2, 5, 3, 2, 5, 3, 8, 2,
+			6, 7, 2, 1, 4, 2, 0, 5, 4, 1, 0, 3, 6, 9, 5, 2, 4, 5, 2, 4, 2, 1, 4, 6, 0,
+			3, 0, 7, 6, 1, 5, 4, 3, 0, 4, 6, 4, 3
+		],
+		"school": "Howard High School",
+		"score": [0, 0, 0]
+	},
+	"ttCLbz1OJXesSSGP1meQRU3dHZy2": {
+		"questionsSolved": ["placeholder", "Recursion"],
+		"randomNumbers": [
+			3, 0, 1, 3, 0, 1, 4, 7, 1, 2, 5, 6, 5, 3, 8, 1, 6, 2, 0, 5, 3, 0, 8, 4, 8,
+			4, 3, 5, 0, 6, 2, 1, 6, 2, 1, 4, 3, 6, 5, 1, 0, 5, 0, 3, 1, 4, 0, 2, 6, 0,
+			1, 8, 5, 9, 0, 5, 6, 0, 1, 4, 5, 2, 1
+		],
+		"school": "Howard High School",
+		"score": [0, 14, 0]
+	},
+	"u5u5QNVjIieDUfBY2DJo590vRiq1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 2",
+			"Variables 1",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions"
+		],
+		"randomNumbers": [
+			4, 0, 2, 3, 7, 4, 6, 3, 7, 0, 1, 4, 2, 5, 3, 2, 1, 7, 4, 2, 5, 8, 9, 3, 8,
+			3, 0, 2, 3, 1, 0, 4, 6, 6, 0, 1, 4, 1, 8, 1, 4, 0, 5, 4, 3, 5, 3, 1, 3, 2,
+			0, 6, 2, 3, 2, 4, 1, 2, 4, 1, 3, 2, 0
+		],
+		"school": "Centennial High School",
+		"score": [62, 0, 0]
+	},
+	"uJ79BLS5VCg7LKtwQ3EvBWrMowu2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"Functions"
+		],
+		"randomNumbers": [
+			1, 0, 4, 3, 2, 1, 6, 7, 4, 7, 3, 2, 1, 8, 6, 3, 0, 2, 5, 0, 3, 9, 8, 4, 4,
+			2, 8, 3, 0, 1, 4, 6, 0, 4, 2, 0, 5, 0, 2, 5, 0, 4, 2, 0, 5, 0, 3, 4, 6, 0,
+			4, 0, 2, 3, 0, 4, 3, 4, 1, 3, 0, 3, 6
+		],
+		"school": "Reservoir High School",
+		"score": [62, 0, 0]
+	},
+	"uRPUJtLUZNTDIHTvMObqzyMaM303": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			3, 2, 4, 4, 2, 0, 7, 3, 6, 7, 3, 4, 2, 6, 3, 0, 4, 2, 5, 4, 3, 1, 7, 2, 5,
+			7, 8, 0, 1, 2, 5, 2, 6, 5, 3, 0, 7, 9, 8, 2, 4, 1, 0, 1, 4, 2, 3, 4, 1, 6,
+			2, 6, 5, 0, 2, 0, 3, 0, 2, 1, 3, 5, 2
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"uRY3UGqXoBXkgvahmQezkv3n0Kv2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Booleans"
+		],
+		"randomNumbers": [
+			4, 0, 2, 6, 5, 3, 1, 3, 2, 0, 2, 4, 5, 2, 7, 7, 4, 3, 3, 5, 2, 2, 5, 9, 0,
+			8, 2, 4, 5, 1, 6, 0, 1, 5, 3, 2, 3, 9, 1, 1, 3, 0, 0, 5, 4, 1, 3, 0, 0, 3,
+			6, 5, 4, 9, 2, 1, 5, 3, 1, 2, 1, 2, 0
+		],
+		"school": "River Hill High School",
+		"score": [20, 0, 0]
+	},
+	"uRY66p2VTVhuKvNlXqOqrsuSpXq1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 5, 2, 1, 6, 2, 4, 2, 5, 5, 7, 6, 9, 0, 1, 1, 7, 8, 1, 5, 4, 4, 3, 1, 5,
+			2, 8, 4, 2, 5, 3, 5, 4, 0, 1, 6, 5, 6, 1, 2, 5, 0, 5, 0, 1, 1, 0, 4, 6, 2,
+			4, 9, 3, 7, 2, 6, 0, 1, 2, 0, 4, 1, 2
+		],
+		"school": "Centennial High School",
+		"score": [4, 0, 0]
+	},
+	"ud4lAAiGXQV1Ge4nu8IQtqPj6M82": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 2, 3, 5, 1, 2, 0, 5, 3, 3, 0, 7, 2, 3, 6, 3, 2, 6, 5, 0, 4, 6, 0, 8, 5,
+			3, 7, 4, 5, 1, 4, 6, 2, 4, 5, 1, 9, 0, 2, 0, 4, 2, 5, 3, 1, 1, 3, 2, 3, 1,
+			2, 7, 6, 9, 3, 0, 1, 5, 0, 4, 5, 3, 6
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"umqOYTGi4majy6TowOeqfsjzrEh1": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 0, 4, 0, 4, 3, 4, 5, 2, 2, 4, 0, 2, 7, 6, 8, 7, 5, 0, 5, 2, 7, 4, 3, 8,
+			3, 4, 6, 5, 1, 0, 3, 5, 0, 2, 6, 3, 6, 8, 0, 2, 1, 2, 1, 3, 3, 0, 2, 3, 2,
+			4, 6, 2, 1, 6, 2, 4, 1, 4, 0, 0, 2, 6
+		],
+		"school": "Howard High School",
+		"score": [4, 0, 0]
+	},
+	"vBwfn4zqB4fk7I0PtynJM1YFggP2": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			0, 3, 4, 5, 7, 1, 7, 1, 5, 4, 7, 2, 5, 8, 9, 5, 8, 7, 4, 2, 1, 9, 4, 2, 1,
+			3, 0, 5, 6, 2, 6, 5, 1, 3, 5, 1, 5, 4, 6, 3, 5, 0, 3, 1, 2, 1, 5, 3, 2, 0,
+			5, 3, 5, 4, 0, 4, 5, 5, 2, 4, 6, 5, 1
+		],
+		"school": "Glenelg High School",
+		"score": [0, 0, 0]
+	},
+	"vE46KoOlL3c45EVB6YKu6CcCZdJ3": {
+		"questionsSolved": ["placeholder", "Greedy"],
+		"randomNumbers": [
+			2, 3, 4, 1, 5, 3, 6, 7, 2, 2, 5, 6, 1, 0, 4, 3, 4, 7, 3, 4, 1, 1, 4, 3, 4,
+			0, 6, 6, 4, 0, 3, 1, 0, 0, 6, 4, 3, 7, 6, 3, 5, 4, 1, 4, 3, 3, 1, 5, 2, 3,
+			4, 8, 1, 4, 1, 4, 3, 3, 4, 0, 5, 0, 1
+		],
+		"school": "Glenelg High School",
+		"score": [0, 15, 0]
+	},
+	"vGSaScXZXKXNBldkVfIuKxyZmrF2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops"
+		],
+		"randomNumbers": [
+			5, 1, 4, 7, 2, 1, 7, 2, 4, 0, 3, 4, 2, 9, 3, 4, 3, 0, 3, 2, 0, 4, 6, 7, 6,
+			4, 5, 6, 1, 3, 6, 1, 0, 3, 0, 2, 7, 1, 4, 1, 2, 0, 0, 4, 2, 5, 1, 4, 5, 6,
+			0, 6, 2, 9, 2, 1, 0, 4, 5, 3, 1, 2, 5
+		],
+		"school": "Howard High School",
+		"score": [35, 0, 0]
+	},
+	"vI6nzKBdM1X01SNJnvlHx0yb5z12": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			3, 5, 0, 0, 3, 6, 2, 7, 1, 6, 1, 0, 9, 5, 7, 0, 4, 5, 0, 5, 1, 6, 8, 4, 8,
+			3, 7, 6, 0, 5, 0, 2, 5, 2, 1, 3, 3, 4, 2, 2, 4, 0, 3, 1, 2, 3, 2, 1, 5, 4,
+			0, 0, 8, 4, 5, 6, 3, 1, 2, 3, 5, 4, 2
+		],
+		"school": "Howard High School",
+		"score": [10, 0, 0]
+	},
+	"vmJKMUau2JUovHOCUUicyBV7LOy2": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			4, 2, 3, 7, 1, 6, 0, 6, 5, 6, 4, 5, 5, 4, 2, 2, 5, 0, 1, 3, 0, 7, 6, 4, 6,
+			5, 1, 3, 2, 1, 2, 0, 4, 6, 0, 5, 0, 9, 8, 4, 0, 2, 2, 4, 5, 1, 3, 2, 3, 5,
+			2, 3, 5, 2, 4, 6, 3, 0, 2, 5, 3, 5, 6
+		],
+		"school": "Glenelg High School",
+		"score": [4, 0, 0]
+	},
+	"wEZPMRHy2kTI2tmd5JCaSingxao1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Libraries",
+			"OOP",
+			"Greedy",
+			"Recursion",
+			"Sorting",
+			"Binary Search",
+			"Graphs",
+			"BFS DFS",
+			"Flood Fill",
+			"Dynamic Programming",
+			"Functions",
+			"Automation",
+			"Google Maps",
+			"Maze Generation",
+			"Web Development"
+		],
+		"randomNumbers": [
+			5, 4, 0, 6, 1, 2, 3, 7, 4, 1, 0, 6, 4, 9, 0, 0, 8, 7, 2, 5, 3, 9, 8, 4, 3,
+			0, 2, 3, 0, 2, 4, 2, 1, 5, 6, 0, 4, 3, 2, 0, 4, 2, 3, 2, 4, 4, 2, 5, 4, 2,
+			6, 8, 1, 4, 1, 5, 3, 5, 2, 0, 1, 5, 3
+		],
+		"school": "River Hill High School",
+		"score": [76, 113, 31]
+	},
+	"wMS3mh9VfOUL6hDsTKBEur3LCz12": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			0, 3, 5, 2, 4, 1, 0, 1, 4, 3, 2, 6, 1, 2, 5, 7, 3, 5, 0, 1, 5, 3, 6, 9, 4,
+			6, 5, 1, 0, 4, 1, 4, 0, 6, 5, 4, 8, 1, 4, 5, 2, 3, 1, 3, 4, 3, 4, 2, 1, 2,
+			4, 4, 6, 2, 1, 2, 0, 3, 2, 5, 6, 2, 4
+		],
+		"school": "Centennial High School",
+		"score": [15, 0, 0]
+	},
+	"wn2gnSiVbcaudvjj3KEQ1ZAJeYg2": {
+		"questionsSolved": ["placeholder", "Hello World", "OOP"],
+		"randomNumbers": [
+			4, 5, 2, 5, 2, 6, 2, 5, 4, 4, 3, 5, 2, 8, 5, 8, 5, 7, 2, 5, 0, 3, 5, 6, 7,
+			6, 8, 4, 0, 3, 0, 6, 3, 6, 3, 4, 3, 8, 4, 2, 5, 0, 5, 0, 4, 1, 0, 4, 3, 4,
+			1, 7, 4, 1, 1, 3, 0, 0, 5, 4, 6, 5, 2
+		],
+		"school": "River Hill High School",
+		"score": [18, 0, 0]
+	},
+	"wo8uIO3GMKTITgAFMqNnw3EsRgh1": {
+		"questionsSolved": ["placeholder", "Booleans"],
+		"randomNumbers": [
+			3, 4, 5, 2, 6, 5, 0, 2, 6, 1, 4, 2, 4, 6, 3, 2, 1, 3, 2, 5, 0, 8, 5, 6, 0,
+			5, 1, 3, 0, 6, 5, 4, 0, 5, 3, 4, 1, 6, 3, 4, 1, 2, 1, 3, 2, 5, 2, 3, 0, 5,
+			6, 1, 5, 4, 4, 5, 0, 4, 3, 1, 2, 5, 1
+		],
+		"school": "Centennial High School",
+		"score": [10, 0, 0]
+	},
+	"xZTlPTiijpMGXRE1D4ccUyGcH5t1": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Loops",
+			"Arrays",
+			"Dynamic Programming"
+		],
+		"randomNumbers": [
+			5, 3, 2, 4, 5, 6, 6, 3, 4, 2, 3, 5, 1, 7, 6, 8, 5, 2, 1, 0, 4, 0, 8, 9, 1,
+			6, 4, 3, 6, 4, 5, 3, 1, 5, 1, 3, 4, 3, 0, 5, 4, 2, 4, 3, 1, 0, 3, 4, 0, 3,
+			5, 3, 1, 8, 2, 5, 1, 5, 4, 0, 0, 2, 3
+		],
+		"school": "Glenelg High School",
+		"score": [43, 17, 0]
+	},
+	"xmGP17y337hOPPCfQRCoRG8utfh1": {
+		"questionsSolved": ["placeholder"],
+		"randomNumbers": [
+			1, 4, 2, 3, 4, 2, 7, 1, 4, 7, 3, 6, 3, 6, 1, 7, 3, 1, 1, 5, 3, 7, 5, 0, 8,
+			1, 6, 3, 5, 2, 3, 1, 4, 6, 0, 4, 0, 7, 3, 3, 2, 4, 1, 0, 3, 2, 3, 1, 6, 0,
+			3, 7, 8, 6, 3, 0, 2, 4, 3, 0, 2, 5, 6
+		],
+		"school": "River Hill High School",
+		"score": [0, 0, 0]
+	},
+	"xpLL7VuybYZGV3MM4v9kEAhUEFw2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2",
+			"Booleans",
+			"Binary Search",
+			"Maze Generation",
+			"OOP",
+			"Loops"
+		],
+		"randomNumbers": [
+			2, 5, 3, 3, 1, 4, 6, 0, 3, 5, 1, 4, 9, 5, 3, 1, 5, 0, 4, 5, 3, 8, 4, 3, 2,
+			5, 3, 0, 5, 2, 2, 1, 0, 4, 5, 2, 7, 2, 3, 1, 4, 5, 1, 2, 4, 1, 3, 2, 1, 4,
+			3, 7, 0, 3, 1, 4, 6, 5, 1, 3, 0, 2, 1
+		],
+		"school": "Reservoir High School",
+		"score": [49, 15, 9]
+	},
+	"ySgrtScwraY9IrU4X9lZG3bGka73": {
+		"questionsSolved": ["placeholder", "Hello World"],
+		"randomNumbers": [
+			1, 2, 4, 7, 2, 5, 2, 3, 1, 7, 2, 0, 5, 1, 3, 2, 8, 7, 4, 3, 5, 3, 7, 1, 2,
+			7, 5, 4, 6, 2, 0, 1, 5, 5, 1, 0, 0, 7, 6, 4, 1, 3, 2, 1, 3, 2, 0, 3, 3, 0,
+			6, 7, 0, 2, 5, 4, 2, 0, 5, 4, 6, 0, 3
+		],
+		"school": "Reservoir High School",
+		"score": [4, 0, 0]
+	},
+	"yiSoFjH00uSf0Wi2YOIOo2A7CHC3": {
+		"questionsSolved": [
+			"placeholder",
+			"Booleans",
+			"Binary Search",
+			"Web Development",
+			"Automation"
+		],
+		"randomNumbers": [
+			1, 3, 5, 1, 3, 7, 2, 4, 1, 0, 1, 3, 8, 7, 6, 5, 4, 1, 5, 4, 3, 3, 1, 7, 5,
+			1, 3, 2, 3, 0, 3, 2, 5, 0, 2, 6, 8, 0, 7, 5, 1, 0, 5, 1, 3, 5, 4, 3, 3, 1,
+			2, 1, 6, 2, 0, 3, 2, 4, 5, 3, 4, 3, 5
+		],
+		"school": "Howard High School",
+		"score": [10, 15, 16]
+	},
+	"zVK8Lb381LfDaJPUoCAmPl1NmtU2": {
+		"questionsSolved": ["placeholder", "Hello World", "Variables 1"],
+		"randomNumbers": [
+			5, 1, 4, 5, 1, 0, 6, 5, 7, 3, 6, 2, 9, 0, 8, 1, 8, 2, 1, 3, 0, 0, 5, 1, 0,
+			3, 1, 1, 5, 2, 5, 3, 0, 1, 0, 5, 8, 2, 7, 0, 2, 5, 5, 1, 2, 0, 1, 4, 5, 3,
+			1, 0, 8, 5, 4, 5, 0, 5, 0, 3, 1, 6, 0
+		],
+		"school": "Glenelg High School",
+		"score": [10, 0, 0]
+	},
+	"zjvW89ddSkXda1O3XnFETypq8rU2": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			4, 0, 3, 0, 6, 1, 7, 6, 1, 4, 3, 2, 7, 1, 6, 8, 5, 7, 4, 1, 3, 4, 7, 8, 4,
+			5, 8, 4, 3, 6, 3, 4, 0, 2, 3, 0, 2, 3, 4, 3, 1, 4, 2, 5, 1, 4, 0, 2, 1, 6,
+			4, 1, 6, 4, 1, 4, 5, 1, 2, 3, 4, 6, 3
+		],
+		"school": "Howard High School",
+		"score": [15, 0, 0]
+	},
+	"zk2uziykhHbBBP7f48vFqcVnPaI3": {
+		"questionsSolved": [
+			"placeholder",
+			"Hello World",
+			"Variables 1",
+			"Variables 2"
+		],
+		"randomNumbers": [
+			3, 0, 2, 7, 5, 3, 6, 1, 0, 1, 3, 5, 2, 3, 0, 4, 8, 6, 1, 4, 5, 9, 0, 7, 7,
+			6, 5, 4, 2, 5, 6, 1, 0, 6, 0, 4, 9, 5, 3, 0, 3, 2, 4, 2, 1, 4, 3, 1, 2, 6,
+			5, 7, 3, 0, 4, 2, 1, 1, 0, 5, 3, 4, 5
+		],
+		"school": "Centennial High School",
+		"score": [15, 0, 0]
+	}
+}
